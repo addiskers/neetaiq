@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build
+frontend/.next/
+frontend/out/
+
+# Env
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large)
+*.xlsx
+*.pdf
+
+# Docker volumes
+pgdata/
+
+# DB dumps (transfer separately, not in git)
+db_dump.sql
