@@ -26,18 +26,18 @@ services:
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,https://matdaaniq.com,https://www.matdaaniq.com}
       ENVIRONMENT: production
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
 
   frontend:
     build:
       context: ./frontend
       args:
-        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000/api}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://matdaaniq.com/api}
     restart: unless-stopped
     depends_on:
       - backend
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
 
 volumes:
   pgdata:
