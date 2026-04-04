@@ -23,7 +23,7 @@ services:
         condition: service_healthy
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-matdaaniq_db}
-      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,https://matdaaniq.com,https://www.matdaaniq.com}
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://www.matdaaniq.com}
       ENVIRONMENT: production
     expose:
       - "8000"
@@ -32,7 +32,7 @@ services:
     build:
       context: ./frontend
       args:
-        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://matdaaniq.com/api}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-https://www.matdaaniq.com/api}
     restart: unless-stopped
     depends_on:
       - backend
@@ -47,8 +47,22 @@ services:
       - backend
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+      - certbot-www:/var/www/certbot
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - certbot-var:/var/lib/letsencrypt
+      - certbot-www:/var/www/certbot
 
 volumes:
   pgdata:
+  certbot-etc:
+  certbot-var:
+  certbot-www:
