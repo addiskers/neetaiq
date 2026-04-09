@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Users, LogOut, MessageCircle, X } from "lucide-react";
+import { LayoutDashboard, LayoutGrid, Users, X, ChevronDown } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
 
 const modules = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
+  { name: "Election Tracker", href: "/election-tracker", icon: LayoutGrid },
   { name: "Candidate Intel", href: "/candidate-intel", icon: Users },
-  { name: "Tweet Generator", href: "/tweets", icon: MessageCircle },
 ];
 
 export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void }) {
@@ -25,53 +25,55 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
   };
 
   return (
-    <aside className="w-[240px] bg-white border-r border-[#E5E7EB] flex flex-col h-full shrink-0">
+    <aside className="w-[260px] bg-[#0A1128] flex flex-col h-full shrink-0">
       {/* Logo */}
       <div className="px-5 py-5 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="bg-[#0A1128] rounded-xl px-3 py-2 flex items-center gap-0.5">
+          <div className="bg-[#111B33] rounded-xl px-3 py-2 flex items-center gap-0.5">
             <span className="text-white font-extrabold text-[15px]">मतदान</span>
             <span className="text-[#3B82F6] font-extrabold text-[15px]">iQ</span>
           </div>
         </div>
-        {/* Close button — mobile only */}
         {onCloseMobile && (
           <button
             type="button"
             title="Close menu"
             onClick={onCloseMobile}
-            className="lg:hidden p-1.5 rounded-lg text-[#6B7280] hover:bg-[#F3F4F6] hover:text-[#111827] transition-colors"
+            className="lg:hidden p-1.5 rounded-lg text-[#475569] hover:text-white transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
         )}
       </div>
 
-      <div className="h-px bg-[#F3F4F6] mx-4" />
+      <div className="h-px bg-white/10 mx-4" />
 
       {/* Active Theatre */}
       <div className="px-5 py-4">
-        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#9CA3AF] mb-2">Active Theatre</div>
-        <select
-          title="Select Election"
-          value={electionId || ""}
-          onChange={(e) => setElectionId(Number(e.target.value))}
-          className="w-full bg-[#F9FAFB] text-[#111827] text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-[#E5E7EB] outline-none focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/10 transition-all"
-        >
-          {elections.map((e) => (
-            <option key={e.id} value={e.id}>
-              {e.state} — {e.year}
-            </option>
-          ))}
-        </select>
+        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Active Theatre</div>
+        <div className="relative">
+          <select
+            title="Select Election"
+            value={electionId || ""}
+            onChange={(e) => setElectionId(Number(e.target.value))}
+            className="w-full bg-[#111B33] text-white text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none cursor-pointer"
+          >
+            {elections.map((e) => (
+              <option key={e.id} value={e.id}>
+                {e.state} {e.year}
+              </option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
+        </div>
       </div>
 
-      <div className="h-px bg-[#F3F4F6] mx-4" />
+      <div className="h-px bg-white/10 mx-4" />
 
       {/* Granularity */}
       <div className="px-5 py-4">
-        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#9CA3AF] mb-2">Granularity</div>
-        <div className="flex bg-[#F3F4F6] rounded-xl p-1">
+        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Granularity</div>
+        <div className="flex bg-[#111B33] rounded-xl p-1">
           {(["STATE", "DISTRICT", "AC"] as const).map((g) => (
             <button
               type="button"
@@ -79,8 +81,8 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
               onClick={() => setGranularity(g)}
               className={`flex-1 text-[11px] font-bold py-2 rounded-lg transition-all ${
                 granularity === g
-                  ? "bg-white text-[#4F46E5] shadow-sm"
-                  : "text-[#6B7280] hover:text-[#111827]"
+                  ? "bg-[#3B82F6] text-white shadow-sm"
+                  : "text-[#64748B] hover:text-white"
               }`}
             >
               {g}
@@ -89,44 +91,50 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
         </div>
 
         {(granularity === "DISTRICT" || granularity === "AC") && (
-          <select
-            title="Select District"
-            value={selectedDistrict || ""}
-            onChange={(e) => {
-              setSelectedDistrict(e.target.value || null);
-              setSelectedAC(null);
-            }}
-            className="w-full mt-2.5 bg-[#F9FAFB] text-[#111827] text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-[#E5E7EB] outline-none focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/10 transition-all"
-          >
-            <option value="">All Districts</option>
-            {districts.map((d) => (
-              <option key={d.id} value={d.name}>{d.name}</option>
-            ))}
-          </select>
+          <div className="relative mt-2.5">
+            <select
+              title="Select District"
+              value={selectedDistrict || ""}
+              onChange={(e) => {
+                setSelectedDistrict(e.target.value || null);
+                setSelectedAC(null);
+              }}
+              className="w-full bg-[#111B33] text-white text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none"
+            >
+              <option value="">All Districts</option>
+              {districts.map((d) => (
+                <option key={d.id} value={d.name}>{d.name}</option>
+              ))}
+            </select>
+            <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
+          </div>
         )}
 
         {granularity === "AC" && (
-          <select
-            title="Select Constituency"
-            value={selectedAC || ""}
-            onChange={(e) => setSelectedAC(e.target.value ? Number(e.target.value) : null)}
-            className="w-full mt-2.5 bg-[#F9FAFB] text-[#111827] text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-[#E5E7EB] outline-none focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/10 transition-all"
-          >
-            <option value="">All Constituencies</option>
-            {filteredConstituencies.map((c) => (
-              <option key={c.id} value={c.ac_number}>
-                {c.ac_number} — {c.name}
-              </option>
-            ))}
-          </select>
+          <div className="relative mt-2.5">
+            <select
+              title="Select Constituency"
+              value={selectedAC || ""}
+              onChange={(e) => setSelectedAC(e.target.value ? Number(e.target.value) : null)}
+              className="w-full bg-[#111B33] text-white text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none"
+            >
+              <option value="">All Constituencies</option>
+              {filteredConstituencies.map((c) => (
+                <option key={c.id} value={c.ac_no}>
+                  {c.ac_no} — {c.name}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
+          </div>
         )}
       </div>
 
-      <div className="h-px bg-[#F3F4F6] mx-4" />
+      <div className="h-px bg-white/10 mx-4" />
 
       {/* Modules */}
       <div className="px-5 py-4 flex-1">
-        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#9CA3AF] mb-2">Modules</div>
+        <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Modules</div>
         <nav className="space-y-1">
           {modules.map((mod) => {
             const isActive = pathname === mod.href || (mod.href !== "/" && pathname.startsWith(mod.href));
@@ -137,8 +145,8 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
                 onClick={handleNavClick}
                 className={`flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-[13px] font-semibold transition-all ${
                   isActive
-                    ? "bg-[#4F46E5]/8 text-[#4F46E5]"
-                    : "text-[#6B7280] hover:text-[#111827] hover:bg-[#F9FAFB]"
+                    ? "bg-[#3B82F6]/15 text-[#3B82F6]"
+                    : "text-[#64748B] hover:text-white hover:bg-white/5"
                 }`}
               >
                 <mod.icon className="w-[18px] h-[18px]" />
@@ -149,12 +157,11 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
         </nav>
       </div>
 
-      {/* End Session */}
-      <div className="px-5 py-4 border-t border-[#F3F4F6]">
-        <button type="button" className="flex items-center gap-2.5 text-[13px] font-medium text-[#9CA3AF] hover:text-[#EF4444] transition-colors">
-          <LogOut className="w-[16px] h-[16px]" />
-          End Session
-        </button>
+      {/* Footer */}
+      <div className="px-5 py-4 border-t border-white/10">
+        <div className="text-[10px] text-[#475569]">
+          Powered by <span className="text-[#64748B] font-semibold">MatdaanIQ</span>
+        </div>
       </div>
     </aside>
   );

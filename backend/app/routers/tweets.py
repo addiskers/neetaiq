@@ -1,5 +1,4 @@
-import random
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import Optional
@@ -23,7 +22,6 @@ def generate_tweets(
     category: Optional[str] = None,
     db: Session = Depends(get_db),
 ):
-    """Generate election-related tweet templates from real data."""
     eid = _resolve_eid(election_id, db)
     election = db.query(Election).filter(Election.id == eid).first()
     if not election:
@@ -33,14 +31,15 @@ def generate_tweets(
     year = election.year
     tweets = []
 
-    # --- Stats-based tweets ---
     total_constituencies = db.query(Constituency).filter_by(election_id=eid).count()
     total_electors = db.query(func.sum(Constituency.total_electors)).filter(
         Constituency.election_id == eid
     ).scalar() or 0
-    total_candidates = db.query(Candidate).filter_by(election_id=eid, is_contesting=True).count()
+    total_candidates = db.query(Candidate).filter(
+        Candidate.election_id == eid, Candidate.is_nota == False
+    ).count()
     total_parties = db.query(func.count(func.distinct(Candidate.party_id))).filter(
-        Candidate.election_id == eid, Candidate.is_contesting == True
+        Candidate.election_id == eid, Candidate.is_nota == False
     ).scalar() or 0
 
     electors_cr = round(total_electors / 10000000, 1)
@@ -49,50 +48,25 @@ def generate_tweets(
         tweets.extend([
             {
                 "category": "overview",
-                "emoji": "🗳️",
-                "text": f"🗳️ {state} {year} Elections: {total_constituencies} constituencies, {electors_cr} Cr electors, {total_candidates} candidates from {total_parties} parties. Democracy at scale! #Election{year} #{state}Elections",
+                "emoji": "\U0001f5f3\ufe0f",
+                "text": f"\U0001f5f3\ufe0f {state} {year} Elections: {total_constituencies} constituencies, {electors_cr} Cr electors, {total_candidates} candidates from {total_parties} parties. Democracy at scale! #Election{year} #{state}Elections",
             },
             {
                 "category": "overview",
-                "emoji": "📊",
-                "text": f"📊 {state} {year} by the numbers:\n\n🏛️ {total_constituencies} Assembly Constituencies\n👥 {electors_cr} Cr voters\n🎯 {total_candidates} candidates\n🏳️ {total_parties} political parties\n\n#Election{year} #{state}",
-            },
-            {
-                "category": "overview",
-                "emoji": "🇮🇳",
-                "text": f"🇮🇳 The battle for {state} {year} is ON!\n\n{total_candidates} candidates fighting across {total_constituencies} seats for the mandate of {electors_cr} Cr voters.\n\nWho will emerge victorious? 🤔\n\n#{state}Elections #{state}{year}",
+                "emoji": "\U0001f4ca",
+                "text": f"\U0001f4ca {state} {year} by the numbers:\n\n\U0001f3db\ufe0f {total_constituencies} Assembly Constituencies\n\U0001f465 {electors_cr} Cr voters\n\U0001f3af {total_candidates} candidates\n\U0001f3f3\ufe0f {total_parties} political parties\n\n#Election{year} #{state}",
             },
         ])
 
-    # --- Gender-based tweets ---
-    male = db.query(func.sum(Constituency.male_electors)).filter(Constituency.election_id == eid).scalar() or 0
-    female = db.query(func.sum(Constituency.female_electors)).filter(Constituency.election_id == eid).scalar() or 0
-    total = male + female or 1
-    female_pct = round(female / total * 100, 1)
-
-    if not category or category == "demographics":
-        tweets.extend([
-            {
-                "category": "demographics",
-                "emoji": "👩",
-                "text": f"👩 Women voters make up {female_pct}% of {state}'s electorate in {year}!\n\n{round(female/10000000, 1)} Cr women will decide the fate of {total_constituencies} constituencies.\n\nWomen power! 💪 #{state}Elections #WomenVoters",
-            },
-            {
-                "category": "demographics",
-                "emoji": "📈",
-                "text": f"📈 {state} {year} voter demographics:\n\n🔵 Male: {round(male/10000000, 1)} Cr ({round(male/total*100, 1)}%)\n🔴 Female: {round(female/10000000, 1)} Cr ({female_pct}%)\n\nNearly equal representation! #{state}Elections #DemocracyMatters",
-            },
-        ])
-
-    # --- Party-based tweets ---
+    # Party-based tweets
     top_parties = (
         db.query(
-            Party.name, Party.short_name,
+            Party.name, Party.abbr,
             func.count(Candidate.id).label("contested"),
-            func.sum(Candidate.votes).label("total_votes"),
+            func.sum(Candidate.votes_total).label("total_votes"),
         )
         .join(Candidate)
-        .filter(Candidate.election_id == eid, Candidate.is_contesting == True)
+        .filter(Candidate.election_id == eid, Candidate.is_nota == False)
         .group_by(Party.id)
         .order_by(func.count(Candidate.id).desc())
         .limit(5)
@@ -105,42 +79,36 @@ def generate_tweets(
             votes_str = ""
             if p.total_votes:
                 votes_str = f" ({round(p.total_votes / 100000, 1)}L votes)"
-            lines.append(f"• {p.short_name}: {p.contested} seats{votes_str}")
+            lines.append(f"\u2022 {p.abbr}: {p.contested} seats{votes_str}")
 
-        tweets.extend([
-            {
-                "category": "party",
-                "emoji": "🏛️",
-                "text": f"🏛️ Top parties in {state} {year}:\n\n" + "\n".join(lines) + f"\n\nWho will form the government? 🤔\n\n#{state}Elections #ElectionResults",
-            },
-        ])
+        tweets.append({
+            "category": "party",
+            "emoji": "\U0001f3db\ufe0f",
+            "text": f"\U0001f3db\ufe0f Top parties in {state} {year}:\n\n" + "\n".join(lines) + f"\n\nWho will form the government? \U0001f914\n\n#{state}Elections #ElectionResults",
+        })
 
-    # --- Winners / Results tweets (only if vote data exists) ---
+    # Winners / Results tweets
     winners = db.query(Candidate).filter(
-        Candidate.election_id == eid, Candidate.position == 1
+        Candidate.election_id == eid, Candidate.position == 1, Candidate.is_nota == False
     ).all()
 
     if winners and (not category or category == "results"):
-        # Party-wise seat count
         party_seats = {}
         for w in winners:
-            pname = w.party.short_name or w.party.name
+            pname = w.party.abbr if w.party else "IND"
             party_seats[pname] = party_seats.get(pname, 0) + 1
 
         sorted_parties = sorted(party_seats.items(), key=lambda x: x[1], reverse=True)
         top = sorted_parties[0] if sorted_parties else None
 
         if top:
-            seat_lines = [f"🏆 {p}: {s} seats" if i == 0 else f"  {p}: {s} seats" for i, (p, s) in enumerate(sorted_parties[:5])]
-            tweets.extend([
-                {
-                    "category": "results",
-                    "emoji": "🏆",
-                    "text": f"🏆 {state} {year} RESULTS:\n\n" + "\n".join(seat_lines) + f"\n\n{top[0]} emerges as the single largest party with {top[1]} seats!\n\n#{state}Results #{state}Elections",
-                },
-            ])
+            seat_lines = [f"\U0001f3c6 {p}: {s} seats" if i == 0 else f"  {p}: {s} seats" for i, (p, s) in enumerate(sorted_parties[:5])]
+            tweets.append({
+                "category": "results",
+                "emoji": "\U0001f3c6",
+                "text": f"\U0001f3c6 {state} {year} RESULTS:\n\n" + "\n".join(seat_lines) + f"\n\n{top[0]} emerges as the single largest party with {top[1]} seats!\n\n#{state}Results #{state}Elections",
+            })
 
-        # Closest contests
         close_contests = db.query(Constituency).filter(
             Constituency.election_id == eid,
             Constituency.winning_margin != None,
@@ -148,70 +116,61 @@ def generate_tweets(
         ).order_by(Constituency.winning_margin).limit(3).all()
 
         if close_contests:
-            contest_lines = [f"• {c.name}: margin of just {c.winning_margin:,} votes!" for c in close_contests]
-            tweets.extend([
-                {
-                    "category": "results",
-                    "emoji": "⚔️",
-                    "text": f"⚔️ Nail-biters in {state} {year}!\n\n" + "\n".join(contest_lines) + f"\n\nEvery vote counts! 🗳️\n\n#{state}Elections #CloseContest",
-                },
-            ])
+            contest_lines = [f"\u2022 {c.name}: margin of just {c.winning_margin:,} votes!" for c in close_contests]
+            tweets.append({
+                "category": "results",
+                "emoji": "\u2694\ufe0f",
+                "text": f"\u2694\ufe0f Nail-biters in {state} {year}!\n\n" + "\n".join(contest_lines) + f"\n\nEvery vote counts! \U0001f5f3\ufe0f\n\n#{state}Elections #CloseContest",
+            })
 
-    # --- Turnout tweets ---
+    # Turnout tweets
     high_turnout = db.query(Constituency).filter(
         Constituency.election_id == eid,
-        Constituency.turnout_percentage != None,
-    ).order_by(Constituency.turnout_percentage.desc()).limit(3).all()
+        Constituency.turnout_pct != None,
+    ).order_by(Constituency.turnout_pct.desc()).limit(3).all()
 
     low_turnout = db.query(Constituency).filter(
         Constituency.election_id == eid,
-        Constituency.turnout_percentage != None,
-    ).order_by(Constituency.turnout_percentage.asc()).limit(3).all()
+        Constituency.turnout_pct != None,
+    ).order_by(Constituency.turnout_pct.asc()).limit(3).all()
 
     if high_turnout and (not category or category == "turnout"):
-        high_lines = [f"🟢 {c.name}: {c.turnout_percentage}%" for c in high_turnout]
-        low_lines = [f"🔴 {c.name}: {c.turnout_percentage}%" for c in low_turnout]
-        tweets.extend([
-            {
-                "category": "turnout",
-                "emoji": "📊",
-                "text": f"📊 {state} {year} Voter Turnout:\n\nHighest:\n" + "\n".join(high_lines) + "\n\nLowest:\n" + "\n".join(low_lines) + f"\n\n#{state}Elections #VoterTurnout",
-            },
-        ])
+        high_lines = [f"\U0001f7e2 {c.name}: {c.turnout_pct}%" for c in high_turnout]
+        low_lines = [f"\U0001f534 {c.name}: {c.turnout_pct}%" for c in low_turnout]
+        tweets.append({
+            "category": "turnout",
+            "emoji": "\U0001f4ca",
+            "text": f"\U0001f4ca {state} {year} Voter Turnout:\n\nHighest:\n" + "\n".join(high_lines) + "\n\nLowest:\n" + "\n".join(low_lines) + f"\n\n#{state}Elections #VoterTurnout",
+        })
 
-    # --- Trivia / Fun facts ---
+    # Trivia
     if not category or category == "trivia":
         youngest = db.query(Candidate).filter(
-            Candidate.election_id == eid, Candidate.age != None, Candidate.is_contesting == True
+            Candidate.election_id == eid, Candidate.age != None, Candidate.is_nota == False
         ).order_by(Candidate.age.asc()).first()
 
         oldest = db.query(Candidate).filter(
-            Candidate.election_id == eid, Candidate.age != None, Candidate.is_contesting == True
+            Candidate.election_id == eid, Candidate.age != None, Candidate.is_nota == False
         ).order_by(Candidate.age.desc()).first()
 
         if youngest and oldest:
-            tweets.extend([
-                {
-                    "category": "trivia",
-                    "emoji": "🧑‍💼",
-                    "text": f"🧑‍💼 Age range of {state} {year} candidates:\n\n👶 Youngest: {youngest.name} ({youngest.age} yrs) from {youngest.constituency.name}\n👴 Oldest: {oldest.name} ({oldest.age} yrs) from {oldest.constituency.name}\n\nDemocracy has no age bar! #{state}Elections",
-                },
-            ])
+            tweets.append({
+                "category": "trivia",
+                "emoji": "\U0001f9d1\u200d\U0001f4bc",
+                "text": f"\U0001f9d1\u200d\U0001f4bc Age range of {state} {year} candidates:\n\n\U0001f476 Youngest: {youngest.name} ({youngest.age} yrs) from {youngest.constituency.name}\n\U0001f474 Oldest: {oldest.name} ({oldest.age} yrs) from {oldest.constituency.name}\n\nDemocracy has no age bar! #{state}Elections",
+            })
 
-        # Independents count
         ind_count = db.query(Candidate).join(Party).filter(
             Candidate.election_id == eid,
-            Candidate.is_contesting == True,
-            Party.short_name == "IND",
+            Candidate.is_nota == False,
+            Party.abbr == "IND",
         ).count()
 
         if ind_count > 0:
-            tweets.extend([
-                {
-                    "category": "trivia",
-                    "emoji": "🎯",
-                    "text": f"🎯 {ind_count} Independent candidates are contesting in {state} {year}!\n\nThat's {round(ind_count/total_candidates*100, 1)}% of all candidates going solo without party backing.\n\n#{state}Elections #IndependentCandidates",
-                },
-            ])
+            tweets.append({
+                "category": "trivia",
+                "emoji": "\U0001f3af",
+                "text": f"\U0001f3af {ind_count} Independent candidates contested in {state} {year}!\n\nThat's {round(ind_count/total_candidates*100, 1)}% of all candidates going solo without party backing.\n\n#{state}Elections #IndependentCandidates",
+            })
 
     return tweets

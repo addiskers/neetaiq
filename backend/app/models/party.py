@@ -7,8 +7,8 @@ class Party(Base):
     __tablename__ = "parties"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String(200), nullable=False, unique=True)
-    short_name = Column(String(20))
-    color = Column(String(7))
+    name = Column(String(200), nullable=False)
+    abbr = Column(String(50), nullable=False, unique=True)
+    color = Column(String(7))  # hex color for charts
 
     candidates = relationship("Candidate", back_populates="party")

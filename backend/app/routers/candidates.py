@@ -4,11 +4,8 @@ from sqlalchemy import func
 from typing import List, Optional
 
 from app.database import get_db
-from app.models import Election, Candidate, Party, Constituency, District
-from app.schemas.candidate import (
-    CandidateBrief, CandidateDetail, PartyOut,
-    CriminalRecordOut, PoliticalAffiliationOut,
-)
+from app.models import Election, Candidate, Party, Constituency
+from app.schemas.candidate import CandidateBrief, CandidateDetail, PartyOut
 
 router = APIRouter(prefix="/api/candidates", tags=["candidates"])
 
@@ -26,7 +23,7 @@ def list_candidates(
     constituency: Optional[str] = None,
     party: Optional[str] = None,
     search: Optional[str] = None,
-    contesting_only: bool = Query(True),
+    exclude_nota: bool = Query(True),
     limit: int = Query(50),
     offset: int = Query(0),
     db: Session = Depends(get_db),
@@ -38,8 +35,8 @@ def list_candidates(
         .filter(Candidate.election_id == eid)
     )
 
-    if contesting_only:
-        q = q.filter(Candidate.is_contesting == True)
+    if exclude_nota:
+        q = q.filter(Candidate.is_nota == False)
 
     if constituency:
         q = q.join(Constituency).filter(
@@ -48,7 +45,7 @@ def list_candidates(
 
     if party:
         q = q.join(Party).filter(
-            (func.lower(Party.short_name) == party.lower()) |
+            (func.lower(Party.abbr) == party.lower()) |
             (func.lower(Party.name).contains(party.lower()))
         )
 
@@ -62,16 +59,20 @@ def list_candidates(
             id=c.id,
             name=c.name,
             constituency_name=c.constituency.name,
-            constituency_ac_number=c.constituency.ac_number,
-            party_name=c.party.name,
-            party_short_name=c.party.short_name,
-            party_color=c.party.color,
-            status=c.status,
-            is_contesting=c.is_contesting or False,
+            constituency_ac_no=c.constituency.ac_no,
+            party_name=c.party.name if c.party else None,
+            party_abbr=c.party.abbr if c.party else None,
+            party_color=c.party.color if c.party else None,
+            gender=c.gender,
             age=c.age,
+            position=c.position,
+            votes_total=c.votes_total,
+            vote_pct=float(c.vote_pct) if c.vote_pct else None,
+            is_nota=c.is_nota,
             declared_assets=c.declared_assets,
             liabilities=c.liabilities,
             criminal_cases=c.criminal_cases or 0,
+            image_url=c.image_url,
         )
         for c in candidates
     ]
@@ -79,11 +80,14 @@ def list_candidates(
 
 @router.get("/parties", response_model=List[PartyOut])
 def list_parties(election_id: Optional[int] = None, db: Session = Depends(get_db)):
-    """List all parties with candidates in this election."""
     eid = _resolve_eid(election_id, db)
     party_ids = (
         db.query(func.distinct(Candidate.party_id))
-        .filter(Candidate.election_id == eid, Candidate.is_contesting == True)
+        .filter(
+            Candidate.election_id == eid,
+            Candidate.is_nota == False,
+            Candidate.party_id != None,
+        )
         .all()
     )
     ids = [p[0] for p in party_ids]
@@ -98,8 +102,6 @@ def get_candidate(candidate_id: int, db: Session = Depends(get_db)):
         .options(
             joinedload(Candidate.party),
             joinedload(Candidate.constituency).joinedload(Constituency.district),
-            joinedload(Candidate.criminal_records),
-            joinedload(Candidate.political_affiliations),
         )
         .filter(Candidate.id == candidate_id)
         .first()
@@ -107,50 +109,27 @@ def get_candidate(candidate_id: int, db: Session = Depends(get_db)):
     if not c:
         raise HTTPException(status_code=404, detail="Candidate not found")
 
-    affiliations = [
-        PoliticalAffiliationOut(
-            id=a.id,
-            party_name=a.party.name if a.party else "Unknown",
-            party_short_name=a.party.short_name if a.party else None,
-            start_year=a.start_year,
-            end_year=a.end_year,
-            is_current=a.is_current or False,
-        )
-        for a in c.political_affiliations
-    ]
-
-    criminal_records = [
-        CriminalRecordOut(
-            id=r.id,
-            ipc_section=r.ipc_section,
-            description=r.description,
-            case_status=r.case_status,
-            case_year=r.case_year,
-        )
-        for r in c.criminal_records
-    ]
-
     return CandidateDetail(
         id=c.id,
         name=c.name,
         constituency_name=c.constituency.name,
-        constituency_ac_number=c.constituency.ac_number,
+        constituency_ac_no=c.constituency.ac_no,
         district_name=c.constituency.district.name,
-        party_name=c.party.name,
-        party_short_name=c.party.short_name,
-        party_color=c.party.color,
-        status=c.status,
-        is_contesting=c.is_contesting or False,
-        is_incumbent=c.is_incumbent or False,
-        profile_url=c.profile_url,
-        age=c.age,
+        party_name=c.party.name if c.party else None,
+        party_abbr=c.party.abbr if c.party else None,
+        party_color=c.party.color if c.party else None,
         gender=c.gender,
+        age=c.age,
+        position=c.position,
+        votes_general=c.votes_general,
+        votes_postal=c.votes_postal,
+        votes_total=c.votes_total,
+        vote_pct=float(c.vote_pct) if c.vote_pct else None,
+        is_nota=c.is_nota,
         education=c.education,
         occupation=c.occupation,
         declared_assets=c.declared_assets,
         liabilities=c.liabilities,
         criminal_cases=c.criminal_cases or 0,
-        approval_rating=float(c.approval_rating) if c.approval_rating else None,
-        criminal_records=criminal_records,
-        political_affiliations=affiliations,
+        image_url=c.image_url,
     )

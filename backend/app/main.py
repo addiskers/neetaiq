@@ -6,9 +6,9 @@ from app.config import CORS_ORIGINS
 from app.routers import overview, candidates, search, tweets
 
 app = FastAPI(
-    title="MatdaanIQ API",
-    description="India's Booth-Level Voter Intelligence Platform — matdaaniq.com",
-    version="1.0.0",
+    title="NetaIQ API",
+    description="India's Election Intelligence Platform",
+    version="2.0.0",
     docs_url="/docs" if os.getenv("ENVIRONMENT", "development") != "production" else None,
     redoc_url="/redoc" if os.getenv("ENVIRONMENT", "development") != "production" else None,
 )
@@ -31,7 +31,7 @@ app.include_router(tweets.router)
 
 @app.get("/")
 def root():
-    return {"message": "MatdaanIQ API", "version": "1.0.0"}
+    return {"message": "NetaIQ API", "version": "2.0.0"}
 
 
 @app.get("/api/health")

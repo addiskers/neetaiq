@@ -28,6 +28,9 @@ Thumbs.db
 
 # Docker volumes
 pgdata/
-
+.claude/
+.csv
+.json
+.xlsx
 # DB dumps (transfer separately, not in git)
 db_dump.sql

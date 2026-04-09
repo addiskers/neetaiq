@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session, joinedload
-from typing import List, Optional
+from typing import Optional
 
 from app.database import get_db
 from app.models import Candidate, Constituency, Party
@@ -11,7 +11,7 @@ router = APIRouter(prefix="/api/search", tags=["search"])
 @router.get("")
 def search(
     q: str = Query(..., min_length=2),
-    type: Optional[str] = None,  # "candidate" or "constituency"
+    type: Optional[str] = None,
     election_id: int = Query(1),
     limit: int = Query(10),
     db: Session = Depends(get_db),
@@ -31,7 +31,7 @@ def search(
         results["constituencies"] = [
             {
                 "id": c.id,
-                "ac_number": c.ac_number,
+                "ac_no": c.ac_no,
                 "name": c.name,
                 "district": c.district.name,
                 "total_electors": c.total_electors,
@@ -46,7 +46,7 @@ def search(
             .filter(
                 Candidate.election_id == election_id,
                 Candidate.name.ilike(f"%{q}%"),
-                Candidate.is_contesting == True,
+                Candidate.is_nota == False,
             )
             .limit(limit)
             .all()
@@ -55,7 +55,7 @@ def search(
             {
                 "id": c.id,
                 "name": c.name,
-                "party": c.party.short_name,
+                "party": c.party.abbr if c.party else None,
                 "constituency": c.constituency.name,
             }
             for c in candidates

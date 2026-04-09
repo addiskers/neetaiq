@@ -1,6 +1,5 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Date, UniqueConstraint
+from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, Date, UniqueConstraint
 from sqlalchemy.orm import relationship
-from sqlalchemy.sql import func
 from app.database import Base
 
 
@@ -8,12 +7,11 @@ class Election(Base):
     __tablename__ = "elections"
 
     id = Column(Integer, primary_key=True, index=True)
-    year = Column(Integer, nullable=False)
-    election_name = Column(String(200), nullable=False)
-    election_type = Column(String(50), nullable=False)
     state = Column(String(100), nullable=False)
+    year = Column(Integer, nullable=False)
+    type = Column(String(50), nullable=False)  # "Assembly"
+    name = Column(String(200), nullable=False)
     election_date = Column(Date)
-    created_at = Column(DateTime, server_default=func.now())
 
     districts = relationship("District", back_populates="election")
     constituencies = relationship("Constituency", back_populates="election")
@@ -26,8 +24,6 @@ class District(Base):
     id = Column(Integer, primary_key=True, index=True)
     election_id = Column(Integer, ForeignKey("elections.id"), nullable=False)
     name = Column(String(200), nullable=False)
-    name_previous = Column(String(200))
-    rename_status = Column(String(50))
 
     __table_args__ = (UniqueConstraint("election_id", "name"),)
 
@@ -41,22 +37,34 @@ class Constituency(Base):
     id = Column(Integer, primary_key=True, index=True)
     election_id = Column(Integer, ForeignKey("elections.id"), nullable=False)
     district_id = Column(Integer, ForeignKey("districts.id"), nullable=False)
-    ac_number = Column(Integer, nullable=False)
+    ac_no = Column(Integer, nullable=False)
     name = Column(String(200), nullable=False)
-    total_polling_stations = Column(Integer)
+    category = Column(String(10))  # GEN/SC/ST
+    total_electors = Column(Integer)
     male_electors = Column(Integer)
     female_electors = Column(Integer)
     third_gender_electors = Column(Integer)
-    total_electors = Column(Integer)
-    swing_status = Column(String(20), default="Stable")
-    ruling_party = Column(String(100))
-    turnout_percentage = Column(Numeric(5, 2))
-    total_votes = Column(Integer)
+    total_polling_stations = Column(Integer)
+    total_votes_polled = Column(Integer)
+    turnout_pct = Column(Numeric(5, 2))
     winning_margin = Column(Integer)
 
-    __table_args__ = (UniqueConstraint("election_id", "ac_number"),)
+    __table_args__ = (UniqueConstraint("election_id", "ac_no"),)
 
     election = relationship("Election", back_populates="constituencies")
     district = relationship("District", back_populates="constituencies")
-    polling_stations = relationship("PollingStation", back_populates="constituency")
     candidates = relationship("Candidate", back_populates="constituency")
+
+
+class DistrictMapping(Base):
+    """Links districts across election years (same row in mapping file)."""
+    __tablename__ = "district_mappings"
+
+    id = Column(Integer, primary_key=True, index=True)
+    district_2016_id = Column(Integer, ForeignKey("districts.id"), nullable=True)
+    district_2021_id = Column(Integer, ForeignKey("districts.id"), nullable=True)
+    district_2026_id = Column(Integer, ForeignKey("districts.id"), nullable=True)
+
+    district_2016 = relationship("District", foreign_keys=[district_2016_id])
+    district_2021 = relationship("District", foreign_keys=[district_2021_id])
+    district_2026 = relationship("District", foreign_keys=[district_2026_id])

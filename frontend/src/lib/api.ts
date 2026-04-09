@@ -9,17 +9,16 @@ async function fetchApi<T>(path: string): Promise<T> {
 // Types
 export interface Election {
   id: number;
-  year: number;
-  election_name: string;
-  election_type: string;
   state: string;
+  year: number;
+  type: string;
+  name: string;
 }
 
 export interface StateOverview {
   state: string;
   constituency_count: number;
   total_electors: number;
-  swing_status: string;
 }
 
 export interface DistrictOverview {
@@ -27,142 +26,101 @@ export interface DistrictOverview {
   name: string;
   constituency_count: number;
   total_electors: number;
-  total_polling_stations: number;
 }
 
 export interface ConstituencyBrief {
   id: number;
-  ac_number: number;
+  ac_no: number;
   name: string;
   district_name: string;
   total_electors: number | null;
-  swing_status: string;
+  category: string | null;
 }
 
 export interface ConstituencyDetail {
   id: number;
-  ac_number: number;
+  ac_no: number;
   name: string;
   district_name: string;
-  total_polling_stations: number | null;
-  male_electors: number | null;
-  female_electors: number | null;
-  third_gender_electors: number | null;
+  category: string | null;
   total_electors: number | null;
-  swing_status: string | null;
-  ruling_party: string | null;
-  turnout_percentage: number | null;
-}
-
-export interface GenderDemographics {
-  male_electors: number;
-  female_electors: number;
-  third_gender_electors: number;
-  total_electors: number;
-  male_pct: number;
-  female_pct: number;
-  third_gender_pct: number;
+  total_votes_polled: number | null;
+  turnout_pct: number | null;
+  winning_margin: number | null;
 }
 
 export interface DossierRow {
   id: number;
   name: string;
   constituency_name: string;
-  party_short_name: string | null;
+  party_abbr: string | null;
   party_color: string | null;
+  position: number | null;
+  votes_total: number | null;
+  vote_pct: number | null;
   declared_assets: number | null;
   liabilities: number | null;
   criminal_cases: number;
+  image_url: string | null;
 }
 
 export interface CandidateBrief {
   id: number;
   name: string;
   constituency_name: string;
-  constituency_ac_number: number;
-  party_name: string;
-  party_short_name: string | null;
+  constituency_ac_no: number;
+  party_name: string | null;
+  party_abbr: string | null;
   party_color: string | null;
-  status: string;
-  is_contesting: boolean;
+  gender: string | null;
   age: number | null;
+  position: number | null;
+  votes_total: number | null;
+  vote_pct: number | null;
+  is_nota: boolean;
   declared_assets: number | null;
   liabilities: number | null;
   criminal_cases: number;
+  image_url: string | null;
 }
 
 export interface CandidateDetail {
   id: number;
   name: string;
   constituency_name: string;
-  constituency_ac_number: number;
+  constituency_ac_no: number;
   district_name: string;
-  party_name: string;
-  party_short_name: string | null;
+  party_name: string | null;
+  party_abbr: string | null;
   party_color: string | null;
-  status: string;
-  is_contesting: boolean;
-  is_incumbent: boolean;
-  profile_url: string | null;
-  age: number | null;
   gender: string | null;
+  age: number | null;
+  position: number | null;
+  votes_general: number | null;
+  votes_postal: number | null;
+  votes_total: number | null;
+  vote_pct: number | null;
+  is_nota: boolean;
   education: string | null;
   occupation: string | null;
   declared_assets: number | null;
   liabilities: number | null;
   criminal_cases: number;
-  approval_rating: number | null;
-  criminal_records: CriminalRecord[];
-  political_affiliations: PoliticalAffiliation[];
-}
-
-export interface CriminalRecord {
-  id: number;
-  ipc_section: string | null;
-  description: string | null;
-  case_status: string | null;
-  case_year: number | null;
-}
-
-export interface PoliticalAffiliation {
-  id: number;
-  party_name: string;
-  party_short_name: string | null;
-  start_year: number | null;
-  end_year: number | null;
-  is_current: boolean;
+  image_url: string | null;
 }
 
 export interface Party {
   id: number;
   name: string;
-  short_name: string | null;
+  abbr: string | null;
   color: string | null;
-}
-
-export interface Countdown {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-  election_date: string;
 }
 
 export interface ElectionStats {
   total_constituencies: number;
-  total_polling_stations: number;
   total_electors: number;
   total_candidates: number;
-  total_contesting: number;
   total_parties: number;
-}
-
-export interface ResourceAllocation {
-  safe: number;
-  swing: number;
-  volatile: number;
-  leaning: number;
-  stable: number;
 }
 
 function eid(electionId?: number): string {
@@ -185,14 +143,26 @@ export const api = {
     fetchApi<ConstituencyDetail>(`/overview/constituencies/${ac}${qs(electionId)}`),
   getDossierTable: (electionId?: number, limit = 20, offset = 0, extra?: string) =>
     fetchApi<DossierRow[]>(`/overview/dossier-table${qs(electionId, `limit=${limit}&offset=${offset}${extra ? `&${extra}` : ""}`)}`),
-  getDemographics: (electionId?: number, extra?: string) => fetchApi<GenderDemographics>(`/overview/demographics${qs(electionId, extra)}`),
-  getCountdown: (electionId?: number) => fetchApi<Countdown>(`/overview/countdown${qs(electionId)}`),
   getStats: (electionId?: number, extra?: string) => fetchApi<ElectionStats>(`/overview/stats${qs(electionId, extra)}`),
   getTurnoutByConstituency: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/turnout-by-constituency${qs(electionId, extra)}`),
   getTurnoutByDistrict: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/turnout-by-district${qs(electionId, extra)}`),
   getPartyPerformance: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/party-performance${qs(electionId, extra)}`),
   getMarginDistribution: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/vote-margin-distribution${qs(electionId, extra)}`),
   getCategoryMix: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/category-mix${qs(electionId, extra)}`),
+  getCountdown: (electionId?: number) => fetchApi<any>(`/overview/countdown${qs(electionId)}`),
+  getAcResults: (electionId?: number) => fetchApi<any[]>(`/overview/ac-results${qs(electionId)}`),
+  getHistoricalWave: () => fetchApi<any>("/overview/historical-wave"),
+  getClosestContests: (electionId?: number, limit = 10) => fetchApi<any[]>(`/overview/closest-contests${qs(electionId, `limit=${limit}`)}`),
+  getNotaImpact: (electionId?: number) => fetchApi<any[]>(`/overview/nota-impact${qs(electionId)}`),
+  getCrorepatiCandidates: (electionId?: number) => fetchApi<any>(`/overview/crorepati-candidates${qs(electionId)}`),
+  getGenderDemographics: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/gender-demographics${qs(electionId, extra)}`),
+  getEducationBreakdown: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/education-breakdown${qs(electionId, extra)}`),
+  getCriminalOverview: (electionId?: number, extra?: string) => fetchApi<any>(`/overview/criminal-overview${qs(electionId, extra)}`),
+  getMarginVsTurnout: (electionId?: number) => fetchApi<any[]>(`/overview/margin-vs-turnout${qs(electionId)}`),
+  getConstituencyTracker: (electionId?: number, extra?: string) =>
+    fetchApi<any[]>(`/overview/constituency-tracker${qs(electionId, extra)}`),
+  getPlacesToWatch: () => fetchApi<any[]>("/overview/places-to-watch"),
+  getSwingAnalysis: () => fetchApi<any[]>("/overview/swing-analysis"),
   getCandidates: (electionId?: number, extra?: string) =>
     fetchApi<CandidateBrief[]>(`/candidates${qs(electionId, extra)}`),
   getCandidate: (id: number) => fetchApi<CandidateDetail>(`/candidates/${id}`),

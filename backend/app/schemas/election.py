@@ -5,10 +5,10 @@ from datetime import date
 
 class ElectionOut(BaseModel):
     id: int
-    year: int
-    election_name: str
-    election_type: str
     state: str
+    year: int
+    type: str
+    name: str
     election_date: Optional[date] = None
 
     class Config:
@@ -18,8 +18,6 @@ class ElectionOut(BaseModel):
 class DistrictOut(BaseModel):
     id: int
     name: str
-    name_previous: Optional[str] = None
-    rename_status: Optional[str] = None
     constituency_count: int = 0
 
     class Config:
@@ -28,17 +26,14 @@ class DistrictOut(BaseModel):
 
 class ConstituencyOut(BaseModel):
     id: int
-    ac_number: int
+    ac_no: int
     name: str
     district_name: str
-    total_polling_stations: Optional[int] = None
-    male_electors: Optional[int] = None
-    female_electors: Optional[int] = None
-    third_gender_electors: Optional[int] = None
+    category: Optional[str] = None
     total_electors: Optional[int] = None
-    swing_status: Optional[str] = "Stable"
-    ruling_party: Optional[str] = None
-    turnout_percentage: Optional[float] = None
+    total_votes_polled: Optional[int] = None
+    turnout_pct: Optional[float] = None
+    winning_margin: Optional[int] = None
 
     class Config:
         from_attributes = True
@@ -46,11 +41,11 @@ class ConstituencyOut(BaseModel):
 
 class ConstituencyBrief(BaseModel):
     id: int
-    ac_number: int
+    ac_no: int
     name: str
     district_name: str
     total_electors: Optional[int] = None
-    swing_status: Optional[str] = "Stable"
+    category: Optional[str] = None
 
     class Config:
         from_attributes = True

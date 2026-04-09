@@ -44,7 +44,10 @@
       "Bash(taskkill //F //IM python3.exe)",
       "Bash(curl -s \"http://localhost:8000/api/overview/turnout-by-district?election_id=4\")",
       "Bash(python -c \"import sys,json; [print\\(f''''  {d[\"\"district\"\"]:25s} {d[\"\"turnout\"\"]}%''''\\) for d in json.load\\(sys.stdin\\)[:5]]\")",
-      "Bash(curl -s \"http://localhost:8000/api/overview/vote-margin-distribution?election_id=4\")"
+      "Bash(curl -s \"http://localhost:8000/api/overview/vote-margin-distribution?election_id=4\")",
+      "mcp__plugin_figma_figma__get_screenshot",
+      "Bash(curl -sL \"https://api.github.com/repos/datameet/maps/contents/assembly-constituencies\")",
+      "Bash(python scripts/enrich_2026_electors.py)"
     ]
   }
 }

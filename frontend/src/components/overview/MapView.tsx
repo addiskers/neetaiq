@@ -1,324 +1,205 @@
 "use client";
-import { useEffect, useRef, useCallback, useState, useMemo } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useFilters } from "@/lib/filter-context";
+import { api } from "@/lib/api";
 
-// --- State configs ---
-interface StateMapConfig {
-  center: L.LatLngExpression;
-  zoom: number;
-  geoJsonFile: string;
-  districtColors: Record<string, string>;
-  districtCenters: Record<string, [number, number]>;
-}
-
-const ASSAM_CONFIG: StateMapConfig = {
-  center: [26.15, 92.50],
-  zoom: 7.3,
-  geoJsonFile: "/assam-districts.geojson",
-  districtColors: {
-    "Kokrajhar": "#A3E4D7", "Chirang": "#F9E79F", "Bongaigaon": "#E8DAEF",
-    "Dhubri": "#ABEBC6", "South Salmara-Mankachar": "#F5CBA7", "Goalpara": "#AED6F1",
-    "Barpeta": "#F5DEB3", "Bajali": "#E8D5B7", "Nalbari": "#A2D9CE",
-    "Baksa": "#B8E6B8", "Tamulpur": "#FADBD8", "Kamrup Rural": "#E59866",
-    "Kamrup Metropolitan": "#F7DC6F", "Darrang": "#D6EAF8", "Udalguri": "#E8DAEF",
-    "Morigaon": "#D5D8DC", "Nagaon": "#EDBB99", "Hojai": "#F1948A",
-    "Sonitpur": "#AED6F1", "Biswanath": "#D4E6F1", "West Karbi Anglong": "#D5F5E3",
-    "Karbi Anglong": "#D7BDE2", "Golaghat": "#F0B27A", "Jorhat": "#85C1E9",
-    "Majuli": "#A9CCE3", "Sivasagar": "#F9E79F", "Charaideo": "#D5F5E3",
-    "Dibrugarh": "#F5B7B1", "Lakhimpur": "#FAD7A0", "Dhemaji": "#F9E79F",
-    "Tinsukia": "#D6DBDF", "Dima Hasao": "#D2B4DE", "Cachar": "#FADBD8",
-    "Hailakandi": "#82E0AA", "Sribhumi": "#D4EFDF",
-  },
-  districtCenters: {
-    "Bajali": [26.40, 91.10], "Baksa": [26.70, 91.25], "Barpeta": [26.32, 91.00],
-    "Biswanath": [26.73, 93.15], "Bongaigaon": [26.47, 90.56], "Cachar": [24.79, 92.82],
-    "Charaideo": [27.05, 95.00], "Chirang": [26.50, 90.22], "Darrang": [26.45, 92.17],
-    "Dhemaji": [27.47, 94.56], "Dhubri": [26.02, 89.98], "Dibrugarh": [27.47, 94.91],
-    "Dima Hasao": [25.50, 93.01], "Goalpara": [26.17, 90.62], "Golaghat": [26.52, 93.96],
-    "Hailakandi": [24.68, 92.56], "Hojai": [25.85, 92.85], "Jorhat": [26.75, 94.22],
-    "Kamrup Metropolitan": [26.14, 91.74], "Kamrup Rural": [26.22, 91.50],
-    "Karbi Anglong": [26.00, 93.56], "Kokrajhar": [26.40, 89.88], "Lakhimpur": [27.23, 94.10],
-    "Majuli": [26.95, 94.17], "Morigaon": [26.25, 92.40], "Nagaon": [26.35, 92.69],
-    "Nalbari": [26.44, 91.44], "Sivasagar": [26.98, 94.63], "Sonitpur": [26.70, 92.95],
-    "South Salmara-Mankachar": [26.10, 90.20], "Sribhumi": [24.87, 92.35],
-    "Tamulpur": [26.60, 91.30], "Tinsukia": [27.49, 95.36], "Udalguri": [26.75, 92.10],
-    "West Karbi Anglong": [25.80, 93.20],
-  },
+const PARTY_COLORS: Record<string, string> = {
+  BJP: "#FF9933", INC: "#00BFFF", AIUDF: "#006400", AGP: "#C8A2C8",
+  BOPF: "#FF7F50", UPPL: "#FFD700", "CPI(M)": "#FF0000", IND: "#808080",
+  AITC: "#00FF00", NCP: "#004080",
 };
 
-const WB_CONFIG: StateMapConfig = {
-  center: [23.8, 87.85],
-  zoom: 6.8,
-  geoJsonFile: "/west-bengal-districts.geojson",
-  districtColors: {
-    "Cooch Behar": "#A3E4D7", "Alipurduar": "#F9E79F", "Jalpaiguri": "#E8DAEF",
-    "Darjeeling": "#ABEBC6", "Kalimpong": "#F5CBA7", "Uttar Dinajpur": "#AED6F1",
-    "Dakshin Dinajpur": "#F5DEB3", "Malda": "#A2D9CE", "Murshidabad": "#B8E6B8",
-    "Birbhum": "#FADBD8", "Jhargram": "#E59866", "Paschim Medinipur": "#F7DC6F",
-    "Purba Medinipur": "#D6EAF8", "Bankura": "#E8DAEF", "Purulia": "#D5D8DC",
-    "Purba Bardhaman": "#EDBB99", "Paschim Bardhaman": "#F1948A", "Nadia": "#AED6F1",
-    "North 24 Parganas": "#D4E6F1", "Howrah": "#D5F5E3", "Hooghly": "#D7BDE2",
-    "Kolkata": "#F0B27A", "South 24 Parganas": "#85C1E9",
-  },
-  districtCenters: {
-    "Cooch Behar": [26.30, 89.35], "Alipurduar": [26.65, 89.45],
-    "Jalpaiguri": [26.65, 88.65], "Darjeeling": [26.90, 88.10],
-    "Kalimpong": [26.95, 88.55], "Uttar Dinajpur": [26.05, 88.00],
-    "Dakshin Dinajpur": [25.45, 88.15], "Malda": [25.15, 87.90],
-    "Murshidabad": [24.20, 88.00], "Birbhum": [24.10, 87.45],
-    "Jhargram": [22.35, 86.70], "Paschim Medinipur": [22.40, 87.10],
-    "Purba Medinipur": [22.05, 87.55], "Bankura": [23.05, 87.10],
-    "Purulia": [23.15, 86.30], "Purba Bardhaman": [23.35, 87.65],
-    "Paschim Bardhaman": [23.55, 87.05], "Nadia": [23.70, 88.35],
-    "North 24 Parganas": [22.80, 88.55], "Howrah": [22.55, 87.95],
-    "Hooghly": [22.85, 87.85], "Kolkata": [22.55, 88.32],
-    "South 24 Parganas": [21.95, 88.40],
-  },
+const CATEGORY_COLORS: Record<string, string> = {
+  GEN: "#93C5FD", SC: "#FCD34D", ST: "#6EE7B7",
 };
 
-const STATE_CONFIGS: Record<string, StateMapConfig> = {
-  "Assam": ASSAM_CONFIG,
-  "West Bengal": WB_CONFIG,
-};
+const ASSAM_CENTER: L.LatLngExpression = [26.15, 92.50];
+const ASSAM_ZOOM = 7.3;
 
-export default function MapView() {
+export type MapMode = "results" | "category" | "prev_winner";
+
+export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
-  const geoLayerRef = useRef<L.GeoJSON | null>(null);
-  const markerLayerRef = useRef<L.LayerGroup | null>(null);
-  const [geoData, setGeoData] = useState<any>(null);
+  const layerRef = useRef<L.GeoJSON | null>(null);
+  const labelLayerRef = useRef<L.LayerGroup | null>(null);
+  const [acGeoData, setAcGeoData] = useState<any>(null);
+  const [acResults, setAcResults] = useState<any[]>([]);
+  const [prevResults, setPrevResults] = useState<any[]>([]);
 
   const {
-    selectedDistrict, setSelectedDistrict, setGranularity,
-    selectedAC, districts, filteredConstituencies, currentElection,
+    electionId, currentElection, selectedDistrict, setSelectedDistrict,
+    setGranularity, selectedAC, setSelectedAC, constituencies,
   } = useFilters();
 
-  const stateName = currentElection?.state || "Assam";
-  const config = STATE_CONFIGS[stateName] || ASSAM_CONFIG;
-
-  // Load GeoJSON when state changes
   useEffect(() => {
-    setGeoData(null);
-    fetch(config.geoJsonFile)
-      .then((r) => r.json())
-      .then(setGeoData);
-  }, [config.geoJsonFile]);
-
-  // Init map
-  useEffect(() => {
-    if (!mapContainer.current || mapRef.current) return;
-
-    const map = L.map(mapContainer.current, {
-      center: config.center,
-      zoom: config.zoom,
-      zoomControl: false,
-      attributionControl: false,
-      minZoom: 5,
-      maxZoom: 13,
-    });
-
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
-      maxZoom: 18,
-    }).addTo(map);
-
-    L.control.zoom({ position: "topright" }).addTo(map);
-
-    markerLayerRef.current = L.layerGroup().addTo(map);
-    mapRef.current = map;
-    setTimeout(() => map.invalidateSize(), 100);
-
-    return () => {
-      map.remove();
-      mapRef.current = null;
-    };
+    fetch("/assam-ac.geojson").then((r) => r.json()).then(setAcGeoData);
   }, []);
 
-  // Re-center map when state changes
   useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
-    map.flyTo(config.center, config.zoom, { duration: 0.6 });
-  }, [config.center, config.zoom]);
+    if (electionId) {
+      api.getAcResults(electionId).then(setAcResults).catch(() => setAcResults([]));
+    }
+  }, [electionId]);
 
-  const handleDistrictClick = useCallback((name: string) => {
-    if (selectedDistrict === name) {
-      setSelectedDistrict(null);
-      setGranularity("STATE");
+  // Fetch 2021 results for "prev_winner" mode
+  useEffect(() => {
+    if (mapMode === "prev_winner") {
+      // Find the 2021 election and fetch its results
+      api.getElections().then((elections) => {
+        const e2021 = elections.find((e: any) => e.year === 2021);
+        if (e2021) {
+          api.getAcResults(e2021.id).then(setPrevResults);
+        }
+      });
+    }
+  }, [mapMode]);
+
+  useEffect(() => {
+    if (!mapContainer.current || mapRef.current) return;
+    const map = L.map(mapContainer.current, {
+      center: ASSAM_CENTER, zoom: ASSAM_ZOOM, zoomControl: false,
+      attributionControl: false, minZoom: 5, maxZoom: 13,
+    });
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", { maxZoom: 18 }).addTo(map);
+    L.control.zoom({ position: "topright" }).addTo(map);
+    labelLayerRef.current = L.layerGroup().addTo(map);
+    mapRef.current = map;
+    setTimeout(() => map.invalidateSize(), 100);
+    return () => { map.remove(); mapRef.current = null; };
+  }, []);
+
+  const handleAcClick = useCallback((acNo: number, districtName: string) => {
+    if (selectedAC === acNo) {
+      setSelectedAC(null); setSelectedDistrict(null); setGranularity("STATE");
     } else {
-      setSelectedDistrict(name);
-      setGranularity("DISTRICT");
+      setSelectedAC(acNo); setSelectedDistrict(districtName); setGranularity("AC");
     }
-  }, [selectedDistrict, setSelectedDistrict, setGranularity]);
+  }, [selectedAC, setSelectedAC, setSelectedDistrict, setGranularity]);
 
-  // Render GeoJSON districts
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !geoData) return;
+    const labelLayer = labelLayerRef.current;
+    if (!map || !acGeoData || !labelLayer) return;
 
-    if (geoLayerRef.current) {
-      map.removeLayer(geoLayerRef.current);
-    }
+    if (layerRef.current) map.removeLayer(layerRef.current);
+    labelLayer.clearLayers();
 
-    const geoLayer = L.geoJSON(geoData, {
+    const resultMap: Record<number, any> = {};
+    for (const r of acResults) resultMap[r.ac_no] = r;
+
+    const prevMap: Record<number, any> = {};
+    for (const r of prevResults) prevMap[r.ac_no] = r;
+
+    const hasPartyResults = acResults.some((r) => r.party);
+    const conMap: Record<number, any> = {};
+    for (const c of constituencies) conMap[c.ac_no] = c;
+
+    // Determine effective mode
+    const effectiveMode = hasPartyResults ? "results" : mapMode;
+
+    const geoLayer = L.geoJSON(acGeoData, {
       style: (feature) => {
-        const name = feature?.properties?.name || "";
-        const isSelected = selectedDistrict === name;
+        const acNo = feature?.properties?.ac_no;
+        const result = resultMap[acNo];
+        const prev = prevMap[acNo];
+        const con = conMap[acNo];
+        const isSelectedAC = selectedAC === acNo;
+        const isSelectedDistrict = selectedDistrict &&
+          feature?.properties?.district?.toUpperCase() === selectedDistrict.toUpperCase();
+
+        let fillColor = "#E2E8F0";
+        if (effectiveMode === "results" && result?.party) {
+          fillColor = PARTY_COLORS[result.party] || result.party_color || "#94A3B8";
+        } else if (effectiveMode === "prev_winner" && prev?.party) {
+          fillColor = PARTY_COLORS[prev.party] || prev.party_color || "#94A3B8";
+        } else if (con?.category) {
+          fillColor = CATEGORY_COLORS[con.category] || "#E2E8F0";
+        }
+
         return {
-          fillColor: isSelected ? "#3B82F6" : (config.districtColors[name] || "#E2E8F0"),
-          fillOpacity: isSelected ? 0.5 : 0.75,
-          color: isSelected ? "#1D4ED8" : "#64748B",
-          weight: isSelected ? 3 : 1,
-          opacity: isSelected ? 1 : 0.6,
+          fillColor,
+          fillOpacity: isSelectedAC ? 0.9 : isSelectedDistrict ? 0.8 : 0.65,
+          color: isSelectedAC ? "#1D4ED8" : "#fff",
+          weight: isSelectedAC ? 3 : 0.8,
+          opacity: 1,
         };
       },
       onEachFeature: (feature, layer) => {
-        const name = feature.properties?.name || "";
-        const districtData = districts.find((d) => d.name === name);
+        const acNo = feature.properties?.ac_no;
+        const acName = feature.properties?.name || "";
+        const district = feature.properties?.district || "";
+        const result = resultMap[acNo];
+        const prev = prevMap[acNo];
+        const con = conMap[acNo];
+        const electors = con?.total_electors ? `${(con.total_electors / 100000).toFixed(1)}L electors` : "";
+        const cat = con?.category || "";
 
-        const tip = districtData
-          ? `<div style="font-weight:700;font-size:13px;margin-bottom:3px;">${name}</div>
-             <div style="color:#475569;font-size:11px;">${districtData.constituency_count} Constituencies</div>
-             <div style="color:#475569;font-size:11px;">${(districtData.total_electors / 100000).toFixed(1)}L Electors</div>
-             <div style="color:#475569;font-size:11px;">${districtData.total_polling_stations.toLocaleString()} Polling Stations</div>
-             <div style="color:#3B82F6;font-size:10px;margin-top:4px;font-weight:600;">Click to filter dashboard</div>`
-          : `<div style="font-weight:700;font-size:13px;">${name}</div>`;
+        let tip = "";
+        if (effectiveMode === "results" && result?.party) {
+          tip = `<div style="font-weight:700;font-size:13px;margin-bottom:2px;">${acNo}. ${acName}</div>
+             <div style="color:#475569;font-size:11px;">${district} ${cat ? `(${cat})` : ""}</div>
+             <div style="font-weight:600;font-size:11px;margin-top:3px;color:${PARTY_COLORS[result.party] || '#333'}">${result.party} - ${result.winner}</div>
+             ${result.margin ? `<div style="color:#6B7280;font-size:10px;">Margin: ${result.margin.toLocaleString()}</div>` : ""}`;
+        } else if (effectiveMode === "prev_winner" && prev?.party) {
+          tip = `<div style="font-weight:700;font-size:13px;margin-bottom:2px;">${acNo}. ${acName}</div>
+             <div style="color:#475569;font-size:11px;">${district} ${cat ? `(${cat})` : ""}</div>
+             <div style="font-weight:600;font-size:11px;margin-top:3px;color:${PARTY_COLORS[prev.party] || '#333'}">2021 Winner: ${prev.party} - ${prev.winner}</div>
+             ${prev.margin ? `<div style="color:#6B7280;font-size:10px;">2021 Margin: ${prev.margin.toLocaleString()}</div>` : ""}
+             ${electors ? `<div style="color:#6B7280;font-size:10px;">2026: ${electors}</div>` : ""}`;
+        } else {
+          tip = `<div style="font-weight:700;font-size:13px;">${acNo}. ${acName}</div>
+             <div style="color:#475569;font-size:11px;">${district} ${cat ? `(${cat})` : ""}</div>
+             ${electors ? `<div style="color:#475569;font-size:10px;">${electors}</div>` : ""}`;
+        }
 
         layer.bindTooltip(tip, { className: "district-tooltip", sticky: true });
-
         layer.on("mouseover", () => {
-          if (selectedDistrict !== name) {
-            (layer as any).setStyle({ fillOpacity: 0.9, weight: 2, color: "#3B82F6" });
-          }
+          if (selectedAC !== acNo) (layer as any).setStyle({ fillOpacity: 0.95, weight: 2, color: "#3B82F6" });
         });
-        layer.on("mouseout", () => {
-          geoLayer.resetStyle(layer);
-        });
-
-        layer.on("click", () => handleDistrictClick(name));
+        layer.on("mouseout", () => { geoLayer.resetStyle(layer); });
+        layer.on("click", () => handleAcClick(acNo, district));
       },
     }).addTo(map);
 
-    geoLayerRef.current = geoLayer;
-  }, [geoData, selectedDistrict, districts, handleDistrictClick, config.districtColors]);
+    layerRef.current = geoLayer;
 
-  // Render labels + constituency markers
-  useEffect(() => {
-    const map = mapRef.current;
-    const markerLayer = markerLayerRef.current;
-    if (!map || !markerLayer) return;
-
-    markerLayer.clearLayers();
-
-    if (!selectedDistrict) {
-      // STATE VIEW — district name labels
-      map.flyTo(config.center, config.zoom, { duration: 0.6 });
-
-      Object.entries(config.districtCenters).forEach(([name, center]) => {
-        const shortName = name
-          .replace("-Mankachar", "")
-          .replace(" Metropolitan", " Metro")
-          .replace(" Rural", "")
-          .replace("North 24 Parganas", "N 24 Pgs")
-          .replace("South 24 Parganas", "S 24 Pgs")
-          .replace("Paschim Medinipur", "P. Medinipur")
-          .replace("Purba Medinipur", "E. Medinipur")
-          .replace("Purba Bardhaman", "E. Bardhaman")
-          .replace("Paschim Bardhaman", "W. Bardhaman")
-          .replace("Uttar Dinajpur", "U. Dinajpur")
-          .replace("Dakshin Dinajpur", "D. Dinajpur");
-
-        const label = L.marker(center, {
-          icon: L.divIcon({
-            className: "district-label",
-            html: `<div style="font-size:9px;font-weight:700;color:#1e293b;text-shadow:0 0 4px #fff,0 0 4px #fff,0 0 4px #fff;white-space:nowrap;text-transform:uppercase;letter-spacing:0.3px;pointer-events:none;">${shortName}</div>`,
-            iconSize: [0, 0],
-            iconAnchor: [0, 6],
-          }),
-          interactive: false,
+    const addLabels = () => {
+      labelLayer.clearLayers();
+      if (map.getZoom() >= 8) {
+        acGeoData.features.forEach((feature: any) => {
+          const acNo = feature.properties?.ac_no;
+          if (!feature.geometry) return;
+          const bounds = L.geoJSON(feature).getBounds();
+          const center = bounds.getCenter();
+          L.marker(center, {
+            icon: L.divIcon({
+              className: "",
+              html: `<div style="font-size:${map.getZoom() >= 10 ? 10 : 8}px;font-weight:700;color:#1e293b;text-shadow:0 0 3px #fff,0 0 3px #fff;text-align:center;pointer-events:none;">${acNo}</div>`,
+              iconSize: [20, 12], iconAnchor: [10, 6],
+            }),
+            interactive: false,
+          }).addTo(labelLayer);
         });
-        label.addTo(markerLayer);
-      });
+      }
+    };
+    addLabels();
+    map.on("zoomend", addLabels);
+
+    if (selectedDistrict && !selectedAC) {
+      const distFeatures = acGeoData.features.filter((f: any) => f.properties?.district?.toUpperCase() === selectedDistrict.toUpperCase());
+      if (distFeatures.length > 0) map.flyToBounds(L.geoJSON({ type: "FeatureCollection", features: distFeatures } as any).getBounds(), { padding: [30, 30], duration: 0.6 });
+    } else if (selectedAC) {
+      const acFeature = acGeoData.features.find((f: any) => f.properties?.ac_no === selectedAC);
+      if (acFeature) map.flyToBounds(L.geoJSON(acFeature).getBounds(), { padding: [50, 50], duration: 0.6 });
     } else {
-      // DISTRICT VIEW — zoom in, show constituencies
-      const center = config.districtCenters[selectedDistrict];
-      if (center) {
-        map.flyTo(center, 9.5, { duration: 0.6 });
-      }
-
-      // District name header
-      if (center) {
-        const header = L.marker([center[0] + 0.3, center[1]], {
-          icon: L.divIcon({
-            className: "",
-            html: `<div style="font-size:14px;font-weight:800;color:#1e293b;text-shadow:0 0 6px #fff,0 0 6px #fff;white-space:nowrap;text-transform:uppercase;letter-spacing:1px;">${selectedDistrict}</div>`,
-            iconSize: [0, 0],
-            iconAnchor: [40, 0],
-          }),
-          interactive: false,
-        });
-        header.addTo(markerLayer);
-      }
-
-      // Constituency markers
-      filteredConstituencies.forEach((c, i) => {
-        const dc = config.districtCenters[c.district_name];
-        if (!dc) return;
-
-        const angle = (i / Math.max(filteredConstituencies.length, 1)) * Math.PI * 2;
-        const spread = 0.05 + (i % 4) * 0.025;
-        const lat = dc[0] + Math.cos(angle) * spread;
-        const lng = dc[1] + Math.sin(angle) * spread;
-
-        const isSelected = selectedAC === c.ac_number;
-
-        const marker = L.circleMarker([lat, lng], {
-          radius: isSelected ? 14 : 9,
-          fillColor: isSelected ? "#3B82F6" : "#10B981",
-          fillOpacity: isSelected ? 1 : 0.8,
-          color: isSelected ? "#1D4ED8" : "#047857",
-          weight: isSelected ? 3 : 1.5,
-        });
-
-        marker.bindTooltip(
-          `<div style="font-weight:700;font-size:12px;">${c.name}</div>
-           <div style="color:#475569;font-size:10px;">AC ${c.ac_number} • ${c.district_name}</div>
-           <div style="color:#475569;font-size:10px;">${c.total_electors ? (c.total_electors / 100000).toFixed(1) + "L electors" : ""}</div>`,
-          { className: "district-tooltip", direction: "top", offset: [0, -8] }
-        );
-
-        const acLabel = L.marker([lat, lng], {
-          icon: L.divIcon({
-            className: "",
-            html: `<div style="font-size:7px;font-weight:700;color:#fff;text-align:center;pointer-events:none;margin-top:-4px;">${c.ac_number}</div>`,
-            iconSize: [18, 18],
-            iconAnchor: [9, 9],
-          }),
-          interactive: false,
-        });
-
-        marker.addTo(markerLayer);
-        acLabel.addTo(markerLayer);
-      });
-
-      // Back button
-      if (center) {
-        const back = L.marker([center[0] - 0.25, center[1] - 0.15] as L.LatLngExpression, {
-          icon: L.divIcon({
-            className: "",
-            html: `<div style="background:#3B82F6;color:#fff;padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;box-shadow:0 2px 8px rgba(59,130,246,0.4);">← Back to ${stateName}</div>`,
-            iconSize: [0, 0],
-          }),
-        });
-        back.on("click", () => {
-          setSelectedDistrict(null);
-          setGranularity("STATE");
-        });
-        back.addTo(markerLayer);
-      }
+      map.flyTo(ASSAM_CENTER, ASSAM_ZOOM, { duration: 0.6 });
     }
-  }, [selectedDistrict, selectedAC, filteredConstituencies, setSelectedDistrict, setGranularity, config, stateName]);
+
+    return () => { map.off("zoomend", addLabels); };
+  }, [acGeoData, acResults, prevResults, constituencies, selectedDistrict, selectedAC, handleAcClick, mapMode]);
 
   return <div ref={mapContainer} className="w-full h-full rounded-xl" />;
 }
