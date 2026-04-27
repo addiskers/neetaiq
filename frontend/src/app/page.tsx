@@ -63,7 +63,7 @@ export default function OverviewPage() {
   const [swingAnalysis, setSwingAnalysis] = useState<any[]>([]);
 
   const hasResults = currentElection && currentElection.year !== 2026;
-  const [mapMode, setMapMode] = useState<"results" | "category" | "prev_winner">("category");
+  const [mapMode, setMapMode] = useState<"results" | "category" | "prev_winner" | "prediction">("category");
 
   // Reset map mode when election changes
   useEffect(() => {
@@ -85,7 +85,7 @@ export default function OverviewPage() {
     api.getTurnoutByDistrict(electionId, filterParams).then(setTurnoutByDistrict);
     api.getMarginDistribution(electionId, filterParams).then(setMarginDistribution);
     api.getCategoryMix(electionId, filterParams).then(setCategoryMix);
-    api.getHistoricalWave().then(setHistoricalWave);
+    api.getHistoricalWave(electionId).then(setHistoricalWave);
     api.getClosestContests(electionId).then(setClosestContests);
     api.getNotaImpact(electionId).then(setNotaImpact);
     api.getCrorepatiCandidates(electionId).then(setCrorepati);
@@ -94,8 +94,8 @@ export default function OverviewPage() {
     api.getCriminalOverview(electionId, filterParams).then(setCriminalData);
     api.getMarginVsTurnout(electionId).then(setMarginTurnout);
     api.getCountdown(electionId).then(setCountdown);
-    api.getPlacesToWatch().then(setPlacesToWatch);
-    api.getSwingAnalysis().then(setSwingAnalysis);
+    api.getPlacesToWatch(electionId).then(setPlacesToWatch);
+    api.getSwingAnalysis(electionId).then(setSwingAnalysis);
   }, [electionId, filterParams]);
 
   const filteredDistrictsList = districts.filter((d) =>
@@ -196,8 +196,12 @@ export default function OverviewPage() {
             <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-[#3B82F6]" /><span className="text-sm font-semibold text-[#111827]">{viewLabel}</span></div>
             {!hasResults && (
               <div className="flex bg-[#F3F4F6] rounded-lg p-0.5 gap-0.5">
-                {([["category", "Category"], ["prev_winner", "2021 Winner"]] as const).map(([mode, label]) => (
-                  <button key={mode} type="button" onClick={() => setMapMode(mode)}
+                {([
+                  ["category", "Category"],
+                  ["prev_winner", "Prev Winner"],
+                  ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026 ? [["prediction", "\u{1F916} AI Prediction"]] : []),
+                ] as [string, string][]).map(([mode, label]) => (
+                  <button key={mode} type="button" onClick={() => setMapMode(mode as any)}
                     className={`text-[11px] font-semibold px-3 py-1.5 rounded-md transition-all ${mapMode === mode ? "bg-white text-[#111827] shadow-sm" : "text-[#6B7280] hover:text-[#111827]"}`}
                   >{label}</button>
                 ))}
@@ -208,10 +212,24 @@ export default function OverviewPage() {
             <MapView mapMode={hasResults ? "results" : mapMode} />
             {/* Map Legend */}
             <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm border border-[#E5E7EB] z-[400]">
-              {(hasResults || mapMode === "prev_winner") && partyPerformance.length > 0 ? (
+              {mapMode === "prediction" && !hasResults ? (
                 <>
-                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">{hasResults ? "Winner" : "2021 Winner"}</div>
-                  {["BJP", "INC", "AIUDF", "AGP", "BOPF", "UPPL"].map((p) => (
+                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">AI Prediction</div>
+                  {["AITC", "BJP", "INC", "CPI(M)"].map((p) => (
+                    <div key={p} className="flex items-center gap-1.5 py-0.5">
+                      <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
+                      <span className="text-[10px] text-[#374151]">{p}</span>
+                    </div>
+                  ))}
+                  <div className="flex items-center gap-1.5 py-0.5 mt-1 border-t border-[#E5E7EB] pt-1">
+                    <span className="w-2.5 h-2.5 rounded-sm border-2 border-yellow-400" />
+                    <span className="text-[10px] text-[#374151]">Swing</span>
+                  </div>
+                </>
+              ) : (hasResults || mapMode === "prev_winner") && partyPerformance.length > 0 ? (
+                <>
+                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">{hasResults ? "Winner" : "Prev Winner"}</div>
+                  {["BJP", "INC", "AIUDF", "AGP", "BOPF", "UPPL", "AITC", "CPI(M)"].filter((p) => partyPerformance.some((pp: any) => pp.abbr === p)).map((p) => (
                     <div key={p} className="flex items-center gap-1.5 py-0.5">
                       <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
                       <span className="text-[10px] text-[#374151]">{p}</span>
@@ -221,9 +239,9 @@ export default function OverviewPage() {
               ) : (
                 <>
                   <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">Seat Category</div>
-                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#93C5FD]" /><span className="text-[10px] text-[#374151]">General (98)</span></div>
-                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#FCD34D]" /><span className="text-[10px] text-[#374151]">SC (9)</span></div>
-                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#6EE7B7]" /><span className="text-[10px] text-[#374151]">ST (19)</span></div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#93C5FD]" /><span className="text-[10px] text-[#374151]">General</span></div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#FCD34D]" /><span className="text-[10px] text-[#374151]">SC</span></div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#6EE7B7]" /><span className="text-[10px] text-[#374151]">ST</span></div>
                 </>
               )}
             </div>

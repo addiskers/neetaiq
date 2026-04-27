@@ -422,9 +422,12 @@ def get_ac_results(
 
 
 @router.get("/historical-wave")
-def get_historical_wave(db: Session = Depends(get_db)):
-    """Party seats across all elections (2016, 2021, 2026) for line/area chart."""
-    elections = db.query(Election).filter(Election.state == "Assam").order_by(Election.year).all()
+def get_historical_wave(election_id: Optional[int] = None, db: Session = Depends(get_db)):
+    """Party seats across all elections for the same state, for line/area chart."""
+    eid = _resolve_eid(election_id, db)
+    current = db.query(Election).filter(Election.id == eid).first()
+    state = current.state if current else "Assam"
+    elections = db.query(Election).filter(Election.state == state).order_by(Election.year).all()
     # Get top parties by total seats across all elections
     all_parties = set()
     data_by_year = {}
@@ -724,15 +727,24 @@ def get_margin_vs_turnout(
 
 
 @router.get("/places-to-watch")
-def get_places_to_watch(db: Session = Depends(get_db)):
-    """Constituencies from 2021 with thin margins -- key battlegrounds for 2026."""
-    e2021 = db.query(Election).filter(Election.state == "Assam", Election.year == 2021).first()
-    if not e2021:
+def get_places_to_watch(election_id: Optional[int] = None, db: Session = Depends(get_db)):
+    """Constituencies with thin margins -- key battlegrounds."""
+    eid = _resolve_eid(election_id, db)
+    current = db.query(Election).filter(Election.id == eid).first()
+    if not current:
+        return []
+    state = current.state
+    # Find most recent election with results for the same state
+    prev = db.query(Election).filter(
+        Election.state == state,
+        Election.year <= current.year,
+    ).order_by(Election.year.desc()).first()
+    if not prev:
         return []
 
     close = (
         db.query(Constituency)
-        .filter(Constituency.election_id == e2021.id, Constituency.winning_margin != None, Constituency.winning_margin < 10000)
+        .filter(Constituency.election_id == prev.id, Constituency.winning_margin != None, Constituency.winning_margin < 10000)
         .order_by(Constituency.winning_margin)
         .limit(15)
         .all()
@@ -758,12 +770,16 @@ def get_places_to_watch(db: Session = Depends(get_db)):
 
 
 @router.get("/swing-analysis")
-def get_swing_analysis(db: Session = Depends(get_db)):
-    """Compare party performance between 2016 and 2021."""
-    e2016 = db.query(Election).filter(Election.state == "Assam", Election.year == 2016).first()
-    e2021 = db.query(Election).filter(Election.state == "Assam", Election.year == 2021).first()
-    if not e2016 or not e2021:
+def get_swing_analysis(election_id: Optional[int] = None, db: Session = Depends(get_db)):
+    """Compare party performance between the two most recent elections for the same state."""
+    eid = _resolve_eid(election_id, db)
+    current = db.query(Election).filter(Election.id == eid).first()
+    state = current.state if current else "Assam"
+    elections = db.query(Election).filter(Election.state == state).order_by(Election.year).all()
+    if len(elections) < 2:
         return []
+    e2016 = elections[-2]
+    e2021 = elections[-1]
 
     def get_party_data(eid):
         winners = db.query(Candidate).filter(Candidate.election_id == eid, Candidate.position == 1, Candidate.is_nota == False).all()
@@ -815,12 +831,15 @@ def get_constituency_tracker(
 
     constituencies = q.order_by(Constituency.ac_no).all()
 
-    # Get 2021 winners for comparison (when viewing 2026)
+    # Get previous election winners for comparison
     winner_2021 = {}
-    if election and election.year == 2026:
-        e2021 = db.query(Election).filter(Election.state == "Assam", Election.year == 2021).first()
-        if e2021:
-            for w in db.query(Candidate).filter(Candidate.election_id == e2021.id, Candidate.position == 1, Candidate.is_nota == False).all():
+    if election:
+        e_prev = db.query(Election).filter(
+            Election.state == election.state,
+            Election.year < election.year,
+        ).order_by(Election.year.desc()).first()
+        if e_prev:
+            for w in db.query(Candidate).filter(Candidate.election_id == e_prev.id, Candidate.position == 1, Candidate.is_nota == False).all():
                 winner_2021[w.constituency.name.upper()] = {
                     "name": w.name,
                     "party": w.party.abbr if w.party else None,

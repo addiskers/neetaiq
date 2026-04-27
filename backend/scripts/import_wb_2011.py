@@ -1,12 +1,11 @@
-"""Import West Bengal 2021 election data — detailed results + affidavit data.
+"""Import West Bengal 2011 election data — detailed results + affidavit data.
 
-Data sources (all under west_bengal_election_data 1/west_bengal_election_data/wb_2021/):
-  - Results: Detailed Results_Election_2021.xlsx (14 cols, different format from 2011/2016)
-  - Electors: electors_data_2021.xlsx (no district column, constituency name + category)
-  - District mapping: from 2021_candidate_profiles.json (candidate_profile.district)
-  - Parties: List Of Political Parties Participated_2021.xlsx
-  - Affidavit bridge: wb2021_all_candidates.xlsx
-  - Affidavit data: 2021_candidate_profiles.json
+Data sources (all under west_bengal_election_data 1/west_bengal_election_data/wb_2011/):
+  - Results: Detailed_Results_2011.xlsx
+  - Electors: electors_data_2011.xlsx (district-AC mapping + elector breakdown)
+  - Parties: Political_Parties_2011.xlsx
+  - Affidavit bridge: wb2011_all_candidates.xlsx
+  - Affidavit data: 2011_candidate_profiles.json
 """
 import sys
 import os
@@ -17,87 +16,92 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import openpyxl
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from app.database import engine, Base
 from app.models import Election, District, Constituency, Party, Candidate
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
-DATA_DIR = os.path.join(PROJECT_ROOT, "west_bengal_election_data 1", "west_bengal_election_data", "wb_2021")
+DATA_DIR = os.path.join(PROJECT_ROOT, "west_bengal_election_data 1", "west_bengal_election_data", "wb_2011")
 
-RESULTS_FILE = os.path.join(DATA_DIR, "Detailed Results_Election_2021.xlsx")
-ELECTORS_FILE = os.path.join(DATA_DIR, "electors_data_2021.xlsx")
-PARTIES_FILE = os.path.join(DATA_DIR, "List Of Political Parties Participated_2021.xlsx")
-CANDIDATES_XLSX = os.path.join(DATA_DIR, "wb2021_all_candidates.xlsx")
-PROFILES_JSON = os.path.join(DATA_DIR, "2021_candidate_profiles.json")
+RESULTS_FILE = os.path.join(DATA_DIR, "Detailed_Results_2011.xlsx")
+ELECTORS_FILE = os.path.join(DATA_DIR, "electors_data_2011.xlsx")
+PARTIES_FILE = os.path.join(DATA_DIR, "Political_Parties_2011.xlsx")
+CANDIDATES_XLSX = os.path.join(DATA_DIR, "wb2011_all_candidates.xlsx")
+PROFILES_JSON = os.path.join(DATA_DIR, "2011_candidate_profiles.json")
 
 PARTY_COLORS = {
     "AITC": "#00FF00", "CPM": "#FF0000", "CPI(M)": "#FF0000", "INC": "#00BFFF",
     "BJP": "#FF9933", "AIFB": "#CC0000", "RSP": "#FF6600", "CPI": "#FF4444",
     "JD(U)": "#003366", "BSP": "#0000FF", "NCP": "#004080", "IND": "#808080",
     "NOTA": "#000000", "GJM": "#FFD700", "JMM": "#2E8B57", "SUCI": "#8B0000",
+    "SDF": "#FF69B4", "RJD": "#00A300", "SP": "#FF0000",
 }
 
-ABBR_ALIASES = {"CPM": "CPI(M)"}
-
-# AC name normalization: results file name -> JSON profile name
-AC_NAME_FIXES = {
-    "MAHISADAL": "MAHISHADAL",
-    "MANGALKOT": "MONGALKOTE",
+# Map abbreviations used in results to canonical abbreviations in the Party table
+ABBR_ALIASES = {
+    "CPM": "CPI(M)",
+    "CPI(ML)(L)": "CPI(ML)(L)",
 }
 
 
 def load_electors():
-    """Parse electors_data_2021.xlsx -> {ac_name_upper: {electors}}."""
+    """Parse electors_data_2011.xlsx -> {ac_no: {district, name, category, ...electors}}."""
     wb = openpyxl.load_workbook(ELECTORS_FILE, read_only=True)
     ws = wb[wb.sheetnames[0]]
     rows = list(ws.iter_rows(values_only=True))
     wb.close()
 
-    elector_map = {}
+    ac_map = {}
     for row in rows[1:]:
-        raw = str(row[0]).strip() if row[0] else None
-        if not raw:
+        district = str(row[0]).strip() if row[0] else None
+        ac_no = int(row[1]) if row[1] else None
+        raw_name = str(row[2]).strip() if row[2] else None
+        if not ac_no or not raw_name:
             continue
-        clean = re.sub(r"\s+(SC|ST|GEN)\s*$", "", raw, flags=re.IGNORECASE).strip().upper()
-        # Normalize spacing
-        clean = re.sub(r"\s+", " ", clean)
-        elector_map[clean] = {
-            "male_electors": int(row[1]) if row[1] else None,
-            "female_electors": int(row[2]) if row[2] else None,
-            "third_gender_electors": int(row[3]) if row[3] else None,
-            "total_electors": int(row[4]) if row[4] else None,
+
+        category = "GEN"
+        if "(SC)" in raw_name:
+            category = "SC"
+        elif "(ST)" in raw_name:
+            category = "ST"
+        clean_name = re.sub(r"\s*\((SC|ST)\)\s*$", "", raw_name).strip()
+
+        ac_map[ac_no] = {
+            "district": district,
+            "name": clean_name,
+            "category": category,
+            "male_electors": int(row[3]) if row[3] else None,
+            "female_electors": int(row[4]) if row[4] else None,
+            "third_gender_electors": int(row[5]) if row[5] else None,
+            "total_electors": int(row[6]) if row[6] else None,
+            "total_voters": int(row[13]) if row[13] else None,
         }
-    return elector_map
-
-
-def load_district_from_json():
-    """Build {ac_name_upper: district} from JSON candidate profiles."""
-    with open(PROFILES_JSON, "r", encoding="utf-8") as f:
-        profiles = json.load(f)
-    ac_district = {}
-    for p in profiles:
-        cp = p.get("candidate_profile", {})
-        ac = re.sub(r"\s+", " ", (cp.get("ac_name") or "").strip().upper())
-        dist = (cp.get("district") or "").strip().upper()
-        if ac and dist and ac not in ac_district:
-            ac_district[ac] = dist
-    return ac_district
+    return ac_map
 
 
 def load_party_names():
+    """Parse Political_Parties_2011.xlsx -> {abbr: full_name}."""
     wb = openpyxl.load_workbook(PARTIES_FILE, read_only=True)
     ws = wb[wb.sheetnames[0]]
     rows = list(ws.iter_rows(values_only=True))
     wb.close()
+
     party_map = {}
     for row in rows[1:]:
-        abbr = str(row[2]).strip() if row[2] else None
-        full_name = str(row[3]).strip() if row[3] else None
-        if abbr and full_name:
-            party_map[abbr] = full_name
+        raw = str(row[2]).strip() if row[2] else None
+        if not raw:
+            continue
+        # Format: "ABBR                    Full Name"
+        parts = re.split(r"\s{2,}", raw, maxsplit=1)
+        abbr = parts[0].strip()
+        full_name = parts[1].strip() if len(parts) > 1 else abbr
+        party_map[abbr] = full_name
     return party_map
 
 
 def load_affidavit_bridge():
+    """Build {(constituency_upper, candidate_name_upper): affidavit_data} from xlsx+json."""
+    # Load candidate xlsx for id -> (name, constituency) mapping
     wb = openpyxl.load_workbook(CANDIDATES_XLSX, read_only=True)
     ws = wb[wb.sheetnames[0]]
     rows = list(ws.iter_rows(values_only=True))
@@ -109,10 +113,10 @@ def load_affidavit_bridge():
         name = str(row[2]).strip() if row[2] else ""
         constituency = str(row[4]).strip().upper() if row[4] else ""
         constituency = re.sub(r"\s*\((SC|ST)\)\s*$", "", constituency).strip()
-        constituency = re.sub(r"\s+", " ", constituency)
         if cid:
             csv_by_id[cid] = {"name": name, "constituency": constituency}
 
+    # Load JSON profiles
     with open(PROFILES_JSON, "r", encoding="utf-8") as f:
         profiles = json.load(f)
 
@@ -124,6 +128,7 @@ def load_affidavit_bridge():
         if csv_info:
             key = (csv_info["constituency"], csv_info["name"].upper())
             json_by_key[key] = p
+
     return json_by_key
 
 
@@ -145,11 +150,9 @@ def parse_criminal(status):
 def run():
     Base.metadata.create_all(bind=engine)
 
-    elector_map = load_electors()
-    print(f"Loaded electors for {len(elector_map)} constituencies")
-
-    ac_district = load_district_from_json()
-    print(f"Loaded district mapping for {len(ac_district)} ACs")
+    # Load all data sources
+    ac_map = load_electors()
+    print(f"Loaded electors: {len(ac_map)} ACs, {len(set(a['district'] for a in ac_map.values()))} districts")
 
     party_names = load_party_names()
     print(f"Loaded {len(party_names)} party name mappings")
@@ -157,58 +160,59 @@ def run():
     affidavit_data = load_affidavit_bridge()
     print(f"Loaded {len(affidavit_data)} affidavit profiles")
 
+    # Load detailed results
     wb = openpyxl.load_workbook(RESULTS_FILE, read_only=True)
     ws = wb[wb.sheetnames[0]]
     result_rows = list(ws.iter_rows(values_only=True))
     wb.close()
     print(f"Loaded {len(result_rows) - 1} result rows")
 
-    # 2021 format: STATE/UT, AC NO, AC NAME, CANDIDATE NAME, SEX, AGE, CATEGORY, PARTY,
-    #              SYMBOL, VALID VOTES GENERAL, VALID VOTES POSTAL, VALID VOTES TOTAL,
-    #              % VOTES POLLED, TOTAL ELECTORS
-
     with Session(engine) as session:
         existing = session.query(Election).filter(
-            Election.state == "West Bengal", Election.year == 2021
+            Election.state == "West Bengal", Election.year == 2011
         ).first()
         if existing:
-            print(f"ERROR: West Bengal 2021 already exists (id={existing.id}). Skipping.")
+            print(f"ERROR: West Bengal 2011 already exists (id={existing.id}). Skipping.")
             return
 
+        # 1. Create election
         election = Election(
-            state="West Bengal", year=2021, type="Assembly",
-            name="West Bengal Legislative Assembly Election 2021",
+            state="West Bengal", year=2011, type="Assembly",
+            name="West Bengal Legislative Assembly Election 2011",
         )
         session.add(election)
         session.flush()
         print(f"Created election: {election.name} (id={election.id})")
 
-        # Parse results
+        # 2. Create districts
+        district_cache = {}
+        for ac_info in ac_map.values():
+            dname = ac_info["district"]
+            if dname not in district_cache:
+                district = District(election_id=election.id, name=dname.title())
+                session.add(district)
+                district_cache[dname] = district
+        session.flush()
+        print(f"Created {len(district_cache)} districts")
+
+        # 3. Parse results -> group by AC
         ac_data = {}
-        for row in result_rows[1:]:
-            ac_no = row[1]
+        for row in result_rows[1:]:  # skip header row
+            ac_no = row[0]
             if ac_no is None or not isinstance(ac_no, (int, float)):
                 continue
             ac_no = int(ac_no)
-            ac_name = str(row[2]).strip() if row[2] else ""
-            cand_name = str(row[3]).strip() if row[3] else None
-            if cand_name:
-                cand_name = cand_name.strip()
-            sex = str(row[4]).strip() if row[4] else None
-            if sex:
-                sex = sex[0].upper() if sex.upper() in ("MALE", "FEMALE") else sex
-            age = int(row[5]) if row[5] else None
-            category = str(row[6]).strip() if row[6] else "GEN"
-            party_abbr = str(row[7]).strip() if row[7] else None
-            gen_votes = int(row[9]) if row[9] else 0
-            postal_votes = int(row[10]) if row[10] else 0
-            total_valid = int(row[11]) if row[11] else 0
-            total_electors_col = int(row[13]) if row[13] else None
+            cand_name = str(row[2]).strip() if row[2] else None
+            sex = str(row[3]).strip() if row[3] else None
+            age = int(row[4]) if row[4] else None
+            party_abbr = str(row[6]).strip() if row[6] else None
+            gen_votes = int(row[7]) if row[7] else 0
+            postal_votes = int(row[8]) if row[8] else 0
+            total_valid = int(row[9]) if row[9] else 0
+            total_electors_col = int(row[10]) if row[10] else None
 
             if ac_no not in ac_data:
                 ac_data[ac_no] = {
-                    "name": ac_name,
-                    "category": category,
                     "total_electors_from_results": total_electors_col,
                     "candidates": [],
                 }
@@ -223,35 +227,20 @@ def run():
                 "total_votes": total_valid,
             })
 
-        # Create districts
-        district_cache = {}
-        for ac_no, info in ac_data.items():
-            ac_name_upper = re.sub(r"\s+", " ", info["name"].upper())
-            ac_name_upper = AC_NAME_FIXES.get(ac_name_upper, ac_name_upper)
-            dist = ac_district.get(ac_name_upper)
-            if dist and dist not in district_cache:
-                district = District(election_id=election.id, name=dist.title())
-                session.add(district)
-                district_cache[dist] = district
-        session.flush()
-        print(f"Created {len(district_cache)} districts")
-
-        # Create constituencies
+        # 4. Create constituencies
         constituency_cache = {}
         for ac_no, info in ac_data.items():
-            ac_name_upper = re.sub(r"\s+", " ", info["name"].upper())
-            ac_name_upper = AC_NAME_FIXES.get(ac_name_upper, ac_name_upper)
-            dist_name = ac_district.get(ac_name_upper)
-            district = district_cache.get(dist_name) if dist_name else None
+            mapping = ac_map.get(ac_no, {})
+            district_name = mapping.get("district")
+            district = district_cache.get(district_name)
 
-            electors = elector_map.get(ac_name_upper, {})
-            total_electors = electors.get("total_electors") or info.get("total_electors_from_results")
-
+            total_electors = mapping.get("total_electors") or info.get("total_electors_from_results")
             total_votes = sum(c["total_votes"] for c in info["candidates"])
             turnout = round(total_votes / total_electors * 100, 2) if total_electors and total_votes else None
 
+            # Winning margin (exclude NOTA)
             sorted_cands = sorted(info["candidates"], key=lambda x: x["total_votes"], reverse=True)
-            real_cands = [c for c in sorted_cands if c["party"] != "NOTA" and (c["name"] or "") != "None of the Above"]
+            real_cands = [c for c in sorted_cands if c["party"] != "NOTA"]
             margin = None
             if len(real_cands) >= 2:
                 margin = real_cands[0]["total_votes"] - real_cands[1]["total_votes"]
@@ -260,12 +249,12 @@ def run():
                 election_id=election.id,
                 district_id=district.id if district else None,
                 ac_no=ac_no,
-                name=re.sub(r"\s+", " ", info["name"].upper()),
-                category=info.get("category"),
+                name=mapping.get("name", str(ac_no)),
+                category=mapping.get("category"),
                 total_electors=total_electors,
-                male_electors=electors.get("male_electors"),
-                female_electors=electors.get("female_electors"),
-                third_gender_electors=electors.get("third_gender_electors"),
+                male_electors=mapping.get("male_electors"),
+                female_electors=mapping.get("female_electors"),
+                third_gender_electors=mapping.get("third_gender_electors"),
                 total_votes_polled=total_votes,
                 turnout_pct=turnout,
                 winning_margin=margin,
@@ -276,13 +265,13 @@ def run():
         session.flush()
         print(f"Created {len(constituency_cache)} constituencies")
 
-        # Build party cache
+        # 5. Build party cache (reuse existing parties)
         party_cache = {}
         for p in session.query(Party).all():
             party_cache[p.abbr.upper()] = p
             party_cache[p.name.upper()] = p
 
-        # Import candidates
+        # 6. Import candidates
         imported = 0
         for ac_no, info in ac_data.items():
             constituency = constituency_cache[ac_no]
@@ -290,22 +279,29 @@ def run():
             total_valid_in_ac = sum(c["total_votes"] for c in sorted_cands)
 
             for pos, cand in enumerate(sorted_cands, start=1):
-                name = (cand["name"] or "UNKNOWN").strip()
-                is_nota = (cand["party"] == "NOTA" or name == "None of the Above")
+                is_nota = (cand["party"] == "NOTA" or cand["name"] == "None of the Above")
+                name = cand["name"]
                 if name == "None of the Above":
                     name = "NOTA"
 
+                # Get or create party
                 party = None
                 if not is_nota and cand["party"]:
                     raw_abbr = cand["party"]
                     canonical_abbr = ABBR_ALIASES.get(raw_abbr, raw_abbr)
+
+                    # Try to find existing party
                     p_key = canonical_abbr.upper()
                     if p_key not in party_cache:
+                        # Also try the raw abbreviation
                         p_key = raw_abbr.upper()
+
                     if p_key not in party_cache:
+                        # Create new party
                         full_name = party_names.get(raw_abbr, raw_abbr)
                         new_party = Party(
-                            name=full_name, abbr=canonical_abbr,
+                            name=full_name,
+                            abbr=canonical_abbr,
                             color=PARTY_COLORS.get(raw_abbr) or PARTY_COLORS.get(canonical_abbr),
                         )
                         session.add(new_party)
@@ -313,16 +309,21 @@ def run():
                         party_cache[canonical_abbr.upper()] = new_party
                         party_cache[full_name.upper()] = new_party
                         p_key = canonical_abbr.upper()
+
                     party = party_cache[p_key]
 
                 vote_pct = round(cand["total_votes"] / total_valid_in_ac * 100, 2) if total_valid_in_ac > 0 else 0
 
+                # Look up affidavit data
                 ac_name_upper = constituency.name.upper()
                 affidavit = affidavit_data.get((ac_name_upper, name.upper()))
 
-                education = occupation = image_url = None
-                declared_assets = liabilities_val = None
+                education = None
+                occupation = None
+                declared_assets = None
+                liabilities_val = None
                 criminal_cases = 0
+                image_url = None
 
                 if affidavit:
                     cp = affidavit.get("candidate_profile", {})
@@ -331,48 +332,79 @@ def run():
                         edu = edu[len("Category:"):].strip()
                     if edu and edu not in ("Not mentioned", "Not Given"):
                         education = edu
+
                     occ = (affidavit.get("profession", {}).get("self") or "").strip()
                     if occ and occ not in ("Not mentioned", "Not Given"):
                         occupation = occ
+
                     assets = parse_rupees(affidavit.get("assets_summary", {}).get("total_assets"))
                     if assets > 0:
                         declared_assets = assets
                     liab = parse_rupees(affidavit.get("assets_summary", {}).get("total_liabilities"))
                     if liab > 0:
                         liabilities_val = liab
+
                     criminal_cases = parse_criminal(cp.get("crime_status"))
+
                     img = (cp.get("image_url") or "").strip()
                     if img and img != "None":
                         image_url = img
 
                 session.add(Candidate(
-                    election_id=election.id, constituency_id=constituency.id,
+                    election_id=election.id,
+                    constituency_id=constituency.id,
                     party_id=party.id if party else None,
-                    name=name, gender=cand["sex"], age=cand["age"], position=pos,
-                    votes_general=cand["gen_votes"], votes_postal=cand["postal_votes"],
-                    votes_total=cand["total_votes"], vote_pct=vote_pct, is_nota=is_nota,
-                    education=education, occupation=occupation,
-                    declared_assets=declared_assets, liabilities=liabilities_val,
-                    criminal_cases=criminal_cases, image_url=image_url,
+                    name=name,
+                    gender=cand["sex"],
+                    age=cand["age"],
+                    position=pos,
+                    votes_general=cand["gen_votes"],
+                    votes_postal=cand["postal_votes"],
+                    votes_total=cand["total_votes"],
+                    vote_pct=vote_pct,
+                    is_nota=is_nota,
+                    education=education,
+                    occupation=occupation,
+                    declared_assets=declared_assets,
+                    liabilities=liabilities_val,
+                    criminal_cases=criminal_cases,
+                    image_url=image_url,
                 ))
                 imported += 1
 
         session.flush()
         print(f"Imported {imported} candidates")
+
         session.commit()
 
         # Summary
         print(f"\n=== Summary ===")
-        n_real = session.query(Candidate).filter(Candidate.election_id == election.id, Candidate.is_nota == False).count()
-        n_nota = session.query(Candidate).filter(Candidate.election_id == election.id, Candidate.is_nota == True).count()
-        has_edu = session.query(Candidate).filter(Candidate.election_id == election.id, Candidate.education != None).count()
-        has_assets = session.query(Candidate).filter(Candidate.election_id == election.id, Candidate.declared_assets != None).count()
+        n_real = session.query(Candidate).filter(
+            Candidate.election_id == election.id, Candidate.is_nota == False
+        ).count()
+        n_nota = session.query(Candidate).filter(
+            Candidate.election_id == election.id, Candidate.is_nota == True
+        ).count()
+        has_edu = session.query(Candidate).filter(
+            Candidate.election_id == election.id, Candidate.education != None
+        ).count()
+        has_assets = session.query(Candidate).filter(
+            Candidate.election_id == election.id, Candidate.declared_assets != None
+        ).count()
+        has_img = session.query(Candidate).filter(
+            Candidate.election_id == election.id, Candidate.image_url != None
+        ).count()
         print(f"  Candidates: {n_real} real + {n_nota} NOTA")
-        print(f"  With education: {has_edu}, With assets: {has_assets}")
+        print(f"  With education: {has_edu}")
+        print(f"  With assets: {has_assets}")
+        print(f"  With image: {has_img}")
 
+        # Verify seat counts
         print(f"\n=== Top Parties by Seats Won ===")
         winners = session.query(Candidate).filter(
-            Candidate.election_id == election.id, Candidate.position == 1, Candidate.is_nota == False,
+            Candidate.election_id == election.id,
+            Candidate.position == 1,
+            Candidate.is_nota == False,
         ).all()
         party_seats = {}
         for w in winners:

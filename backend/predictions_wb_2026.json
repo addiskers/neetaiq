@@ -1,0 +1,5335 @@
+{
+  "model": "GradientBoosting",
+  "training_years": [
+    2016,
+    2021
+  ],
+  "features_used": [
+    "vote_share_y1",
+    "vote_share_y2",
+    "vote_share_y3",
+    "won_y1",
+    "won_y2",
+    "won_y3",
+    "margin_pct_latest",
+    "vote_trend",
+    "incumbency",
+    "consecutive_wins",
+    "margin_shrinking",
+    "turnout_y1",
+    "turnout_y2",
+    "turnout_y3",
+    "turnout_trend",
+    "is_sc",
+    "is_st",
+    "total_electors",
+    "electors_growth",
+    "has_candidate",
+    "candidate_assets_log",
+    "candidate_criminal",
+    "candidate_age",
+    "candidate_edu",
+    "total_candidates"
+  ],
+  "validation_accuracy_2021": 0.5563,
+  "predicted_seats": {
+    "AITC": 159,
+    "BJP": 120,
+    "INC": 11,
+    "CPI(M)": 4
+  },
+  "predictions": [
+    {
+      "ac_no": 1,
+      "name": "MEKLIGANJ",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.86,
+      "party_probabilities": {
+        "AITC": 0.8602,
+        "BJP": 0.0844,
+        "INC": 0.0176,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0054,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 2,
+      "name": "MATHABHANGA",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.197,
+      "party_probabilities": {
+        "AITC": 0.0012,
+        "BJP": 0.1968,
+        "INC": 0.0378,
+        "CPI(M)": 0.0051,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 3,
+      "name": "COOCHBEHAR UTTAR",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.931,
+      "party_probabilities": {
+        "AITC": 0.0343,
+        "BJP": 0.931,
+        "INC": 0.0052,
+        "CPI(M)": 0.0279,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 4,
+      "name": "COOCH BEHAR DAKSHIN",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.006,
+      "party_probabilities": {
+        "AITC": 0.0006,
+        "BJP": 0.0063,
+        "INC": 0.0002,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 5,
+      "name": "SITALKUCHI",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.938,
+      "party_probabilities": {
+        "AITC": 0.0193,
+        "BJP": 0.9375,
+        "INC": 0.0207,
+        "CPI(M)": 0.0179,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 6,
+      "name": "SITAI",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.917,
+      "party_probabilities": {
+        "AITC": 0.9171,
+        "BJP": 0.4502,
+        "INC": 0.1698,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0483,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 7,
+      "name": "DINHATA",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.704,
+      "party_probabilities": {
+        "AITC": 0.5335,
+        "BJP": 0.7043,
+        "INC": 0.0672,
+        "CPI(M)": 0.0003,
+        "AIFB": 0.0706,
+        "RSP": 0.0003
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 8,
+      "name": "NATABARI",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.867,
+      "party_probabilities": {
+        "AITC": 0.0214,
+        "BJP": 0.8666,
+        "INC": 0.0712,
+        "CPI(M)": 0.0016,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 9,
+      "name": "TUFANGANJ",
+      "district": "Coochbehar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.866,
+      "party_probabilities": {
+        "AITC": 0.002,
+        "BJP": 0.8664,
+        "INC": 0.1576,
+        "CPI(M)": 0.05,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 10,
+      "name": "KUMARGRAM",
+      "district": "Alipurduar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.455,
+      "party_probabilities": {
+        "AITC": 0.1415,
+        "BJP": 0.4548,
+        "INC": 0.0132,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0142
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 11,
+      "name": "KALCHINI",
+      "district": "Alipurduar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.752,
+      "party_probabilities": {
+        "AITC": 0.0162,
+        "BJP": 0.7524,
+        "INC": 0.0209,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0619
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 12,
+      "name": "ALIPURDUARS",
+      "district": "Alipurduar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.965,
+      "party_probabilities": {
+        "AITC": 0.0214,
+        "BJP": 0.965,
+        "INC": 0.0068,
+        "CPI(M)": 0.0196,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 13,
+      "name": "FALAKATA",
+      "district": "Alipurduar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.747,
+      "party_probabilities": {
+        "AITC": 0.0672,
+        "BJP": 0.7474,
+        "INC": 0.0089,
+        "CPI(M)": 0.0319,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 14,
+      "name": "MADARIHAT",
+      "district": "Alipurduar",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.429,
+      "party_probabilities": {
+        "AITC": 0.0553,
+        "BJP": 0.4286,
+        "INC": 0.0028,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.051
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 15,
+      "name": "DHUPGURI",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.193,
+      "party_probabilities": {
+        "AITC": 0.0319,
+        "BJP": 0.1928,
+        "INC": 0.0456,
+        "CPI(M)": 0.0383,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 16,
+      "name": "MAYNAGURI",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.915,
+      "party_probabilities": {
+        "AITC": 0.0459,
+        "BJP": 0.9149,
+        "INC": 0.0568,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0377
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 17,
+      "name": "JALPAIGURI",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.357,
+      "party_probabilities": {
+        "AITC": 0.2791,
+        "BJP": 0.3566,
+        "INC": 0.0176,
+        "CPI(M)": 0.0258,
+        "AIFB": 0.0003,
+        "RSP": 0.0003
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 18,
+      "name": "RAJGANJ",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.356,
+      "party_probabilities": {
+        "AITC": 0.0459,
+        "BJP": 0.356,
+        "INC": 0.0157,
+        "CPI(M)": 0.0699,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 19,
+      "name": "DABGRAM-FULBARI",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.869,
+      "party_probabilities": {
+        "AITC": 0.0849,
+        "BJP": 0.8686,
+        "INC": 0.0117,
+        "CPI(M)": 0.0086,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 20,
+      "name": "MAL",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.537,
+      "party_probabilities": {
+        "AITC": 0.537,
+        "BJP": 0.2447,
+        "INC": 0.0226,
+        "CPI(M)": 0.0115,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 21,
+      "name": "NAGRAKATA",
+      "district": "Jalpaiguri",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.924,
+      "party_probabilities": {
+        "AITC": 0.0785,
+        "BJP": 0.9245,
+        "INC": 0.0274,
+        "CPI(M)": 0.0463,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 22,
+      "name": "KALIMPONG",
+      "district": "Kalimpong",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.104,
+      "party_probabilities": {
+        "AITC": 0.0001,
+        "BJP": 0.104,
+        "INC": 0.0879,
+        "CPI(M)": 0.0665,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "IND",
+      "swing": true
+    },
+    {
+      "ac_no": 23,
+      "name": "DARJEELING",
+      "district": "Darjeeling",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.12,
+      "party_probabilities": {
+        "AITC": 0.0001,
+        "BJP": 0.1201,
+        "INC": 0.0385,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 24,
+      "name": "KURSEONG",
+      "district": "Darjeeling",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.244,
+      "party_probabilities": {
+        "AITC": 0.0001,
+        "BJP": 0.2444,
+        "INC": 0.1932,
+        "CPI(M)": 0.0065,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 25,
+      "name": "MATIGARA-NAXALBARI",
+      "district": "Darjeeling",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.907,
+      "party_probabilities": {
+        "AITC": 0.907,
+        "BJP": 0.8012,
+        "INC": 0.0155,
+        "CPI(M)": 0.113,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 26,
+      "name": "SILIGURI",
+      "district": "Darjeeling",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.841,
+      "party_probabilities": {
+        "AITC": 0.0028,
+        "BJP": 0.8405,
+        "INC": 0.0622,
+        "CPI(M)": 0.0525,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 27,
+      "name": "PHANSIDEWA",
+      "district": "Darjeeling",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.907,
+      "party_probabilities": {
+        "AITC": 0.0068,
+        "BJP": 0.9069,
+        "INC": 0.0034,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 28,
+      "name": "CHOPRA",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.739,
+      "party_probabilities": {
+        "AITC": 0.7388,
+        "BJP": 0.0568,
+        "INC": 0.2676,
+        "CPI(M)": 0.0143,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 29,
+      "name": "ISLAMPUR",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.822,
+      "party_probabilities": {
+        "AITC": 0.8222,
+        "BJP": 0.054,
+        "INC": 0.0004,
+        "CPI(M)": 0.0372,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 30,
+      "name": "GOALPOKHAR",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.927,
+      "party_probabilities": {
+        "AITC": 0.9272,
+        "BJP": 0.0057,
+        "INC": 0.0054,
+        "CPI(M)": 0.0,
+        "AIFB": 0.173,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 31,
+      "name": "CHAKULIA",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.98,
+      "party_probabilities": {
+        "AITC": 0.9796,
+        "BJP": 0.0477,
+        "INC": 0.0201,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0067,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 32,
+      "name": "KARANDIGHI",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.824,
+      "party_probabilities": {
+        "AITC": 0.8236,
+        "BJP": 0.1006,
+        "INC": 0.2319,
+        "CPI(M)": 0.0156,
+        "AIFB": 0.0002,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 33,
+      "name": "HEMTABAD",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.76,
+      "party_probabilities": {
+        "AITC": 0.7597,
+        "BJP": 0.0481,
+        "INC": 0.005,
+        "CPI(M)": 0.0043,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 34,
+      "name": "KALIAGANJ",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.702,
+      "party_probabilities": {
+        "AITC": 0.0616,
+        "BJP": 0.7019,
+        "INC": 0.0304,
+        "CPI(M)": 0.0101,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 35,
+      "name": "RAIGANJ",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.819,
+      "party_probabilities": {
+        "AITC": 0.1865,
+        "BJP": 0.8186,
+        "INC": 0.211,
+        "CPI(M)": 0.0235,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 36,
+      "name": "ITAHAR",
+      "district": "Uttar Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.754,
+      "party_probabilities": {
+        "AITC": 0.7545,
+        "BJP": 0.0243,
+        "INC": 0.0269,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 37,
+      "name": "KUSHMANDI",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.616,
+      "party_probabilities": {
+        "AITC": 0.6157,
+        "BJP": 0.0409,
+        "INC": 0.0314,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0025
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 38,
+      "name": "KUMARGANJ",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.514,
+      "party_probabilities": {
+        "AITC": 0.5136,
+        "BJP": 0.0844,
+        "INC": 0.1079,
+        "CPI(M)": 0.0036,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 39,
+      "name": "BALURGHAT",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.575,
+      "party_probabilities": {
+        "AITC": 0.0035,
+        "BJP": 0.5748,
+        "INC": 0.0115,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0042
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 40,
+      "name": "TAPAN",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.313,
+      "party_probabilities": {
+        "AITC": 0.0087,
+        "BJP": 0.313,
+        "INC": 0.0099,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0025
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 41,
+      "name": "GANGARAMPUR",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.344,
+      "party_probabilities": {
+        "AITC": 0.0335,
+        "BJP": 0.3441,
+        "INC": 0.0021,
+        "CPI(M)": 0.0033,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 42,
+      "name": "HARIRAMPUR",
+      "district": "Dakshin Dinajpur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.892,
+      "party_probabilities": {
+        "AITC": 0.892,
+        "BJP": 0.1175,
+        "INC": 0.0258,
+        "CPI(M)": 0.0086,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 43,
+      "name": "HABIBPUR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.616,
+      "party_probabilities": {
+        "AITC": 0.0111,
+        "BJP": 0.6157,
+        "INC": 0.0519,
+        "CPI(M)": 0.0147,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 44,
+      "name": "GAZOLE",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.446,
+      "party_probabilities": {
+        "AITC": 0.4462,
+        "BJP": 0.2261,
+        "INC": 0.0995,
+        "CPI(M)": 0.0167,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 45,
+      "name": "CHANCHAL",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.481,
+      "party_probabilities": {
+        "AITC": 0.4813,
+        "BJP": 0.0473,
+        "INC": 0.0184,
+        "CPI(M)": 0.0687,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 46,
+      "name": "HARISCHANDRAPUR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.77,
+      "party_probabilities": {
+        "AITC": 0.7698,
+        "BJP": 0.0281,
+        "INC": 0.162,
+        "CPI(M)": 0.1953,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 47,
+      "name": "MALATIPUR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.761,
+      "party_probabilities": {
+        "AITC": 0.7607,
+        "BJP": 0.1015,
+        "INC": 0.0071,
+        "CPI(M)": 0.0411,
+        "AIFB": 0.0001,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 48,
+      "name": "RATUA",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.551,
+      "party_probabilities": {
+        "AITC": 0.5514,
+        "BJP": 0.1799,
+        "INC": 0.0226,
+        "CPI(M)": 0.0487,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 49,
+      "name": "MANIKCHAK",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.398,
+      "party_probabilities": {
+        "AITC": 0.3975,
+        "BJP": 0.1332,
+        "INC": 0.0156,
+        "CPI(M)": 0.0884,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 50,
+      "name": "MALDAHA",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.887,
+      "party_probabilities": {
+        "AITC": 0.7571,
+        "BJP": 0.8874,
+        "INC": 0.0166,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 51,
+      "name": "ENGLISHBAZAR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.468,
+      "party_probabilities": {
+        "AITC": 0.1344,
+        "BJP": 0.4678,
+        "INC": 0.0098,
+        "CPI(M)": 0.065,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 52,
+      "name": "MOTHABARI",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.936,
+      "party_probabilities": {
+        "AITC": 0.9362,
+        "BJP": 0.2227,
+        "INC": 0.0068,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 53,
+      "name": "SUJAPUR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.285,
+      "party_probabilities": {
+        "AITC": 0.2853,
+        "BJP": 0.0486,
+        "INC": 0.0522,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 54,
+      "name": "BAISNABNAGAR",
+      "district": "Malda",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.906,
+      "party_probabilities": {
+        "AITC": 0.9057,
+        "BJP": 0.3446,
+        "INC": 0.0001,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0438
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 55,
+      "name": "FARAKKA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.412,
+      "party_probabilities": {
+        "AITC": 0.4121,
+        "BJP": 0.0519,
+        "INC": 0.0057,
+        "CPI(M)": 0.0213,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 56,
+      "name": "SAMSERGANJ",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.862,
+      "party_probabilities": {
+        "AITC": 0.8622,
+        "BJP": 0.7248,
+        "INC": 0.0244,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 57,
+      "name": "SUTI",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.179,
+      "party_probabilities": {
+        "AITC": 0.0809,
+        "BJP": 0.1787,
+        "INC": 0.0045,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0212
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 58,
+      "name": "JANGIPUR",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.82,
+      "party_probabilities": {
+        "AITC": 0.5136,
+        "BJP": 0.8201,
+        "INC": 0.0014,
+        "CPI(M)": 0.0191,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 59,
+      "name": "RAGHUNATHGANJ",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.167,
+      "party_probabilities": {
+        "AITC": 0.1672,
+        "BJP": 0.0393,
+        "INC": 0.0111,
+        "CPI(M)": 0.1127,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 60,
+      "name": "SAGARDIGHI",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.613,
+      "party_probabilities": {
+        "AITC": 0.613,
+        "BJP": 0.115,
+        "INC": 0.1124,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 61,
+      "name": "LALGOLA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.239,
+      "party_probabilities": {
+        "AITC": 0.2395,
+        "BJP": 0.1656,
+        "INC": 0.0031,
+        "CPI(M)": 0.1042,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 62,
+      "name": "BHAGABANGOLA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.446,
+      "party_probabilities": {
+        "AITC": 0.4463,
+        "BJP": 0.0002,
+        "INC": 0.0101,
+        "CPI(M)": 0.0644,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 63,
+      "name": "RANINAGAR",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.565,
+      "party_probabilities": {
+        "AITC": 0.5653,
+        "BJP": 0.1293,
+        "INC": 0.0109,
+        "CPI(M)": 0.0464,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 64,
+      "name": "MURSHIDABAD",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.123,
+      "party_probabilities": {
+        "AITC": 0.1054,
+        "BJP": 0.1233,
+        "INC": 0.0081,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0097,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 65,
+      "name": "NABAGRAM",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.223,
+      "party_probabilities": {
+        "AITC": 0.2233,
+        "BJP": 0.1955,
+        "INC": 0.0456,
+        "CPI(M)": 0.0149,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 66,
+      "name": "KHARGRAM",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.844,
+      "party_probabilities": {
+        "AITC": 0.8442,
+        "BJP": 0.0021,
+        "INC": 0.007,
+        "CPI(M)": 0.0225,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 67,
+      "name": "BURWAN",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.367,
+      "party_probabilities": {
+        "AITC": 0.3672,
+        "BJP": 0.1381,
+        "INC": 0.0153,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0273
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 68,
+      "name": "KANDI",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.488,
+      "party_probabilities": {
+        "AITC": 0.4877,
+        "BJP": 0.1635,
+        "INC": 0.0084,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 69,
+      "name": "BHARATPUR",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.719,
+      "party_probabilities": {
+        "AITC": 0.719,
+        "BJP": 0.37,
+        "INC": 0.0595,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0532
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 70,
+      "name": "REJINAGAR",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.655,
+      "party_probabilities": {
+        "AITC": 0.6551,
+        "BJP": 0.1683,
+        "INC": 0.0103,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 71,
+      "name": "BELDANGA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.371,
+      "party_probabilities": {
+        "AITC": 0.0755,
+        "BJP": 0.0605,
+        "INC": 0.3706,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0243
+      },
+      "incumbent_2021": "INC",
+      "swing": false
+    },
+    {
+      "ac_no": 72,
+      "name": "BAHARAMPUR",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.319,
+      "party_probabilities": {
+        "AITC": 0.0045,
+        "BJP": 0.0719,
+        "INC": 0.3194,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 73,
+      "name": "HARIHARPARA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.903,
+      "party_probabilities": {
+        "AITC": 0.9029,
+        "BJP": 0.0252,
+        "INC": 0.4481,
+        "CPI(M)": 0.0456,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 74,
+      "name": "NAODA",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.737,
+      "party_probabilities": {
+        "AITC": 0.7369,
+        "BJP": 0.019,
+        "INC": 0.021,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0168
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 75,
+      "name": "DOMKAL",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.393,
+      "party_probabilities": {
+        "AITC": 0.3932,
+        "BJP": 0.0239,
+        "INC": 0.0481,
+        "CPI(M)": 0.0093,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 76,
+      "name": "JALANGI",
+      "district": "Murshidabad",
+      "category": "GEN",
+      "predicted_winner": "CPI(M)",
+      "confidence": 0.577,
+      "party_probabilities": {
+        "AITC": 0.0027,
+        "BJP": 0.0176,
+        "INC": 0.0385,
+        "CPI(M)": 0.5767,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": null,
+      "swing": true
+    },
+    {
+      "ac_no": 77,
+      "name": "KARIMPUR",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.069,
+      "party_probabilities": {
+        "AITC": 0.069,
+        "BJP": 0.0309,
+        "INC": 0.0118,
+        "CPI(M)": 0.0199,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 78,
+      "name": "TEHATTA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.668,
+      "party_probabilities": {
+        "AITC": 0.2805,
+        "BJP": 0.6681,
+        "INC": 0.019,
+        "CPI(M)": 0.0012,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 79,
+      "name": "PALASHIPARA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.659,
+      "party_probabilities": {
+        "AITC": 0.0111,
+        "BJP": 0.0865,
+        "INC": 0.6587,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 80,
+      "name": "KALIGANJ",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.494,
+      "party_probabilities": {
+        "AITC": 0.4942,
+        "BJP": 0.0942,
+        "INC": 0.0035,
+        "CPI(M)": 0.0201,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 81,
+      "name": "NAKASHIPARA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.486,
+      "party_probabilities": {
+        "AITC": 0.2831,
+        "BJP": 0.4865,
+        "INC": 0.0275,
+        "CPI(M)": 0.0062,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 82,
+      "name": "CHAPRA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.402,
+      "party_probabilities": {
+        "AITC": 0.4018,
+        "BJP": 0.0102,
+        "INC": 0.0015,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 83,
+      "name": "KRISHNANAGAR UTTAR",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.915,
+      "party_probabilities": {
+        "AITC": 0.0084,
+        "BJP": 0.9154,
+        "INC": 0.0073,
+        "CPI(M)": 0.0361,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 84,
+      "name": "NABADWIP",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.215,
+      "party_probabilities": {
+        "AITC": 0.215,
+        "BJP": 0.2006,
+        "INC": 0.0083,
+        "CPI(M)": 0.0023,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 85,
+      "name": "KRISHNANAGAR DAKSHIN",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.961,
+      "party_probabilities": {
+        "AITC": 0.9608,
+        "BJP": 0.0265,
+        "INC": 0.0333,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 86,
+      "name": "SANTIPUR",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.108,
+      "party_probabilities": {
+        "AITC": 0.0069,
+        "BJP": 0.0221,
+        "INC": 0.108,
+        "CPI(M)": 0.0408,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 87,
+      "name": "RANAGHAT UTTAR PASCHIM",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.897,
+      "party_probabilities": {
+        "AITC": 0.0097,
+        "BJP": 0.8971,
+        "INC": 0.0328,
+        "CPI(M)": 0.0048,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 88,
+      "name": "KRISHNAGANJ",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.268,
+      "party_probabilities": {
+        "AITC": 0.0847,
+        "BJP": 0.2683,
+        "INC": 0.0192,
+        "CPI(M)": 0.0125,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 89,
+      "name": "RANAGHAT UTTAR PURBA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.596,
+      "party_probabilities": {
+        "AITC": 0.5957,
+        "BJP": 0.0314,
+        "INC": 0.0158,
+        "CPI(M)": 0.002,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 90,
+      "name": "RANAGHAT DAKSHIN",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.711,
+      "party_probabilities": {
+        "AITC": 0.0045,
+        "BJP": 0.7111,
+        "INC": 0.0878,
+        "CPI(M)": 0.0343,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 91,
+      "name": "CHAKDAHA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.296,
+      "party_probabilities": {
+        "AITC": 0.2233,
+        "BJP": 0.2962,
+        "INC": 0.0867,
+        "CPI(M)": 0.0026,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 92,
+      "name": "KALYANI",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.155,
+      "party_probabilities": {
+        "AITC": 0.0138,
+        "BJP": 0.1551,
+        "INC": 0.0402,
+        "CPI(M)": 0.0086,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 93,
+      "name": "HARINGHATA",
+      "district": "Nadia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.925,
+      "party_probabilities": {
+        "AITC": 0.0079,
+        "BJP": 0.9247,
+        "INC": 0.0098,
+        "CPI(M)": 0.0056,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 94,
+      "name": "BAGDA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.081,
+      "party_probabilities": {
+        "AITC": 0.0076,
+        "BJP": 0.0811,
+        "INC": 0.0179,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0152,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 95,
+      "name": "BANGAON UTTAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.914,
+      "party_probabilities": {
+        "AITC": 0.1587,
+        "BJP": 0.9144,
+        "INC": 0.0614,
+        "CPI(M)": 0.0761,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 96,
+      "name": "BANGAON DAKSHIN",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.152,
+      "party_probabilities": {
+        "AITC": 0.1518,
+        "BJP": 0.0359,
+        "INC": 0.0331,
+        "CPI(M)": 0.0037,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 97,
+      "name": "GAIGHATA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.489,
+      "party_probabilities": {
+        "AITC": 0.1788,
+        "BJP": 0.4892,
+        "INC": 0.2432,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 98,
+      "name": "SWARUPNAGAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.46,
+      "party_probabilities": {
+        "AITC": 0.4604,
+        "BJP": 0.0958,
+        "INC": 0.0273,
+        "CPI(M)": 0.0028,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 99,
+      "name": "BADURIA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.336,
+      "party_probabilities": {
+        "AITC": 0.0937,
+        "BJP": 0.3358,
+        "INC": 0.0073,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 100,
+      "name": "HABRA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.488,
+      "party_probabilities": {
+        "AITC": 0.4878,
+        "BJP": 0.1963,
+        "INC": 0.0332,
+        "CPI(M)": 0.0156,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 101,
+      "name": "ASHOKNAGAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.877,
+      "party_probabilities": {
+        "AITC": 0.2572,
+        "BJP": 0.8771,
+        "INC": 0.0163,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 102,
+      "name": "AMDANGA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.246,
+      "party_probabilities": {
+        "AITC": 0.0179,
+        "BJP": 0.2459,
+        "INC": 0.0154,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 103,
+      "name": "BIJPUR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.744,
+      "party_probabilities": {
+        "AITC": 0.744,
+        "BJP": 0.0138,
+        "INC": 0.0342,
+        "CPI(M)": 0.0202,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 104,
+      "name": "NAIHATI",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.879,
+      "party_probabilities": {
+        "AITC": 0.8795,
+        "BJP": 0.1467,
+        "INC": 0.0776,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 105,
+      "name": "BHATPARA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.955,
+      "party_probabilities": {
+        "AITC": 0.0444,
+        "BJP": 0.9552,
+        "INC": 0.0083,
+        "CPI(M)": 0.023,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 106,
+      "name": "JAGATDAL",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.584,
+      "party_probabilities": {
+        "AITC": 0.5841,
+        "BJP": 0.0782,
+        "INC": 0.011,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0014,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 107,
+      "name": "NOAPARA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.049,
+      "party_probabilities": {
+        "AITC": 0.0488,
+        "BJP": 0.0003,
+        "INC": 0.0064,
+        "CPI(M)": 0.0136,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 108,
+      "name": "BARRACKPUR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.426,
+      "party_probabilities": {
+        "AITC": 0.4265,
+        "BJP": 0.1632,
+        "INC": 0.0057,
+        "CPI(M)": 0.01,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 109,
+      "name": "KHARDAHA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.535,
+      "party_probabilities": {
+        "AITC": 0.5352,
+        "BJP": 0.0405,
+        "INC": 0.006,
+        "CPI(M)": 0.0014,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 110,
+      "name": "DUM DUM UTTAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.511,
+      "party_probabilities": {
+        "AITC": 0.5115,
+        "BJP": 0.1936,
+        "INC": 0.2245,
+        "CPI(M)": 0.001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 111,
+      "name": "PANIHATI",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.2,
+      "party_probabilities": {
+        "AITC": 0.1998,
+        "BJP": 0.0128,
+        "INC": 0.0591,
+        "CPI(M)": 0.0318,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 112,
+      "name": "KAMARHATI",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.494,
+      "party_probabilities": {
+        "AITC": 0.4936,
+        "BJP": 0.1049,
+        "INC": 0.01,
+        "CPI(M)": 0.0263,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 113,
+      "name": "BARANAGAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.452,
+      "party_probabilities": {
+        "AITC": 0.452,
+        "BJP": 0.1665,
+        "INC": 0.0669,
+        "CPI(M)": 0.0489,
+        "AIFB": 0.0002,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 114,
+      "name": "DUM DUM",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.618,
+      "party_probabilities": {
+        "AITC": 0.6183,
+        "BJP": 0.0315,
+        "INC": 0.0593,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 115,
+      "name": "RAJARHAT NEW TOWN",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.605,
+      "party_probabilities": {
+        "AITC": 0.0844,
+        "BJP": 0.6051,
+        "INC": 0.101,
+        "CPI(M)": 0.0142,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 116,
+      "name": "BIDHANNAGAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.848,
+      "party_probabilities": {
+        "AITC": 0.5076,
+        "BJP": 0.8476,
+        "INC": 0.008,
+        "CPI(M)": 0.0212,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 117,
+      "name": "RAJARHAT GOPALPUR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.511,
+      "party_probabilities": {
+        "AITC": 0.5109,
+        "BJP": 0.0175,
+        "INC": 0.0053,
+        "CPI(M)": 0.0137,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 118,
+      "name": "MADHYAMGRAM",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.874,
+      "party_probabilities": {
+        "AITC": 0.7053,
+        "BJP": 0.8739,
+        "INC": 0.1656,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0133,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 119,
+      "name": "BARASAT",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.366,
+      "party_probabilities": {
+        "AITC": 0.3659,
+        "BJP": 0.0498,
+        "INC": 0.1467,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0064,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 120,
+      "name": "DEGANGA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.515,
+      "party_probabilities": {
+        "AITC": 0.0104,
+        "BJP": 0.5153,
+        "INC": 0.022,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "RSSCMJP",
+      "swing": true
+    },
+    {
+      "ac_no": 121,
+      "name": "HAROA",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.156,
+      "party_probabilities": {
+        "AITC": 0.1559,
+        "BJP": 0.0435,
+        "INC": 0.0142,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 122,
+      "name": "MINAKHAN",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.526,
+      "party_probabilities": {
+        "AITC": 0.5262,
+        "BJP": 0.3536,
+        "INC": 0.0501,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 123,
+      "name": "SANDESHKHALI",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.838,
+      "party_probabilities": {
+        "AITC": 0.8381,
+        "BJP": 0.0361,
+        "INC": 0.0283,
+        "CPI(M)": 0.0088,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 124,
+      "name": "BASIRHAT DAKSHIN",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.474,
+      "party_probabilities": {
+        "AITC": 0.2056,
+        "BJP": 0.4736,
+        "INC": 0.0854,
+        "CPI(M)": 0.0243,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 125,
+      "name": "BASIRHAT UTTAR",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.463,
+      "party_probabilities": {
+        "AITC": 0.0066,
+        "BJP": 0.4631,
+        "INC": 0.0165,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "RSSCMJP",
+      "swing": true
+    },
+    {
+      "ac_no": 126,
+      "name": "HINGALGANJ",
+      "district": "North 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.868,
+      "party_probabilities": {
+        "AITC": 0.8681,
+        "BJP": 0.0217,
+        "INC": 0.0082,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 127,
+      "name": "GOSABA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.745,
+      "party_probabilities": {
+        "AITC": 0.7451,
+        "BJP": 0.0101,
+        "INC": 0.0045,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0026
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 128,
+      "name": "BASANTI",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.665,
+      "party_probabilities": {
+        "AITC": 0.3948,
+        "BJP": 0.6653,
+        "INC": 0.4304,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0047
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 129,
+      "name": "KULTALI",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.949,
+      "party_probabilities": {
+        "AITC": 0.9487,
+        "BJP": 0.0873,
+        "INC": 0.0533,
+        "CPI(M)": 0.1834,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 130,
+      "name": "PATHARPRATIMA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.684,
+      "party_probabilities": {
+        "AITC": 0.684,
+        "BJP": 0.3434,
+        "INC": 0.0084,
+        "CPI(M)": 0.0351,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 131,
+      "name": "KAKDWIP",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.559,
+      "party_probabilities": {
+        "AITC": 0.5595,
+        "BJP": 0.3101,
+        "INC": 0.0064,
+        "CPI(M)": 0.0086,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 132,
+      "name": "SAGAR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.907,
+      "party_probabilities": {
+        "AITC": 0.9068,
+        "BJP": 0.3876,
+        "INC": 0.0203,
+        "CPI(M)": 0.0066,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 133,
+      "name": "KULPI",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.29,
+      "party_probabilities": {
+        "AITC": 0.2897,
+        "BJP": 0.0537,
+        "INC": 0.0734,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 134,
+      "name": "RAIDIGHI",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.39,
+      "party_probabilities": {
+        "AITC": 0.0599,
+        "BJP": 0.3897,
+        "INC": 0.0272,
+        "CPI(M)": 0.0072,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 135,
+      "name": "MANDIRBAZAR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.733,
+      "party_probabilities": {
+        "AITC": 0.7325,
+        "BJP": 0.0711,
+        "INC": 0.0166,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 136,
+      "name": "JOYNAGAR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.895,
+      "party_probabilities": {
+        "AITC": 0.895,
+        "BJP": 0.0627,
+        "INC": 0.0646,
+        "CPI(M)": 0.0238,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 137,
+      "name": "BARUIPUR PURBA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.233,
+      "party_probabilities": {
+        "AITC": 0.2329,
+        "BJP": 0.2334,
+        "INC": 0.1035,
+        "CPI(M)": 0.026,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 138,
+      "name": "CANNING PASCHIM",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.277,
+      "party_probabilities": {
+        "AITC": 0.277,
+        "BJP": 0.0393,
+        "INC": 0.0105,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 139,
+      "name": "CANNING PURBA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.515,
+      "party_probabilities": {
+        "AITC": 0.5155,
+        "BJP": 0.3934,
+        "INC": 0.024,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 140,
+      "name": "BARUIPUR PASCHIM",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.723,
+      "party_probabilities": {
+        "AITC": 0.7233,
+        "BJP": 0.2157,
+        "INC": 0.5524,
+        "CPI(M)": 0.0046,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 141,
+      "name": "MAGRAHAT PURBA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.231,
+      "party_probabilities": {
+        "AITC": 0.1537,
+        "BJP": 0.231,
+        "INC": 0.0073,
+        "CPI(M)": 0.0015,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 142,
+      "name": "MAGRAHAT PASCHIM",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.462,
+      "party_probabilities": {
+        "AITC": 0.4619,
+        "BJP": 0.044,
+        "INC": 0.0052,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 143,
+      "name": "DIAMOND HARBOUR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.612,
+      "party_probabilities": {
+        "AITC": 0.6117,
+        "BJP": 0.148,
+        "INC": 0.0161,
+        "CPI(M)": 0.026,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 144,
+      "name": "FALTA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.77,
+      "party_probabilities": {
+        "AITC": 0.7705,
+        "BJP": 0.0783,
+        "INC": 0.0163,
+        "CPI(M)": 0.0051,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 145,
+      "name": "SATGACHHIA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.428,
+      "party_probabilities": {
+        "AITC": 0.0829,
+        "BJP": 0.4284,
+        "INC": 0.3868,
+        "CPI(M)": 0.003,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 146,
+      "name": "BISHNUPUR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.013,
+      "party_probabilities": {
+        "AITC": 0.0131,
+        "BJP": 0.0005,
+        "INC": 0.0001,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 147,
+      "name": "SONARPUR DAKSHIN",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.596,
+      "party_probabilities": {
+        "AITC": 0.3105,
+        "BJP": 0.5956,
+        "INC": 0.0793,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 148,
+      "name": "BHANGAR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.601,
+      "party_probabilities": {
+        "AITC": 0.0082,
+        "BJP": 0.6006,
+        "INC": 0.2422,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "RSSCMJP",
+      "swing": true
+    },
+    {
+      "ac_no": 149,
+      "name": "KASBA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.323,
+      "party_probabilities": {
+        "AITC": 0.03,
+        "BJP": 0.3225,
+        "INC": 0.0227,
+        "CPI(M)": 0.0484,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 150,
+      "name": "JADAVPUR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "CPI(M)",
+      "confidence": 0.345,
+      "party_probabilities": {
+        "AITC": 0.0738,
+        "BJP": 0.3204,
+        "INC": 0.0148,
+        "CPI(M)": 0.345,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 151,
+      "name": "SONARPUR UTTAR",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.872,
+      "party_probabilities": {
+        "AITC": 0.8724,
+        "BJP": 0.6058,
+        "INC": 0.1102,
+        "CPI(M)": 0.0072,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 152,
+      "name": "TOLLYGANJ",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.695,
+      "party_probabilities": {
+        "AITC": 0.6953,
+        "BJP": 0.4585,
+        "INC": 0.0472,
+        "CPI(M)": 0.0015,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 153,
+      "name": "BEHALA PURBA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.845,
+      "party_probabilities": {
+        "AITC": 0.8446,
+        "BJP": 0.101,
+        "INC": 0.0877,
+        "CPI(M)": 0.0515,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 154,
+      "name": "BEHALA PASCHIM",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.088,
+      "party_probabilities": {
+        "AITC": 0.0132,
+        "BJP": 0.0883,
+        "INC": 0.0082,
+        "CPI(M)": 0.0587,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "CPI(M)",
+      "swing": true
+    },
+    {
+      "ac_no": 155,
+      "name": "MAHESHTALA",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.483,
+      "party_probabilities": {
+        "AITC": 0.4828,
+        "BJP": 0.0368,
+        "INC": 0.0309,
+        "CPI(M)": 0.0054,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 156,
+      "name": "BUDGE BUDGE",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.596,
+      "party_probabilities": {
+        "AITC": 0.5962,
+        "BJP": 0.5385,
+        "INC": 0.0001,
+        "CPI(M)": 0.0265,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 157,
+      "name": "METIABURUZ",
+      "district": "South 24 Parganas",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.776,
+      "party_probabilities": {
+        "AITC": 0.776,
+        "BJP": 0.0447,
+        "INC": 0.0726,
+        "CPI(M)": 0.0027,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 158,
+      "name": "KOLKATA PORT",
+      "district": "Kolkata South",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.86,
+      "party_probabilities": {
+        "AITC": 0.8598,
+        "BJP": 0.0474,
+        "INC": 0.0049,
+        "CPI(M)": 0.0089,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 159,
+      "name": "BHABANIPUR",
+      "district": "Kolkata South",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.205,
+      "party_probabilities": {
+        "AITC": 0.2047,
+        "BJP": 0.0383,
+        "INC": 0.0039,
+        "CPI(M)": 0.0607,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 160,
+      "name": "RASHBEHARI",
+      "district": "Kolkata South",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.617,
+      "party_probabilities": {
+        "AITC": 0.6167,
+        "BJP": 0.3369,
+        "INC": 0.019,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 161,
+      "name": "BALLYGUNGE",
+      "district": "Kolkata South",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.062,
+      "party_probabilities": {
+        "AITC": 0.0617,
+        "BJP": 0.0022,
+        "INC": 0.0031,
+        "CPI(M)": 0.0015,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BSP",
+      "swing": true
+    },
+    {
+      "ac_no": 162,
+      "name": "CHOWRANGEE",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.792,
+      "party_probabilities": {
+        "AITC": 0.7918,
+        "BJP": 0.0082,
+        "INC": 0.0064,
+        "CPI(M)": 0.0112,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 163,
+      "name": "ENTALLY",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.846,
+      "party_probabilities": {
+        "AITC": 0.8455,
+        "BJP": 0.0999,
+        "INC": 0.0924,
+        "CPI(M)": 0.0059,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 164,
+      "name": "BELEGHATA",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.749,
+      "party_probabilities": {
+        "AITC": 0.7487,
+        "BJP": 0.0054,
+        "INC": 0.0248,
+        "CPI(M)": 0.0016,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 165,
+      "name": "JORASANKO",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.447,
+      "party_probabilities": {
+        "AITC": 0.4468,
+        "BJP": 0.0161,
+        "INC": 0.0016,
+        "CPI(M)": 0.0011,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 166,
+      "name": "SHYAMPUKUR",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.357,
+      "party_probabilities": {
+        "AITC": 0.3566,
+        "BJP": 0.0689,
+        "INC": 0.0675,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0179,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 167,
+      "name": "MANIKTOLA",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.083,
+      "party_probabilities": {
+        "AITC": 0.0828,
+        "BJP": 0.0005,
+        "INC": 0.0001,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 168,
+      "name": "KASHIPUR-BELGACHHIA",
+      "district": "Kolkata North",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.763,
+      "party_probabilities": {
+        "AITC": 0.7633,
+        "BJP": 0.0002,
+        "INC": 0.0227,
+        "CPI(M)": 0.0079,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 169,
+      "name": "BALLY",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.271,
+      "party_probabilities": {
+        "AITC": 0.2711,
+        "BJP": 0.1145,
+        "INC": 0.0143,
+        "CPI(M)": 0.0041,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 170,
+      "name": "HOWRAH UTTAR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.644,
+      "party_probabilities": {
+        "AITC": 0.6437,
+        "BJP": 0.0634,
+        "INC": 0.0295,
+        "CPI(M)": 0.0045,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 171,
+      "name": "HOWRAH MADHYA",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.824,
+      "party_probabilities": {
+        "AITC": 0.8238,
+        "BJP": 0.3935,
+        "INC": 0.0064,
+        "CPI(M)": 0.1651,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 172,
+      "name": "SHIBPUR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.886,
+      "party_probabilities": {
+        "AITC": 0.8864,
+        "BJP": 0.1026,
+        "INC": 0.0138,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0131,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 173,
+      "name": "HOWRAH DAKSHIN",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.983,
+      "party_probabilities": {
+        "AITC": 0.9829,
+        "BJP": 0.7295,
+        "INC": 0.0719,
+        "CPI(M)": 0.0189,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 174,
+      "name": "SANKRAIL",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.369,
+      "party_probabilities": {
+        "AITC": 0.0217,
+        "BJP": 0.3688,
+        "INC": 0.0244,
+        "CPI(M)": 0.0167,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 175,
+      "name": "PANCHLA",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.908,
+      "party_probabilities": {
+        "AITC": 0.9077,
+        "BJP": 0.2423,
+        "INC": 0.023,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0148,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 176,
+      "name": "ULUBERIA PURBA",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.048,
+      "party_probabilities": {
+        "AITC": 0.0475,
+        "BJP": 0.0447,
+        "INC": 0.0259,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 177,
+      "name": "ULUBERIA UTTAR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.222,
+      "party_probabilities": {
+        "AITC": 0.2219,
+        "BJP": 0.0295,
+        "INC": 0.004,
+        "CPI(M)": 0.0186,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 178,
+      "name": "ULUBERIA DAKSHIN",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.312,
+      "party_probabilities": {
+        "AITC": 0.0029,
+        "BJP": 0.2343,
+        "INC": 0.312,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0069,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 179,
+      "name": "SHYAMPUR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.392,
+      "party_probabilities": {
+        "AITC": 0.3918,
+        "BJP": 0.0041,
+        "INC": 0.0039,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 180,
+      "name": "BAGNAN",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.724,
+      "party_probabilities": {
+        "AITC": 0.7243,
+        "BJP": 0.0278,
+        "INC": 0.0425,
+        "CPI(M)": 0.0312,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 181,
+      "name": "AMTA",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.146,
+      "party_probabilities": {
+        "AITC": 0.1245,
+        "BJP": 0.1064,
+        "INC": 0.1458,
+        "CPI(M)": 0.0198,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 182,
+      "name": "UDAYNARAYANPUR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.536,
+      "party_probabilities": {
+        "AITC": 0.5365,
+        "BJP": 0.1105,
+        "INC": 0.0054,
+        "CPI(M)": 0.0193,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 183,
+      "name": "JAGATBALLAVPUR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.561,
+      "party_probabilities": {
+        "AITC": 0.5612,
+        "BJP": 0.2438,
+        "INC": 0.0671,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 184,
+      "name": "DOMJUR",
+      "district": "Howrah",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.466,
+      "party_probabilities": {
+        "AITC": 0.4661,
+        "BJP": 0.1473,
+        "INC": 0.0103,
+        "CPI(M)": 0.0691,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 185,
+      "name": "UTTARPARA",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.238,
+      "party_probabilities": {
+        "AITC": 0.2385,
+        "BJP": 0.1809,
+        "INC": 0.1684,
+        "CPI(M)": 0.0019,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 186,
+      "name": "SREERAMPUR",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.644,
+      "party_probabilities": {
+        "AITC": 0.6439,
+        "BJP": 0.0286,
+        "INC": 0.0068,
+        "CPI(M)": 0.0588,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 187,
+      "name": "CHAMPDANI",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.325,
+      "party_probabilities": {
+        "AITC": 0.3252,
+        "BJP": 0.1079,
+        "INC": 0.0122,
+        "CPI(M)": 0.0611,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 188,
+      "name": "SINGUR",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.512,
+      "party_probabilities": {
+        "AITC": 0.5116,
+        "BJP": 0.2608,
+        "INC": 0.0081,
+        "CPI(M)": 0.0026,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 189,
+      "name": "CHANDANNAGAR",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.619,
+      "party_probabilities": {
+        "AITC": 0.6188,
+        "BJP": 0.058,
+        "INC": 0.0147,
+        "CPI(M)": 0.0043,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 190,
+      "name": "CHUNCHURA",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.098,
+      "party_probabilities": {
+        "AITC": 0.006,
+        "BJP": 0.0737,
+        "INC": 0.0979,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0606,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AIFB",
+      "swing": true
+    },
+    {
+      "ac_no": 191,
+      "name": "BALAGARH",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.211,
+      "party_probabilities": {
+        "AITC": 0.2108,
+        "BJP": 0.0732,
+        "INC": 0.0088,
+        "CPI(M)": 0.014,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 192,
+      "name": "PANDUA",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.748,
+      "party_probabilities": {
+        "AITC": 0.7476,
+        "BJP": 0.5169,
+        "INC": 0.1246,
+        "CPI(M)": 0.0056,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 193,
+      "name": "SAPTAGRAM",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.685,
+      "party_probabilities": {
+        "AITC": 0.6848,
+        "BJP": 0.6553,
+        "INC": 0.0072,
+        "CPI(M)": 0.0386,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 194,
+      "name": "CHANDITALA",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.701,
+      "party_probabilities": {
+        "AITC": 0.7013,
+        "BJP": 0.5549,
+        "INC": 0.1462,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 195,
+      "name": "JANGIPARA",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.718,
+      "party_probabilities": {
+        "AITC": 0.7179,
+        "BJP": 0.081,
+        "INC": 0.0288,
+        "CPI(M)": 0.0121,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 196,
+      "name": "HARIPAL",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.388,
+      "party_probabilities": {
+        "AITC": 0.388,
+        "BJP": 0.1861,
+        "INC": 0.0166,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 197,
+      "name": "DHANEKHALI",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.85,
+      "party_probabilities": {
+        "AITC": 0.85,
+        "BJP": 0.1788,
+        "INC": 0.0208,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 198,
+      "name": "TARAKESWAR",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.242,
+      "party_probabilities": {
+        "AITC": 0.2421,
+        "BJP": 0.041,
+        "INC": 0.0085,
+        "CPI(M)": 0.0016,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 199,
+      "name": "PURSURAH",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.714,
+      "party_probabilities": {
+        "AITC": 0.0545,
+        "BJP": 0.7137,
+        "INC": 0.0091,
+        "CPI(M)": 0.0067,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 200,
+      "name": "ARAMBAG",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.726,
+      "party_probabilities": {
+        "AITC": 0.055,
+        "BJP": 0.7264,
+        "INC": 0.0193,
+        "CPI(M)": 0.105,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 201,
+      "name": "GOGHAT",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.954,
+      "party_probabilities": {
+        "AITC": 0.9542,
+        "BJP": 0.7612,
+        "INC": 0.0102,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0152,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 202,
+      "name": "KHANAKUL",
+      "district": "Hooghly",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.705,
+      "party_probabilities": {
+        "AITC": 0.178,
+        "BJP": 0.7048,
+        "INC": 0.0454,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0002,
+        "RSP": 0.2316
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 203,
+      "name": "TAMLUK",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.931,
+      "party_probabilities": {
+        "AITC": 0.1548,
+        "BJP": 0.9313,
+        "INC": 0.0082,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 204,
+      "name": "PANSKURA PURBA",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.873,
+      "party_probabilities": {
+        "AITC": 0.0347,
+        "BJP": 0.8733,
+        "INC": 0.0127,
+        "CPI(M)": 0.0053,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 205,
+      "name": "PANSKURA PASCHIM",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.7,
+      "party_probabilities": {
+        "AITC": 0.0015,
+        "BJP": 0.6998,
+        "INC": 0.0083,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 206,
+      "name": "MOYNA",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.659,
+      "party_probabilities": {
+        "AITC": 0.2707,
+        "BJP": 0.6591,
+        "INC": 0.0069,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 207,
+      "name": "NANDAKUMAR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.836,
+      "party_probabilities": {
+        "AITC": 0.1046,
+        "BJP": 0.8362,
+        "INC": 0.0144,
+        "CPI(M)": 0.0456,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 208,
+      "name": "MAHISHADAL",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.864,
+      "party_probabilities": {
+        "AITC": 0.2221,
+        "BJP": 0.8639,
+        "INC": 0.006,
+        "CPI(M)": 0.0299,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 209,
+      "name": "HALDIA",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.983,
+      "party_probabilities": {
+        "AITC": 0.0059,
+        "BJP": 0.9834,
+        "INC": 0.0001,
+        "CPI(M)": 0.2173,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 210,
+      "name": "NANDIGRAM",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.848,
+      "party_probabilities": {
+        "AITC": 0.0902,
+        "BJP": 0.8475,
+        "INC": 0.1064,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 211,
+      "name": "CHANDIPUR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.848,
+      "party_probabilities": {
+        "AITC": 0.5307,
+        "BJP": 0.8481,
+        "INC": 0.0776,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 212,
+      "name": "PATASHPUR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.669,
+      "party_probabilities": {
+        "AITC": 0.4517,
+        "BJP": 0.6691,
+        "INC": 0.0303,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 213,
+      "name": "KANTHI UTTAR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.869,
+      "party_probabilities": {
+        "AITC": 0.096,
+        "BJP": 0.8689,
+        "INC": 0.0845,
+        "CPI(M)": 0.0029,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 214,
+      "name": "BHAGABANPUR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.542,
+      "party_probabilities": {
+        "AITC": 0.0171,
+        "BJP": 0.5418,
+        "INC": 0.0026,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.1374
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 215,
+      "name": "KHEJURI",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.908,
+      "party_probabilities": {
+        "AITC": 0.0286,
+        "BJP": 0.9078,
+        "INC": 0.0192,
+        "CPI(M)": 0.0355,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 216,
+      "name": "KANTHI DAKSHIN",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.533,
+      "party_probabilities": {
+        "AITC": 0.5326,
+        "BJP": 0.089,
+        "INC": 0.012,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 217,
+      "name": "RAMNAGAR",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.812,
+      "party_probabilities": {
+        "AITC": 0.8125,
+        "BJP": 0.4937,
+        "INC": 0.0002,
+        "CPI(M)": 0.0235,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 218,
+      "name": "EGRA",
+      "district": "Purbo Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.799,
+      "party_probabilities": {
+        "AITC": 0.799,
+        "BJP": 0.7718,
+        "INC": 0.0896,
+        "CPI(M)": 0.0521,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 219,
+      "name": "DANTAN",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.972,
+      "party_probabilities": {
+        "AITC": 0.3718,
+        "BJP": 0.9716,
+        "INC": 0.0069,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 220,
+      "name": "NAYAGRAM",
+      "district": "Jhargram",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.745,
+      "party_probabilities": {
+        "AITC": 0.745,
+        "BJP": 0.0261,
+        "INC": 0.0232,
+        "CPI(M)": 0.0078,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 221,
+      "name": "GOPIBALLAVPUR",
+      "district": "Jhargram",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.467,
+      "party_probabilities": {
+        "AITC": 0.467,
+        "BJP": 0.0282,
+        "INC": 0.0229,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 222,
+      "name": "JHARGRAM",
+      "district": "Jhargram",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.568,
+      "party_probabilities": {
+        "AITC": 0.5678,
+        "BJP": 0.1368,
+        "INC": 0.0131,
+        "CPI(M)": 0.0354,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 223,
+      "name": "KESHIARY",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.709,
+      "party_probabilities": {
+        "AITC": 0.7087,
+        "BJP": 0.418,
+        "INC": 0.0241,
+        "CPI(M)": 0.0093,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 224,
+      "name": "KHARAGPUR SADAR",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.775,
+      "party_probabilities": {
+        "AITC": 0.7749,
+        "BJP": 0.1512,
+        "INC": 0.009,
+        "CPI(M)": 0.0111,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 225,
+      "name": "NARAYANGARH",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.465,
+      "party_probabilities": {
+        "AITC": 0.102,
+        "BJP": 0.465,
+        "INC": 0.0157,
+        "CPI(M)": 0.0013,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 226,
+      "name": "SABANG",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.557,
+      "party_probabilities": {
+        "AITC": 0.5572,
+        "BJP": 0.1902,
+        "INC": 0.0386,
+        "CPI(M)": 0.0387,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 227,
+      "name": "PINGLA",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.767,
+      "party_probabilities": {
+        "AITC": 0.7509,
+        "BJP": 0.7667,
+        "INC": 0.027,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 228,
+      "name": "KHARAGPUR",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.956,
+      "party_probabilities": {
+        "AITC": 0.9564,
+        "BJP": 0.2099,
+        "INC": 0.0106,
+        "CPI(M)": 0.0046,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 229,
+      "name": "DEBRA",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.709,
+      "party_probabilities": {
+        "AITC": 0.709,
+        "BJP": 0.2841,
+        "INC": 0.1863,
+        "CPI(M)": 0.0013,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 230,
+      "name": "DASPUR",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.687,
+      "party_probabilities": {
+        "AITC": 0.6666,
+        "BJP": 0.6871,
+        "INC": 0.2343,
+        "CPI(M)": 0.0044,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 231,
+      "name": "GHATAL",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.694,
+      "party_probabilities": {
+        "AITC": 0.1283,
+        "BJP": 0.6944,
+        "INC": 0.006,
+        "CPI(M)": 0.0051,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 232,
+      "name": "CHANDRAKONA",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.023,
+      "party_probabilities": {
+        "AITC": 0.0162,
+        "BJP": 0.0229,
+        "INC": 0.0077,
+        "CPI(M)": 0.0175,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 233,
+      "name": "GARBETA",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.99,
+      "party_probabilities": {
+        "AITC": 0.9904,
+        "BJP": 0.7864,
+        "INC": 0.0071,
+        "CPI(M)": 0.0388,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 234,
+      "name": "SALBONI",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.491,
+      "party_probabilities": {
+        "AITC": 0.4914,
+        "BJP": 0.1082,
+        "INC": 0.0133,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 235,
+      "name": "KESHPUR",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.635,
+      "party_probabilities": {
+        "AITC": 0.6349,
+        "BJP": 0.1455,
+        "INC": 0.0205,
+        "CPI(M)": 0.0087,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 236,
+      "name": "MEDINIPUR",
+      "district": "Paschim Medinipur",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.409,
+      "party_probabilities": {
+        "AITC": 0.4092,
+        "BJP": 0.0484,
+        "INC": 0.1153,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 237,
+      "name": "BINPUR",
+      "district": "Jhargram",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.154,
+      "party_probabilities": {
+        "AITC": 0.1303,
+        "BJP": 0.1536,
+        "INC": 0.0323,
+        "CPI(M)": 0.013,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 238,
+      "name": "BANDWAN",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.772,
+      "party_probabilities": {
+        "AITC": 0.7717,
+        "BJP": 0.3002,
+        "INC": 0.0615,
+        "CPI(M)": 0.0062,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 239,
+      "name": "BALARAMPUR",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.333,
+      "party_probabilities": {
+        "AITC": 0.3221,
+        "BJP": 0.3327,
+        "INC": 0.007,
+        "CPI(M)": 0.0068,
+        "AIFB": 0.0003,
+        "RSP": 0.0003
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 240,
+      "name": "BAGHMUNDI",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.057,
+      "party_probabilities": {
+        "AITC": 0.0112,
+        "BJP": 0.0218,
+        "INC": 0.0565,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0202,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 241,
+      "name": "JOYPUR",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.128,
+      "party_probabilities": {
+        "AITC": 0.0043,
+        "BJP": 0.0661,
+        "INC": 0.1278,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0626,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 242,
+      "name": "PURULIA",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.861,
+      "party_probabilities": {
+        "AITC": 0.2254,
+        "BJP": 0.8608,
+        "INC": 0.0087,
+        "CPI(M)": 0.0012,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 243,
+      "name": "MANBAZAR",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.739,
+      "party_probabilities": {
+        "AITC": 0.7387,
+        "BJP": 0.003,
+        "INC": 0.0129,
+        "CPI(M)": 0.0488,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 244,
+      "name": "KASHIPUR",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.92,
+      "party_probabilities": {
+        "AITC": 0.2008,
+        "BJP": 0.92,
+        "INC": 0.0457,
+        "CPI(M)": 0.0189,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 245,
+      "name": "PARA",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.383,
+      "party_probabilities": {
+        "AITC": 0.1805,
+        "BJP": 0.3833,
+        "INC": 0.0194,
+        "CPI(M)": 0.0048,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 246,
+      "name": "RAGHUNATHPUR",
+      "district": "Purulia",
+      "category": "GEN",
+      "predicted_winner": "CPI(M)",
+      "confidence": 0.04,
+      "party_probabilities": {
+        "AITC": 0.0088,
+        "BJP": 0.0348,
+        "INC": 0.0303,
+        "CPI(M)": 0.0399,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": true
+    },
+    {
+      "ac_no": 247,
+      "name": "SALTORA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.332,
+      "party_probabilities": {
+        "AITC": 0.3318,
+        "BJP": 0.0037,
+        "INC": 0.0093,
+        "CPI(M)": 0.003,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 248,
+      "name": "CHHATNA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.3,
+      "party_probabilities": {
+        "AITC": 0.0353,
+        "BJP": 0.3005,
+        "INC": 0.0224,
+        "CPI(M)": 0.0,
+        "AIFB": 0.0,
+        "RSP": 0.0105
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 249,
+      "name": "RANIBANDH",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.666,
+      "party_probabilities": {
+        "AITC": 0.0219,
+        "BJP": 0.6104,
+        "INC": 0.6663,
+        "CPI(M)": 0.0186,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 250,
+      "name": "RAIPUR",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.653,
+      "party_probabilities": {
+        "AITC": 0.0089,
+        "BJP": 0.6534,
+        "INC": 0.0034,
+        "CPI(M)": 0.0022,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 251,
+      "name": "TALDANGRA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.08,
+      "party_probabilities": {
+        "AITC": 0.0803,
+        "BJP": 0.0067,
+        "INC": 0.0045,
+        "CPI(M)": 0.0049,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 252,
+      "name": "BANKURA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.284,
+      "party_probabilities": {
+        "AITC": 0.0698,
+        "BJP": 0.2842,
+        "INC": 0.044,
+        "CPI(M)": 0.0519,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 253,
+      "name": "BARJORA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.337,
+      "party_probabilities": {
+        "AITC": 0.0377,
+        "BJP": 0.3372,
+        "INC": 0.0171,
+        "CPI(M)": 0.0025,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 254,
+      "name": "ONDA",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.486,
+      "party_probabilities": {
+        "AITC": 0.1415,
+        "BJP": 0.4861,
+        "INC": 0.0213,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.3823,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 255,
+      "name": "BISHNUPUR",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.682,
+      "party_probabilities": {
+        "AITC": 0.6821,
+        "BJP": 0.042,
+        "INC": 0.0026,
+        "CPI(M)": 0.004,
+        "AIFB": 0.0,
+        "RSP": 0.0
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 256,
+      "name": "KATULPUR",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.951,
+      "party_probabilities": {
+        "AITC": 0.1399,
+        "BJP": 0.9511,
+        "INC": 0.0037,
+        "CPI(M)": 0.0157,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 257,
+      "name": "INDUS",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.169,
+      "party_probabilities": {
+        "AITC": 0.1131,
+        "BJP": 0.1686,
+        "INC": 0.0078,
+        "CPI(M)": 0.0035,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 258,
+      "name": "SONAMUKHI",
+      "district": "Bankura",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.847,
+      "party_probabilities": {
+        "AITC": 0.0433,
+        "BJP": 0.8474,
+        "INC": 0.0039,
+        "CPI(M)": 0.0043,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 259,
+      "name": "KHANDAGHOSH",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.171,
+      "party_probabilities": {
+        "AITC": 0.0455,
+        "BJP": 0.1705,
+        "INC": 0.0293,
+        "CPI(M)": 0.0049,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 260,
+      "name": "BURDWAN DAKSHIN",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.002,
+      "party_probabilities": {
+        "AITC": 0.0008,
+        "BJP": 0.0022,
+        "INC": 0.0002,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 261,
+      "name": "RAINA",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.155,
+      "party_probabilities": {
+        "AITC": 0.1365,
+        "BJP": 0.1547,
+        "INC": 0.0337,
+        "CPI(M)": 0.0027,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 262,
+      "name": "JAMALPUR",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.806,
+      "party_probabilities": {
+        "AITC": 0.0662,
+        "BJP": 0.8057,
+        "INC": 0.0137,
+        "CPI(M)": 0.0075,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 263,
+      "name": "MONTESWAR",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.453,
+      "party_probabilities": {
+        "AITC": 0.4526,
+        "BJP": 0.2934,
+        "INC": 0.0215,
+        "CPI(M)": 0.0024,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 264,
+      "name": "KALNA",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.505,
+      "party_probabilities": {
+        "AITC": 0.2332,
+        "BJP": 0.505,
+        "INC": 0.0099,
+        "CPI(M)": 0.0073,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 265,
+      "name": "MEMARI",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.33,
+      "party_probabilities": {
+        "AITC": 0.2359,
+        "BJP": 0.3301,
+        "INC": 0.0239,
+        "CPI(M)": 0.0029,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 266,
+      "name": "BURDWAN UTTAR",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.009,
+      "party_probabilities": {
+        "AITC": 0.0085,
+        "BJP": 0.0014,
+        "INC": 0.0001,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 267,
+      "name": "BHATAR",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.292,
+      "party_probabilities": {
+        "AITC": 0.1696,
+        "BJP": 0.292,
+        "INC": 0.216,
+        "CPI(M)": 0.0149,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 268,
+      "name": "PURBASTHALI DAKSHIN",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.851,
+      "party_probabilities": {
+        "AITC": 0.8511,
+        "BJP": 0.5895,
+        "INC": 0.1168,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 269,
+      "name": "PURBASTHALI UTTAR",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.517,
+      "party_probabilities": {
+        "AITC": 0.0639,
+        "BJP": 0.5172,
+        "INC": 0.134,
+        "CPI(M)": 0.0081,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 270,
+      "name": "KATWA",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.422,
+      "party_probabilities": {
+        "AITC": 0.4225,
+        "BJP": 0.2624,
+        "INC": 0.0033,
+        "CPI(M)": 0.076,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 271,
+      "name": "KETUGRAM",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.506,
+      "party_probabilities": {
+        "AITC": 0.5063,
+        "BJP": 0.2254,
+        "INC": 0.0143,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 272,
+      "name": "MONGALKOTE",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "INC",
+      "confidence": 0.282,
+      "party_probabilities": {
+        "AITC": 0.1202,
+        "BJP": 0.1442,
+        "INC": 0.2825,
+        "CPI(M)": 0.0086,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 273,
+      "name": "AUSGRAM",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.406,
+      "party_probabilities": {
+        "AITC": 0.4059,
+        "BJP": 0.1956,
+        "INC": 0.0362,
+        "CPI(M)": 0.0141,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 274,
+      "name": "GALSI",
+      "district": "Purba Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "CPI(M)",
+      "confidence": 0.206,
+      "party_probabilities": {
+        "AITC": 0.1052,
+        "BJP": 0.1447,
+        "INC": 0.0921,
+        "CPI(M)": 0.2056,
+        "AIFB": 0.0001,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 275,
+      "name": "PANDABESWAR",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.362,
+      "party_probabilities": {
+        "AITC": 0.2945,
+        "BJP": 0.3625,
+        "INC": 0.0001,
+        "CPI(M)": 0.0399,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 276,
+      "name": "DURGAPUR PURBA",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.222,
+      "party_probabilities": {
+        "AITC": 0.222,
+        "BJP": 0.1584,
+        "INC": 0.0119,
+        "CPI(M)": 0.0045,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 277,
+      "name": "DURGAPUR PASCHIM",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.798,
+      "party_probabilities": {
+        "AITC": 0.0541,
+        "BJP": 0.7981,
+        "INC": 0.0489,
+        "CPI(M)": 0.0328,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 278,
+      "name": "RANIGANJ",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.442,
+      "party_probabilities": {
+        "AITC": 0.2118,
+        "BJP": 0.442,
+        "INC": 0.0975,
+        "CPI(M)": 0.0208,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 279,
+      "name": "JAMURIA",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.758,
+      "party_probabilities": {
+        "AITC": 0.0398,
+        "BJP": 0.7585,
+        "INC": 0.0149,
+        "CPI(M)": 0.0038,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 280,
+      "name": "ASANSOL DAKSHIN",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.728,
+      "party_probabilities": {
+        "AITC": 0.3718,
+        "BJP": 0.7284,
+        "INC": 0.0481,
+        "CPI(M)": 0.0419,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 281,
+      "name": "ASANSOL UTTAR",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.736,
+      "party_probabilities": {
+        "AITC": 0.7355,
+        "BJP": 0.0658,
+        "INC": 0.0468,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 282,
+      "name": "KULTI",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.933,
+      "party_probabilities": {
+        "AITC": 0.195,
+        "BJP": 0.933,
+        "INC": 0.0026,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0411,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 283,
+      "name": "BARABANI",
+      "district": "Paschim Bardhaman",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.875,
+      "party_probabilities": {
+        "AITC": 0.875,
+        "BJP": 0.047,
+        "INC": 0.0078,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 284,
+      "name": "DUBRAJPUR",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.364,
+      "party_probabilities": {
+        "AITC": 0.2189,
+        "BJP": 0.3645,
+        "INC": 0.0335,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0159,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "BJP",
+      "swing": false
+    },
+    {
+      "ac_no": 285,
+      "name": "SURI",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.708,
+      "party_probabilities": {
+        "AITC": 0.2475,
+        "BJP": 0.7083,
+        "INC": 0.0388,
+        "CPI(M)": 0.0306,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 286,
+      "name": "BOLPUR",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.378,
+      "party_probabilities": {
+        "AITC": 0.1214,
+        "BJP": 0.3783,
+        "INC": 0.0434,
+        "CPI(M)": 0.0002,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 287,
+      "name": "NANOOR",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.628,
+      "party_probabilities": {
+        "AITC": 0.0221,
+        "BJP": 0.6282,
+        "INC": 0.0954,
+        "CPI(M)": 0.0385,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 288,
+      "name": "LABHPUR",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "BJP",
+      "confidence": 0.462,
+      "party_probabilities": {
+        "AITC": 0.3247,
+        "BJP": 0.4618,
+        "INC": 0.0772,
+        "CPI(M)": 0.0055,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": true
+    },
+    {
+      "ac_no": 289,
+      "name": "SAINTHIA",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.706,
+      "party_probabilities": {
+        "AITC": 0.7062,
+        "BJP": 0.3442,
+        "INC": 0.0507,
+        "CPI(M)": 0.0139,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 290,
+      "name": "MAYURESWAR",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.963,
+      "party_probabilities": {
+        "AITC": 0.9629,
+        "BJP": 0.8165,
+        "INC": 0.0042,
+        "CPI(M)": 0.0662,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 291,
+      "name": "RAMPURHAT",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.805,
+      "party_probabilities": {
+        "AITC": 0.8046,
+        "BJP": 0.557,
+        "INC": 0.0041,
+        "CPI(M)": 0.0244,
+        "AIFB": 0.0002,
+        "RSP": 0.0002
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 292,
+      "name": "HANSAN",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.66,
+      "party_probabilities": {
+        "AITC": 0.6604,
+        "BJP": 0.3589,
+        "INC": 0.0111,
+        "CPI(M)": 0.0375,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 293,
+      "name": "NALHATI",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.957,
+      "party_probabilities": {
+        "AITC": 0.9569,
+        "BJP": 0.1647,
+        "INC": 0.0412,
+        "CPI(M)": 0.0001,
+        "AIFB": 0.0041,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    },
+    {
+      "ac_no": 294,
+      "name": "MURARAI",
+      "district": "Birbhum",
+      "category": "GEN",
+      "predicted_winner": "AITC",
+      "confidence": 0.36,
+      "party_probabilities": {
+        "AITC": 0.3605,
+        "BJP": 0.0656,
+        "INC": 0.1004,
+        "CPI(M)": 0.2485,
+        "AIFB": 0.0001,
+        "RSP": 0.0001
+      },
+      "incumbent_2021": "AITC",
+      "swing": false
+    }
+  ]
+}

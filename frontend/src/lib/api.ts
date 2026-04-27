@@ -151,7 +151,7 @@ export const api = {
   getCategoryMix: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/category-mix${qs(electionId, extra)}`),
   getCountdown: (electionId?: number) => fetchApi<any>(`/overview/countdown${qs(electionId)}`),
   getAcResults: (electionId?: number) => fetchApi<any[]>(`/overview/ac-results${qs(electionId)}`),
-  getHistoricalWave: () => fetchApi<any>("/overview/historical-wave"),
+  getHistoricalWave: (electionId?: number) => fetchApi<any>(`/overview/historical-wave${qs(electionId)}`),
   getClosestContests: (electionId?: number, limit = 10) => fetchApi<any[]>(`/overview/closest-contests${qs(electionId, `limit=${limit}`)}`),
   getNotaImpact: (electionId?: number) => fetchApi<any[]>(`/overview/nota-impact${qs(electionId)}`),
   getCrorepatiCandidates: (electionId?: number) => fetchApi<any>(`/overview/crorepati-candidates${qs(electionId)}`),
@@ -161,13 +161,17 @@ export const api = {
   getMarginVsTurnout: (electionId?: number) => fetchApi<any[]>(`/overview/margin-vs-turnout${qs(electionId)}`),
   getConstituencyTracker: (electionId?: number, extra?: string) =>
     fetchApi<any[]>(`/overview/constituency-tracker${qs(electionId, extra)}`),
-  getPlacesToWatch: () => fetchApi<any[]>("/overview/places-to-watch"),
-  getSwingAnalysis: () => fetchApi<any[]>("/overview/swing-analysis"),
+  getPlacesToWatch: (electionId?: number) => fetchApi<any[]>(`/overview/places-to-watch${qs(electionId)}`),
+  getSwingAnalysis: (electionId?: number) => fetchApi<any[]>(`/overview/swing-analysis${qs(electionId)}`),
   getCandidates: (electionId?: number, extra?: string) =>
     fetchApi<CandidateBrief[]>(`/candidates${qs(electionId, extra)}`),
   getCandidate: (id: number) => fetchApi<CandidateDetail>(`/candidates/${id}`),
   getParties: (electionId?: number) => fetchApi<Party[]>(`/candidates/parties${qs(electionId)}`),
   search: (q: string) => fetchApi<{ candidates: any[]; constituencies: any[] }>(`/search?q=${q}`),
+  getPredictionSummary: () => fetchApi<any>("/predictions/summary"),
+  getConstituencyPredictions: (params?: string) => fetchApi<any[]>(`/predictions/constituencies${params ? `?${params}` : ""}`),
+  getBattlegrounds: (limit = 20) => fetchApi<any[]>(`/predictions/battlegrounds?limit=${limit}`),
+  getSwingMap: () => fetchApi<any[]>("/predictions/swing-map"),
   generateTweets: (electionId?: number, category?: string) => {
     const parts: string[] = [];
     if (electionId) parts.push(`election_id=${electionId}`);

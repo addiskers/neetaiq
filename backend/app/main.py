@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import CORS_ORIGINS
-from app.routers import overview, candidates, search, tweets
+from app.routers import overview, candidates, search, tweets, predictions
 
 app = FastAPI(
     title="NetaIQ API",
@@ -27,6 +27,7 @@ app.include_router(overview.router)
 app.include_router(candidates.router)
 app.include_router(search.router)
 app.include_router(tweets.router)
+app.include_router(predictions.router)
 
 
 @app.get("/")

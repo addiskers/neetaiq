@@ -29,8 +29,13 @@ Thumbs.db
 # Docker volumes
 pgdata/
 .claude/
-.csv
-.json
-.xlsx
+
 # DB dumps (transfer separately, not in git)
 db_dump.sql
+netanly_dump.sql
+netaiq_db_dump.sql
+
+# Raw election data (large)
+west_bengal_election_data*/
+assam*/
+temp_shp/

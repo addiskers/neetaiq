@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, LayoutGrid, Users, X, ChevronDown } from "lucide-react";
+import { LayoutDashboard, LayoutGrid, Users, Brain, X, ChevronDown } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
 
 const modules = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
   { name: "Election Tracker", href: "/election-tracker", icon: LayoutGrid },
   { name: "Candidate Intel", href: "/candidate-intel", icon: Users },
+  { name: "AI Predictions", href: "/predictions", icon: Brain },
 ];
 
 export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void }) {
