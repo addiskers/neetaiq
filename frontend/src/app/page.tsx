@@ -2,7 +2,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { api, type ElectionStats, type DossierRow } from "@/lib/api";
 import { useFilters } from "@/lib/filter-context";
-import { MapPin, TrendingUp, Users, ChevronRight, Search, BarChart3, AlertTriangle, GraduationCap, Shield, Clock } from "lucide-react";
+import { MapPin, TrendingUp, Users, ChevronRight, Search, BarChart3, AlertTriangle, GraduationCap, Shield, Clock, Maximize2, Minimize2 } from "lucide-react";
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area, Treemap } from "recharts";
 import dynamic from "next/dynamic";
 
@@ -42,7 +42,7 @@ function CardTitle({ icon: Icon, title }: { icon: any; title: string }) {
 }
 
 export default function OverviewPage() {
-  const { electionId, currentElection, granularity, setGranularity, selectedDistrict, setSelectedDistrict, selectedAC, setSelectedAC, districts, filteredConstituencies } = useFilters();
+  const { electionId, currentElection, granularity, setGranularity, selectedDistrict, setSelectedDistrict, selectedAC, setSelectedAC, districts, constituencies, filteredConstituencies } = useFilters();
   const [stats, setStats] = useState<ElectionStats | null>(null);
   const [dossier, setDossier] = useState<DossierRow[]>([]);
   const [searchDistrict, setSearchDistrict] = useState("");
@@ -64,6 +64,7 @@ export default function OverviewPage() {
 
   const hasResults = currentElection && currentElection.year !== 2026;
   const [mapMode, setMapMode] = useState<"results" | "category" | "prev_winner" | "prediction">("category");
+  const [mapExpanded, setMapExpanded] = useState(false);
 
   // Reset map mode when election changes
   useEffect(() => {
@@ -98,15 +99,27 @@ export default function OverviewPage() {
     api.getSwingAnalysis(electionId).then(setSwingAnalysis);
   }, [electionId, filterParams]);
 
+  const searchQ = searchDistrict.toLowerCase().trim();
+  const isSearching = searchQ.length >= 2;
+
   const filteredDistrictsList = districts.filter((d) =>
-    d.name.toLowerCase().includes(searchDistrict.toLowerCase())
+    d.name.toLowerCase().includes(searchQ)
   );
+
+  // When searching 2+ chars, search across all constituencies (AC name, number, district)
+  const searchedConstituencies = isSearching
+    ? constituencies.filter((c) =>
+        c.name.toLowerCase().includes(searchQ) ||
+        c.ac_no.toString().includes(searchQ) ||
+        c.district_name.toLowerCase().includes(searchQ)
+      )
+    : [];
 
   const viewLabel = selectedAC
     ? filteredConstituencies.find((c) => c.ac_no === selectedAC)?.name || "Constituency"
     : selectedDistrict || currentElection?.state || "Overview";
 
-  const GENDER_COLORS: Record<string, string> = { MALE: "#3B82F6", FEMALE: "#EC4899", UNKNOWN: "#F59E0B" };
+  const GENDER_COLORS: Record<string, string> = { MALE: "#3B82F6", FEMALE: "#EC4899", "THIRD GENDER": "#8B5CF6", UNKNOWN: "#F59E0B" };
   const CATEGORY_COLORS: Record<string, string> = { GEN: "#3B82F6", SC: "#F59E0B", ST: "#10B981" };
 
   return (
@@ -160,7 +173,26 @@ export default function OverviewPage() {
             <input type="text" placeholder="Search..." value={searchDistrict} onChange={(e) => setSearchDistrict(e.target.value)} className="bg-transparent text-sm text-[#111827] placeholder-[#64748B] outline-none flex-1" />
           </div>
           <div className="space-y-1 max-h-[250px] sm:max-h-[400px] overflow-y-auto pr-1">
-            {granularity === "STATE" || !selectedDistrict ? (
+            {isSearching ? (
+              /* When searching, show matching constituencies directly */
+              searchedConstituencies.length > 0 ? (
+                searchedConstituencies.map((c) => (
+                  <button
+                    type="button"
+                    key={c.id}
+                    onClick={() => { setSelectedAC(c.ac_no); setSelectedDistrict(c.district_name); setGranularity("AC"); setSearchDistrict(""); }}
+                    className={`w-full flex items-center justify-between px-3 py-3 rounded-xl cursor-pointer transition-all ${
+                      selectedAC === c.ac_no ? "bg-[#3B82F6]/10 text-[#3B82F6] ring-1 ring-[#3B82F6]/20" : "text-[#6B7280] hover:bg-[#F3F4F6] active:scale-[0.98]"
+                    }`}
+                  >
+                    <div className="text-left"><div className="text-sm font-semibold">{c.name}</div><div className="text-[11px] text-[#9CA3AF]">AC {c.ac_no} &bull; {c.district_name}</div></div>
+                    <span className={`text-[9px] px-2 py-0.5 rounded-full font-bold ${c.category === "SC" ? "bg-[#F59E0B]/20 text-[#D97706]" : c.category === "ST" ? "bg-[#10B981]/20 text-[#059669]" : "bg-[#3B82F6]/20 text-[#3B82F6]"}`}>{c.category || "GEN"}</span>
+                  </button>
+                ))
+              ) : (
+                <div className="text-sm text-[#9CA3AF] text-center py-4">No results</div>
+              )
+            ) : !selectedDistrict ? (
               filteredDistrictsList.map((d) => (
                 <button
                   type="button"
@@ -175,7 +207,7 @@ export default function OverviewPage() {
                 </button>
               ))
             ) : (
-              filteredConstituencies.filter((c) => c.name.toLowerCase().includes(searchDistrict.toLowerCase())).map((c) => (
+              filteredConstituencies.map((c) => (
                 <button
                   type="button"
                   key={c.id}
@@ -193,7 +225,13 @@ export default function OverviewPage() {
         </div>
         <div className="lg:col-span-9 bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm">
           <div className="flex items-center justify-between px-4 py-3 border-b border-[#E5E7EB]">
-            <div className="flex items-center gap-2"><MapPin className="w-4 h-4 text-[#3B82F6]" /><span className="text-sm font-semibold text-[#111827]">{viewLabel}</span></div>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-[#3B82F6]" />
+              <span className="text-sm font-semibold text-[#111827]">{viewLabel}</span>
+              <button type="button" title="Full screen map" onClick={() => setMapExpanded(true)} className="p-1 rounded-md hover:bg-[#F3F4F6] text-[#6B7280] hover:text-[#111827] transition-colors">
+                <Maximize2 className="w-4 h-4" />
+              </button>
+            </div>
             {!hasResults && (
               <div className="flex bg-[#F3F4F6] rounded-lg p-0.5 gap-0.5">
                 {([
@@ -249,6 +287,74 @@ export default function OverviewPage() {
         </div>
       </div>
 
+      {/* Fullscreen Map Overlay */}
+      {mapExpanded && (
+        <div className="fixed inset-0 z-[9999] bg-white flex flex-col">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-[#E5E7EB] shrink-0">
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-[#3B82F6]" />
+              <span className="text-sm font-semibold text-[#111827]">{viewLabel}</span>
+            </div>
+            <div className="flex items-center gap-3">
+              {!hasResults && (
+                <div className="flex bg-[#F3F4F6] rounded-lg p-0.5 gap-0.5">
+                  {([
+                    ["category", "Category"],
+                    ["prev_winner", "Prev Winner"],
+                    ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026 ? [["prediction", "\u{1F916} AI Prediction"]] : []),
+                  ] as [string, string][]).map(([mode, label]) => (
+                    <button key={mode} type="button" onClick={() => setMapMode(mode as any)}
+                      className={`text-[11px] font-semibold px-3 py-1.5 rounded-md transition-all ${mapMode === mode ? "bg-white text-[#111827] shadow-sm" : "text-[#6B7280] hover:text-[#111827]"}`}
+                    >{label}</button>
+                  ))}
+                </div>
+              )}
+              <button type="button" title="Exit fullscreen" onClick={() => setMapExpanded(false)} className="p-1.5 rounded-md hover:bg-[#F3F4F6] text-[#6B7280] hover:text-[#111827] transition-colors">
+                <Minimize2 className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+          <div className="flex-1 relative">
+            <MapView mapMode={hasResults ? "results" : mapMode} />
+            {/* Legend */}
+            <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm border border-[#E5E7EB] z-[400]">
+              {mapMode === "prediction" && !hasResults ? (
+                <>
+                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">AI Prediction</div>
+                  {["AITC", "BJP", "INC", "CPI(M)"].map((p) => (
+                    <div key={p} className="flex items-center gap-1.5 py-0.5">
+                      <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
+                      <span className="text-[10px] text-[#374151]">{p}</span>
+                    </div>
+                  ))}
+                  <div className="flex items-center gap-1.5 py-0.5 mt-1 border-t border-[#E5E7EB] pt-1">
+                    <span className="w-2.5 h-2.5 rounded-sm border-2 border-yellow-400" />
+                    <span className="text-[10px] text-[#374151]">Swing</span>
+                  </div>
+                </>
+              ) : (hasResults || mapMode === "prev_winner") && partyPerformance.length > 0 ? (
+                <>
+                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">{hasResults ? "Winner" : "Prev Winner"}</div>
+                  {["BJP", "INC", "AIUDF", "AGP", "BOPF", "UPPL", "AITC", "CPI(M)"].filter((p) => partyPerformance.some((pp: any) => pp.abbr === p)).map((p) => (
+                    <div key={p} className="flex items-center gap-1.5 py-0.5">
+                      <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
+                      <span className="text-[10px] text-[#374151]">{p}</span>
+                    </div>
+                  ))}
+                </>
+              ) : (
+                <>
+                  <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">Seat Category</div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#93C5FD]" /><span className="text-[10px] text-[#374151]">General</span></div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#FCD34D]" /><span className="text-[10px] text-[#374151]">SC</span></div>
+                  <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#6EE7B7]" /><span className="text-[10px] text-[#374151]">ST</span></div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Row: Historical Wave + Demographic Mix + Gender Ratio + Category */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
         {/* Historical Wave */}
@@ -277,19 +383,19 @@ export default function OverviewPage() {
 
         {/* Gender/Demographic */}
         <Card>
-          <CardTitle icon={Users} title="Gender Demographics" />
+          <CardTitle icon={Users} title="Voter Gender Split" />
           {genderDemo.length > 0 ? (
             <>
               <div className="text-center mb-2">
-                <div className="text-2xl font-extrabold text-[#111827]">{genderDemo.reduce((s, g) => s + g.count, 0)}</div>
-                <div className="text-[10px] text-[#9CA3AF] uppercase font-bold">Total Candidates</div>
+                <div className="text-2xl font-extrabold text-[#111827]">{formatNum(genderDemo.reduce((s, g) => s + g.count, 0))}</div>
+                <div className="text-[10px] text-[#9CA3AF] uppercase font-bold">Total Electors</div>
               </div>
               <ResponsiveContainer width="100%" height={110}>
                 <PieChart>
                   <Pie data={genderDemo} cx="50%" cy="50%" innerRadius={28} outerRadius={48} dataKey="count" paddingAngle={3}>
                     {genderDemo.map((g) => <Cell key={g.gender} fill={GENDER_COLORS[g.gender] || "#94A3B8"} />)}
                   </Pie>
-                  <Tooltip formatter={(v: any, _: any, props: any) => [`${v} candidates`, props.payload.gender]} />
+                  <Tooltip formatter={(v: any, _: any, props: any) => [formatNum(v), props.payload.gender]} />
                 </PieChart>
               </ResponsiveContainer>
               <div className="flex justify-center gap-4 mt-2">
@@ -297,7 +403,7 @@ export default function OverviewPage() {
                   <div key={g.gender} className="flex items-center gap-1.5">
                     <span className="w-2.5 h-2.5 rounded-full" style={{ background: GENDER_COLORS[g.gender] || "#94A3B8" }} />
                     <span className="text-[11px] font-semibold" style={{ color: GENDER_COLORS[g.gender] || "#6B7280" }}>{g.gender} {g.pct}%</span>
-                    <span className="text-[10px] text-[#9CA3AF]">({g.count})</span>
+                    <span className="text-[10px] text-[#9CA3AF]">({formatNum(g.count)})</span>
                   </div>
                 ))}
               </div>
@@ -499,7 +605,7 @@ export default function OverviewPage() {
         {/* Swing Analysis */}
         {swingAnalysis.length > 0 && (
           <Card>
-            <CardTitle icon={TrendingUp} title="Swing Analysis (2016 vs 2021)" />
+            <CardTitle icon={TrendingUp} title={`Swing Analysis (${swingAnalysis[0]?.year_prev} vs ${swingAnalysis[0]?.year_curr})`} />
             <div className="space-y-2">
               {swingAnalysis.map((p) => (
                 <div key={p.party} className="flex items-center justify-between text-xs border-b border-[#F3F4F6] pb-2">
@@ -507,8 +613,8 @@ export default function OverviewPage() {
                     <span className="font-bold text-[#111827]">{p.party}</span>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="text-center w-16"><div className="text-[#6B7280]">{p.seats_2016}</div><div className="text-[9px] text-[#9CA3AF]">2016</div></div>
-                    <div className="text-center w-16"><div className="font-bold text-[#111827]">{p.seats_2021}</div><div className="text-[9px] text-[#9CA3AF]">2021</div></div>
+                    <div className="text-center w-16"><div className="text-[#6B7280]">{p.seats_2016}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_prev}</div></div>
+                    <div className="text-center w-16"><div className="font-bold text-[#111827]">{p.seats_2021}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_curr}</div></div>
                     <div className={`text-center w-16 font-bold ${p.seat_change > 0 ? "text-[#059669]" : p.seat_change < 0 ? "text-[#EF4444]" : "text-[#6B7280]"}`}>
                       {p.seat_change > 0 ? "+" : ""}{p.seat_change}
                     </div>

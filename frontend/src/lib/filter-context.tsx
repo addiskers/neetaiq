@@ -25,7 +25,7 @@ const FilterContext = createContext<FilterState | null>(null);
 export function FilterProvider({ children }: { children: ReactNode }) {
   const [elections, setElections] = useState<Election[]>([]);
   const [electionId, setElectionIdRaw] = useState<number | undefined>(undefined);
-  const [granularity, setGranularity] = useState<Granularity>("STATE");
+  const [granularity, setGranularity] = useState<Granularity>("DISTRICT");
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
   const [selectedAC, setSelectedAC] = useState<number | null>(null);
   const [districts, setDistricts] = useState<DistrictOverview[]>([]);
@@ -53,17 +53,13 @@ export function FilterProvider({ children }: { children: ReactNode }) {
   // When changing election, reset filters
   const setElectionId = (id: number) => {
     setElectionIdRaw(id);
-    setGranularity("STATE");
+    setGranularity("DISTRICT");
     setSelectedDistrict(null);
     setSelectedAC(null);
   };
 
   // Reset selections when granularity changes
   useEffect(() => {
-    if (granularity === "STATE") {
-      setSelectedDistrict(null);
-      setSelectedAC(null);
-    }
     if (granularity === "DISTRICT") {
       setSelectedAC(null);
     }

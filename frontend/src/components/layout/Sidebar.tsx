@@ -4,17 +4,16 @@ import { usePathname } from "next/navigation";
 import { LayoutDashboard, LayoutGrid, Users, Brain, X, ChevronDown } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
 
-const modules = [
+const baseModules = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
   { name: "Election Tracker", href: "/election-tracker", icon: LayoutGrid },
   { name: "Candidate Intel", href: "/candidate-intel", icon: Users },
-  { name: "AI Predictions", href: "/predictions", icon: Brain },
 ];
 
 export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void }) {
   const pathname = usePathname();
   const {
-    elections, electionId, setElectionId,
+    elections, setElectionId, currentElection,
     granularity, setGranularity,
     selectedDistrict, setSelectedDistrict,
     selectedAC, setSelectedAC,
@@ -23,6 +22,25 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
 
   const handleNavClick = () => {
     onCloseMobile?.();
+  };
+
+  // Derive unique states and years for split dropdowns
+  const uniqueStates = [...new Set(elections.map((e) => e.state))];
+  const selectedState = currentElection?.state || uniqueStates[0] || "";
+  const yearsForState = elections
+    .filter((e) => e.state === selectedState)
+    .sort((a, b) => b.year - a.year);
+
+  const handleStateChange = (state: string) => {
+    const latest = elections
+      .filter((e) => e.state === state)
+      .sort((a, b) => b.year - a.year)[0];
+    if (latest) setElectionId(latest.id);
+  };
+
+  const handleYearChange = (year: number) => {
+    const match = elections.find((e) => e.state === selectedState && e.year === year);
+    if (match) setElectionId(match.id);
   };
 
   return (
@@ -49,20 +67,31 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
 
       <div className="h-px bg-white/10 mx-4" />
 
-      {/* Active Theatre */}
+      {/* Active Theatre — State + Year */}
       <div className="px-5 py-4">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Active Theatre</div>
         <div className="relative">
           <select
-            title="Select Election"
-            value={electionId || ""}
-            onChange={(e) => setElectionId(Number(e.target.value))}
+            title="Select State"
+            value={selectedState}
+            onChange={(e) => handleStateChange(e.target.value)}
             className="w-full bg-[#111B33] text-white text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none cursor-pointer"
           >
-            {elections.map((e) => (
-              <option key={e.id} value={e.id}>
-                {e.state} {e.year}
-              </option>
+            {uniqueStates.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
+        </div>
+        <div className="relative mt-2">
+          <select
+            title="Select Year"
+            value={currentElection?.year || ""}
+            onChange={(e) => handleYearChange(Number(e.target.value))}
+            className="w-full bg-[#111B33] text-white text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none cursor-pointer"
+          >
+            {yearsForState.map((e) => (
+              <option key={e.id} value={e.year}>{e.year}</option>
             ))}
           </select>
           <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
@@ -75,7 +104,7 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
       <div className="px-5 py-4">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Granularity</div>
         <div className="flex bg-[#111B33] rounded-xl p-1">
-          {(["STATE", "DISTRICT", "AC"] as const).map((g) => (
+          {(["DISTRICT", "AC"] as const).map((g) => (
             <button
               type="button"
               key={g}
@@ -91,8 +120,7 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
           ))}
         </div>
 
-        {(granularity === "DISTRICT" || granularity === "AC") && (
-          <div className="relative mt-2.5">
+        <div className="relative mt-2.5">
             <select
               title="Select District"
               value={selectedDistrict || ""}
@@ -109,7 +137,6 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
             </select>
             <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
           </div>
-        )}
 
         {granularity === "AC" && (
           <div className="relative mt-2.5">
@@ -137,7 +164,12 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
       <div className="px-5 py-4 flex-1">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Modules</div>
         <nav className="space-y-1">
-          {modules.map((mod) => {
+          {[
+            ...baseModules,
+            ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026
+              ? [{ name: "AI Predictions", href: "/predictions", icon: Brain }]
+              : []),
+          ].map((mod) => {
             const isActive = pathname === mod.href || (mod.href !== "/" && pathname.startsWith(mod.href));
             return (
               <Link

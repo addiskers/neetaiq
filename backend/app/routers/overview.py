@@ -585,18 +585,37 @@ def get_gender_demographics(
     ac_no: Optional[int] = None,
     db: Session = Depends(get_db),
 ):
-    """Candidate gender breakdown, filtered by district/AC."""
+    """Voter (elector) gender breakdown from constituency rolls, filtered by district/AC."""
     eid = _resolve_eid(election_id, db)
+    cs = _filter_constituencies(db, eid, district, ac_no)
+
+    male = sum(c.male_electors or 0 for c in cs)
+    female = sum(c.female_electors or 0 for c in cs)
+    third = sum((c.third_gender_electors or 0) for c in cs)
+
+    # If elector gender data exists, use it
+    if male + female + third > 0:
+        rows = [
+            ("MALE", male),
+            ("FEMALE", female),
+        ]
+        if third > 0:
+            rows.append(("THIRD GENDER", third))
+        total = sum(v for _, v in rows) or 1
+        return [
+            {"gender": g, "count": v, "pct": round(v / total * 100, 1)}
+            for g, v in rows if v > 0
+        ]
+
+    # Fallback: candidate gender
     q = db.query(Candidate).filter(
         Candidate.election_id == eid, Candidate.is_nota == False
     )
     if ac_no or district:
-        cs = _filter_constituencies(db, eid, district, ac_no)
         c_ids = [c.id for c in cs]
         q = q.filter(Candidate.constituency_id.in_(c_ids))
-
     candidates = q.all()
-    gender_counts = {}
+    gender_counts: dict = {}
     for c in candidates:
         g = (c.gender or "Unknown").upper()
         if g == "M":
@@ -604,7 +623,6 @@ def get_gender_demographics(
         elif g == "F":
             g = "FEMALE"
         gender_counts[g] = gender_counts.get(g, 0) + 1
-
     total = sum(gender_counts.values()) or 1
     return [
         {"gender": k, "count": v, "pct": round(v / total * 100, 1)}
@@ -771,15 +789,21 @@ def get_places_to_watch(election_id: Optional[int] = None, db: Session = Depends
 
 @router.get("/swing-analysis")
 def get_swing_analysis(election_id: Optional[int] = None, db: Session = Depends(get_db)):
-    """Compare party performance between the two most recent elections for the same state."""
+    """Compare party performance between the two most recent elections with results for the same state."""
     eid = _resolve_eid(election_id, db)
     current = db.query(Election).filter(Election.id == eid).first()
     state = current.state if current else "Assam"
-    elections = db.query(Election).filter(Election.state == state).order_by(Election.year).all()
-    if len(elections) < 2:
+    all_elections = db.query(Election).filter(Election.state == state).order_by(Election.year).all()
+
+    def has_results(e):
+        return db.query(Candidate).filter(Candidate.election_id == e.id, Candidate.position == 1).first() is not None
+
+    elections_with_results = [e for e in all_elections if has_results(e)]
+    if len(elections_with_results) < 2:
         return []
-    e2016 = elections[-2]
-    e2021 = elections[-1]
+
+    e_prev = elections_with_results[-2]
+    e_curr = elections_with_results[-1]
 
     def get_party_data(eid):
         winners = db.query(Candidate).filter(Candidate.election_id == eid, Candidate.position == 1, Candidate.is_nota == False).all()
@@ -795,17 +819,20 @@ def get_swing_analysis(election_id: Optional[int] = None, db: Session = Depends(
             votes[abbr] = votes.get(abbr, 0) + (c.votes_total or 0)
         return seats, votes, total_votes
 
-    s16, v16, t16 = get_party_data(e2016.id)
-    s21, v21, t21 = get_party_data(e2021.id)
+    s_prev, v_prev, t_prev = get_party_data(e_prev.id)
+    s_curr, v_curr, t_curr = get_party_data(e_curr.id)
 
-    all_p = sorted(set(list(s16.keys()) + list(s21.keys())), key=lambda p: s21.get(p, 0) + s16.get(p, 0), reverse=True)[:8]
+    all_p = sorted(set(list(s_prev.keys()) + list(s_curr.keys())), key=lambda p: s_curr.get(p, 0) + s_prev.get(p, 0), reverse=True)[:8]
     return [{
         "party": p,
-        "seats_2016": s16.get(p, 0), "seats_2021": s21.get(p, 0),
-        "seat_change": s21.get(p, 0) - s16.get(p, 0),
-        "vote_share_2016": round(v16.get(p, 0) / t16 * 100, 1) if t16 else 0,
-        "vote_share_2021": round(v21.get(p, 0) / t21 * 100, 1) if t21 else 0,
-        "vote_swing": round((v21.get(p, 0) / t21 * 100) - (v16.get(p, 0) / t16 * 100), 1) if t16 and t21 else 0,
+        "year_prev": e_prev.year,
+        "year_curr": e_curr.year,
+        "seats_2016": s_prev.get(p, 0),
+        "seats_2021": s_curr.get(p, 0),
+        "seat_change": s_curr.get(p, 0) - s_prev.get(p, 0),
+        "vote_share_2016": round(v_prev.get(p, 0) / t_prev * 100, 1) if t_prev else 0,
+        "vote_share_2021": round(v_curr.get(p, 0) / t_curr * 100, 1) if t_curr else 0,
+        "vote_swing": round((v_curr.get(p, 0) / t_curr * 100) - (v_prev.get(p, 0) / t_prev * 100), 1) if t_prev and t_curr else 0,
     } for p in all_p]
 
 
