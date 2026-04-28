@@ -7,6 +7,7 @@ import { FilterProvider } from "@/lib/filter-context";
 export const metadata: Metadata = {
   title: "मतदान iQ — India's Booth-Level Voter Intelligence Platform",
   description: "India's Booth-Level Voter Intelligence Platform | matdaaniq.com",
+  icons: { icon: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
