@@ -14,6 +14,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="h-full">
       <head>
+        <meta name="google-site-verification" content="6AIdlgWvny6elAPBIivuCf5qy0vePr9M5_ptaS_4b2I" />
+        <Script id="gtm" strategy="afterInteractive">{`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-KGD96WFD');
+        `}</Script>
         <Script id="clarity" strategy="afterInteractive">{`
           (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -30,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         `}</Script>
       </head>
       <body suppressHydrationWarning className="h-screen flex overflow-hidden bg-[#F7F8FC]">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGD96WFD" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         <FilterProvider>
           <MobileLayout>{children}</MobileLayout>
         </FilterProvider>
