@@ -25,6 +25,7 @@ services:
       DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-matdaaniq_db}
       CORS_ORIGINS: ${CORS_ORIGINS:-https://www.matdaaniq.com}
       ENVIRONMENT: production
+      ZYTE_API_KEY: ${ZYTE_API_KEY:-}
     expose:
       - "8000"
 
