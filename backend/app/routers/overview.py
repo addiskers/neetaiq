@@ -263,7 +263,9 @@ def get_category_mix(
     cs = _filter_constituencies(db, eid, district, ac_no)
     cats: dict = {}
     for c in cs:
-        cat = c.category or "GEN"
+        cat = (c.category or "GEN").upper()
+        if cat == "GENERAL":
+            cat = "GEN"
         cats[cat] = cats.get(cat, 0) + 1
 
     total = sum(cats.values()) or 1

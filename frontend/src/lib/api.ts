@@ -179,4 +179,49 @@ export const api = {
     const q = parts.length ? `?${parts.join("&")}` : "";
     return fetchApi<any[]>(`/tweets/generate${q}`);
   },
+  // Live Election
+  getLiveResults: (stateCode: string, forceRefresh = false) =>
+    fetchApi<LiveElectionResults>(`/live-election/results?state=${encodeURIComponent(stateCode)}${forceRefresh ? "&force_refresh=true" : ""}`),
+  getLiveStates: () => fetchApi<LiveStateInfo[]>("/live-election/states"),
 };
+
+// Live Election types
+export interface LivePartyResult {
+  party: string;
+  short: string;
+  won: number;
+  leading: number;
+  total: number;
+  color: string;
+}
+
+export interface LiveConstituencyResult {
+  const_no: number | null;
+  name: string;
+  leading_candidate: string;
+  leading_party: string;
+  leading_party_short: string;
+  trailing_candidate: string;
+  trailing_party: string;
+  margin: number | null;
+  rounds: string;
+  status: string;
+  party_color: string;
+}
+
+export interface LiveElectionResults {
+  state: string;
+  state_code: string;
+  total_ac: number;
+  parties: LivePartyResult[];
+  constituencies: LiveConstituencyResult[];
+  last_updated: string | null;
+  fetched_at: string;
+  error?: string;
+}
+
+export interface LiveStateInfo {
+  code: string;
+  name: string;
+  total_ac: number;
+}

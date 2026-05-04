@@ -44,6 +44,14 @@ AC_NAME_FIXES = {
     "MANGALKOT": "MONGALKOTE",
 }
 
+# Elector file name -> canonical results file name
+ELECTOR_NAME_FIXES = {
+    "COOCHBIHAR UTTAR": "COOCHBEHAR UTTAR",
+    "COOCHBIHAR DAKSHIN": "COOCHBEHAR DAKSHIN",
+    "MAHISADAL": "MAHISHADAL",
+    "MANGALKOT": "MONGALKOTE",
+}
+
 
 def load_electors():
     """Parse electors_data_2021.xlsx -> {ac_name_upper: {electors}}."""
@@ -57,9 +65,13 @@ def load_electors():
         raw = str(row[0]).strip() if row[0] else None
         if not raw:
             continue
-        clean = re.sub(r"\s+(SC|ST|GEN)\s*$", "", raw, flags=re.IGNORECASE).strip().upper()
+        # Strip AC number prefix (e.g. "111-PANIHATI-GEN" -> "PANIHATI-GEN")
+        clean = re.sub(r"^\d+[-\s]+", "", raw).strip()
+        # Strip category suffix with hyphen or space (e.g. "NAME-GEN", "NAME SC")
+        clean = re.sub(r"[-\s]+(SC|ST|GEN|GENERAL)\s*$", "", clean, flags=re.IGNORECASE).strip().upper()
         # Normalize spacing
         clean = re.sub(r"\s+", " ", clean)
+        clean = ELECTOR_NAME_FIXES.get(clean, clean)
         elector_map[clean] = {
             "male_electors": int(row[1]) if row[1] else None,
             "female_electors": int(row[2]) if row[2] else None,

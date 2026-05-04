@@ -10,6 +10,7 @@ const PARTY_COLORS: Record<string, string> = {
   BOPF: "#FF7F50", UPPL: "#FFD700", "CPI(M)": "#FF0000", IND: "#808080",
   AITC: "#00FF00", NCP: "#004080", AIFB: "#CC0000", RSP: "#FF6600",
   CPI: "#FF4444", BSP: "#0000FF", GJM: "#FFD700", SUCI: "#8B0000",
+  AINRC: "#800080", DMK: "#FF0000", AIADMK: "#228B22", PMK: "#FFFF00",
 };
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -19,12 +20,13 @@ const CATEGORY_COLORS: Record<string, string> = {
 const STATE_MAP_CONFIG: Record<string, { center: L.LatLngExpression; zoom: number; geojson: string }> = {
   "Assam": { center: [26.15, 92.50], zoom: 7.3, geojson: "/assam-ac.geojson" },
   "West Bengal": { center: [23.0, 87.85], zoom: 6.5, geojson: "/west-bengal-ac.geojson" },
+  "Puducherry": { center: [11.93, 79.83], zoom: 10, geojson: "/puducherry-ac.geojson" },
 };
 const DEFAULT_CONFIG = STATE_MAP_CONFIG["Assam"];
 
-export type MapMode = "results" | "category" | "prev_winner" | "prediction";
+export type MapMode = "results" | "category" | "prev_winner" | "prediction" | "live";
 
-export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) {
+export default function MapView({ mapMode = "results", liveResults }: { mapMode?: MapMode; liveResults?: { ac_no: number; party: string; status: string; candidate?: string; margin?: number | null }[] }) {
   const mapContainer = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const layerRef = useRef<L.GeoJSON | null>(null);
@@ -123,14 +125,20 @@ export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) 
     const predMap: Record<number, any> = {};
     for (const p of predictionData) predMap[p.ac_no] = p;
 
+    const liveMap: Record<number, any> = {};
+    if (liveResults) for (const l of liveResults) liveMap[l.ac_no] = l;
+
     const hasPartyResults = acResults.some((r) => r.party);
     const hasPredictions = predictionData.length > 0;
+    const hasLiveResults = liveResults && liveResults.length > 0;
     const conMap: Record<number, any> = {};
     for (const c of constituencies) conMap[c.ac_no] = c;
 
     // Determine effective mode
     let effectiveMode = mapMode;
-    if (mapMode === "prediction" && hasPredictions) {
+    if (mapMode === "live" && hasLiveResults) {
+      effectiveMode = "live";
+    } else if (mapMode === "prediction" && hasPredictions) {
       effectiveMode = "prediction";
     } else if (hasPartyResults) {
       effectiveMode = "results";
@@ -144,6 +152,7 @@ export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) 
         const result = resultMap[acNo];
         const prev = prevMap[acNo];
         const pred = predMap[acNo];
+        const live = liveMap[acNo];
         const con = conMap[acNo];
         const isSelectedAC = selectedAC === acNo;
         const districtName = con?.district_name || feature?.properties?.district || "";
@@ -151,7 +160,9 @@ export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) 
           districtName.toUpperCase() === selectedDistrict.toUpperCase();
 
         let fillColor = "#E2E8F0";
-        if (effectiveMode === "prediction" && pred?.predicted_winner) {
+        if (effectiveMode === "live" && live?.party) {
+          fillColor = PARTY_COLORS[live.party] || "#94A3B8";
+        } else if (effectiveMode === "prediction" && pred?.predicted_winner) {
           fillColor = PARTY_COLORS[pred.predicted_winner] || "#94A3B8";
         } else if (effectiveMode === "results" && result?.party) {
           fillColor = PARTY_COLORS[result.party] || result.party_color || "#94A3B8";
@@ -182,12 +193,19 @@ export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) 
         const prev = prevMap[acNo];
         const con = conMap[acNo];
         const pred = predMap[acNo];
+        const live = liveMap[acNo];
         const district = con?.district_name || feature.properties?.district || "";
         const electors = con?.total_electors ? `${(con.total_electors / 100000).toFixed(1)}L electors` : "";
         const cat = con?.category || "";
 
         let tip = "";
-        if (effectiveMode === "prediction" && pred) {
+        if (effectiveMode === "live" && live) {
+          const statusLabel = live.status === "won" ? "Winner" : "Leading";
+          tip = `<div style="font-weight:700;font-size:13px;margin-bottom:2px;">${acNo}. ${acName}</div>
+             <div style="color:#475569;font-size:11px;">${district} ${cat ? `(${cat})` : ""}</div>
+             <div style="font-weight:600;font-size:11px;margin-top:3px;color:${PARTY_COLORS[live.party] || '#333'}">${statusLabel}: ${live.party}${live.candidate ? ` - ${live.candidate}` : ""}</div>
+             ${live.margin ? `<div style="color:#6B7280;font-size:10px;">Margin: ${live.margin.toLocaleString()}</div>` : ""}`;
+        } else if (effectiveMode === "prediction" && pred) {
           const confPct = Math.round(pred.confidence * 100);
           const probs = pred.party_probabilities || {};
           const probRows = Object.entries(probs)
@@ -270,7 +288,7 @@ export default function MapView({ mapMode = "results" }: { mapMode?: MapMode }) 
     }
 
     return () => { map.off("zoomend", addLabels); };
-  }, [acGeoData, acResults, prevResults, predictionData, constituencies, selectedDistrict, selectedAC, handleAcClick, mapMode, config]);
+  }, [acGeoData, acResults, prevResults, predictionData, liveResults, constituencies, selectedDistrict, selectedAC, handleAcClick, mapMode, config]);
 
   return <div ref={mapContainer} className="w-full h-full rounded-xl" />;
 }

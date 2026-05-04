@@ -58,7 +58,13 @@
       "Bash(python scripts/import_wb_2016.py)",
       "Bash(python scripts/import_wb_2021.py)",
       "Bash(python scripts/import_wb_2026.py)",
-      "Bash(python scripts/predict_wb_2026.py)"
+      "Bash(python scripts/predict_wb_2026.py)",
+      "Bash(python -m scripts.import_wb_2021)",
+      "Bash(grep -E \"\\\\.\\(geojson|json|js\\)$\")",
+      "Bash(python backend/scripts/generate_puducherry_geojson.py)",
+      "Bash(python -m scripts.import_puducherry_2011)",
+      "WebFetch(domain:results.eci.gov.in)",
+      "WebSearch"
     ]
   }
 }

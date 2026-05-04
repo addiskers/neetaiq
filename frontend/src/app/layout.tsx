@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="h-full">
       <head>
+        <meta name="robots" content="all, follow" />
         <meta name="google-site-verification" content="6AIdlgWvny6elAPBIivuCf5qy0vePr9M5_ptaS_4b2I" />
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

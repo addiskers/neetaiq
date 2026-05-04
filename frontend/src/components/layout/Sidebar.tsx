@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, LayoutGrid, Users, Brain, X, ChevronDown } from "lucide-react";
+import { LayoutDashboard, LayoutGrid, Users, Brain, Radio, X, ChevronDown } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
 
 const baseModules = [
@@ -166,6 +166,9 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
         <nav className="space-y-1">
           {[
             ...baseModules,
+            ...(currentElection?.year === 2026
+              ? [{ name: "Live Election", href: "/live-election", icon: Radio }]
+              : []),
             ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026
               ? [{ name: "AI Predictions", href: "/predictions", icon: Brain }]
               : []),
