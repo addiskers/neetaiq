@@ -1,12 +1,12 @@
 """
-Live Election router — scrapes ECI results in real-time.
-URL patterns:
-  partywiseresult-{CODE}.htm   → party tally
-  statewise{CODE}{1..N}.htm    → constituency-level results (paginated)
+Live Election router — scrapes ECI results via Zyte API proxy.
+Set ZYTE_API_KEY env var to enable.
 """
 import asyncio
+import os
 import re
 import time
+from base64 import b64decode
 from datetime import datetime
 from typing import Optional
 
@@ -18,6 +18,7 @@ router = APIRouter(prefix="/api/live-election", tags=["live-election"])
 
 # ── Config ─────────────────────────────────────────────────────────────────
 ECI_BASE = "https://results.eci.gov.in/ResultAcGenMay2026"
+ZYTE_API_KEY = os.getenv("ZYTE_API_KEY", "")
 
 STATE_CONFIG: dict[str, dict] = {
     "S03": {"name": "Assam", "total_ac": 126},
@@ -27,7 +28,6 @@ STATE_CONFIG: dict[str, dict] = {
     "S25": {"name": "West Bengal", "total_ac": 294},
 }
 
-# Reverse lookup: state name → code
 _NAME_TO_CODE = {v["name"]: k for k, v in STATE_CONFIG.items()}
 
 PARTY_COLORS: dict[str, str] = {
@@ -44,17 +44,6 @@ PARTY_COLORS: dict[str, str] = {
 CACHE_TTL = 60
 _cache: dict = {}
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/147.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,*/*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": f"{ECI_BASE}/index.htm",
-}
-
 
 # ── Cache ──────────────────────────────────────────────────────────────────
 def _cache_get(key: str):
@@ -68,11 +57,17 @@ def _cache_set(key: str, data):
     _cache[key] = {"ts": time.time(), "data": data}
 
 
-# ── HTTP ───────────────────────────────────────────────────────────────────
+# ── Fetch via Zyte API ─────────────────────────────────────────────────────
 async def _fetch_html(client: httpx.AsyncClient, url: str) -> BeautifulSoup:
-    resp = await client.get(url, headers=HEADERS)
+    """Fetch a URL through Zyte API (bypasses IP blocks)."""
+    resp = await client.post(
+        "https://api.zyte.com/v1/extract",
+        auth=(ZYTE_API_KEY, ""),
+        json={"url": url, "httpResponseBody": True, "followRedirect": True},
+    )
     resp.raise_for_status()
-    return BeautifulSoup(resp.text, "html.parser")
+    body = b64decode(resp.json()["httpResponseBody"])
+    return BeautifulSoup(body, "html.parser")
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -87,7 +82,6 @@ def _party_color(short: str) -> str:
 
 
 def _short_name(full: str) -> str:
-    """Extract short name from 'Full Party Name - SHORT'."""
     return full.split("-")[-1].strip() if "-" in full else full.strip()
 
 
@@ -104,7 +98,6 @@ def _parse_last_updated(soup: BeautifulSoup) -> Optional[str]:
 
 
 def _discover_total_pages(soup: BeautifulSoup, state_code: str) -> int:
-    """Find the highest statewise page number from pagination links."""
     pattern = re.compile(
         rf"statewise{re.escape(state_code)}(\d+)\.htm", re.IGNORECASE
     )
@@ -118,9 +111,6 @@ def _discover_total_pages(soup: BeautifulSoup, state_code: str) -> int:
 
 # ── Parsers ────────────────────────────────────────────────────────────────
 def _parse_parties(soup: BeautifulSoup) -> list:
-    """Parse party-wise results table.
-    Columns: Party Name | Won | Leading | Total
-    """
     parties = []
     seen: set = set()
     for table in soup.find_all("table"):
@@ -141,24 +131,14 @@ def _parse_parties(soup: BeautifulSoup) -> list:
             seen.add(party_full)
             short = _short_name(party_full)
             parties.append({
-                "party": party_full,
-                "short": short,
-                "won": won,
-                "leading": leading,
-                "total": total,
+                "party": party_full, "short": short,
+                "won": won, "leading": leading, "total": total,
                 "color": _party_color(short),
             })
     return sorted(parties, key=lambda x: x["total"], reverse=True)
 
 
 def _parse_constituencies(soup: BeautifulSoup) -> list:
-    """Parse one statewise page.
-    Columns: AC Name | No | Lead Cand | Lead Party | Trail Cand | Trail Party | Margin | Rounds | Status
-
-    Key filter: cells[1] MUST be a valid integer (AC number).
-    This skips the nested 'Party Wise State Trends' sub-tables
-    and other metadata rows inside each constituency card.
-    """
     items = []
     skip_names = {
         "constituency", "ac name", "ac no", "", "sn", "s.no",
@@ -172,24 +152,12 @@ def _parse_constituencies(soup: BeautifulSoup) -> list:
             cells = [td.get_text(strip=True) for td in row.find_all("td")]
             if len(cells) < 3:
                 continue
-
             name = cells[0].strip()
             if not name or name.lower() in skip_names:
                 continue
-
-            # AC number in cells[1] is REQUIRED — this is the key filter
-            # that separates real constituency rows from nested sub-tables
-            if len(cells) < 2:
-                continue
             const_no = _to_int(cells[1])
-            if const_no is None:
+            if const_no is None or const_no < 1 or const_no > 500:
                 continue
-
-            # Sanity: AC numbers are typically 1-300
-            if const_no < 1 or const_no > 500:
-                continue
-
-            # Deduplicate: only keep first occurrence of each AC
             if const_no in seen_ac:
                 continue
             seen_ac.add(const_no)
@@ -204,16 +172,13 @@ def _parse_constituencies(soup: BeautifulSoup) -> list:
             margin = _to_int(margin_str) if margin_str not in ("-", "") else None
             lp_short = _short_name(leading_party_full)
             items.append({
-                "const_no": const_no,
-                "name": name,
+                "const_no": const_no, "name": name,
                 "leading_candidate": leading_candidate,
                 "leading_party": leading_party_full,
                 "leading_party_short": lp_short,
                 "trailing_candidate": trailing_candidate,
                 "trailing_party": trailing_party,
-                "margin": margin,
-                "rounds": rounds,
-                "status": status,
+                "margin": margin, "rounds": rounds, "status": status,
                 "party_color": _party_color(lp_short),
             })
     return items
@@ -223,9 +188,7 @@ def _parse_constituencies(soup: BeautifulSoup) -> list:
 async def _get_all_data(state_code: str) -> dict:
     code = state_code.upper()
     if code not in STATE_CONFIG:
-        raise ValueError(
-            f"Unsupported state '{code}'. Supported: {', '.join(STATE_CONFIG)}"
-        )
+        raise ValueError(f"Unsupported state '{code}'.")
 
     cached = _cache_get(f"all_{code}")
     if cached:
@@ -235,19 +198,19 @@ async def _get_all_data(state_code: str) -> dict:
     partywise_url = f"{ECI_BASE}/partywiseresult-{code}.htm"
     statewise_p1 = f"{ECI_BASE}/statewise{code}1.htm"
 
-    async with httpx.AsyncClient(timeout=30, follow_redirects=True) as client:
+    async with httpx.AsyncClient(timeout=60) as client:
         party_soup, p1_soup = await asyncio.gather(
             _fetch_html(client, partywise_url),
             _fetch_html(client, statewise_p1),
         )
         total_pages = _discover_total_pages(p1_soup, code)
-        remaining_urls = [
-            f"{ECI_BASE}/statewise{code}{p}.htm"
-            for p in range(2, total_pages + 1)
-        ]
-        rest_soups = await asyncio.gather(
-            *[_fetch_html(client, u) for u in remaining_urls]
-        )
+        if total_pages > 1:
+            rest_soups = await asyncio.gather(*[
+                _fetch_html(client, f"{ECI_BASE}/statewise{code}{p}.htm")
+                for p in range(2, total_pages + 1)
+            ])
+        else:
+            rest_soups = []
 
     parties = _parse_parties(party_soup)
     last_updated = _parse_last_updated(party_soup)
@@ -257,11 +220,9 @@ async def _get_all_data(state_code: str) -> dict:
         constituencies.extend(_parse_constituencies(soup))
 
     result = {
-        "state": cfg["name"],
-        "state_code": code,
+        "state": cfg["name"], "state_code": code,
         "total_ac": cfg["total_ac"],
-        "parties": parties,
-        "constituencies": constituencies,
+        "parties": parties, "constituencies": constituencies,
         "last_updated": last_updated,
         "fetched_at": datetime.utcnow().isoformat() + "Z",
     }
@@ -270,19 +231,15 @@ async def _get_all_data(state_code: str) -> dict:
 
 
 def _resolve_state_code(state: str) -> str:
-    """Accept either state code (S25) or name (West Bengal)."""
     upper = state.upper()
     if upper in STATE_CONFIG:
         return upper
     if state in _NAME_TO_CODE:
         return _NAME_TO_CODE[state]
-    # Try case-insensitive name match
     for name, code in _NAME_TO_CODE.items():
         if name.lower() == state.lower():
             return code
-    raise ValueError(
-        f"Unknown state '{state}'. Available: {list(_NAME_TO_CODE.keys())}"
-    )
+    raise ValueError(f"Unknown state '{state}'.")
 
 
 # ── Routes ─────────────────────────────────────────────────────────────────
@@ -291,7 +248,13 @@ async def get_live_results(
     state: str = Query(default="S25"),
     force_refresh: bool = Query(default=False),
 ):
-    """Full live results: party tally + constituency details."""
+    if not ZYTE_API_KEY:
+        return {
+            "state": state, "total_ac": 0,
+            "parties": [], "constituencies": [],
+            "error": "ZYTE_API_KEY env var not set. Set it to enable ECI scraping.",
+        }
+
     try:
         code = _resolve_state_code(state)
     except ValueError as exc:
@@ -301,25 +264,21 @@ async def get_live_results(
         _cache.pop(f"all_{code}", None)
 
     try:
-        data = await _get_all_data(code)
-        return data
+        return await _get_all_data(code)
     except Exception as exc:
         cfg = STATE_CONFIG.get(code, {})
         return {
-            "state": cfg.get("name", state),
-            "state_code": code,
+            "state": cfg.get("name", state), "state_code": code,
             "total_ac": cfg.get("total_ac", 0),
-            "parties": [],
-            "constituencies": [],
+            "parties": [], "constituencies": [],
             "last_updated": None,
             "fetched_at": datetime.utcnow().isoformat() + "Z",
-            "error": str(exc),
+            "error": f"Scrape failed: {exc}",
         }
 
 
 @router.get("/states")
 async def get_available_states():
-    """All available state codes and names."""
     return [
         {"code": k, "name": v["name"], "total_ac": v["total_ac"]}
         for k, v in STATE_CONFIG.items()
@@ -328,6 +287,5 @@ async def get_available_states():
 
 @router.get("/cache/clear")
 async def clear_cache():
-    """Clear the in-memory cache."""
     _cache.clear()
     return {"cleared": True}
