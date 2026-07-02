@@ -1,8 +1,2 @@
-from app.models.election import Election, District, Constituency, DistrictMapping
-from app.models.party import Party
-from app.models.candidate import Candidate
-
-__all__ = [
-    "Election", "District", "Constituency", "DistrictMapping",
-    "Party", "Candidate",
-]
+# Models are imported lazily per-state via app.models.westbengal and app.models.assam.
+# create_tables.py imports them explicitly for schema creation.

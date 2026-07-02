@@ -1,0 +1,778 @@
+sno,candidate_id,candidate_name,candidate_link,constituency,party,criminal_cases,education,assets,liabilities
+1,49,Davendra Chand,https://www.myneta.info/utt2012/candidate.php?candidate_id=49,KHATIMA,INC,0,Graduate,"Rs 39,92,855 ~ 39 Lacs+","Rs 6,39,790 ~ 6 Lacs+"
+2,226,Narendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=226,DWARAHAT,BJP,2,12th Pass,"Rs 34,09,344 ~ 34 Lacs+","Rs 1,25,000 ~ 1 Lacs+"
+3,105,Rajendra Barakoti,https://www.myneta.info/utt2012/candidate.php?candidate_id=105,SOMESHWAR (SC),INC,0,10th Pass,"Rs 24,77,000 ~ 24 Lacs+","Rs 10,79,000 ~ 10 Lacs+"
+4,623,Aale Nabi,https://www.myneta.info/utt2012/candidate.php?candidate_id=623,KASHIPUR,IND,0,5th Pass,"Rs 16,35,000 ~ 16 Lacs+",Rs 0 ~
+5,616,Abdul Aziz Qureshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=616,KASHIPUR,SP,1,12th Pass,"Rs 27,92,210 ~ 27 Lacs+",Rs 0 ~
+6,656,Abdul Gaffar,https://www.myneta.info/utt2012/candidate.php?candidate_id=656,RAMNAGAR,SP,0,8th Pass,"Rs 7,96,000 ~ 7 Lacs+",Rs 0 ~
+7,537,Abdul Mannan,https://www.myneta.info/utt2012/candidate.php?candidate_id=537,KHANPUR,Mahan Dal,0,10th Pass,"Rs 1,57,86,898 ~ 1 Crore+",Rs 0 ~
+8,696,Abdul Matin Siddiqi,https://www.myneta.info/utt2012/candidate.php?candidate_id=696,HALDWANI,SP,8,8th Pass,"Rs 22,48,196 ~ 22 Lacs+",Rs 0 ~
+9,611,Abdul Sattar,https://www.myneta.info/utt2012/candidate.php?candidate_id=611,LAKSAR,IND,0,Not Given,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=611&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=611&col=lia
+10,315,Achla Khandewal,https://www.myneta.info/utt2012/candidate.php?candidate_id=315,GHANSALI (SC),BSP,0,Graduate,"Rs 24,31,000 ~ 24 Lacs+","Rs 10,02,000 ~ 10 Lacs+"
+11,763,Ad. Govind Lal Verma,https://www.myneta.info/utt2012/candidate.php?candidate_id=763,ALMORA,UPP,0,Graduate Professional,"Rs 36,29,552 ~ 36 Lacs+",Rs 0 ~
+12,306,Adesh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=306,BHEL RANIPUR,BJP,0,12th Pass,"Rs 77,02,745 ~ 77 Lacs+","Rs 95,180 ~ 95 Thou+"
+13,417,Adesh Garg,https://www.myneta.info/utt2012/candidate.php?candidate_id=417,DEHRADUN CANTONMENT,IND,1,12th Pass,"Rs 75,84,113 ~ 75 Lacs+","Rs 4,47,472 ~ 4 Lacs+"
+14,21,Adesh Singh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=21,JASPUR,BJP,0,12th Pass,"Rs 64,62,172 ~ 64 Lacs+",Rs 0 ~
+15,160,Aditya Kothari,https://www.myneta.info/utt2012/candidate.php?candidate_id=160,NARENDRANAGAR,IND,0,Graduate,"Rs 1,53,91,968 ~ 1 Crore+","Rs 76,66,626 ~ 76 Lacs+"
+16,660,Ajay Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=660,RAMNAGAR,IND,0,10th Pass,"Rs 17,00,500 ~ 17 Lacs+",Rs 0 ~
+17,103,Ajay Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=103,RANIKHET,BJP,0,Graduate Professional,"Rs 31,37,910 ~ 31 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+18,453,Ajay Kathuria,https://www.myneta.info/utt2012/candidate.php?candidate_id=453,RISHIKESH,IND,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=453&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=453&col=lia
+19,268,Ajay Sood,https://www.myneta.info/utt2012/candidate.php?candidate_id=268,RAIPUR,BSP,0,Graduate,"Rs 55,54,202 ~ 55 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+20,104,Ajay Tamta,https://www.myneta.info/utt2012/candidate.php?candidate_id=104,SOMESHWAR (SC),BJP,0,12th Pass,"Rs 31,27,175 ~ 31 Lacs+","Rs 7,45,253 ~ 7 Lacs+"
+21,218,Ajijur Rehaman,https://www.myneta.info/utt2012/candidate.php?candidate_id=218,DHARAMPUR,Muslim League Kerala State Committee,0,Literate,"Rs 22,93,000 ~ 22 Lacs+",Rs 0 ~
+22,628,Aladdin,https://www.myneta.info/utt2012/candidate.php?candidate_id=628,HARIDWAR RURAL,MaJP,0,Not Given,"Rs 6,70,000 ~ 6 Lacs+",Rs 0 ~
+23,330,Alok Meherwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=330,BADRINATH,SP,0,8th Pass,"Rs 3,10,450 ~ 3 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+24,760,Amar Ram (captain),https://www.myneta.info/utt2012/candidate.php?candidate_id=760,SOMESHWAR (SC),SaSP,0,10th Pass,"Rs 7,64,570 ~ 7 Lacs+",Rs 0 ~
+25,622,Amarjeet Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=622,KASHIPUR,IND,0,10th Pass,"Rs 83,90,000 ~ 83 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+26,488,Ambris Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=488,BHEL RANIPUR,IND,1,Post Graduate,"Rs 41,81,000 ~ 41 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+27,208,Amit,https://www.myneta.info/utt2012/candidate.php?candidate_id=208,SAHASPUR,AITC,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=208&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=208&col=lia
+28,421,Amit Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=421,MUSSOORIE,UtRM,0,10th Pass,"Rs 25,02,000 ~ 25 Lacs+","Rs 46,00,000 ~ 46 Lacs+"
+29,250,Amrita Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=250,RAMNAGAR,INC,0,Graduate,"Rs 13,57,86,327 ~ 13 Crore+",Rs 0 ~
+30,4,Anand Prakash,https://www.myneta.info/utt2012/candidate.php?candidate_id=4,LANSDOWNE,UKDP,0,10th Pass,"Rs 1,80,26,500 ~ 1 Crore+","Rs 30,50,000 ~ 30 Lacs+"
+31,773,Anand Prakash Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=773,CHAMPAWAT,IND,0,10th Pass,"Rs 21,60,000 ~ 21 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+32,22,Anand Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=22,JASPUR,UKDP,0,12th Pass,"Rs 43,40,000 ~ 43 Lacs+",Rs 0 ~
+33,329,Anand Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=329,BADRINATH,CPI,0,Graduate Professional,"Rs 15,70,000 ~ 15 Lacs+","Rs 20,000 ~ 20 Thou+"
+34,739,Anand Singh Kapkoti,https://www.myneta.info/utt2012/candidate.php?candidate_id=739,KAPKOT,IND,0,Literate,"Rs 5,00,000 ~ 5 Lacs+",Rs 0 ~
+35,271,Anil Kalura,https://www.myneta.info/utt2012/candidate.php?candidate_id=271,RISHIKESH,UKDP,0,10th Pass,"Rs 2,83,000 ~ 2 Lacs+","Rs 1,25,000 ~ 1 Lacs+"
+36,547,Anil Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=547,MANGLOR,Inqalab Vikas Dal,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=547&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=547&col=lia
+37,650,Anil Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=650,YAMKESHWAR,IND,0,12th Pass,"Rs 30,300 ~ 30 Thou+",Rs 0 ~
+38,702,Anil Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=702,HALDWANI,IND,0,8th Pass,"Rs 2,32,623 ~ 2 Lacs+",Rs 0 ~
+39,347,Anil Nautiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=347,KARANPRAYAG,IND,0,10th Pass,"Rs 56,99,500 ~ 56 Lacs+","Rs 1,85,000 ~ 1 Lacs+"
+40,395,Anil Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=395,RAIPUR,IND,0,Post Graduate,"Rs 6,75,000 ~ 6 Lacs+",Rs 0 ~
+41,599,Anita,https://www.myneta.info/utt2012/candidate.php?candidate_id=599,BAZPUR (SC),LJP,0,Post Graduate,"Rs 60,400 ~ 60 Thou+",Rs 0 ~
+42,99,Anoop Ram Kohali,https://www.myneta.info/utt2012/candidate.php?candidate_id=99,SALT,BSP,0,10th Pass,"Rs 32,60,000 ~ 32 Lacs+","Rs 60,000 ~ 60 Thou+"
+43,568,Ansuiya Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=568,NANAKMATA (ST),SP,0,10th Pass,"Rs 46,04,491 ~ 46 Lacs+",Rs 0 ~
+44,548,Anuj,https://www.myneta.info/utt2012/candidate.php?candidate_id=548,MANGLOR,SP,4,Graduate,"Rs 9,15,280 ~ 9 Lacs+",Rs 0 ~
+45,440,Anuj Dimri,https://www.myneta.info/utt2012/candidate.php?candidate_id=440,DOIWWALA,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=440&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=440&col=lia
+46,522,Anuj Verma,https://www.myneta.info/utt2012/candidate.php?candidate_id=522,PIRANKALIYAR,IND,0,5th Pass,"Rs 4,30,000 ~ 4 Lacs+",Rs 0 ~
+47,387,Anuradha,https://www.myneta.info/utt2012/candidate.php?candidate_id=387,RAIPUR,MKD,0,Graduate,"Rs 3,21,000 ~ 3 Lacs+","Rs 15,000 ~ 15 Thou+"
+48,14,Anusuya Prasad Maikhuri,https://www.myneta.info/utt2012/candidate.php?candidate_id=14,KARANPRAYAG,INC,0,Doctorate,"Rs 1,16,90,810 ~ 1 Crore+",Rs 0 ~
+49,576,Anwar Ahmad,https://www.myneta.info/utt2012/candidate.php?candidate_id=576,SITARGANJ,IND,1,5th Pass,"Rs 4,67,52,843 ~ 4 Crore+","Rs 44,98,700 ~ 44 Lacs+"
+50,762,Arjun Bhakuni,https://www.myneta.info/utt2012/candidate.php?candidate_id=762,ALMORA,SP,0,Graduate,"Rs 8,95,000 ~ 8 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+51,627,Arjun Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=627,HARIDWAR RURAL,LJP,0,Graduate,"Rs 66,000 ~ 66 Thou+",Rs 0 ~
+52,486,Arjun Nagyan,https://www.myneta.info/utt2012/candidate.php?candidate_id=486,BHEL RANIPUR,IND,0,Graduate Professional,"Rs 54,14,383 ~ 54 Lacs+","Rs 1,70,000 ~ 1 Lacs+"
+53,140,Arjun Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=140,RUDRAPRAYAG,UtRM,0,8th Pass,"Rs 19,73,878 ~ 19 Lacs+","Rs 2,02,791 ~ 2 Lacs+"
+54,182,Arjuni Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=182,CHAKRATA (ST) ,UtRM,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=182&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=182&col=lia
+55,582,Artaim Kathaayat,https://www.myneta.info/utt2012/candidate.php?candidate_id=582,KICHHA,IND,0,Post Graduate,"Rs 1,17,589 ~ 1 Lacs+",Rs 0 ~
+56,447,Arti,https://www.myneta.info/utt2012/candidate.php?candidate_id=447,RISHIKESH,JD(U),0,Post Graduate,"Rs 1,02,000 ~ 1 Lacs+",Rs 0 ~
+57,489,Arun Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=489,BHEL RANIPUR,IND,0,12th Pass,"Rs 50,51,000 ~ 50 Lacs+",Rs 0 ~
+58,348,Arun Maithani,https://www.myneta.info/utt2012/candidate.php?candidate_id=348,KARANPRAYAG,IND,0,Post Graduate,"Rs 12,16,280 ~ 12 Lacs+",Rs 0 ~
+59,2,Arvind,https://www.myneta.info/utt2012/candidate.php?candidate_id=2,SHRINAGAR,UKDP,0,Graduate,"Rs 5,65,000 ~ 5 Lacs+",Rs 0 ~
+60,31,Arvind Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=31,GADARPUR,BJP,3,Graduate,"Rs 24,61,226 ~ 24 Lacs+",Rs 0 ~
+61,190,Arvind Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=190,VIKASNAGAR ,SP,0,Graduate,"Rs 15,40,000 ~ 15 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+62,204,Aryendra Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=204,SAHASPUR,INC,0,Graduate,"Rs 1,98,97,719 ~ 1 Crore+","Rs 29,72,750 ~ 29 Lacs+"
+63,124,Asha,https://www.myneta.info/utt2012/candidate.php?candidate_id=124,KEDARNATH,BJP,0,Not Given,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=124&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=124&col=lia
+64,174,Asha,https://www.myneta.info/utt2012/candidate.php?candidate_id=174,TEHRI,IND,0,12th Pass,"Rs 11,25,000 ~ 11 Lacs+",Rs 0 ~
+65,454,Ashish,https://www.myneta.info/utt2012/candidate.php?candidate_id=454,RISHIKESH,IND,0,12th Pass,"Rs 5,54,000 ~ 5 Lacs+","Rs 4,20,000 ~ 4 Lacs+"
+66,468,Ashok Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=468,HARIDWAR,IND,0,Graduate,"Rs 1,71,32,972 ~ 1 Crore+","Rs 60,92,053 ~ 60 Lacs+"
+67,651,Ashok Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=651,YAMKESHWAR,IND,0,8th Pass,"Rs 1,77,900 ~ 1 Lacs+",Rs 0 ~
+68,603,Asrar,https://www.myneta.info/utt2012/candidate.php?candidate_id=603,LAKSAR,Muslim League Kerala State Committee,0,Not Given,"Rs 1,42,60,000 ~ 1 Crore+",Rs 0 ~
+69,487,Ataur Rahman,https://www.myneta.info/utt2012/candidate.php?candidate_id=487,BHEL RANIPUR,IND,0,Post Graduate,"Rs 53,79,066 ~ 53 Lacs+","Rs 3,29,000 ~ 3 Lacs+"
+70,349,Awatar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=349,KARANPRAYAG,IND,0,12th Pass,"Rs 8,92,000 ~ 8 Lacs+",Rs 0 ~
+71,502,Babu Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=502,JWALAPUR (SC),IND,0,Literate,"Rs 1,00,000 ~ 1 Lacs+",Rs 0 ~
+72,365,Babulal Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=365,SAHASPUR,RLD,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=365&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=365&col=lia
+73,571,Bachan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=571,SITARGANJ,LJP,0,8th Pass,"Rs 10,50,000 ~ 10 Lacs+",Rs 0 ~
+74,735,Bachi Ram Koli,https://www.myneta.info/utt2012/candidate.php?candidate_id=735,GANGOLIHAT (SC),UtRM,0,Post Graduate,"Rs 85,75,800 ~ 85 Lacs+","Rs 20,37,036 ~ 20 Lacs+"
+75,107,Bachi Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=107,JAGESHWAR,BJP,0,Graduate,"Rs 91,71,000 ~ 91 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+76,90,Bahadur Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=90,BAGESHWWAR,BSP,0,Graduate Professional,"Rs 34,31,000 ~ 34 Lacs+",Rs 0 ~
+77,219,Bahadur Singh Rwat,https://www.myneta.info/utt2012/candidate.php?candidate_id=219,DHARAMPUR,UKDP,0,Graduate,"Rs 36,85,921 ~ 36 Lacs+","Rs 6,94,585 ~ 6 Lacs+"
+78,768,Bala Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=768,ALMORA,IND,0,8th Pass,"Rs 5,22,000 ~ 5 Lacs+",Rs 0 ~
+79,341,Balak Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=341,THARALI (SC),IND,0,5th Pass,"Rs 5,64,000 ~ 5 Lacs+","Rs 3,000 ~ 3 Thou+"
+80,408,Balesh Bawania,https://www.myneta.info/utt2012/candidate.php?candidate_id=408,RAJPUR ROAD (SC),IND,1,Post Graduate,"Rs 12,63,000 ~ 12 Lacs+","Rs 5,90,000 ~ 5 Lacs+"
+81,338,Bali Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=338,THARALI (SC),JD(U),0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=338&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=338&col=lia
+82,305,Balvant Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=305,BHEL RANIPUR,INC,0,10th Pass,"Rs 1,90,10,000 ~ 1 Crore+","Rs 7,83,428 ~ 7 Lacs+"
+83,531,Balvir Siingh,https://www.myneta.info/utt2012/candidate.php?candidate_id=531,ROORKEE,IND,0,Post Graduate,"Rs 1,35,47,000 ~ 1 Crore+",Rs 0 ~
+84,86,Balwant Singh Bhoryal,https://www.myneta.info/utt2012/candidate.php?candidate_id=86,KAPKOT,BJP,0,10th Pass,"Rs 2,41,37,028 ~ 2 Crore+","Rs 52,67,102 ~ 52 Lacs+"
+85,248,Banshidhar Bhagat,https://www.myneta.info/utt2012/candidate.php?candidate_id=248,KALADHUNGI,BJP,0,8th Pass,"Rs 73,02,728 ~ 73 Lacs+",Rs 0 ~
+86,229,Basant Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=229,LALKUWAN,UKDP,0,Post Graduate,"Rs 9,84,822 ~ 9 Lacs+",Rs 0 ~
+87,472,Beer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=472,HARIDWAR,IND,0,12th Pass,"Rs 13,81,500 ~ 13 Lacs+",Rs 0 ~
+88,569,Beer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=569,NANAKMATA (ST),IND,0,10th Pass,"Rs 79,45,500 ~ 79 Lacs+",Rs 0 ~
+89,410,Beer Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=410,DEHRADUN CANTONMENT,NCP,0,8th Pass,"Rs 90,000 ~ 90 Thou+",Rs 0 ~
+90,354,Bhagwan Das,https://www.myneta.info/utt2012/candidate.php?candidate_id=354,GHANSALI (SC),ABHM,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=354&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=354&col=lia
+91,68,Bhagwan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=68,PAURI (SC),BSP,0,12th Pass,"Rs 42,57,481 ~ 42 Lacs+","Rs 9,69,290 ~ 9 Lacs+"
+92,429,Bhagwan Singh Panwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=429,MUSSOORIE,IND,0,Graduate,"Rs 4,22,000 ~ 4 Lacs+",Rs 0 ~
+93,170,Bhagwan Singh Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=170,TEHRI,CPM,0,12th Pass,"Rs 24,51,193 ~ 24 Lacs+","Rs 2,57,168 ~ 2 Lacs+"
+94,133,Bhagwati Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=133,RUDRAPRAYAG,IND,0,12th Pass,"Rs 4,75,000 ~ 4 Lacs+",Rs 0 ~
+95,59,Bhagwati Prasad Bahuguna,https://www.myneta.info/utt2012/candidate.php?candidate_id=59,GANGOTRI,UKDP,0,Post Graduate,"Rs 93,000 ~ 93 Thou+","Rs 1,000 ~ 1 Thou+"
+96,682,Bharat Bhushan,https://www.myneta.info/utt2012/candidate.php?candidate_id=682,CHAUBATAKHAL,IND,0,8th Pass,"Rs 4,36,000 ~ 4 Lacs+","Rs 40,000 ~ 40 Thou+"
+97,532,Bharat Bhushan Kalra,https://www.myneta.info/utt2012/candidate.php?candidate_id=532,ROORKEE,IND,0,8th Pass,"Rs 23,60,000 ~ 23 Lacs+",Rs 0 ~
+98,134,Bharat Singh Chaudhary,https://www.myneta.info/utt2012/candidate.php?candidate_id=134,RUDRAPRAYAG,IND,0,Graduate,"Rs 1,14,88,200 ~ 1 Crore+","Rs 1,69,42,631 ~ 1 Crore+"
+99,436,Bhargav Chandola,https://www.myneta.info/utt2012/candidate.php?candidate_id=436,DOIWWALA,UtRM,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=436&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=436&col=lia
+100,185,Bheem Dutt,https://www.myneta.info/utt2012/candidate.php?candidate_id=185,CHAKRATA (ST) ,IND,0,12th Pass,"Rs 61,500 ~ 61 Thou+","Rs 14,000 ~ 14 Thou+"
+101,313,Bheem Lal Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=313,GHANSALI (SC),BJP,0,12th Pass,"Rs 4,16,000 ~ 4 Lacs+",Rs 0 ~
+102,47,Bheem Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=47,NANAKMATA (ST),BSP,0,8th Pass,"Rs 1,58,66,200 ~ 1 Crore+","Rs 13,00,000 ~ 13 Lacs+"
+103,368,Bhoop Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=368,SAHASPUR,IND,0,Others,"Rs 78,60,100 ~ 78 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+104,674,"Bhoopendra Singh \""bhai Ji\""",https://www.myneta.info/utt2012/candidate.php?candidate_id=674,KALADHUNGI,IND,0,12th Pass,"Rs 32,84,370 ~ 32 Lacs+","Rs 4,21,266 ~ 4 Lacs+"
+105,584,Bhupal Singh Dangwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=584,RUDRAPUR,UKDP,0,12th Pass,"Rs 80,000 ~ 80 Thou+",Rs 0 ~
+106,755,Bhupendar,https://www.myneta.info/utt2012/candidate.php?candidate_id=755,SALT,RLD,0,Post Graduate,"Rs 15,000 ~ 15 Thou+",Rs 0 ~
+107,389,Bhupendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=389,RAIPUR,SHS,0,12th Pass,"Rs 4,01,000 ~ 4 Lacs+","Rs 60,000 ~ 60 Thou+"
+108,422,Bhupendra Singh Chhetri,https://www.myneta.info/utt2012/candidate.php?candidate_id=422,MUSSOORIE,GDP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=422&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=422&col=lia
+109,243,Bhuwan Chandra Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=243,HALDWANI,UKDP,0,Graduate Professional,"Rs 14,33,856 ~ 14 Lacs+","Rs 1,16,930 ~ 1 Lacs+"
+110,699,Bhuwan Chandra Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=699,HALDWANI,LJP,0,8th Pass,"Rs 49,02,000 ~ 49 Lacs+",Rs 0 ~
+111,756,Bhuwan Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=756,SALT,IND,0,Post Graduate,"Rs 8,70,000 ~ 8 Lacs+",Rs 0 ~
+112,411,Bijendar Singh Thapa,https://www.myneta.info/utt2012/candidate.php?candidate_id=411,DEHRADUN CANTONMENT,AITC,0,10th Pass,"Rs 1,50,000 ~ 1 Lacs+",Rs 0 ~
+113,677,Bikram Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=677,SHRINAGAR,NCP,0,12th Pass,"Rs 6,75,000 ~ 6 Lacs+",Rs 0 ~
+114,149,Bilashwar Jhaldiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=149,DEOPRAYAG,RLD,0,12th Pass,"Rs 9,62,500 ~ 9 Lacs+","Rs 35,000 ~ 35 Thou+"
+115,508,Bimla,https://www.myneta.info/utt2012/candidate.php?candidate_id=508,JHABRERA (SC),RLNP,0,10th Pass,"Rs 5,40,000 ~ 5 Lacs+",Rs 0 ~
+116,504,Bishamber Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=504,BHAGWANPUR (SC),SP,0,Post Graduate,"Rs 1,09,40,000 ~ 1 Crore+",Rs 0 ~
+117,121,Bishan Singh Chuphal,https://www.myneta.info/utt2012/candidate.php?candidate_id=121,DIDIHAT,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=121&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=121&col=lia
+118,519,Brahmanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=519,PIRANKALIYAR,LJP,0,10th Pass,"Rs 21,75,000 ~ 21 Lacs+",Rs 0 ~
+119,552,Braj Bhushan,https://www.myneta.info/utt2012/candidate.php?candidate_id=552,MANGLOR,IND,0,Literate,"Rs 36,37,066 ~ 36 Lacs+","Rs 1,22,048 ~ 1 Lacs+"
+120,3,Brig. (retd) Surender Singh Patwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=3,CHAUBATAKHAL,UtRM,0,Post Graduate,"Rs 1,58,95,082 ~ 1 Crore+","Rs 21,00,000 ~ 21 Lacs+"
+121,405,Brij Mohan,https://www.myneta.info/utt2012/candidate.php?candidate_id=405,RAJPUR ROAD (SC),LJP,0,12th Pass,Nil,Rs 0 ~
+122,302,Brijrani,https://www.myneta.info/utt2012/candidate.php?candidate_id=302,JWALAPUR (SC),INC,0,Graduate,"Rs 1,00,89,653 ~ 1 Crore+","Rs 33,00,000 ~ 33 Lacs+"
+123,509,Budh Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=509,JHABRERA (SC),RLD,0,8th Pass,"Rs 5,25,985 ~ 5 Lacs+","Rs 8,98,408 ~ 8 Lacs+"
+124,285,Ch. Kulveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=285,KHANPUR,BSP,1,Graduate Professional,"Rs 4,49,05,981 ~ 4 Crore+","Rs 22,00,773 ~ 22 Lacs+"
+125,360,Chait Ram Urf Chaitu,https://www.myneta.info/utt2012/candidate.php?candidate_id=360,DHANOLTI,IND,0,Literate,"Rs 6,23,424 ~ 6 Lacs+",Rs 0 ~
+126,85,Chandan Ram Das,https://www.myneta.info/utt2012/candidate.php?candidate_id=85,BAGESHWWAR,BJP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=85&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=85&col=lia
+127,196,Chander Mohan Singh Patwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=196,VIKASNAGAR ,IND,0,8th Pass,"Rs 4,01,000 ~ 4 Lacs+",Rs 0 ~
+128,652,Chandra Prakash,https://www.myneta.info/utt2012/candidate.php?candidate_id=652,YAMKESHWAR,IND,0,Graduate,"Rs 44,70,000 ~ 44 Lacs+",Rs 0 ~
+129,301,Chandra Shekhar,https://www.myneta.info/utt2012/candidate.php?candidate_id=301,JWALAPUR (SC),BJP,0,8th Pass,"Rs 1,82,09,929 ~ 1 Crore+","Rs 5,66,785 ~ 5 Lacs+"
+130,645,Chandrapal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=645,JASPUR,IND,0,Literate,"Rs 57,85,650 ~ 57 Lacs+","Rs 50,000 ~ 50 Thou+"
+131,517,Charan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=517,PIRANKALIYAR,RLD,0,8th Pass,"Rs 19,85,000 ~ 19 Lacs+",Rs 0 ~
+132,15,Chatur Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=15,KARANPRAYAG,UKDP,1,12th Pass,"Rs 92,17,440 ~ 92 Lacs+",Rs 0 ~
+133,560,Chaudhary Sudeshpal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=560,KHATIMA,MKD,1,Post Graduate,"Rs 1,03,28,888 ~ 1 Crore+","Rs 22,46,876 ~ 22 Lacs+"
+134,561,Chetram,https://www.myneta.info/utt2012/candidate.php?candidate_id=561,KHATIMA,IND,0,8th Pass,"Rs 41,20,000 ~ 41 Lacs+","Rs 5,70,000 ~ 5 Lacs+"
+135,317,Chintamani,https://www.myneta.info/utt2012/candidate.php?candidate_id=317,DHANOLTI,UKDP,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=317&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=317&col=lia
+136,655,Col. Harpal Singh Bist (ret),https://www.myneta.info/utt2012/candidate.php?candidate_id=655,YAMKESHWAR,IND,0,12th Pass,"Rs 7,66,84,581 ~ 7 Crore+","Rs 8,58,000 ~ 8 Lacs+"
+137,76,Daleep Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=76,LANSDOWNE,BJP,0,Graduate,"Rs 98,09,010 ~ 98 Lacs+","Rs 16,00,000 ~ 16 Lacs+"
+138,233,Dan Singh Bhandari,https://www.myneta.info/utt2012/candidate.php?candidate_id=233,BHIMTAL,BJP,0,12th Pass,"Rs 26,47,162 ~ 26 Lacs+","Rs 21,55,058 ~ 21 Lacs+"
+139,562,Daya Krishna Joshi Urf Dayalu Guru,https://www.myneta.info/utt2012/candidate.php?candidate_id=562,KHATIMA,IND,0,12th Pass,"Rs 28,99,436 ~ 28 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+140,745,Deep Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=745,BAGESHWWAR,IND,0,Graduate Professional,"Rs 2,07,000 ~ 2 Lacs+","Rs 30,000 ~ 30 Thou+"
+141,744,Deep Chandra Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=744,BAGESHWWAR,IND,0,Graduate,"Rs 1,90,000 ~ 1 Lacs+",Rs 0 ~
+142,457,Deep Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=457,RISHIKESH,IND,11,Post Graduate,"Rs 12,36,804 ~ 12 Lacs+","Rs 2,29,340 ~ 2 Lacs+"
+143,687,Deepak Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=687,LANSDOWNE,IND,0,12th Pass,"Rs 1,09,000 ~ 1 Lacs+",Rs 0 ~
+144,518,Devanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=518,PIRANKALIYAR,UtRM,1,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=518&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=518&col=lia
+145,706,Devanand Alias Deva,https://www.myneta.info/utt2012/candidate.php?candidate_id=706,NAINITAL (SC),SP,0,Graduate,"Rs 7,14,200 ~ 7 Lacs+",Rs 0 ~
+146,362,Devendra Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=362,DHANOLTI,IND,0,12th Pass,"Rs 12,34,000 ~ 12 Lacs+",Rs 0 ~
+147,678,Devendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=678,SHRINAGAR,IND,0,Post Graduate,"Rs 24,40,000 ~ 24 Lacs+","Rs 40,000 ~ 40 Thou+"
+148,261,Devendra Singh Sethi,https://www.myneta.info/utt2012/candidate.php?candidate_id=261,DEHRADUN CANTONMENT,INC,2,8th Pass,"Rs 62,48,915 ~ 62 Lacs+","Rs 9,66,863 ~ 9 Lacs+"
+149,748,Devi Dutt Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=748,DWARAHAT,IND,0,10th Pass,"Rs 17,56,199 ~ 17 Lacs+",Rs 0 ~
+150,164,Devi Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=164,PRATAPNAGAR,BSP,0,8th Pass,"Rs 7,31,000 ~ 7 Lacs+",Rs 0 ~
+151,230,Devki Nandan Suyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=230,LALKUWAN,BSP,0,Graduate Professional,"Rs 89,38,261 ~ 89 Lacs+","Rs 36,18,668 ~ 36 Lacs+"
+152,70,Dhan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=70,SHRINAGAR,BJP,0,Doctorate,"Rs 42,23,455 ~ 42 Lacs+","Rs 83,991 ~ 83 Thou+"
+153,171,Dhan Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=171,TEHRI,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=171&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=171&col=lia
+154,312,Dhani Lal Shah,https://www.myneta.info/utt2012/candidate.php?candidate_id=312,GHANSALI (SC),INC,0,Post Graduate,"Rs 1,65,339 ~ 1 Lacs+","Rs 2,39,530 ~ 2 Lacs+"
+155,626,Dharampal Sahgal,https://www.myneta.info/utt2012/candidate.php?candidate_id=626,HARIDWAR RURAL,NCP,0,Literate,"Rs 23,00,000 ~ 23 Lacs+",Rs 0 ~
+156,137,Dheer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=137,RUDRAPRAYAG,BSP,0,Graduate,"Rs 17,39,000 ~ 17 Lacs+",Rs 0 ~
+157,469,Dhiraj Bhardwaj,https://www.myneta.info/utt2012/candidate.php?candidate_id=469,HARIDWAR,IND,4,5th Pass,"Rs 10,83,700 ~ 10 Lacs+",Rs 0 ~
+158,16,Dhoomi Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=16,KARANPRAYAG,BSP,0,Graduate,"Rs 12,24,500 ~ 12 Lacs+",Rs 0 ~
+159,214,Dinesh Agarwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=214,DHARAMPUR,INC,1,Graduate Professional,"Rs 1,96,61,256 ~ 1 Crore+","Rs 24,90,000 ~ 24 Lacs+"
+160,731,Dinesh Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=731,GANGOLIHAT (SC),UKDP,0,Graduate,Nil,Rs 0 ~
+161,434,Dinesh Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=434,DOIWWALA,MOSP,0,10th Pass,"Rs 33,15,280 ~ 33 Lacs+",Rs 0 ~
+162,131,Dinesh Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=131,KEDARNATH,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=131&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=131&col=lia
+163,752,Dinesh Chandra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=752,SALT,UtRM,0,8th Pass,"Rs 89,650 ~ 89 Thou+",Rs 0 ~
+164,177,Dinesh Dhanai,https://www.myneta.info/utt2012/candidate.php?candidate_id=177,TEHRI,IND,0,Graduate,"Rs 41,63,255 ~ 41 Lacs+","Rs 2,61,456 ~ 2 Lacs+"
+165,323,Dinesh Nautiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=323,GANGOTRI,CPI,0,Post Graduate,"Rs 35,34,539 ~ 35 Lacs+",Rs 0 ~
+166,709,Dinesh Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=709,DHARCHULA,UPP,0,Graduate,"Rs 40,000 ~ 40 Thou+","Rs 2,85,000 ~ 2 Lacs+"
+167,145,Diwakar Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=145,DEOPRAYAG,BJP,0,10th Pass,"Rs 77,88,537 ~ 77 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+168,716,Diwan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=716,DIDIHAT,NCP,0,12th Pass,"Rs 3,41,600 ~ 3 Lacs+","Rs 25,000 ~ 25 Thou+"
+169,249,Diwan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=249,RAMNAGAR,BJP,0,Post Graduate,"Rs 64,63,557 ~ 64 Lacs+","Rs 2,45,000 ~ 2 Lacs+"
+170,245,Diwan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=245,KALADHUNGI,BSP,0,Post Graduate,"Rs 1,56,64,482 ~ 1 Crore+","Rs 6,72,202 ~ 6 Lacs+"
+171,685,Dr Harender Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=685,CHAUBATAKHAL,IND,0,Doctorate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=685&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=685&col=lia
+172,698,Dr. Narayan Singh Pangtey,https://www.myneta.info/utt2012/candidate.php?candidate_id=698,HALDWANI,UtRM,0,Graduate Professional,"Rs 97,93,628 ~ 97 Lacs+",Rs 0 ~
+173,168,Dr. Pramod Uniyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=168,TEHRI,BSP,0,Post Graduate,"Rs 3,08,256 ~ 3 Lacs+",Rs 0 ~
+174,24,Dr. Shailendra Mohan Singhal,https://www.myneta.info/utt2012/candidate.php?candidate_id=24,JASPUR,INC,0,Graduate Professional,"Rs 3,19,53,804 ~ 3 Crore+","Rs 28,68,354 ~ 28 Lacs+"
+175,727,Dr. Suresh Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=727,BHIMTAL,IND,1,Post Graduate,"Rs 3,84,09,346 ~ 3 Crore+",Rs 0 ~
+176,594,Dulal Mandal,https://www.myneta.info/utt2012/candidate.php?candidate_id=594,GADARPUR,AITC,1,Literate,"Rs 1,30,500 ~ 1 Lacs+",Rs 0 ~
+177,128,Durgpal,https://www.myneta.info/utt2012/candidate.php?candidate_id=128,KEDARNATH,UtRM,0,Graduate Professional,"Rs 1,64,65,074 ~ 1 Crore+","Rs 25,00,000 ~ 25 Lacs+"
+178,172,Er. Ratan Singh Gunsola,https://www.myneta.info/utt2012/candidate.php?candidate_id=172,TEHRI,UtRM,0,Graduate Professional,"Rs 3,17,67,897 ~ 3 Crore+",Rs 0 ~
+179,490,Ex. Capt. Alok Kumar Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=490,BHEL RANIPUR,IND,0,Post Graduate,"Rs 3,05,83,339 ~ 3 Crore+","Rs 1,96,62,945 ~ 1 Crore+"
+180,646,Faryad Ahmed,https://www.myneta.info/utt2012/candidate.php?candidate_id=646,JASPUR,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=646&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=646&col=lia
+181,671,Fidhaurrehman,https://www.myneta.info/utt2012/candidate.php?candidate_id=671,KALADHUNGI,AITC,0,5th Pass,"Rs 1,00,000 ~ 1 Lacs+",Rs 0 ~
+182,293,Furkan Ahmed,https://www.myneta.info/utt2012/candidate.php?candidate_id=293,PIRANKALIYAR,INC,0,10th Pass,"Rs 1,60,90,637 ~ 1 Crore+","Rs 30,68,129 ~ 30 Lacs+"
+183,51,G.c. Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=51,KHATIMA,BSP,0,Post Graduate,"Rs 3,36,88,076 ~ 3 Crore+","Rs 31,19,000 ~ 31 Lacs+"
+184,711,Gagan Singh Rajwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=711,DHARCHULA,IND,1,Literate,"Rs 31,11,000 ~ 31 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+185,463,Gajinder Singh Sidhu,https://www.myneta.info/utt2012/candidate.php?candidate_id=463,HARIDWAR,RKSP,0,8th Pass,"Rs 1,72,000 ~ 1 Lacs+",Rs 0 ~
+186,724,Ganesh Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=724,BHIMTAL,IND,0,Graduate Professional,"Rs 30,50,600 ~ 30 Lacs+","Rs 1,64,308 ~ 1 Lacs+"
+187,257,Ganesh Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=257,MUSSOORIE,BJP,1,10th Pass,"Rs 1,47,01,413 ~ 1 Crore+","Rs 30,93,986 ~ 30 Lacs+"
+188,667,Ganesh Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=667,PAURI (SC),IND,0,8th Pass,"Rs 93,500 ~ 93 Thou+",Rs 0 ~
+189,72,Ganesh Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=72,SHRINAGAR,INC,1,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=72&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=72&col=lia
+190,126,Gangadhar Nautiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=126,KEDARNATH,CPM,1,Graduate Professional,"Rs 56,26,990 ~ 56 Lacs+","Rs 1,90,000 ~ 1 Lacs+"
+191,549,Gaurav Chaudhary,https://www.myneta.info/utt2012/candidate.php?candidate_id=549,MANGLOR,RLD,0,Graduate,"Rs 4,95,80,010 ~ 4 Crore+","Rs 73,93,000 ~ 73 Lacs+"
+192,600,Gavindra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=600,BAZPUR (SC),SP,2,8th Pass,"Rs 2,15,000 ~ 2 Lacs+","Rs 11,671 ~ 11 Thou+"
+193,730,Geeta Thakur Gowal,https://www.myneta.info/utt2012/candidate.php?candidate_id=730,GANGOLIHAT (SC),BJP,0,Post Graduate,"Rs 18,50,000 ~ 18 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+194,629,Ghalib,https://www.myneta.info/utt2012/candidate.php?candidate_id=629,HARIDWAR RURAL,Muslim League Kerala State Committee,0,8th Pass,"Rs 10,11,000 ~ 10 Lacs+",Rs 0 ~
+195,67,Ghananand,https://www.myneta.info/utt2012/candidate.php?candidate_id=67,PAURI (SC),BJP,0,10th Pass,"Rs 4,36,091 ~ 4 Lacs+","Rs 33,963 ~ 33 Thou+"
+196,179,Ghansyam Kunwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=179,CHAKRATA (ST) ,BSP,0,Literate,"Rs 2,48,800 ~ 2 Lacs+",Rs 0 ~
+197,691,Gita Ram Sundriyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=691,KOTDWAR,UtRM,0,12th Pass,"Rs 32,80,000 ~ 32 Lacs+",Rs 0 ~
+198,427,Godavari Thapa Thapli,https://www.myneta.info/utt2012/candidate.php?candidate_id=427,MUSSOORIE,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=427&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=427&col=lia
+199,220,Gopal Puri,https://www.myneta.info/utt2012/candidate.php?candidate_id=220,DHARAMPUR,UtRM,0,8th Pass,"Rs 1,89,042 ~ 1 Lacs+",Rs 0 ~
+200,456,Gopal Purohit,https://www.myneta.info/utt2012/candidate.php?candidate_id=456,RISHIKESH,IND,0,Graduate,"Rs 1,04,53,000 ~ 1 Crore+","Rs 4,85,000 ~ 4 Lacs+"
+201,192,Gopal Singh Dogra,https://www.myneta.info/utt2012/candidate.php?candidate_id=192,VIKASNAGAR ,SaSP,0,10th Pass,"Rs 47,30,260 ~ 47 Lacs+","Rs 6,48,000 ~ 6 Lacs+"
+202,46,Gopal Singh Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=46,NANAKMATA (ST),INC,0,Graduate Professional,"Rs 57,06,000 ~ 57 Lacs+","Rs 20,00,000 ~ 20 Lacs+"
+203,57,Gopal Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=57,GANGOTRI,BJP,0,Post Graduate,"Rs 75,66,971 ~ 75 Lacs+","Rs 5,30,000 ~ 5 Lacs+"
+204,340,Govind Lal Shah,https://www.myneta.info/utt2012/candidate.php?candidate_id=340,THARALI (SC),IND,0,Graduate,"Rs 22,80,000 ~ 22 Lacs+",Rs 0 ~
+205,111,Govind Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=111,LOHAGHAT,BSP,0,Graduate,"Rs 7,75,000 ~ 7 Lacs+","Rs 3,50,500 ~ 3 Lacs+"
+206,712,Govind Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=712,DHARCHULA,IND,0,Post Graduate,"Rs 1,300 ~ 1 Thou+",Rs 0 ~
+207,740,Govind Singh Bhandari,https://www.myneta.info/utt2012/candidate.php?candidate_id=740,KAPKOT,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=740&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=740&col=lia
+208,108,Govind Singh Kunjwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=108,JAGESHWAR,INC,0,12th Pass,"Rs 1,07,82,500 ~ 1 Crore+","Rs 13,15,000 ~ 13 Lacs+"
+209,359,Gulab Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=359,DHANOLTI,IND,0,Post Graduate,"Rs 46,73,000 ~ 46 Lacs+","Rs 23,00,000 ~ 23 Lacs+"
+210,604,Gulam Rasool,https://www.myneta.info/utt2012/candidate.php?candidate_id=604,LAKSAR,AITC,0,8th Pass,"Rs 17,68,000 ~ 17 Lacs+","Rs 4,20,000 ~ 4 Lacs+"
+211,210,Gulfam Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=210,SAHASPUR,SP,0,Others,"Rs 1,05,53,000 ~ 1 Crore+","Rs 23,50,924 ~ 23 Lacs+"
+212,729,Guljar Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=729,PITHORAGARH,IND,0,8th Pass,Nil,Rs 0 ~
+213,275,Gulshan Arora,https://www.myneta.info/utt2012/candidate.php?candidate_id=275,HARIDWAR,BSP,0,Graduate,"Rs 32,27,607 ~ 32 Lacs+",Rs 0 ~
+214,367,Gulzar Ahmad,https://www.myneta.info/utt2012/candidate.php?candidate_id=367,SAHASPUR,IND,0,10th Pass,"Rs 3,15,63,018 ~ 3 Crore+","Rs 87,24,692 ~ 87 Lacs+"
+215,188,Gurumel Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=188,VIKASNAGAR ,BSP,0,Graduate Professional,"Rs 16,24,000 ~ 16 Lacs+",Rs 0 ~
+216,425,Gyanveer Tyagi,https://www.myneta.info/utt2012/candidate.php?candidate_id=425,MUSSOORIE,UPP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=425&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=425&col=lia
+217,634,Ha. Rao Mo. Asgar,https://www.myneta.info/utt2012/candidate.php?candidate_id=634,HARIDWAR RURAL,IND,0,Not Given,"Rs 50,00,000 ~ 50 Lacs+",Rs 0 ~
+218,278,Haji Taslim Ahmad,https://www.myneta.info/utt2012/candidate.php?candidate_id=278,LAKSAR,BSP,5,10th Pass,"Rs 1,11,80,256 ~ 1 Crore+","Rs 8,97,000 ~ 8 Lacs+"
+219,738,Har Govind Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=738,KAPKOT,Hindusthan Nirman Dal,0,Graduate,Nil,Rs 0 ~
+220,142,Harak Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=142,RUDRAPRAYAG,INC,1,Doctorate,"Rs 1,97,10,408 ~ 1 Crore+","Rs 18,50,997 ~ 18 Lacs+"
+221,264,Harbans Kapoor,https://www.myneta.info/utt2012/candidate.php?candidate_id=264,DEHRADUN CANTONMENT,BJP,0,Graduate Professional,"Rs 84,50,984 ~ 84 Lacs+","Rs 1,35,000 ~ 1 Lacs+"
+222,575,Harcharan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=575,SITARGANJ,IJP,0,Illiterate,"Rs 4,00,000 ~ 4 Lacs+","Rs 25,000 ~ 25 Thou+"
+223,231,Harendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=231,LALKUWAN,INC,0,Graduate,"Rs 1,91,99,466 ~ 1 Crore+","Rs 54,38,777 ~ 54 Lacs+"
+224,297,Hari Dass,https://www.myneta.info/utt2012/candidate.php?candidate_id=297,JHABRERA (SC),BSP,0,10th Pass,"Rs 1,29,21,408 ~ 1 Crore+","Rs 18,42,341 ~ 18 Lacs+"
+225,84,Hari Ram Shastri,https://www.myneta.info/utt2012/candidate.php?candidate_id=84,BAGESHWWAR,SP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=84&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=84&col=lia
+226,328,Hari Shankar,https://www.myneta.info/utt2012/candidate.php?candidate_id=328,GANGOTRI,IND,0,Post Graduate,"Rs 15,34,158 ~ 15 Lacs+",Rs 0 ~
+227,567,Hari Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=567,NANAKMATA (ST),CPM,0,5th Pass,"Rs 17,62,000 ~ 17 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+228,203,Haridass Kataria,https://www.myneta.info/utt2012/candidate.php?candidate_id=203,VIKASNAGAR ,IND,0,8th Pass,"Rs 10,18,000 ~ 10 Lacs+",Rs 0 ~
+229,475,Harinder Tiwari,https://www.myneta.info/utt2012/candidate.php?candidate_id=475,HARIDWAR,IND,0,Doctorate,"Rs 60,70,856 ~ 60 Lacs+",Rs 0 ~
+230,19,Haripriya Joshi Alias Hema Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=19,CHAMPAWAT,BJP,0,10th Pass,"Rs 14,75,000 ~ 14 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+231,788,Harish Chandra Durgapal,https://www.myneta.info/utt2012/candidate.php?candidate_id=788,LALKUWAN,IND,0,12th Pass,"Rs 1,54,56,894 ~ 1 Crore+","Rs 1,95,665 ~ 1 Lacs+"
+232,89,Harish Chandra Pathak (er.),https://www.myneta.info/utt2012/candidate.php?candidate_id=89,KAPKOT,UKDP,0,12th Pass,"Rs 28,60,000 ~ 28 Lacs+",Rs 0 ~
+233,117,Harish Dhami,https://www.myneta.info/utt2012/candidate.php?candidate_id=117,DHARCHULA,INC,1,10th Pass,"Rs 41,75,000 ~ 41 Lacs+","Rs 47,00,000 ~ 47 Lacs+"
+234,736,Harish Prashad,https://www.myneta.info/utt2012/candidate.php?candidate_id=736,GANGOLIHAT (SC),IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=736&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=736&col=lia
+235,17,Harish Pujari,https://www.myneta.info/utt2012/candidate.php?candidate_id=17,KARANPRAYAG,BJP,0,Graduate Professional,"Rs 93,73,953 ~ 93 Lacs+",Rs 0 ~
+236,20,Harsh Vardhan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=20,CHAMPAWAT,UKDP,1,Not Given,"Rs 12,96,000 ~ 12 Lacs+",Rs 0 ~
+237,26,Haseen Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=26,KASHIPUR,BSP,0,5th Pass,"Rs 44,94,478 ~ 44 Lacs+","Rs 3,27,573 ~ 3 Lacs+"
+238,664,Havivurahaman,https://www.myneta.info/utt2012/candidate.php?candidate_id=664,RAMNAGAR,IND,0,Others,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+239,439,Heema Bora,https://www.myneta.info/utt2012/candidate.php?candidate_id=439,DOIWWALA,SP,0,5th Pass,"Rs 5,79,100 ~ 5 Lacs+",Rs 0 ~
+240,256,Heera Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=256,DOIWWALA,INC,0,Post Graduate,"Rs 1,16,84,699 ~ 1 Crore+","Rs 3,70,179 ~ 3 Lacs+"
+241,665,Hem Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=665,RAMNAGAR,IND,0,12th Pass,"Rs 92,51,000 ~ 92 Lacs+","Rs 5,90,000 ~ 5 Lacs+"
+242,240,Hem Chandra Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=240,NAINITAL (SC),BJP,0,12th Pass,"Rs 1,10,81,274 ~ 1 Crore+","Rs 11,00,000 ~ 11 Lacs+"
+243,62,Hemesh Kharkwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=62,CHAMPAWAT,INC,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=62&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=62&col=lia
+244,742,Himmat Singh Aithani,https://www.myneta.info/utt2012/candidate.php?candidate_id=742,KAPKOT,IND,0,Literate,"Rs 45,00,000 ~ 45 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+245,632,Hitanshu Chopra,https://www.myneta.info/utt2012/candidate.php?candidate_id=632,HARIDWAR RURAL,RLD,0,8th Pass,"Rs 3,25,000 ~ 3 Lacs+",Rs 0 ~
+246,60,Hukum Singh Pokhriyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=60,GANGOTRI,BSP,0,12th Pass,"Rs 21,92,054 ~ 21 Lacs+",Rs 0 ~
+247,366,Inam Babu,https://www.myneta.info/utt2012/candidate.php?candidate_id=366,SAHASPUR,IND,0,Post Graduate,"Rs 11,05,000 ~ 11 Lacs+",Rs 0 ~
+248,191,Inam Babu,https://www.myneta.info/utt2012/candidate.php?candidate_id=191,VIKASNAGAR ,JD(S),0,Graduate Professional,"Rs 11,35,000 ~ 11 Lacs+",Rs 0 ~
+249,242,Indira Hridayesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=242,HALDWANI,INC,0,Doctorate,"Rs 5,65,11,048 ~ 5 Crore+","Rs 4,08,334 ~ 4 Lacs+"
+250,418,Indradev Shukla,https://www.myneta.info/utt2012/candidate.php?candidate_id=418,DEHRADUN CANTONMENT,IND,0,Graduate,"Rs 10,20,000 ~ 10 Lacs+","Rs 90,000 ~ 90 Thou+"
+251,345,Indresh Maikhuri,https://www.myneta.info/utt2012/candidate.php?candidate_id=345,KARANPRAYAG,CPI(ML)(L),2,Graduate,"Rs 1,28,806 ~ 1 Lacs+",Rs 0 ~
+252,209,Irfan Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=209,SAHASPUR,JLKP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=209&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=209&col=lia
+253,309,Irshad Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=309,HARIDWAR RURAL,INC,0,Graduate,"Rs 28,52,000 ~ 28 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+254,577,Ishwari Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=577,SITARGANJ,IND,0,10th Pass,"Rs 1,82,50,868 ~ 1 Crore+","Rs 3,82,772 ~ 3 Lacs+"
+255,144,Jabar Singh Urf Krantikari Pawel,https://www.myneta.info/utt2012/candidate.php?candidate_id=144,DEOPRAYAG,UtRM,0,Graduate,"Rs 27,21,429 ~ 27 Lacs+",Rs 0 ~
+256,501,Jag Jeevan,https://www.myneta.info/utt2012/candidate.php?candidate_id=501,JWALAPUR (SC),IND,0,10th Pass,"Rs 29,01,000 ~ 29 Lacs+","Rs 35,00,000 ~ 35 Lacs+"
+257,708,Jagat Martolia,https://www.myneta.info/utt2012/candidate.php?candidate_id=708,DHARCHULA,CPI(ML)(L),3,12th Pass,"Rs 1,83,935 ~ 1 Lacs+","Rs 11,986 ~ 11 Thou+"
+258,719,Jagdish Chand,https://www.myneta.info/utt2012/candidate.php?candidate_id=719,DIDIHAT,IND,0,Graduate,"Rs 1,60,549 ~ 1 Lacs+",Rs 0 ~
+259,555,Jagdish Chand Rajwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=555,KHATIMA,UPP,0,Literate,"Rs 8,55,000 ~ 8 Lacs+",Rs 0 ~
+260,428,Jagdish Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=428,MUSSOORIE,IND,0,Graduate,"Rs 61,70,000 ~ 61 Lacs+","Rs 18,00,000 ~ 18 Lacs+"
+261,743,Jagdish Prasad Tamta,https://www.myneta.info/utt2012/candidate.php?candidate_id=743,BAGESHWWAR,SaSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=743&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=743&col=lia
+262,601,Jagdish Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=601,BAZPUR (SC),IND,0,Literate,"Rs 9,92,950 ~ 9 Lacs+","Rs 6,000 ~ 6 Thou+"
+263,122,Jagjiwan Kanyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=122,DIDIHAT,BSP,0,Post Graduate,"Rs 24,81,250 ~ 24 Lacs+","Rs 5,50,000 ~ 5 Lacs+"
+264,538,Jagpal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=538,KHANPUR,MaJP,0,Others,"Rs 12,60,295 ~ 12 Lacs+",Rs 0 ~
+265,53,Jagveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=53,YAMUNOTRI,BJP,0,Graduate,"Rs 40,13,821 ~ 40 Lacs+","Rs 2,81,979 ~ 2 Lacs+"
+266,221,Jagveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=221,DHARAMPUR,JLKP,0,Graduate,"Rs 77,46,950 ~ 77 Lacs+",Rs 0 ~
+267,150,Jai Krishan (pummy) Jansewak,https://www.myneta.info/utt2012/candidate.php?candidate_id=150,DEOPRAYAG,BSP,0,12th Pass,"Rs 11,29,300 ~ 11 Lacs+","Rs 11,16,300 ~ 11 Lacs+"
+268,143,Jai Prakash Upadhyay,https://www.myneta.info/utt2012/candidate.php?candidate_id=143,DEOPRAYAG,UKDP,1,Graduate,"Rs 78,52,000 ~ 78 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+269,441,Jaideep Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=441,DOIWWALA,IND,5,Post Graduate,"Rs 24,33,311 ~ 24 Lacs+","Rs 10,10,445 ~ 10 Lacs+"
+270,507,Jaiprakash,https://www.myneta.info/utt2012/candidate.php?candidate_id=507,JHABRERA (SC),MKD,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=507&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=507&col=lia
+271,193,Jamshed Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=193,VIKASNAGAR ,MKD,1,Post Graduate,"Rs 2,95,506 ~ 2 Lacs+",Rs 0 ~
+272,491,Janak Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=491,BHEL RANIPUR,IND,0,Graduate,"Rs 1,31,27,000 ~ 1 Crore+","Rs 11,45,367 ~ 11 Lacs+"
+273,673,Janardan Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=673,KALADHUNGI,IND,0,Post Graduate,"Rs 32,33,535 ~ 32 Lacs+",Rs 0 ~
+274,597,Jarnail Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=597,GADARPUR,IND,3,10th Pass,"Rs 65,89,200 ~ 65 Lacs+","Rs 7,40,000 ~ 7 Lacs+"
+275,197,Jasbeer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=197,VIKASNAGAR ,IND,0,10th Pass,"Rs 7,91,000 ~ 7 Lacs+",Rs 0 ~
+276,681,Jaspal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=681,CHAUBATAKHAL,IND,0,10th Pass,"Rs 2,73,000 ~ 2 Lacs+","Rs 5,000 ~ 5 Thou+"
+277,48,Jasveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=48,NANAKMATA (ST),UKDP,0,Graduate,"Rs 5,36,951 ~ 5 Lacs+",Rs 0 ~
+278,766,Jaswant Singh Adhikari,https://www.myneta.info/utt2012/candidate.php?candidate_id=766,ALMORA,IND,0,Post Graduate,"Rs 16,51,500 ~ 16 Lacs+",Rs 0 ~
+279,433,Jaswant Singh Randhava,https://www.myneta.info/utt2012/candidate.php?candidate_id=433,DOIWWALA,JD(S),0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=433&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=433&col=lia
+280,636,Javed Aalam,https://www.myneta.info/utt2012/candidate.php?candidate_id=636,HARIDWAR RURAL,IND,0,Graduate,"Rs 1,70,000 ~ 1 Lacs+",Rs 0 ~
+281,13,Jeet Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=13,THARALI (SC),INC,0,Doctorate,"Rs 41,48,177 ~ 41 Lacs+","Rs 7,50,000 ~ 7 Lacs+"
+282,320,Jeet Singh Bhadkoti,https://www.myneta.info/utt2012/candidate.php?candidate_id=320,YAMUNOTRI,JD(U),0,8th Pass,"Rs 1,59,000 ~ 1 Lacs+","Rs 3,60,000 ~ 3 Lacs+"
+283,713,Jewan Singh Danu,https://www.myneta.info/utt2012/candidate.php?candidate_id=713,DHARCHULA,IND,0,12th Pass,"Rs 8,46,100 ~ 8 Lacs+",Rs 0 ~
+284,630,Jitendra Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=630,HARIDWAR RURAL,SP,0,Graduate,"Rs 15,11,550 ~ 15 Lacs+","Rs 29,574 ~ 29 Thou+"
+285,253,Jitendra Mohan Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=253,DOIWWALA,UKDP,0,Graduate,"Rs 59,20,000 ~ 59 Lacs+",Rs 0 ~
+286,361,Jot Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=361,DHANOLTI,IND,1,12th Pass,"Rs 33,09,589 ~ 33 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+287,258,Jot Singh Gunsola,https://www.myneta.info/utt2012/candidate.php?candidate_id=258,MUSSOORIE,INC,0,Graduate,"Rs 58,68,245 ~ 58 Lacs+","Rs 31,00,000 ~ 31 Lacs+"
+288,551,Junaid Akbar,https://www.myneta.info/utt2012/candidate.php?candidate_id=551,MANGLOR,IND,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=551&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=551&col=lia
+289,78,Jyoti  Rautela,https://www.myneta.info/utt2012/candidate.php?candidate_id=78,LANSDOWNE,INC,0,Graduate,"Rs 24,99,526 ~ 24 Lacs+","Rs 6,89,415 ~ 6 Lacs+"
+290,734,Jyoti Rani,https://www.myneta.info/utt2012/candidate.php?candidate_id=734,GANGOLIHAT (SC),LJP,0,12th Pass,"Rs 99,000 ~ 99 Thou+","Rs 24,000 ~ 24 Thou+"
+291,419,Jyotsna,https://www.myneta.info/utt2012/candidate.php?candidate_id=419,DEHRADUN CANTONMENT,IND,0,Graduate,"Rs 1,23,87,940 ~ 1 Crore+","Rs 6,10,000 ~ 6 Lacs+"
+292,586,K.k. Bora,https://www.myneta.info/utt2012/candidate.php?candidate_id=586,RUDRAPUR,CPI(ML)(L),1,Post Graduate,"Rs 15,243 ~ 15 Thou+",Rs 0 ~
+293,590,Kailash Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=590,RUDRAPUR,IND,3,12th Pass,"Rs 10,26,000 ~ 10 Lacs+",Rs 0 ~
+294,774,Kailash Chandra Ray,https://www.myneta.info/utt2012/candidate.php?candidate_id=774,CHAMPAWAT,IND,0,Not Given,"Rs 28,37,000 ~ 28 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+295,765,Kailash Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=765,ALMORA,IND,0,Graduate,"Rs 38,00,379 ~ 38 Lacs+","Rs 1,20,000 ~ 1 Lacs+"
+296,723,Kailash Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=723,BHIMTAL,IND,0,12th Pass,"Rs 21,31,297 ~ 21 Lacs+",Rs 0 ~
+297,426,Kailash Singh Chaudhary,https://www.myneta.info/utt2012/candidate.php?candidate_id=426,MUSSOORIE,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=426&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=426&col=lia
+298,479,Kajichaand,https://www.myneta.info/utt2012/candidate.php?candidate_id=479,BHEL RANIPUR,SP,0,8th Pass,"Rs 75,87,257 ~ 75 Lacs+",Rs 0 ~
+299,281,Kaleem,https://www.myneta.info/utt2012/candidate.php?candidate_id=281,MANGLOR,BJP,0,Graduate,"Rs 3,15,54,000 ~ 3 Crore+",Rs 0 ~
+300,784,Kamal Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=784,LALKUWAN,IND,0,8th Pass,"Rs 20,55,430 ~ 20 Lacs+","Rs 1,89,028 ~ 1 Lacs+"
+301,83,Kamaljeet Narayan,https://www.myneta.info/utt2012/candidate.php?candidate_id=83,BAGESHWWAR,UKDP,0,Graduate Professional,"Rs 11,55,500 ~ 11 Lacs+",Rs 0 ~
+302,431,Kamini Gairola,https://www.myneta.info/utt2012/candidate.php?candidate_id=431,DOIWWALA,NCP,0,Graduate,"Rs 58,08,028 ~ 58 Lacs+","Rs 2,15,960 ~ 2 Lacs+"
+303,178,Kamla Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=178,CHAKRATA (ST) ,BJP,0,Post Graduate,"Rs 42,84,473 ~ 42 Lacs+","Rs 17,25,000 ~ 17 Lacs+"
+304,661,Kamlesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=661,RAMNAGAR,IND,0,Post Graduate,Nil,Rs 0 ~
+305,88,Karam Singh Danu,https://www.myneta.info/utt2012/candidate.php?candidate_id=88,KAPKOT,BSP,0,10th Pass,"Rs 8,15,000 ~ 8 Lacs+","Rs 1,66,000 ~ 1 Lacs+"
+306,102,Karan Mahara,https://www.myneta.info/utt2012/candidate.php?candidate_id=102,RANIKHET,INC,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=102&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=102&col=lia
+307,118,Kashi Singh Airy,https://www.myneta.info/utt2012/candidate.php?candidate_id=118,DHARCHULA,UKDP,0,Post Graduate,"Rs 35,86,451 ~ 35 Lacs+","Rs 9,72,700 ~ 9 Lacs+"
+308,496,Kavita,https://www.myneta.info/utt2012/candidate.php?candidate_id=496,JWALAPUR (SC),RLNP,0,5th Pass,"Rs 22,15,000 ~ 22 Lacs+","Rs 28,000 ~ 28 Thou+"
+309,331,Kedar Singh Fonia,https://www.myneta.info/utt2012/candidate.php?candidate_id=331,BADRINATH,UtRM,0,Post Graduate,"Rs 97,91,000 ~ 97 Lacs+",Rs 0 ~
+310,54,Kedar Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=54,YAMUNOTRI,INC,0,Graduate Professional,"Rs 2,20,62,500 ~ 2 Crore+",Rs 0 ~
+311,579,Keshar Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=579,KICHHA,LJP,0,12th Pass,"Rs 2,79,000 ~ 2 Lacs+",Rs 0 ~
+312,697,Kevlanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=697,HALDWANI,BCP,0,12th Pass,"Rs 7,36,500 ~ 7 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+313,116,Khusal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=116,DHARCHULA,BJP,0,12th Pass,"Rs 3,37,82,173 ~ 3 Crore+","Rs 52,50,000 ~ 52 Lacs+"
+314,769,Kiran Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=769,JAGESHWAR,UPP,0,Graduate,"Rs 13,76,386 ~ 13 Lacs+","Rs 1,03,824 ~ 1 Lacs+"
+315,41,Kiran Chand Mandal,https://www.myneta.info/utt2012/candidate.php?candidate_id=41,SITARGANJ,BJP,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=41&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=41&col=lia
+316,7,Kishan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=7,PUROLA (SC),BSP,0,Others,"Rs 1,15,97,270 ~ 1 Crore+","Rs 16,60,000 ~ 16 Lacs+"
+317,758,Kishan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=758,RANIKHET,IND,0,8th Pass,"Rs 2,77,000 ~ 2 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+318,326,Kishan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=326,GANGOTRI,IND,0,12th Pass,"Rs 23,76,227 ~ 23 Lacs+",Rs 0 ~
+319,169,Kishore Upadyaya,https://www.myneta.info/utt2012/candidate.php?candidate_id=169,TEHRI,INC,3,Doctorate,"Rs 64,30,540 ~ 64 Lacs+",Rs 0 ~
+320,252,Kishori Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=252,RAMNAGAR,BSP,2,Graduate,"Rs 15,20,087 ~ 15 Lacs+","Rs 2,46,000 ~ 2 Lacs+"
+321,138,Kishori Nandan Dobhal,https://www.myneta.info/utt2012/candidate.php?candidate_id=138,RUDRAPRAYAG,UKDP,0,Post Graduate,"Rs 40,16,450 ~ 40 Lacs+",Rs 0 ~
+322,455,Kripal Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=455,RISHIKESH,IND,0,12th Pass,"Rs 1,02,80,000 ~ 1 Crore+",Rs 0 ~
+323,703,Krishna Avatar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=703,HALDWANI,IND,0,Post Graduate,"Rs 78,83,803 ~ 78 Lacs+","Rs 2,35,000 ~ 2 Lacs+"
+324,624,Krishna Gopal,https://www.myneta.info/utt2012/candidate.php?candidate_id=624,KASHIPUR,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=624&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=624&col=lia
+325,717,Krishnanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=717,DIDIHAT,UPP,0,12th Pass,"Rs 5,06,000 ~ 5 Lacs+",Rs 0 ~
+326,635,Kuldeep,https://www.myneta.info/utt2012/candidate.php?candidate_id=635,HARIDWAR RURAL,IND,0,8th Pass,"Rs 4,31,000 ~ 4 Lacs+",Rs 0 ~
+327,187,Kuldeep Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=187,VIKASNAGAR ,BJP,1,Graduate Professional,"Rs 50,62,349 ~ 50 Lacs+","Rs 11,58,229 ~ 11 Lacs+"
+328,65,Kuldeep Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=65,YAMKESHWAR,BSP,2,Post Graduate,"Rs 21,93,700 ~ 21 Lacs+","Rs 21,80,000 ~ 21 Lacs+"
+329,139,Kuldip Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=139,RUDRAPRAYAG,SP,0,Graduate,"Rs 50,000 ~ 50 Thou+","Rs 45,000 ~ 45 Thou+"
+330,132,Kundan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=132,RUDRAPRAYAG,LJP,0,12th Pass,"Rs 3,76,000 ~ 3 Lacs+",Rs 0 ~
+331,556,Kunwar Jaivardhan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=556,KHATIMA,SP,0,Post Graduate,"Rs 1,25,73,656 ~ 1 Crore+","Rs 23,49,591 ~ 23 Lacs+"
+332,286,Kunwar Pranav Singh Champion,https://www.myneta.info/utt2012/candidate.php?candidate_id=286,KHANPUR,INC,1,Graduate,"Rs 1,03,40,000 ~ 1 Crore+",Rs 0 ~
+333,291,Lalit Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=291,PIRANKALIYAR,UKDP,1,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=291&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=291&col=lia
+334,87,Lalit Mohan Singh Farshwan,https://www.myneta.info/utt2012/candidate.php?candidate_id=87,KAPKOT,INC,0,Post Graduate,"Rs 46,80,000 ~ 46 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+335,274,Lallan Bharadwaj Rajbhar,https://www.myneta.info/utt2012/candidate.php?candidate_id=274,RISHIKESH,BSP,0,10th Pass,"Rs 31,46,979 ~ 31 Lacs+","Rs 16,37,269 ~ 16 Lacs+"
+336,372,Laxmi Agarwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=372,SAHASPUR,IND,0,Post Graduate,"Rs 1,50,06,261 ~ 1 Crore+","Rs 4,11,180 ~ 4 Lacs+"
+337,714,Laxmi Datt Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=714,DHARCHULA,IND,0,10th Pass,"Rs 8,20,000 ~ 8 Lacs+",Rs 0 ~
+338,127,Laxmi Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=127,KEDARNATH,CPI,0,Post Graduate,"Rs 19,92,651 ~ 19 Lacs+",Rs 0 ~
+339,778,Lila Wati Gahtori,https://www.myneta.info/utt2012/candidate.php?candidate_id=778,CHAMPAWAT,IND,0,Literate,"Rs 9,70,000 ~ 9 Lacs+","Rs 40,000 ~ 40 Thou+"
+340,659,Liladhar,https://www.myneta.info/utt2012/candidate.php?candidate_id=659,RAMNAGAR,UtRM,0,8th Pass,"Rs 1,02,51,000 ~ 1 Crore+",Rs 0 ~
+341,200,Liyakat,https://www.myneta.info/utt2012/candidate.php?candidate_id=200,VIKASNAGAR ,IND,0,Literate,"Rs 3,000 ~ 3 Thou+",Rs 0 ~
+342,686,Lt Gen (retd) Tejpal Singh Rawat Pvsm Vsm,https://www.myneta.info/utt2012/candidate.php?candidate_id=686,LANSDOWNE,UtRM,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=686&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=686&col=lia
+343,186,M. Islam,https://www.myneta.info/utt2012/candidate.php?candidate_id=186,VIKASNAGAR ,NCP,0,8th Pass,"Rs 17,05,000 ~ 17 Lacs+",Rs 0 ~
+344,607,Machhala Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=607,LAKSAR,Naitik Party,0,Literate,"Rs 16,00,000 ~ 16 Lacs+",Rs 0 ~
+345,276,Madan Kaushik,https://www.myneta.info/utt2012/candidate.php?candidate_id=276,HARIDWAR,BJP,0,Graduate,"Rs 97,53,108 ~ 97 Lacs+","Rs 15,86,797 ~ 15 Lacs+"
+346,166,Madan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=166,PRATAPNAGAR,IND,0,8th Pass,"Rs 19,44,000 ~ 19 Lacs+",Rs 0 ~
+347,112,Madan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=112,CHAMPAWAT,BSP,0,Post Graduate,"Rs 49,17,670 ~ 49 Lacs+","Rs 4,07,888 ~ 4 Lacs+"
+348,225,Madan Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=225,DWARAHAT,INC,0,Graduate Professional,"Rs 12,45,000 ~ 12 Lacs+","Rs 7,00,000 ~ 7 Lacs+"
+349,506,Madan Singh Khalsa,https://www.myneta.info/utt2012/candidate.php?candidate_id=506,JHABRERA (SC),CPI,0,Literate,"Rs 7,40,200 ~ 7 Lacs+",Rs 0 ~
+350,303,Madanlal,https://www.myneta.info/utt2012/candidate.php?candidate_id=303,JWALAPUR (SC),BSP,0,Graduate,"Rs 40,66,419 ~ 40 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+351,688,Madhu Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=688,LANSDOWNE,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=688&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=688&col=lia
+352,10,Magan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=10,THARALI (SC),BJP,0,10th Pass,"Rs 47,59,960 ~ 47 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+353,525,Mahak Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=525,PIRANKALIYAR,IND,0,Graduate Professional,"Rs 40,22,280 ~ 40 Lacs+",Rs 0 ~
+354,318,Mahaveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=318,DHANOLTI,BJP,0,Graduate Professional,"Rs 80,82,539 ~ 80 Lacs+",Rs 0 ~
+355,322,Mahaveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=322,YAMUNOTRI,IND,2,12th Pass,"Rs 7,28,000 ~ 7 Lacs+",Rs 0 ~
+356,637,Mahaveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=637,HARIDWAR RURAL,IND,0,12th Pass,"Rs 32,40,000 ~ 32 Lacs+",Rs 0 ~
+357,570,Mahendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=570,NANAKMATA (ST),IND,0,8th Pass,"Rs 6,38,500 ~ 6 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+358,759,Mahendra Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=759,RANIKHET,IND,0,Graduate,"Rs 79,44,107 ~ 79 Lacs+","Rs 53,06,273 ~ 53 Lacs+"
+359,63,Mahendra Singh Mehra,https://www.myneta.info/utt2012/candidate.php?candidate_id=63,LOHAGHAT,INC,0,12th Pass,"Rs 34,01,832 ~ 34 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+360,39,Mahendra Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=39,KICHHA,UKDP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=39&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=39&col=lia
+361,342,Mahes Shankar,https://www.myneta.info/utt2012/candidate.php?candidate_id=342,THARALI (SC),IND,0,Graduate,"Rs 28,59,104 ~ 28 Lacs+","Rs 34,926 ~ 34 Thou+"
+362,779,Mahesh Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=779,LALKUWAN,BCP,0,8th Pass,"Rs 50,000 ~ 50 Thou+",Rs 0 ~
+363,693,Mahesh Chandra Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=693,KOTDWAR,UtPP,0,Graduate Professional,"Rs 39,54,975 ~ 39 Lacs+",Rs 0 ~
+364,390,Mahesh Kaushal,https://www.myneta.info/utt2012/candidate.php?candidate_id=390,RAIPUR,AITC,0,12th Pass,"Rs 7,58,000 ~ 7 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+365,382,Mahesh Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=382,DHARAMPUR,IND,0,Graduate Professional,"Rs 37,21,214 ~ 37 Lacs+","Rs 1,06,322 ~ 1 Lacs+"
+366,675,Mahesh Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=675,KALADHUNGI,IND,3,Graduate,"Rs 1,36,60,591 ~ 1 Crore+","Rs 22,30,512 ~ 22 Lacs+"
+367,28,Mahilal Gautam,https://www.myneta.info/utt2012/candidate.php?candidate_id=28,BAZPUR (SC),BSP,1,10th Pass,"Rs 69,52,505 ~ 69 Lacs+",Rs 0 ~
+368,154,Mahipal Singh Butola,https://www.myneta.info/utt2012/candidate.php?candidate_id=154,DEOPRAYAG,IND,0,Post Graduate,"Rs 18,35,000 ~ 18 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+369,79,Maj Gen (retd) Bhuwan Chandra Khanduri Avsm,https://www.myneta.info/utt2012/candidate.php?candidate_id=79,KOTDWAR,BJP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=79&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=79&col=lia
+370,314,Makan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=314,GHANSALI (SC),UKDP,0,Graduate,"Rs 69,000 ~ 69 Thou+","Rs 15,000 ~ 15 Thou+"
+371,5,Malchand,https://www.myneta.info/utt2012/candidate.php?candidate_id=5,PUROLA (SC),BJP,1,10th Pass,"Rs 3,78,65,700 ~ 3 Crore+","Rs 3,14,40,000 ~ 3 Crore+"
+372,780,Man Singh Pal,https://www.myneta.info/utt2012/candidate.php?candidate_id=780,LALKUWAN,CPI(ML)(L),0,Literate,"Rs 75,27,000 ~ 75 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+373,692,Manish Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=692,KOTDWAR,SP,0,Post Graduate,"Rs 25,80,500 ~ 25 Lacs+",Rs 0 ~
+374,689,Manish Sundriyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=689,LANSDOWNE,IND,0,Post Graduate,"Rs 45,300 ~ 45 Thou+",Rs 0 ~
+375,533,Manisha,https://www.myneta.info/utt2012/candidate.php?candidate_id=533,ROORKEE,IND,1,Graduate,"Rs 2,93,15,453 ~ 2 Crore+","Rs 1,75,48,888 ~ 1 Crore+"
+376,32,Manishi Chandra Tiwari,https://www.myneta.info/utt2012/candidate.php?candidate_id=32,GADARPUR,INC,0,Post Graduate,"Rs 2,78,10,000 ~ 2 Crore+",Rs 0 ~
+377,335,Manjeet Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=335,THARALI (SC),NCP,0,8th Pass,"Rs 81,000 ~ 81 Thou+",Rs 0 ~
+378,223,Manjoor Hasan,https://www.myneta.info/utt2012/candidate.php?candidate_id=223,DHARAMPUR,SP,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=223&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=223&col=lia
+379,319,Manmohan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=319,DHANOLTI,INC,1,Post Graduate,"Rs 61,56,070 ~ 61 Lacs+",Rs 0 ~
+380,666,Manohar Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=666,PAURI (SC),UtRM,0,5th Pass,"Rs 13,05,000 ~ 13 Lacs+","Rs 90,000 ~ 90 Thou+"
+381,662,Manohar Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=662,RAMNAGAR,IND,0,12th Pass,"Rs 4,17,000 ~ 4 Lacs+",Rs 0 ~
+382,534,Manohar Lal Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=534,ROORKEE,IND,0,Graduate Professional,"Rs 1,83,99,797 ~ 1 Crore+",Rs 0 ~
+383,420,Manoj Dhyani,https://www.myneta.info/utt2012/candidate.php?candidate_id=420,MUSSOORIE,NCP,0,Graduate Professional,"Rs 4,31,531 ~ 4 Lacs+",Rs 0 ~
+384,27,Manoj Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=27,KASHIPUR,INC,0,Graduate Professional,"Rs 2,39,55,897 ~ 2 Crore+","Rs 34,33,000 ~ 34 Lacs+"
+385,668,Manoj Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=668,PAURI (SC),IND,0,12th Pass,"Rs 1,34,400 ~ 1 Lacs+","Rs 74,000 ~ 74 Thou+"
+386,397,Manoj Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=397,RAIPUR,IND,0,10th Pass,"Rs 88,22,700 ~ 88 Lacs+",Rs 0 ~
+387,771,Manoj Kumar Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=771,CHAMPAWAT,SP,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=771&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=771&col=lia
+388,690,Manoj Kumar Kuksal,https://www.myneta.info/utt2012/candidate.php?candidate_id=690,LANSDOWNE,IND,0,Graduate Professional,"Rs 5,65,244 ~ 5 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+389,94,Manoj Tiwari,https://www.myneta.info/utt2012/candidate.php?candidate_id=94,ALMORA,INC,0,Graduate Professional,"Rs 54,87,180 ~ 54 Lacs+","Rs 2,13,313 ~ 2 Lacs+"
+390,563,Manvinder Singh Khaira,https://www.myneta.info/utt2012/candidate.php?candidate_id=563,KHATIMA,IND,0,Graduate,"Rs 94,70,030 ~ 94 Lacs+","Rs 19,00,000 ~ 19 Lacs+"
+391,141,Matbar Singh Kandari,https://www.myneta.info/utt2012/candidate.php?candidate_id=141,RUDRAPRAYAG,BJP,0,Post Graduate,"Rs 1,50,00,000 ~ 1 Crore+","Rs 13,00,000 ~ 13 Lacs+"
+392,618,Mathuri Lal Gautam Ambedkar,https://www.myneta.info/utt2012/candidate.php?candidate_id=618,KASHIPUR,IJP,1,8th Pass,"Rs 64,80,000 ~ 64 Lacs+",Rs 0 ~
+393,398,Maya Mohan Lakhera,https://www.myneta.info/utt2012/candidate.php?candidate_id=398,RAIPUR,IND,0,12th Pass,"Rs 53,93,061 ~ 53 Lacs+","Rs 3,86,000 ~ 3 Lacs+"
+394,115,Mayukh Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=115,PITHORAGARH,INC,0,Post Graduate,"Rs 3,07,00,000 ~ 3 Crore+",Rs 0 ~
+395,663,Md. Sami,https://www.myneta.info/utt2012/candidate.php?candidate_id=663,RAMNAGAR,IND,0,Others,"Rs 7,00,000 ~ 7 Lacs+",Rs 0 ~
+396,658,Mehboob Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=658,RAMNAGAR,RLD,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=658&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=658&col=lia
+397,505,Menpal,https://www.myneta.info/utt2012/candidate.php?candidate_id=505,BHAGWANPUR (SC),LJP,0,8th Pass,"Rs 1,57,000 ~ 1 Lacs+",Rs 0 ~
+398,198,Miss. Babita Pundir,https://www.myneta.info/utt2012/candidate.php?candidate_id=198,VIKASNAGAR ,IND,0,Literate,"Rs 1,05,000 ~ 1 Lacs+",Rs 0 ~
+399,383,Mo. Tahir,https://www.myneta.info/utt2012/candidate.php?candidate_id=383,DHARAMPUR,IND,0,10th Pass,"Rs 17,70,000 ~ 17 Lacs+",Rs 0 ~
+400,400,Mohammad Sattar,https://www.myneta.info/utt2012/candidate.php?candidate_id=400,RAIPUR,IND,0,8th Pass,"Rs 1,37,300 ~ 1 Lacs+",Rs 0 ~
+401,23,Mohammad Umar,https://www.myneta.info/utt2012/candidate.php?candidate_id=23,JASPUR,BSP,1,5th Pass,"Rs 2,01,000 ~ 2 Lacs+","Rs 11,72,365 ~ 11 Lacs+"
+402,316,Mohan Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=316,DHANOLTI,BSP,0,Graduate,"Rs 1,48,000 ~ 1 Lacs+","Rs 1,60,000 ~ 1 Lacs+"
+403,430,Mohan Lal Bangwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=430,MUSSOORIE,IND,0,10th Pass,"Rs 10,58,000 ~ 10 Lacs+","Rs 1,80,000 ~ 1 Lacs+"
+404,332,Mohan Lal Bharti,https://www.myneta.info/utt2012/candidate.php?candidate_id=332,BADRINATH,LJP,0,Literate,"Rs 1,60,000 ~ 1 Lacs+","Rs 1,10,000 ~ 1 Lacs+"
+405,236,Mohan Pal,https://www.myneta.info/utt2012/candidate.php?candidate_id=236,BHIMTAL,BSP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=236&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=236&col=lia
+406,482,Mohan Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=482,BHEL RANIPUR,UtRM,0,Graduate,"Rs 30,21,000 ~ 30 Lacs+",Rs 0 ~
+407,399,Mohan Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=399,RAIPUR,IND,0,12th Pass,"Rs 56,03,389 ~ 56 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+408,642,Mohd. Akram,https://www.myneta.info/utt2012/candidate.php?candidate_id=642,JASPUR,IND,0,5th Pass,"Rs 16,28,500 ~ 16 Lacs+",Rs 0 ~
+409,615,Mohd. Anas Ansari,https://www.myneta.info/utt2012/candidate.php?candidate_id=615,KASHIPUR,RLD,0,10th Pass,"Rs 5,96,976 ~ 5 Lacs+",Rs 0 ~
+410,643,Mohd. Anees,https://www.myneta.info/utt2012/candidate.php?candidate_id=643,JASPUR,IND,0,Post Graduate,"Rs 1,86,000 ~ 1 Lacs+",Rs 0 ~
+411,524,Mohd. Furkan,https://www.myneta.info/utt2012/candidate.php?candidate_id=524,PIRANKALIYAR,IND,0,10th Pass,"Rs 4,31,000 ~ 4 Lacs+","Rs 4,15,000 ~ 4 Lacs+"
+412,644,Mohd. Iqbal,https://www.myneta.info/utt2012/candidate.php?candidate_id=644,JASPUR,IND,0,12th Pass,"Rs 1,06,500 ~ 1 Lacs+",Rs 0 ~
+413,516,Mohd. Iqbal,https://www.myneta.info/utt2012/candidate.php?candidate_id=516,PIRANKALIYAR,SP,0,Literate,"Rs 1,09,00,000 ~ 1 Crore+",Rs 0 ~
+414,617,Mohd. Naeem,https://www.myneta.info/utt2012/candidate.php?candidate_id=617,KASHIPUR,AITC,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=617&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=617&col=lia
+415,619,Mohd. Yamin Siddiqui,https://www.myneta.info/utt2012/candidate.php?candidate_id=619,KASHIPUR,UtRM,0,Graduate Professional,"Rs 1,59,50,036 ~ 1 Crore+","Rs 21,32,133 ~ 21 Lacs+"
+416,705,Mohmmad Asad Raza,https://www.myneta.info/utt2012/candidate.php?candidate_id=705,HALDWANI,IND,0,Literate,"Rs 31,45,674 ~ 31 Lacs+","Rs 6,25,000 ~ 6 Lacs+"
+417,583,Mohmmad Yasin,https://www.myneta.info/utt2012/candidate.php?candidate_id=583,KICHHA,IND,0,Literate,"Rs 4,40,000 ~ 4 Lacs+",Rs 0 ~
+418,718,Moti Ram Sagar,https://www.myneta.info/utt2012/candidate.php?candidate_id=718,DIDIHAT,UtRM,0,10th Pass,"Rs 4,03,130 ~ 4 Lacs+","Rs 2,55,000 ~ 2 Lacs+"
+419,473,Muhammad Mursalin Qureshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=473,HARIDWAR,IND,0,5th Pass,"Rs 57,94,500 ~ 57 Lacs+",Rs 0 ~
+420,146,Mukesh Chamoli,https://www.myneta.info/utt2012/candidate.php?candidate_id=146,DEOPRAYAG,NCP,0,Post Graduate,"Rs 2,22,000 ~ 2 Lacs+",Rs 0 ~
+421,781,Mukesh Chandola,https://www.myneta.info/utt2012/candidate.php?candidate_id=781,LALKUWAN,UPP,0,Literate,"Rs 37,524 ~ 37 Thou+",Rs 0 ~
+422,481,Mukesh Kumar Upadhyay,https://www.myneta.info/utt2012/candidate.php?candidate_id=481,BHEL RANIPUR,SHS,0,5th Pass,"Rs 13,000 ~ 13 Thou+",Rs 0 ~
+423,465,Mukesh Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=465,HARIDWAR,SP,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=465&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=465&col=lia
+424,478,Munarika Yadav,https://www.myneta.info/utt2012/candidate.php?candidate_id=478,BHEL RANIPUR,CPI,0,12th Pass,"Rs 26,47,178 ~ 26 Lacs+",Rs 0 ~
+425,528,Munesh Tyagi,https://www.myneta.info/utt2012/candidate.php?candidate_id=528,ROORKEE,SP,0,Graduate,"Rs 1,12,00,000 ~ 1 Crore+",Rs 0 ~
+426,184,Munna Singh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=184,CHAKRATA (ST) ,UJP,1,Post Graduate,"Rs 1,83,31,087 ~ 1 Crore+","Rs 68,70,077 ~ 68 Lacs+"
+427,492,Murshaleen Quresi,https://www.myneta.info/utt2012/candidate.php?candidate_id=492,BHEL RANIPUR,IND,0,5th Pass,"Rs 58,20,000 ~ 58 Lacs+",Rs 0 ~
+428,353,Nagendra Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=353,GHANSALI (SC),UtRM,0,8th Pass,"Rs 1,000 ~ 1 Thou+","Rs 3,65,000 ~ 3 Lacs+"
+429,767,Nandan Ram Tamta,https://www.myneta.info/utt2012/candidate.php?candidate_id=767,ALMORA,IND,0,12th Pass,"Rs 17,33,478 ~ 17 Lacs+","Rs 1,60,000 ~ 1 Lacs+"
+430,333,Nandan Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=333,BADRINATH,IND,0,Graduate Professional,"Rs 79,12,053 ~ 79 Lacs+","Rs 20,00,000 ~ 20 Lacs+"
+431,540,Nar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=540,KHANPUR,LJP,0,10th Pass,"Rs 1,05,500 ~ 1 Lacs+",Rs 0 ~
+432,43,Narayan Pal,https://www.myneta.info/utt2012/candidate.php?candidate_id=43,SITARGANJ,BSP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=43&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=43&col=lia
+433,732,Narayan Ram Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=732,GANGOLIHAT (SC),INC,0,Post Graduate,"Rs 84,36,563 ~ 84 Lacs+",Rs 0 ~
+434,733,Narayan Ram Sanguri,https://www.myneta.info/utt2012/candidate.php?candidate_id=733,GANGOLIHAT (SC),BSP,0,Graduate,"Rs 15,56,000 ~ 15 Lacs+",Rs 0 ~
+435,753,Narayan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=753,SALT,UPP,1,12th Pass,"Rs 6,15,000 ~ 6 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+436,246,Narayan Singh Jantawal,https://www.myneta.info/utt2012/candidate.php?candidate_id=246,KALADHUNGI,UKDP,0,Doctorate,"Rs 45,53,217 ~ 45 Lacs+","Rs 1,70,931 ~ 1 Lacs+"
+437,324,Narayani,https://www.myneta.info/utt2012/candidate.php?candidate_id=324,GANGOTRI,LJP,0,10th Pass,"Rs 4,45,000 ~ 4 Lacs+",Rs 0 ~
+438,11,Narenedra Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=11,THARALI (SC),BSP,0,Graduate,"Rs 1,19,000 ~ 1 Lacs+",Rs 0 ~
+439,448,Naresh Chandra Baloni,https://www.myneta.info/utt2012/candidate.php?candidate_id=448,RISHIKESH,AITC,0,12th Pass,"Rs 8,75,000 ~ 8 Lacs+",Rs 0 ~
+440,183,Naresh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=183,CHAKRATA (ST) ,SP,0,12th Pass,"Rs 20,43,454 ~ 20 Lacs+","Rs 6,80,000 ~ 6 Lacs+"
+441,550,Naresh Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=550,MANGLOR,MKD,0,Literate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=550&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=550&col=lia
+442,404,Naresh Vaid,https://www.myneta.info/utt2012/candidate.php?candidate_id=404,RAJPUR ROAD (SC),NCP,0,8th Pass,"Rs 3,45,000 ~ 3 Lacs+",Rs 0 ~
+443,388,Naseem,https://www.myneta.info/utt2012/candidate.php?candidate_id=388,RAIPUR,UtPP,0,Illiterate,"Rs 24,40,000 ~ 24 Lacs+",Rs 0 ~
+444,513,Nauratu Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=513,JHABRERA (SC),IND,0,Graduate,"Rs 35,37,000 ~ 35 Lacs+",Rs 0 ~
+445,189,Nav Prabhat,https://www.myneta.info/utt2012/candidate.php?candidate_id=189,VIKASNAGAR ,INC,1,Graduate Professional,"Rs 3,60,08,784 ~ 3 Crore+","Rs 32,65,553 ~ 32 Lacs+"
+446,720,Naveen Chandra Bahuguna,https://www.myneta.info/utt2012/candidate.php?candidate_id=720,BHIMTAL,UPP,0,12th Pass,"Rs 21,91,000 ~ 21 Lacs+","Rs 2,22,000 ~ 2 Lacs+"
+447,232,Naveen Chandra Dumka,https://www.myneta.info/utt2012/candidate.php?candidate_id=232,LALKUWAN,BJP,0,Graduate,"Rs 1,03,12,478 ~ 1 Crore+","Rs 11,58,243 ~ 11 Lacs+"
+448,530,Naveen Jain,https://www.myneta.info/utt2012/candidate.php?candidate_id=530,ROORKEE,IND,0,Post Graduate,"Rs 1,56,000 ~ 1 Lacs+",Rs 0 ~
+449,640,Navneet Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=640,JASPUR,RLD,0,12th Pass,"Rs 51,05,500 ~ 51 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+450,480,Nayeem Ahamed,https://www.myneta.info/utt2012/candidate.php?candidate_id=480,BHEL RANIPUR,RLD,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=480&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=480&col=lia
+451,290,Nayyar Ajam,https://www.myneta.info/utt2012/candidate.php?candidate_id=290,ROORKEE,BSP,1,Post Graduate,"Rs 1,18,43,116 ~ 1 Crore+","Rs 12,00,000 ~ 12 Lacs+"
+452,350,Neelam Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=350,KARANPRAYAG,IND,1,Graduate,"Rs 7,97,000 ~ 7 Lacs+","Rs 95,000 ~ 95 Thou+"
+453,725,Nirmala Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=725,BHIMTAL,IND,0,Post Graduate,"Rs 20,99,952 ~ 20 Lacs+","Rs 89,000 ~ 89 Thou+"
+454,262,Noopur Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=262,DEHRADUN CANTONMENT,BSP,0,Graduate Professional,"Rs 2,30,97,700 ~ 2 Crore+","Rs 5,60,814 ~ 5 Lacs+"
+455,471,Noshad,https://www.myneta.info/utt2012/candidate.php?candidate_id=471,HARIDWAR,IND,0,8th Pass,"Rs 13,41,000 ~ 13 Lacs+",Rs 0 ~
+456,158,Om Gopal Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=158,NARENDRANAGAR,BJP,0,12th Pass,"Rs 2,61,215 ~ 2 Lacs+",Rs 0 ~
+457,130,Om Prakash Vashisth,https://www.myneta.info/utt2012/candidate.php?candidate_id=130,KEDARNATH,IND,0,12th Pass,"Rs 15,72,500 ~ 15 Lacs+",Rs 0 ~
+458,746,P.c.tewari,https://www.myneta.info/utt2012/candidate.php?candidate_id=746,DWARAHAT,UPP,0,Post Graduate,"Rs 27,89,701 ~ 27 Lacs+",Rs 0 ~
+459,605,Padam Singh Gujjar,https://www.myneta.info/utt2012/candidate.php?candidate_id=605,LAKSAR,SP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=605&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=605&col=lia
+460,707,Padma Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=707,NAINITAL (SC),IND,0,8th Pass,"Rs 20,62,726 ~ 20 Lacs+",Rs 0 ~
+461,776,Pan Dev,https://www.myneta.info/utt2012/candidate.php?candidate_id=776,CHAMPAWAT,IND,0,Post Graduate,"Rs 9,10,000 ~ 9 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+462,98,Pan Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=98,SALT,UKDP,0,5th Pass,"Rs 4,04,816 ~ 4 Lacs+",Rs 0 ~
+463,396,Pankaj Chetri,https://www.myneta.info/utt2012/candidate.php?candidate_id=396,RAIPUR,IND,2,Graduate Professional,"Rs 14,75,000 ~ 14 Lacs+",Rs 0 ~
+464,464,Pankaj Dubey,https://www.myneta.info/utt2012/candidate.php?candidate_id=464,HARIDWAR,SHS,0,Graduate,"Rs 2,000 ~ 2 Thou+",Rs 0 ~
+465,477,Pankaj Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=477,BHEL RANIPUR,NCP,0,12th Pass,"Rs 16,90,000 ~ 16 Lacs+",Rs 0 ~
+466,334,Pankaj Vyas,https://www.myneta.info/utt2012/candidate.php?candidate_id=334,BADRINATH,IND,0,Graduate,"Rs 15,70,037 ~ 15 Lacs+","Rs 18,00,000 ~ 18 Lacs+"
+467,749,Pawan Chandra Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=749,DWARAHAT,IND,0,Graduate,"Rs 3,10,000 ~ 3 Lacs+",Rs 0 ~
+468,254,Phool Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=254,DOIWWALA,BSP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=254&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=254&col=lia
+469,476,Pitambar Baloni,https://www.myneta.info/utt2012/candidate.php?candidate_id=476,BHEL RANIPUR,CPM,0,Post Graduate,"Rs 91,39,368 ~ 91 Lacs+",Rs 0 ~
+470,212,Pooja Subba,https://www.myneta.info/utt2012/candidate.php?candidate_id=212,SAHASPUR,GDP,0,12th Pass,"Rs 1,80,000 ~ 1 Lacs+",Rs 0 ~
+471,289,Pradeep Batra,https://www.myneta.info/utt2012/candidate.php?candidate_id=289,ROORKEE,INC,3,Post Graduate,"Rs 2,93,15,453 ~ 2 Crore+","Rs 87,74,444 ~ 87 Lacs+"
+472,497,Pradeep Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=497,JWALAPUR (SC),SHS,0,8th Pass,"Rs 4,02,000 ~ 4 Lacs+",Rs 0 ~
+473,284,Pradeep Kumar (dhiman),https://www.myneta.info/utt2012/candidate.php?candidate_id=284,MANGLOR,UKDP,0,10th Pass,"Rs 1,45,000 ~ 1 Lacs+",Rs 0 ~
+474,91,Prakash Devnata,https://www.myneta.info/utt2012/candidate.php?candidate_id=91,PUROLA (SC),UtPP,0,12th Pass,"Rs 4,58,000 ~ 4 Lacs+",Rs 0 ~
+475,247,Prakash Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=247,KALADHUNGI,INC,0,Graduate,"Rs 58,57,301 ~ 58 Lacs+","Rs 12,18,185 ~ 12 Lacs+"
+476,213,Prakash Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=213,SAHASPUR,UtRM,0,12th Pass,"Rs 23,25,598 ~ 23 Lacs+",Rs 0 ~
+477,785,Prakash Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=785,LALKUWAN,IND,2,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=785&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=785&col=lia
+478,114,Prakash Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=114,PITHORAGARH,BJP,0,Graduate,"Rs 67,94,500 ~ 67 Lacs+","Rs 25,00,000 ~ 25 Lacs+"
+479,215,Prakash Suman Dhyani,https://www.myneta.info/utt2012/candidate.php?candidate_id=215,DHARAMPUR,BJP,0,Post Graduate,"Rs 38,48,815 ~ 38 Lacs+",Rs 0 ~
+480,259,Pramila Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=259,MUSSOORIE,UKDP,1,Post Graduate,"Rs 1,81,336 ~ 1 Lacs+",Rs 0 ~
+481,227,Pramod Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=227,DWARAHAT,BSP,0,Post Graduate,"Rs 11,42,000 ~ 11 Lacs+",Rs 0 ~
+482,100,Pratibha Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=100,RANIKHET,UKDP,0,Doctorate,"Rs 26,40,000 ~ 26 Lacs+",Rs 0 ~
+483,55,Preetam Singh Panwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=55,YAMUNOTRI,UKDP,0,Graduate,"Rs 1,27,51,643 ~ 1 Crore+","Rs 1,70,238 ~ 1 Lacs+"
+484,61,Prem Ballabh Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=61,BADRINATH,BJP,0,Graduate Professional,"Rs 1,05,61,768 ~ 1 Crore+",Rs 0 ~
+485,251,Prem Chandra Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=251,RAMNAGAR,UKDP,0,10th Pass,"Rs 1,09,06,000 ~ 1 Crore+","Rs 1,50,000 ~ 1 Lacs+"
+486,435,Prem Prakash,https://www.myneta.info/utt2012/candidate.php?candidate_id=435,DOIWWALA,UPP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=435&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=435&col=lia
+487,337,Prem Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=337,THARALI (SC),SP,0,10th Pass,"Rs 6,45,000 ~ 6 Lacs+",Rs 0 ~
+488,45,Prem Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=45,NANAKMATA (ST),BJP,1,Doctorate,"Rs 4,81,705 ~ 4 Lacs+","Rs 3,19,090 ~ 3 Lacs+"
+489,606,Prem Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=606,LAKSAR,Mahan Dal,0,10th Pass,"Rs 1,48,65,000 ~ 1 Crore+",Rs 0 ~
+490,527,Prema,https://www.myneta.info/utt2012/candidate.php?candidate_id=527,ROORKEE,JD(U),0,Literate,Nil,Rs 0 ~
+491,36,Premananad Mahajan,https://www.myneta.info/utt2012/candidate.php?candidate_id=36,RUDRAPUR,BSP,0,Graduate,"Rs 39,92,489 ~ 39 Lacs+","Rs 28,52,903 ~ 28 Lacs+"
+492,272,Premchand Aggarwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=272,RISHIKESH,BJP,3,Post Graduate,"Rs 1,33,03,143 ~ 1 Crore+","Rs 4,44,107 ~ 4 Lacs+"
+493,180,Pritam Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=180,CHAKRATA (ST) ,INC,0,Graduate Professional,"Rs 2,78,34,140 ~ 2 Crore+","Rs 32,16,928 ~ 32 Lacs+"
+494,412,Pt. Madan Gopal Chove,https://www.myneta.info/utt2012/candidate.php?candidate_id=412,DEHRADUN CANTONMENT,IJP,1,8th Pass,"Rs 2,23,002 ~ 2 Lacs+",Rs 0 ~
+495,260,Pt. Manoj Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=260,MUSSOORIE,BSP,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=260&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=260&col=lia
+496,757,Puran Chandra Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=757,RANIKHET,SP,0,12th Pass,"Rs 9,30,000 ~ 9 Lacs+",Rs 0 ~
+497,18,Puran Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=18,LOHAGHAT,BJP,0,10th Pass,"Rs 1,80,35,219 ~ 1 Crore+","Rs 1,61,00,000 ~ 1 Crore+"
+498,101,Puran Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=101,RANIKHET,BSP,0,12th Pass,"Rs 8,42,70,000 ~ 8 Crore+","Rs 10,50,000 ~ 10 Lacs+"
+499,151,Puran Singh Bhandari,https://www.myneta.info/utt2012/candidate.php?candidate_id=151,DEOPRAYAG,IND,0,8th Pass,"Rs 5,72,000 ~ 5 Lacs+",Rs 0 ~
+500,235,Puran Singh Mehra,https://www.myneta.info/utt2012/candidate.php?candidate_id=235,BHIMTAL,UKDP,0,Graduate,"Rs 32,55,505 ~ 32 Lacs+","Rs 2,60,000 ~ 2 Lacs+"
+501,754,Purushottam Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=754,SALT,CPI(ML)(L),0,Literate,"Rs 3,88,287 ~ 3 Lacs+",Rs 0 ~
+502,50,Pushkar Singh Dhami,https://www.myneta.info/utt2012/candidate.php?candidate_id=50,KHATIMA,BJP,0,Graduate Professional,"Rs 45,95,533 ~ 45 Lacs+","Rs 6,60,668 ~ 6 Lacs+"
+503,228,Pushpesh Tripathi,https://www.myneta.info/utt2012/candidate.php?candidate_id=228,DWARAHAT,UKDP,0,Post Graduate,"Rs 19,37,000 ~ 19 Lacs+",Rs 0 ~
+504,282,Qazi Md. Nizamuddin,https://www.myneta.info/utt2012/candidate.php?candidate_id=282,MANGLOR,INC,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=282&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=282&col=lia
+505,343,Radhaballbh,https://www.myneta.info/utt2012/candidate.php?candidate_id=343,THARALI (SC),IND,0,Graduate,"Rs 5,70,000 ~ 5 Lacs+","Rs 3,20,581 ~ 3 Lacs+"
+506,147,Raghunandan Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=147,DEOPRAYAG,SHS,1,10th Pass,"Rs 4,09,657 ~ 4 Lacs+",Rs 45 ~
+507,93,Raghunath Singh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=93,ALMORA,BJP,0,Graduate,"Rs 55,63,000 ~ 55 Lacs+","Rs 14,00,000 ~ 14 Lacs+"
+508,415,Rahul Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=415,DEHRADUN CANTONMENT,SHS,0,Graduate,"Rs 51,76,000 ~ 51 Lacs+",Rs 0 ~
+509,244,Raisul Hasan,https://www.myneta.info/utt2012/candidate.php?candidate_id=244,HALDWANI,BSP,2,8th Pass,"Rs 7,75,000 ~ 7 Lacs+","Rs 40,000 ~ 40 Thou+"
+510,267,Raj Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=267,RAJPUR ROAD (SC),INC,0,12th Pass,"Rs 29,96,652 ~ 29 Lacs+","Rs 48,898 ~ 48 Thou+"
+511,34,Raj Kumar Thukral,https://www.myneta.info/utt2012/candidate.php?candidate_id=34,RUDRAPUR,BJP,3,Post Graduate,"Rs 40,91,800 ~ 40 Lacs+",Rs 0 ~
+512,498,Rajan Rathore,https://www.myneta.info/utt2012/candidate.php?candidate_id=498,JWALAPUR (SC),SP,0,Graduate Professional,"Rs 6,40,000 ~ 6 Lacs+",Rs 0 ~
+513,401,Rajani Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=401,RAIPUR,IND,0,Illiterate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=401&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=401&col=lia
+514,613,Rajbeer,https://www.myneta.info/utt2012/candidate.php?candidate_id=613,LAKSAR,IND,0,8th Pass,"Rs 53,75,000 ~ 53 Lacs+",Rs 0 ~
+515,80,Raje Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=80,KOTDWAR,BSP,0,10th Pass,"Rs 10,20,000 ~ 10 Lacs+","Rs 25,000 ~ 25 Thou+"
+516,413,Rajeev Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=413,DEHRADUN CANTONMENT,RJSD,1,12th Pass,"Rs 6,20,446 ~ 6 Lacs+","Rs 97,410 ~ 97 Thou+"
+517,510,Rajendra Kumar Badi,https://www.myneta.info/utt2012/candidate.php?candidate_id=510,JHABRERA (SC),SP,0,8th Pass,"Rs 2,18,23,048 ~ 2 Crore+","Rs 5,75,000 ~ 5 Lacs+"
+518,726,Rajendra Kumar Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=726,BHIMTAL,IND,0,Post Graduate,"Rs 13,56,000 ~ 13 Lacs+","Rs 76,000 ~ 76 Thou+"
+519,414,Rajendra Pant,https://www.myneta.info/utt2012/candidate.php?candidate_id=414,DEHRADUN CANTONMENT,UtRM,0,Graduate,"Rs 18,25,996 ~ 18 Lacs+","Rs 38,000 ~ 38 Thou+"
+520,392,Rajendra Prasad Bhattkoti,https://www.myneta.info/utt2012/candidate.php?candidate_id=392,RAIPUR,UtRM,0,10th Pass,"Rs 17,67,560 ~ 17 Lacs+","Rs 36,000 ~ 36 Thou+"
+521,751,Rajendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=751,DWARAHAT,IND,0,12th Pass,"Rs 4,80,000 ~ 4 Lacs+",Rs 0 ~
+522,9,Rajendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=9,BADRINATH,INC,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=9&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=9&col=lia
+523,694,Rajendra Singh Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=694,KOTDWAR,IND,0,10th Pass,"Rs 41,24,355 ~ 41 Lacs+","Rs 35,84,000 ~ 35 Lacs+"
+524,119,Rajendra Singh Kutiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=119,DHARCHULA,BSP,0,Post Graduate,"Rs 1,33,96,000 ~ 1 Crore+","Rs 14,40,000 ~ 14 Lacs+"
+525,535,Rajendra Singh Pundir,https://www.myneta.info/utt2012/candidate.php?candidate_id=535,ROORKEE,IND,0,Graduate,"Rs 2,08,45,000 ~ 2 Crore+","Rs 53,000 ~ 53 Thou+"
+526,364,Rajesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=364,DHANOLTI,IND,0,Post Graduate,"Rs 96,01,000 ~ 96 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+527,6,Rajesh Juwantha,https://www.myneta.info/utt2012/candidate.php?candidate_id=6,PUROLA (SC),INC,1,10th Pass,"Rs 1,18,42,734 ~ 1 Crore+","Rs 5,03,250 ~ 5 Lacs+"
+528,29,Rajesh Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=29,BAZPUR (SC),BJP,0,Post Graduate,"Rs 5,82,330 ~ 5 Lacs+",Rs 0 ~
+529,591,Rajesh Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=591,RUDRAPUR,IND,0,10th Pass,"Rs 7,157 ~ 7 Thou+",Rs 0 ~
+530,40,Rajesh Pratap Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=40,KICHHA,BSP,1,Post Graduate,"Rs 48,15,700 ~ 48 Lacs+",Rs 0 ~
+531,38,Rajesh Shukla,https://www.myneta.info/utt2012/candidate.php?candidate_id=38,KICHHA,BJP,2,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=38&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=38&col=lia
+532,74,Rajesh Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=74,CHAUBATAKHAL,BSP,0,Graduate,"Rs 17,58,000 ~ 17 Lacs+","Rs 12,50,000 ~ 12 Lacs+"
+533,669,Rajesh Singh Raja,https://www.myneta.info/utt2012/candidate.php?candidate_id=669,PAURI (SC),IND,0,Literate,"Rs 5,27,000 ~ 5 Lacs+","Rs 18,438 ~ 18 Thou+"
+534,167,Rajeshwar Prasad Painuly,https://www.myneta.info/utt2012/candidate.php?candidate_id=167,PRATAPNAGAR,IND,0,Graduate,"Rs 64,53,000 ~ 64 Lacs+",Rs 0 ~
+535,71,Rajeshwer  Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=71,SHRINAGAR,BSP,0,12th Pass,"Rs 6,47,456 ~ 6 Lacs+",Rs 0 ~
+536,608,Rajkumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=608,LAKSAR,RLD,0,10th Pass,"Rs 40,75,000 ~ 40 Lacs+",Rs 0 ~
+537,92,Rajkumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=92,PUROLA (SC),IND,1,Graduate Professional,"Rs 88,85,264 ~ 88 Lacs+","Rs 10,95,161 ~ 10 Lacs+"
+538,602,Rajkumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=602,BAZPUR (SC),IND,4,10th Pass,"Rs 3,53,151 ~ 3 Lacs+",Rs 0 ~
+539,609,Rajkumar Saini,https://www.myneta.info/utt2012/candidate.php?candidate_id=609,LAKSAR,SHS,0,12th Pass,"Rs 11,000 ~ 11 Thou+",Rs 0 ~
+540,391,Rajkumar Urf Rajkumar Tyagi,https://www.myneta.info/utt2012/candidate.php?candidate_id=391,RAIPUR,UPP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=391&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=391&col=lia
+541,296,Rajpal,https://www.myneta.info/utt2012/candidate.php?candidate_id=296,JHABRERA (SC),INC,0,8th Pass,"Rs 94,26,201 ~ 94 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+542,336,Rajpal Kanyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=336,THARALI (SC),CPM,0,Literate,"Rs 19,750 ~ 19 Thou+",Rs 0 ~
+543,273,Rajpal Kharola,https://www.myneta.info/utt2012/candidate.php?candidate_id=273,RISHIKESH,INC,1,Post Graduate,"Rs 40,88,080 ~ 40 Lacs+",Rs 0 ~
+544,75,Rajpal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=75,CHAUBATAKHAL,INC,0,Graduate,"Rs 4,48,363 ~ 4 Lacs+",Rs 0 ~
+545,495,Raju Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=495,JWALAPUR (SC),NCP,0,8th Pass,"Rs 65,000 ~ 65 Thou+",Rs 0 ~
+546,369,Rakesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=369,SAHASPUR,IND,1,Graduate Professional,"Rs 3,12,200 ~ 3 Lacs+",Rs 0 ~
+547,777,Rakesh Agarwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=777,CHAMPAWAT,IND,0,12th Pass,"Rs 54,03,092 ~ 54 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+548,12,Rakesh Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=12,THARALI (SC),UKDP,0,Post Graduate,"Rs 76,000 ~ 76 Thou+","Rs 1,00,000 ~ 1 Lacs+"
+549,557,Rakesh Shukla,https://www.myneta.info/utt2012/candidate.php?candidate_id=557,KHATIMA,SHS,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=557&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=557&col=lia
+550,370,Ram Bahadur Tamang,https://www.myneta.info/utt2012/candidate.php?candidate_id=370,SAHASPUR,IND,0,Others,"Rs 22,54,387 ~ 22 Lacs+",Rs 0 ~
+551,572,Ram Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=572,SITARGANJ,SHS,0,Illiterate,"Rs 30,68,000 ~ 30 Lacs+","Rs 2,27,000 ~ 2 Lacs+"
+552,113,Ram Datt Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=113,PITHORAGARH,BSP,0,Graduate,"Rs 68,00,000 ~ 68 Lacs+",Rs 0 ~
+553,82,Ram Prasad Tamta,https://www.myneta.info/utt2012/candidate.php?candidate_id=82,BAGESHWWAR,INC,0,10th Pass,"Rs 1,30,00,000 ~ 1 Crore+","Rs 1,41,00,000 ~ 1 Crore+"
+554,741,Ram Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=741,KAPKOT,IND,0,10th Pass,"Rs 50,000 ~ 50 Thou+",Rs 0 ~
+555,234,Ram Singh Kera,https://www.myneta.info/utt2012/candidate.php?candidate_id=234,BHIMTAL,INC,4,Graduate,"Rs 28,38,145 ~ 28 Lacs+","Rs 10,35,415 ~ 10 Lacs+"
+556,279,Ram Singh Saini,https://www.myneta.info/utt2012/candidate.php?candidate_id=279,LAKSAR,INC,0,Post Graduate,"Rs 1,59,14,122 ~ 1 Crore+",Rs 0 ~
+557,625,Ram Vilas,https://www.myneta.info/utt2012/candidate.php?candidate_id=625,KASHIPUR,IND,0,12th Pass,"Rs 3,65,637 ~ 3 Lacs+",Rs 0 ~
+558,558,Ram Vriksha,https://www.myneta.info/utt2012/candidate.php?candidate_id=558,KHATIMA,Peace Party,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=558&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=558&col=lia
+559,165,Ramchandra Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=165,PRATAPNAGAR,UKDP,0,Graduate,"Rs 1,76,48,000 ~ 1 Crore+","Rs 11,00,000 ~ 11 Lacs+"
+560,638,Ramesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=638,HARIDWAR RURAL,IND,0,12th Pass,"Rs 14,50,000 ~ 14 Lacs+",Rs 0 ~
+561,564,Ramesh Chandar Joshi Urf Ramu Bhaya,https://www.myneta.info/utt2012/candidate.php?candidate_id=564,KHATIMA,IND,0,Post Graduate,"Rs 2,04,55,686 ~ 2 Crore+","Rs 4,49,058 ~ 4 Lacs+"
+562,199,Ramesh Chandra Azad,https://www.myneta.info/utt2012/candidate.php?candidate_id=199,VIKASNAGAR ,IND,0,12th Pass,"Rs 23,74,457 ~ 23 Lacs+","Rs 1,52,234 ~ 1 Lacs+"
+563,554,Ramesh Chandra Gahtori,https://www.myneta.info/utt2012/candidate.php?candidate_id=554,KHATIMA,NCP,0,Graduate,"Rs 5,50,000 ~ 5 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+564,684,Ramesh Chandra Juyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=684,CHAUBATAKHAL,IND,0,10th Pass,"Rs 11,68,373 ~ 11 Lacs+",Rs 0 ~
+565,566,Ramesh Chandra Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=566,NANAKMATA (ST),NCP,0,10th Pass,"Rs 4,40,00,000 ~ 4 Crore+",Rs 0 ~
+566,443,Ramesh Kothiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=443,DOIWWALA,IND,0,10th Pass,"Rs 7,00,000 ~ 7 Lacs+",Rs 0 ~
+567,352,Ramesh Naithwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=352,GHANSALI (SC),NCP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=352&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=352&col=lia
+568,255,Ramesh Pokhriyal Nishank,https://www.myneta.info/utt2012/candidate.php?candidate_id=255,DOIWWALA,BJP,0,Doctorate,"Rs 1,30,76,819 ~ 1 Crore+","Rs 22,56,000 ~ 22 Lacs+"
+569,125,Ramesh Prasad Chamola,https://www.myneta.info/utt2012/candidate.php?candidate_id=125,KEDARNATH,BSP,0,Post Graduate,"Rs 1,21,80,000 ~ 1 Crore+","Rs 6,83,000 ~ 6 Lacs+"
+570,565,Ramesh Singh Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=565,KHATIMA,IND,0,12th Pass,"Rs 16,87,628 ~ 16 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+571,595,Ramkaran,https://www.myneta.info/utt2012/candidate.php?candidate_id=595,GADARPUR,Suheldev Bhartiya Samaj Party,0,8th Pass,"Rs 1,68,800 ~ 1 Lacs+",Rs 0 ~
+572,459,Ramsharan Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=459,RISHIKESH,IND,0,12th Pass,"Rs 66,475 ~ 66 Thou+",Rs 0 ~
+573,224,Ramsukh,https://www.myneta.info/utt2012/candidate.php?candidate_id=224,DHARAMPUR,BSP(K),12,10th Pass,"Rs 1,29,30,000 ~ 1 Crore+",Rs 0 ~
+574,587,Rani Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=587,RUDRAPUR,LJP,0,8th Pass,"Rs 10,80,404 ~ 10 Lacs+",Rs 0 ~
+575,97,Ranjeet Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=97,SALT,INC,1,10th Pass,"Rs 65,53,958 ~ 65 Lacs+","Rs 33,00,000 ~ 33 Lacs+"
+576,311,Ranveer Singh Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=311,HARIDWAR RURAL,UKDP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=311&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=311&col=lia
+577,523,Rao Irshad,https://www.myneta.info/utt2012/candidate.php?candidate_id=523,PIRANKALIYAR,IND,0,8th Pass,"Rs 55,30,000 ~ 55 Lacs+",Rs 0 ~
+578,483,Rati Bhan Saini,https://www.myneta.info/utt2012/candidate.php?candidate_id=483,BHEL RANIPUR,JD(U),0,12th Pass,"Rs 3,00,000 ~ 3 Lacs+",Rs 0 ~
+579,631,Ravidutt Bakshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=631,HARIDWAR RURAL,SHS,0,8th Pass,"Rs 21,500 ~ 21 Thou+",Rs 0 ~
+580,266,Ravinder Singh Kataria,https://www.myneta.info/utt2012/candidate.php?candidate_id=266,RAJPUR ROAD (SC),BJP,0,12th Pass,"Rs 18,79,642 ~ 18 Lacs+",Rs 0 ~
+581,325,Ravindra,https://www.myneta.info/utt2012/candidate.php?candidate_id=325,GANGOTRI,UPP,0,Graduate,"Rs 45,82,000 ~ 45 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+582,287,Ravindra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=287,KHANPUR,BJP,3,Others,"Rs 3,86,09,101 ~ 3 Crore+","Rs 33,94,255 ~ 33 Lacs+"
+583,761,Rekha Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=761,SOMESHWAR (SC),IND,0,Post Graduate,"Rs 4,16,09,576 ~ 4 Crore+","Rs 5,00,000 ~ 5 Lacs+"
+584,499,Rekha Balmiki,https://www.myneta.info/utt2012/candidate.php?candidate_id=499,JWALAPUR (SC),UtRM,0,Literate,"Rs 55,000 ~ 55 Thou+",Rs 0 ~
+585,520,Rekha Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=520,PIRANKALIYAR,Mahan Dal,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=520&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=520&col=lia
+586,241,Renu Adhikari,https://www.myneta.info/utt2012/candidate.php?candidate_id=241,HALDWANI,BJP,0,Post Graduate,"Rs 2,47,73,385 ~ 2 Crore+","Rs 1,52,77,928 ~ 1 Crore+"
+587,648,Renu Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=648,YAMKESHWAR,UtRM,0,Graduate,"Rs 83,79,364 ~ 83 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+588,120,Rewati Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=120,DIDIHAT,INC,0,Post Graduate,"Rs 72,21,358 ~ 72 Lacs+","Rs 30,00,000 ~ 30 Lacs+"
+589,432,Rishi Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=432,DOIWWALA,LJP,0,12th Pass,"Rs 20,10,000 ~ 20 Lacs+",Rs 0 ~
+590,546,Riyasat,https://www.myneta.info/utt2012/candidate.php?candidate_id=546,KHANPUR,IND,0,Literate,"Rs 8,26,500 ~ 8 Lacs+",Rs 0 ~
+591,371,Riyaz Ahmed,https://www.myneta.info/utt2012/candidate.php?candidate_id=371,SAHASPUR,IND,0,10th Pass,"Rs 18,37,100 ~ 18 Lacs+",Rs 0 ~
+592,385,Roop Chand,https://www.myneta.info/utt2012/candidate.php?candidate_id=385,RAIPUR,NCP,0,12th Pass,"Rs 12,70,000 ~ 12 Lacs+",Rs 0 ~
+593,155,Rukam Singh Pokhriyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=155,NARENDRANAGAR,BSP,0,Graduate,"Rs 3,55,000 ~ 3 Lacs+","Rs 2,70,000 ~ 2 Lacs+"
+594,700,Rupendra Nagar,https://www.myneta.info/utt2012/candidate.php?candidate_id=700,HALDWANI,SHS,2,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=700&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=700&col=lia
+595,445,S.p. Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=445,DOIWWALA,IND,1,Graduate,"Rs 2,72,18,454 ~ 2 Crore+","Rs 3,000 ~ 3 Thou+"
+596,8,Sabar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=8,BADRINATH,BSP,0,Post Graduate,"Rs 13,50,000 ~ 13 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+597,543,Sadat Masood,https://www.myneta.info/utt2012/candidate.php?candidate_id=543,KHANPUR,RLD,1,Post Graduate,"Rs 3,20,26,730 ~ 3 Crore+",Rs 0 ~
+598,542,Saddam Hussain,https://www.myneta.info/utt2012/candidate.php?candidate_id=542,KHANPUR,Muslim League Kerala State Committee,1,8th Pass,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+599,207,Sahab Singh Pundir,https://www.myneta.info/utt2012/candidate.php?candidate_id=207,SAHASPUR,BSP,1,Post Graduate,"Rs 1,14,28,389 ~ 1 Crore+","Rs 5,71,740 ~ 5 Lacs+"
+600,206,Sahdev Singh Pudir,https://www.myneta.info/utt2012/candidate.php?candidate_id=206,SAHASPUR,BJP,1,Graduate,"Rs 72,43,699 ~ 72 Lacs+","Rs 49,812 ~ 49 Thou+"
+601,217,Saleem Ahmed,https://www.myneta.info/utt2012/candidate.php?candidate_id=217,DHARAMPUR,BSP,0,10th Pass,"Rs 1,13,48,963 ~ 1 Crore+",Rs 0 ~
+602,701,Samir Ulla Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=701,HALDWANI,AITC,0,12th Pass,"Rs 11,20,000 ~ 11 Lacs+","Rs 7,00,000 ~ 7 Lacs+"
+603,263,Sanjay Bhatt,https://www.myneta.info/utt2012/candidate.php?candidate_id=263,DEHRADUN CANTONMENT,UKDP,2,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=263&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=263&col=lia
+604,424,Sanjay Goyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=424,MUSSOORIE,SP,0,10th Pass,"Rs 19,18,000 ~ 19 Lacs+","Rs 1,40,000 ~ 1 Lacs+"
+605,280,Sanjay Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=280,LAKSAR,BJP,0,Graduate,"Rs 68,78,148 ~ 68 Lacs+",Rs 0 ~
+606,156,Sanjay Kothiyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=156,NARENDRANAGAR,UKDP,0,Graduate,"Rs 76,30,000 ~ 76 Lacs+","Rs 13,00,000 ~ 13 Lacs+"
+607,514,Sanjay Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=514,JHABRERA (SC),IND,0,8th Pass,"Rs 10,00,000 ~ 10 Lacs+",Rs 0 ~
+608,544,Sanjay Pal,https://www.myneta.info/utt2012/candidate.php?candidate_id=544,KHANPUR,UtRM,2,12th Pass,"Rs 23,20,000 ~ 23 Lacs+",Rs 0 ~
+609,461,Sanjay Pokhriyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=461,RISHIKESH,IND,0,12th Pass,"Rs 8,50,000 ~ 8 Lacs+",Rs 0 ~
+610,593,Sanjay Sahni,https://www.myneta.info/utt2012/candidate.php?candidate_id=593,RUDRAPUR,IND,0,8th Pass,"Rs 8,05,000 ~ 8 Lacs+",Rs 0 ~
+611,783,Sanjay Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=783,LALKUWAN,SP,0,Graduate,"Rs 12,02,000 ~ 12 Lacs+","Rs 2,50,507 ~ 2 Lacs+"
+612,409,Sanjeev Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=409,RAJPUR ROAD (SC),IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=409&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=409&col=lia
+613,553,Sanjeev Tomar,https://www.myneta.info/utt2012/candidate.php?candidate_id=553,MANGLOR,IND,0,Graduate,"Rs 1,16,55,478 ~ 1 Crore+","Rs 8,00,000 ~ 8 Lacs+"
+614,379,Sanjeevan Ram,https://www.myneta.info/utt2012/candidate.php?candidate_id=379,DHARAMPUR,LJP,0,8th Pass,"Rs 1,15,000 ~ 1 Lacs+",Rs 0 ~
+615,474,Sanju,https://www.myneta.info/utt2012/candidate.php?candidate_id=474,HARIDWAR,IND,0,Graduate,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+616,377,Sansar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=377,SAHASPUR,IND,0,10th Pass,"Rs 5,36,500 ~ 5 Lacs+",Rs 0 ~
+617,376,Santosh,https://www.myneta.info/utt2012/candidate.php?candidate_id=376,SAHASPUR,IND,0,10th Pass,"Rs 9,50,000 ~ 9 Lacs+",Rs 0 ~
+618,728,Santosh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=728,PITHORAGARH,SHS,0,Graduate,Nil,Rs 0 ~
+619,407,Sapna Sonkar,https://www.myneta.info/utt2012/candidate.php?candidate_id=407,RAJPUR ROAD (SC),SP,0,10th Pass,"Rs 81,62,953 ~ 81 Lacs+","Rs 17,95,917 ~ 17 Lacs+"
+620,380,Sardar Khan(pappu),https://www.myneta.info/utt2012/candidate.php?candidate_id=380,DHARAMPUR,RLD,0,8th Pass,"Rs 13,72,500 ~ 13 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+621,161,Sardar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=161,NARENDRANAGAR,IND,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=161&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=161&col=lia
+622,239,Sarita Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=239,NAINITAL (SC),INC,0,10th Pass,"Rs 25,10,000 ~ 25 Lacs+",Rs 0 ~
+623,307,Sarita Purohit,https://www.myneta.info/utt2012/candidate.php?candidate_id=307,BHEL RANIPUR,UKDP,0,Graduate,"Rs 8,52,000 ~ 8 Lacs+",Rs 0 ~
+624,64,Sarojni Devi,https://www.myneta.info/utt2012/candidate.php?candidate_id=64,YAMKESHWAR,INC,0,Post Graduate,"Rs 82,84,700 ~ 82 Lacs+","Rs 14,00,000 ~ 14 Lacs+"
+625,574,Sartaj Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=574,SITARGANJ,Peace Party,0,12th Pass,"Rs 2,75,000 ~ 2 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+626,437,Sarvanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=437,DOIWWALA,AITC,0,12th Pass,"Rs 8,14,000 ~ 8 Lacs+",Rs 0 ~
+627,680,Sarvender Singh Panwar (saheb),https://www.myneta.info/utt2012/candidate.php?candidate_id=680,SHRINAGAR,IND,0,10th Pass,"Rs 3,05,000 ~ 3 Lacs+",Rs 0 ~
+628,37,Sarwar Yar Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=37,KICHHA,INC,0,Graduate,"Rs 1,94,25,362 ~ 1 Crore+","Rs 6,59,765 ~ 6 Lacs+"
+629,283,Sarwat Kareem Ansari,https://www.myneta.info/utt2012/candidate.php?candidate_id=283,MANGLOR,BSP,0,8th Pass,"Rs 1,83,00,000 ~ 1 Crore+",Rs 0 ~
+630,610,Satendra Kumar Saini,https://www.myneta.info/utt2012/candidate.php?candidate_id=610,LAKSAR,UtPP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=610&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=610&col=lia
+631,375,Satish Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=375,SAHASPUR,IND,0,10th Pass,"Rs 8,44,210 ~ 8 Lacs+",Rs 0 ~
+632,194,Satish Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=194,VIKASNAGAR ,RLD,0,10th Pass,"Rs 18,00,000 ~ 18 Lacs+",Rs 0 ~
+633,536,Satish Rohela Advocate,https://www.myneta.info/utt2012/candidate.php?candidate_id=536,ROORKEE,IND,0,Post Graduate,"Rs 3,27,33,991 ~ 3 Crore+","Rs 67,87,000 ~ 67 Lacs+"
+634,277,Satpal Bhramchari,https://www.myneta.info/utt2012/candidate.php?candidate_id=277,HARIDWAR,INC,0,8th Pass,"Rs 49,28,981 ~ 49 Lacs+","Rs 13,52,123 ~ 13 Lacs+"
+635,512,Satyapal,https://www.myneta.info/utt2012/candidate.php?candidate_id=512,JHABRERA (SC),Inqalab Vikas Dal,1,10th Pass,"Rs 38,40,000 ~ 38 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+636,299,Satyapal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=299,BHAGWANPUR (SC),INC,0,Post Graduate,"Rs 23,97,952 ~ 23 Lacs+","Rs 6,50,000 ~ 6 Lacs+"
+637,438,Sawan Chand Ramola,https://www.myneta.info/utt2012/candidate.php?candidate_id=438,DOIWWALA,JD(U),0,12th Pass,"Rs 6,80,292 ~ 6 Lacs+",Rs 0 ~
+638,541,Sayeed Hassan,https://www.myneta.info/utt2012/candidate.php?candidate_id=541,KHANPUR,SP,0,8th Pass,"Rs 77,30,000 ~ 77 Lacs+","Rs 26,00,000 ~ 26 Lacs+"
+639,639,Sayyad Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=639,HARIDWAR RURAL,IND,0,Literate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=639&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=639&col=lia
+640,500,Seema,https://www.myneta.info/utt2012/candidate.php?candidate_id=500,JWALAPUR (SC),Muslim League Kerala State Committee,0,Graduate Professional,"Rs 48,000 ~ 48 Thou+",Rs 0 ~
+641,44,Shaheen Khan,https://www.myneta.info/utt2012/candidate.php?candidate_id=44,SITARGANJ,UKDP,0,Illiterate,"Rs 30,00,000 ~ 30 Lacs+",Rs 0 ~
+642,596,Shaherum,https://www.myneta.info/utt2012/candidate.php?candidate_id=596,GADARPUR,SP,3,5th Pass,"Rs 7,09,650 ~ 7 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+643,292,Shahjad,https://www.myneta.info/utt2012/candidate.php?candidate_id=292,PIRANKALIYAR,BSP,2,8th Pass,"Rs 6,52,96,935 ~ 6 Crore+","Rs 79,685 ~ 79 Thou+"
+644,647,Shahnawaz,https://www.myneta.info/utt2012/candidate.php?candidate_id=647,JASPUR,IND,0,Graduate,"Rs 2,06,600 ~ 2 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+645,621,Shahzad Hussaon,https://www.myneta.info/utt2012/candidate.php?candidate_id=621,KASHIPUR,Muslim League Kerala State Committee,0,12th Pass,"Rs 1,69,061 ~ 1 Lacs+",Rs 0 ~
+646,123,Shaila Rani Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=123,KEDARNATH,INC,0,Post Graduate,"Rs 70,25,000 ~ 70 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+647,216,Shailesh Kumar Verma,https://www.myneta.info/utt2012/candidate.php?candidate_id=216,DHARAMPUR,NCP,1,12th Pass,"Rs 7,35,500 ~ 7 Lacs+","Rs 10,50,000 ~ 10 Lacs+"
+648,588,Shakeel Ahmmad,https://www.myneta.info/utt2012/candidate.php?candidate_id=588,RUDRAPUR,Peace Party,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=588&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=588&col=lia
+649,1,Shakti Shail Kaparwan,https://www.myneta.info/utt2012/candidate.php?candidate_id=1,YAMKESHWAR,UKDP,0,Doctorate,"Rs 32,62,000 ~ 32 Lacs+","Rs 11,50,000 ~ 11 Lacs+"
+650,493,Shalu Gahalavat,https://www.myneta.info/utt2012/candidate.php?candidate_id=493,BHEL RANIPUR,IND,0,Post Graduate,"Rs 10,00,000 ~ 10 Lacs+",Rs 0 ~
+651,129,Shambhu Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=129,KEDARNATH,LJP,0,Post Graduate,Nil,Rs 0 ~
+652,378,Shambhu Saran,https://www.myneta.info/utt2012/candidate.php?candidate_id=378,DHARAMPUR,AITC,0,Post Graduate,"Rs 1,45,000 ~ 1 Lacs+",Rs 0 ~
+653,444,Shamsher Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=444,DOIWWALA,IND,0,12th Pass,"Rs 40,40,830 ~ 40 Lacs+",Rs 0 ~
+654,181,Shamsher Singh Rathour,https://www.myneta.info/utt2012/candidate.php?candidate_id=181,CHAKRATA (ST) ,NCP,0,12th Pass,"Rs 2,18,600 ~ 2 Lacs+",Rs 0 ~
+655,715,Shankar Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=715,DHARCHULA,IND,0,Literate,"Rs 1,00,000 ~ 1 Lacs+",Rs 0 ~
+656,403,Shanti Prasad Bijalwan,https://www.myneta.info/utt2012/candidate.php?candidate_id=403,RAIPUR,IND,0,Post Graduate,"Rs 79,12,000 ~ 79 Lacs+","Rs 18,00,000 ~ 18 Lacs+"
+657,654,Shatrughan Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=654,YAMKESHWAR,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=654&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=654&col=lia
+658,95,Shekhar Lakhchaura,https://www.myneta.info/utt2012/candidate.php?candidate_id=95,ALMORA,BSP,0,Post Graduate,"Rs 95,78,200 ~ 95 Lacs+","Rs 13,73,000 ~ 13 Lacs+"
+659,310,Sheshraj Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=310,HARIDWAR RURAL,BSP,0,Post Graduate,"Rs 1,77,30,000 ~ 1 Crore+","Rs 3,00,000 ~ 3 Lacs+"
+660,205,Shiv Prasad Devali,https://www.myneta.info/utt2012/candidate.php?candidate_id=205,SAHASPUR,CPM,1,Graduate,"Rs 33,72,042 ~ 33 Lacs+","Rs 53,996 ~ 53 Thou+"
+661,374,Shiv Raj,https://www.myneta.info/utt2012/candidate.php?candidate_id=374,SAHASPUR,IND,0,10th Pass,"Rs 3,12,000 ~ 3 Lacs+",Rs 0 ~
+662,386,Shiv Sagar Thapa,https://www.myneta.info/utt2012/candidate.php?candidate_id=386,RAIPUR,JKNPP,0,Graduate Professional,"Rs 18,57,300 ~ 18 Lacs+",Rs 0 ~
+663,679,Shiv Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=679,SHRINAGAR,IND,0,12th Pass,"Rs 15,20,000 ~ 15 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+664,423,Shiv Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=423,MUSSOORIE,AITC,0,10th Pass,"Rs 34,02,395 ~ 34 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+665,175,Shivdayal Bahuguna,https://www.myneta.info/utt2012/candidate.php?candidate_id=175,TEHRI,IND,0,Graduate,"Rs 5,62,000 ~ 5 Lacs+",Rs 0 ~
+666,764,Shobha Joshi,https://www.myneta.info/utt2012/candidate.php?candidate_id=764,ALMORA,UtRM,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=764&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=764&col=lia
+667,451,Shobha Ram Raturi,https://www.myneta.info/utt2012/candidate.php?candidate_id=451,RISHIKESH,SaSP,0,12th Pass,"Rs 81,30,000 ~ 81 Lacs+","Rs 7,80,000 ~ 7 Lacs+"
+668,355,Shoorveer Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=355,GHANSALI (SC),IND,0,Post Graduate,"Rs 23,10,000 ~ 23 Lacs+","Rs 3,76,000 ~ 3 Lacs+"
+669,148,Shoorveer Singh Sajwan,https://www.myneta.info/utt2012/candidate.php?candidate_id=148,DEOPRAYAG,INC,0,Post Graduate,"Rs 4,36,24,860 ~ 4 Crore+","Rs 16,00,000 ~ 16 Lacs+"
+670,494,Shreeram Ahuja,https://www.myneta.info/utt2012/candidate.php?candidate_id=494,BHEL RANIPUR,IND,0,10th Pass,"Rs 33,24,692 ~ 33 Lacs+","Rs 9,37,000 ~ 9 Lacs+"
+671,633,Shrikant Verma,https://www.myneta.info/utt2012/candidate.php?candidate_id=633,HARIDWAR RURAL,UtRM,0,Graduate Professional,"Rs 5,94,31,300 ~ 5 Crore+","Rs 70,00,000 ~ 70 Lacs+"
+672,649,Shurbir Singh Bisht,https://www.myneta.info/utt2012/candidate.php?candidate_id=649,YAMKESHWAR,SaSP,0,10th Pass,"Rs 4,84,11,789 ~ 4 Crore+","Rs 2,15,00,000 ~ 2 Crore+"
+673,394,Shusheel Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=394,RAIPUR,LJP,0,10th Pass,"Rs 10,000 ~ 10 Thou+",Rs 0 ~
+674,772,Shyam Sundar Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=772,CHAMPAWAT,AITC,0,10th Pass,"Rs 20,00,000 ~ 20 Lacs+",Rs 0 ~
+675,294,Shyambeer,https://www.myneta.info/utt2012/candidate.php?candidate_id=294,PIRANKALIYAR,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=294&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=294&col=lia
+676,77,Sisupal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=77,LANSDOWNE,BSP,0,10th Pass,"Rs 63,82,000 ~ 63 Lacs+","Rs 30,00,000 ~ 30 Lacs+"
+677,106,Smt. Shudha Nand,https://www.myneta.info/utt2012/candidate.php?candidate_id=106,SOMESHWAR (SC),BSP,0,10th Pass,"Rs 20,59,000 ~ 20 Lacs+","Rs 35,000 ~ 35 Thou+"
+678,238,Snjay Kumar Alias Sanju,https://www.myneta.info/utt2012/candidate.php?candidate_id=238,NAINITAL (SC),BSP,0,Graduate Professional,"Rs 69,77,631 ~ 69 Lacs+","Rs 34,811 ~ 34 Thou+"
+679,159,Soban Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=159,NARENDRANAGAR,UtRM,0,Post Graduate,"Rs 23,47,000 ~ 23 Lacs+",Rs 0 ~
+680,589,Somnath,https://www.myneta.info/utt2012/candidate.php?candidate_id=589,RUDRAPUR,BCP,0,Post Graduate,"Rs 1,30,000 ~ 1 Lacs+",Rs 0 ~
+681,357,Somvari Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=357,DHANOLTI,UtRM,0,Post Graduate,"Rs 38,99,589 ~ 38 Lacs+","Rs 25,000 ~ 25 Thou+"
+682,467,Sonia Kinnar,https://www.myneta.info/utt2012/candidate.php?candidate_id=467,HARIDWAR,JKNPP,0,Literate,"Rs 1,61,000 ~ 1 Lacs+",Rs 0 ~
+683,503,Subhash Chanchal,https://www.myneta.info/utt2012/candidate.php?candidate_id=503,JWALAPUR (SC),IND,0,Post Graduate,"Rs 41,20,000 ~ 41 Lacs+","Rs 14,00,000 ~ 14 Lacs+"
+684,416,Subhash Chand Jasoria,https://www.myneta.info/utt2012/candidate.php?candidate_id=416,DEHRADUN CANTONMENT,SP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=416&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=416&col=lia
+685,109,Subhash Pandey,https://www.myneta.info/utt2012/candidate.php?candidate_id=109,JAGESHWAR,UKDP,0,Post Graduate,"Rs 9,58,576 ~ 9 Lacs+",Rs 0 ~
+686,157,Subodh Uniyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=157,NARENDRANAGAR,INC,0,Post Graduate,"Rs 30,84,362 ~ 30 Lacs+",Rs 0 ~
+687,722,Sudershan Shah,https://www.myneta.info/utt2012/candidate.php?candidate_id=722,BHIMTAL,UtRM,0,Post Graduate,"Rs 2,24,03,250 ~ 2 Crore+","Rs 18,00,000 ~ 18 Lacs+"
+688,202,Suhail Pasha,https://www.myneta.info/utt2012/candidate.php?candidate_id=202,VIKASNAGAR ,IND,0,12th Pass,"Rs 20,68,028 ~ 20 Lacs+",Rs 0 ~
+689,526,Sulekh Chand,https://www.myneta.info/utt2012/candidate.php?candidate_id=526,PIRANKALIYAR,IND,0,12th Pass,"Rs 6,19,000 ~ 6 Lacs+",Rs 0 ~
+690,641,Sultan Bharti,https://www.myneta.info/utt2012/candidate.php?candidate_id=641,JASPUR,SP,2,8th Pass,"Rs 4,10,333 ~ 4 Lacs+",Rs 0 ~
+691,69,Sundar Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=69,PAURI (SC),INC,0,10th Pass,"Rs 57,35,291 ~ 57 Lacs+",Rs 0 ~
+692,176,Sundar Lal Bailwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=176,TEHRI,IND,0,Graduate,"Rs 14,12,000 ~ 14 Lacs+",Rs 0 ~
+693,737,Sundar Singh Mehara,https://www.myneta.info/utt2012/candidate.php?candidate_id=737,KAPKOT,UtRM,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=737&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=737&col=lia
+694,782,Sunder Singh Khanka,https://www.myneta.info/utt2012/candidate.php?candidate_id=782,LALKUWAN,UtRM,0,Others,"Rs 6,45,000 ~ 6 Lacs+",Rs 0 ~
+695,344,Sundra Lal,https://www.myneta.info/utt2012/candidate.php?candidate_id=344,THARALI (SC),IND,0,Post Graduate,"Rs 6,10,375 ~ 6 Lacs+",Rs 0 ~
+696,529,Sunil Kumar Saini,https://www.myneta.info/utt2012/candidate.php?candidate_id=529,ROORKEE,SHS,0,Post Graduate,"Rs 51,000 ~ 51 Thou+",Rs 0 ~
+697,695,Sur Singh Gusain,https://www.myneta.info/utt2012/candidate.php?candidate_id=695,KOTDWAR,IND,0,10th Pass,"Rs 23,87,000 ~ 23 Lacs+",Rs 0 ~
+698,356,Suraj Mani,https://www.myneta.info/utt2012/candidate.php?candidate_id=356,DHANOLTI,SP,0,5th Pass,"Rs 7,33,760 ~ 7 Lacs+",Rs 0 ~
+699,452,Surandra Singh Kaintura,https://www.myneta.info/utt2012/candidate.php?candidate_id=452,RISHIKESH,UtRM,0,Graduate,"Rs 1,04,29,000 ~ 1 Crore+","Rs 61,65,958 ~ 61 Lacs+"
+700,195,Surat Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=195,VIKASNAGAR ,UJP,2,12th Pass,"Rs 61,01,645 ~ 61 Lacs+","Rs 5,98,737 ~ 5 Lacs+"
+701,446,Surendra Dutt Petwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=446,DOIWWALA,IND,0,Post Graduate,"Rs 43,58,582 ~ 43 Lacs+",Rs 0 ~
+702,614,Surendra Kumar Namdev,https://www.myneta.info/utt2012/candidate.php?candidate_id=614,LAKSAR,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=614&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=614&col=lia
+703,298,Surendra Rakesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=298,BHAGWANPUR (SC),BSP,1,Graduate Professional,"Rs 52,47,532 ~ 52 Lacs+",Rs 0 ~
+704,770,Surendra Sahay Gupta,https://www.myneta.info/utt2012/candidate.php?candidate_id=770,JAGESHWAR,IND,0,8th Pass,"Rs 7,25,000 ~ 7 Lacs+","Rs 4,50,000 ~ 4 Lacs+"
+705,81,Surendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=81,KOTDWAR,INC,0,Graduate,"Rs 80,46,141 ~ 80 Lacs+",Rs 0 ~
+706,96,Surendra Singh Jeena,https://www.myneta.info/utt2012/candidate.php?candidate_id=96,SALT,BJP,0,Graduate,"Rs 7,04,26,727 ~ 7 Crore+","Rs 2,59,88,688 ~ 2 Crore+"
+707,351,Surendra Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=351,KARANPRAYAG,IND,0,10th Pass,"Rs 1,61,98,109 ~ 1 Crore+","Rs 18,75,246 ~ 18 Lacs+"
+708,672,Surendra Singh Nigaltiya,https://www.myneta.info/utt2012/candidate.php?candidate_id=672,KALADHUNGI,UtRM,0,10th Pass,"Rs 27,70,000 ~ 27 Lacs+","Rs 3,292 ~ 3 Thou+"
+709,580,Suresh Agarwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=580,KICHHA,UtRM,1,12th Pass,"Rs 75,34,444 ~ 75 Lacs+","Rs 7,24,463 ~ 7 Lacs+"
+710,288,Suresh Chand Jain,https://www.myneta.info/utt2012/candidate.php?candidate_id=288,ROORKEE,BJP,0,Graduate Professional,"Rs 1,73,11,078 ~ 1 Crore+","Rs 4,34,786 ~ 4 Lacs+"
+711,460,Suresh Chandra Dabral,https://www.myneta.info/utt2012/candidate.php?candidate_id=460,RISHIKESH,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=460&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=460&col=lia
+712,42,Suresh Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=42,SITARGANJ,INC,0,Post Graduate,"Rs 1,27,12,766 ~ 1 Crore+","Rs 8,76,242 ~ 8 Lacs+"
+713,300,Suresh Rathore,https://www.myneta.info/utt2012/candidate.php?candidate_id=300,BHAGWANPUR (SC),BJP,0,Graduate,"Rs 1,17,99,581 ~ 1 Crore+","Rs 4,00,000 ~ 4 Lacs+"
+714,327,Suresh Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=327,GANGOTRI,IND,0,12th Pass,"Rs 13,82,649 ~ 13 Lacs+",Rs 0 ~
+715,384,Suresh Singh Rana,https://www.myneta.info/utt2012/candidate.php?candidate_id=384,DHARAMPUR,IND,0,Post Graduate,"Rs 6,15,500 ~ 6 Lacs+","Rs 1,873 ~ 1 Thou+"
+716,485,Sushil Chand Thapliyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=485,BHEL RANIPUR,JKNPP,0,Graduate,"Rs 61,28,000 ~ 61 Lacs+",Rs 0 ~
+717,381,Sushma,https://www.myneta.info/utt2012/candidate.php?candidate_id=381,DHARAMPUR,JMBP,0,Post Graduate,"Rs 41,000 ~ 41 Thou+","Rs 3,50,000 ~ 3 Lacs+"
+718,470,Swami Nitanand,https://www.myneta.info/utt2012/candidate.php?candidate_id=470,HARIDWAR,IND,0,Graduate,"Rs 25,40,000 ~ 25 Lacs+",Rs 0 ~
+719,612,Tahir Hasan,https://www.myneta.info/utt2012/candidate.php?candidate_id=612,LAKSAR,IND,1,Literate,"Rs 1,89,64,979 ~ 1 Crore+","Rs 9,00,000 ~ 9 Lacs+"
+720,775,Tahir Husen,https://www.myneta.info/utt2012/candidate.php?candidate_id=775,CHAMPAWAT,IND,0,Not Given,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=775&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=775&col=lia
+721,585,Tajindra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=585,RUDRAPUR,SP,2,Graduate,"Rs 25,30,000 ~ 25 Lacs+","Rs 25,000 ~ 25 Thou+"
+722,265,Tanveer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=265,RAJPUR ROAD (SC),BSP,0,Post Graduate,"Rs 6,50,73,433 ~ 6 Crore+","Rs 5,72,878 ~ 5 Lacs+"
+723,110,Tara Datt,https://www.myneta.info/utt2012/candidate.php?candidate_id=110,JAGESHWAR,BSP,0,Graduate,"Rs 21,05,000 ~ 21 Lacs+",Rs 0 ~
+724,33,Tarak Bachhar,https://www.myneta.info/utt2012/candidate.php?candidate_id=33,GADARPUR,BSP,2,10th Pass,"Rs 46,65,962 ~ 46 Lacs+","Rs 8,29,000 ~ 8 Lacs+"
+725,222,Tarun Ahuja,https://www.myneta.info/utt2012/candidate.php?candidate_id=222,DHARAMPUR,SHS,0,12th Pass,"Rs 1,39,76,000 ~ 1 Crore+","Rs 23,00,000 ~ 23 Lacs+"
+726,539,Tasin,https://www.myneta.info/utt2012/candidate.php?candidate_id=539,KHANPUR,AITC,0,8th Pass,"Rs 1,28,000 ~ 1 Lacs+",Rs 0 ~
+727,73,Teerath Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=73,CHAUBATAKHAL,BJP,0,Post Graduate,"Rs 1,22,80,000 ~ 1 Crore+","Rs 2,50,000 ~ 2 Lacs+"
+728,35,Tilak Raj Behar,https://www.myneta.info/utt2012/candidate.php?candidate_id=35,RUDRAPUR,INC,2,12th Pass,"Rs 2,42,90,443 ~ 2 Crore+",Rs 0 ~
+729,462,Tripta Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=462,HARIDWAR,NCP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=462&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=462&col=lia
+730,270,Trivendra Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=270,RAIPUR,BJP,0,Graduate,"Rs 54,09,853 ~ 54 Lacs+","Rs 16,12,844 ~ 16 Lacs+"
+731,670,Umesh Sharma,https://www.myneta.info/utt2012/candidate.php?candidate_id=670,KALADHUNGI,SP,0,12th Pass,"Rs 1,38,300 ~ 1 Lacs+",Rs 0 ~
+732,269,Umesh Sharma (kau),https://www.myneta.info/utt2012/candidate.php?candidate_id=269,RAIPUR,INC,0,Graduate,"Rs 1,78,77,086 ~ 1 Crore+",Rs 0 ~
+733,358,Usha Panwar,https://www.myneta.info/utt2012/candidate.php?candidate_id=358,DHANOLTI,IND,0,Post Graduate,"Rs 2,40,500 ~ 2 Lacs+",Rs 0 ~
+734,295,Vaiyajanti Mala,https://www.myneta.info/utt2012/candidate.php?candidate_id=295,JHABRERA (SC),BJP,5,Post Graduate,"Rs 1,29,89,000 ~ 1 Crore+","Rs 12,60,357 ~ 12 Lacs+"
+735,484,Vasisth Pasvan,https://www.myneta.info/utt2012/candidate.php?candidate_id=484,BHEL RANIPUR,LJP,0,10th Pass,"Rs 87,746 ~ 87 Thou+",Rs 0 ~
+736,153,Ved Prakash,https://www.myneta.info/utt2012/candidate.php?candidate_id=153,DEOPRAYAG,IND,0,12th Pass,"Rs 1,96,712 ~ 1 Lacs+",Rs 0 ~
+737,676,Veer Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=676,KALADHUNGI,IND,0,Illiterate,Nil,Rs 0 ~
+738,787,Verenderpuri,https://www.myneta.info/utt2012/candidate.php?candidate_id=787,LALKUWAN,IND,0,Literate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=787&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=787&col=lia
+739,406,Vijay Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=406,RAJPUR ROAD (SC),Rashtriya Jan Kalyan Party,0,Not Given,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+740,58,Vijay Pal Singh Sajwan,https://www.myneta.info/utt2012/candidate.php?candidate_id=58,GANGOTRI,INC,0,Post Graduate,"Rs 59,62,301 ~ 59 Lacs+","Rs 13,30,136 ~ 13 Lacs+"
+741,162,Vijay Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=162,PRATAPNAGAR,BJP,0,Post Graduate,"Rs 55,81,905 ~ 55 Lacs+",Rs 0 ~
+742,592,Vijay Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=592,RUDRAPUR,IND,0,Post Graduate,"Rs 1,41,000 ~ 1 Lacs+",Rs 0 ~
+743,598,Vijay Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=598,GADARPUR,IND,0,Post Graduate,"Rs 3,86,682 ~ 3 Lacs+",Rs 0 ~
+744,66,Vijaya Barthwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=66,YAMKESHWAR,BJP,0,Post Graduate,"Rs 1,50,17,585 ~ 1 Crore+",Rs 0 ~
+745,346,Vijayesh Nawani,https://www.myneta.info/utt2012/candidate.php?candidate_id=346,KARANPRAYAG,UtRM,0,Graduate Professional,"Rs 1,70,70,194 ~ 1 Crore+","Rs 11,41,100 ~ 11 Lacs+"
+746,135,Vijendra Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=135,RUDRAPRAYAG,IND,0,Graduate,"Rs 70,000 ~ 70 Thou+",Rs 0 ~
+747,56,Vijendra Prasad,https://www.myneta.info/utt2012/candidate.php?candidate_id=56,YAMUNOTRI,BSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=56&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=56&col=lia
+748,442,Vijendra Singh Chauhan,https://www.myneta.info/utt2012/candidate.php?candidate_id=442,DOIWWALA,IND,0,10th Pass,"Rs 29,800 ~ 29 Thou+",Rs 0 ~
+749,620,Vikas Agrawal,https://www.myneta.info/utt2012/candidate.php?candidate_id=620,KASHIPUR,SHS,0,Not Given,"Rs 16,20,000 ~ 16 Lacs+",Rs 0 ~
+750,163,Vikram Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=163,PRATAPNAGAR,INC,0,Graduate Professional,"Rs 41,34,984 ~ 41 Lacs+","Rs 5,72,984 ~ 5 Lacs+"
+751,559,Vimal E-tyagi,https://www.myneta.info/utt2012/candidate.php?candidate_id=559,KHATIMA,Adarsh Rashtriya Vikas Party,0,Post Graduate,"Rs 74,35,000 ~ 74 Lacs+","Rs 1,70,000 ~ 1 Lacs+"
+752,573,Vinay Krishna Mondal,https://www.myneta.info/utt2012/candidate.php?candidate_id=573,SITARGANJ,SP,0,12th Pass,"Rs 59,00,000 ~ 59 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+753,201,Vinay Raj Singh (pappu Bhai),https://www.myneta.info/utt2012/candidate.php?candidate_id=201,VIKASNAGAR ,IND,0,10th Pass,"Rs 13,35,792 ~ 13 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+754,393,Vinod Bharthwal,https://www.myneta.info/utt2012/candidate.php?candidate_id=393,RAIPUR,SP,2,Post Graduate,"Rs 4,31,783 ~ 4 Lacs+",Rs 0 ~
+755,52,Vinod Chand,https://www.myneta.info/utt2012/candidate.php?candidate_id=52,KHATIMA,UKDP,1,Post Graduate,"Rs 8,57,794 ~ 8 Lacs+",Rs 0 ~
+756,237,Vinod Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=237,NAINITAL (SC),UKDP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=237&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=237&col=lia
+757,339,Vinod Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=339,THARALI (SC),LJP,0,Graduate,"Rs 3,000 ~ 3 Thou+",Rs 0 ~
+758,511,Vinod Kumar,https://www.myneta.info/utt2012/candidate.php?candidate_id=511,JHABRERA (SC),AITC,0,12th Pass,"Rs 15,500 ~ 15 Thou+",Rs 0 ~
+759,402,Vinod Kumar Maletha,https://www.myneta.info/utt2012/candidate.php?candidate_id=402,RAIPUR,IND,0,Post Graduate,"Rs 10,00,000 ~ 10 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+760,373,Vinod Singh Negi,https://www.myneta.info/utt2012/candidate.php?candidate_id=373,SAHASPUR,IND,0,Graduate,"Rs 45,000 ~ 45 Thou+",Rs 0 ~
+761,747,Vipin Chandra,https://www.myneta.info/utt2012/candidate.php?candidate_id=747,DWARAHAT,UtRM,0,Post Graduate,"Rs 8,21,028 ~ 8 Lacs+",Rs 0 ~
+762,173,Virendar Mohan Uttarakhandi,https://www.myneta.info/utt2012/candidate.php?candidate_id=173,TEHRI,UKDP,0,Graduate,"Rs 2,25,97,683 ~ 2 Crore+","Rs 41,49,614 ~ 41 Lacs+"
+763,449,Virender Bhardwaj,https://www.myneta.info/utt2012/candidate.php?candidate_id=449,RISHIKESH,LJP,0,5th Pass,"Rs 51,21,500 ~ 51 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+764,721,Virendra Danai,https://www.myneta.info/utt2012/candidate.php?candidate_id=721,BHIMTAL,SP,0,8th Pass,"Rs 16,29,000 ~ 16 Lacs+","Rs 3,80,000 ~ 3 Lacs+"
+765,136,Virendra Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=136,RUDRAPRAYAG,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=136&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=136&col=lia
+766,710,Virendra Singh Pal,https://www.myneta.info/utt2012/candidate.php?candidate_id=710,DHARCHULA,UtRM,0,Post Graduate,"Rs 3,40,000 ~ 3 Lacs+",Rs 0 ~
+767,304,Vishal Singh,https://www.myneta.info/utt2012/candidate.php?candidate_id=304,BHEL RANIPUR,BSP,0,Graduate,"Rs 1,25,04,212 ~ 1 Crore+",Rs 0 ~
+768,450,Vishwanath Raturi (babloo),https://www.myneta.info/utt2012/candidate.php?candidate_id=450,RISHIKESH,SP,0,Post Graduate,"Rs 2,23,500 ~ 2 Lacs+",Rs 0 ~
+769,521,Wazid Ali,https://www.myneta.info/utt2012/candidate.php?candidate_id=521,PIRANKALIYAR,JD(U),0,8th Pass,"Rs 3,80,000 ~ 3 Lacs+",Rs 0 ~
+770,545,Yakoob,https://www.myneta.info/utt2012/candidate.php?candidate_id=545,KHANPUR,IND,0,Not Given,"Rs 18,60,000 ~ 18 Lacs+",Rs 0 ~
+771,683,Yashpal Benam,https://www.myneta.info/utt2012/candidate.php?candidate_id=683,CHAUBATAKHAL,IND,1,Post Graduate,"Rs 15,49,000 ~ 15 Lacs+","Rs 3,22,000 ~ 3 Lacs+"
+772,466,Yashpal Singh Rawat,https://www.myneta.info/utt2012/candidate.php?candidate_id=466,HARIDWAR,MaJP,0,8th Pass,"Rs 18,00,000 ~ 18 Lacs+","Rs 3,20,000 ~ 3 Lacs+"
+773,363,Yashveer Arya,https://www.myneta.info/utt2012/candidate.php?candidate_id=363,DHANOLTI,IND,0,Post Graduate,"Rs 91,98,300 ~ 91 Lacs+","Rs 2,46,000 ~ 2 Lacs+"
+774,308,Yatishwaranand,https://www.myneta.info/utt2012/candidate.php?candidate_id=308,HARIDWAR RURAL,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=308&col=ta,https://myneta.info/image_v2.php?myneta_folder=utt2012&candidate_id=308&col=lia
+775,515,Yogesh,https://www.myneta.info/utt2012/candidate.php?candidate_id=515,PIRANKALIYAR,NCP,1,10th Pass,"Rs 8,75,000 ~ 8 Lacs+",Rs 0 ~
+776,458,Yogesh Kumar Uniyal,https://www.myneta.info/utt2012/candidate.php?candidate_id=458,RISHIKESH,IND,0,Graduate,"Rs 1,00,000 ~ 1 Lacs+",Rs 0 ~
+777,211,Zamil Hasan,https://www.myneta.info/utt2012/candidate.php?candidate_id=211,SAHASPUR,Muslim League Kerala State Committee,0,12th Pass,"Rs 21,54,192 ~ 21 Lacs+","Rs 90,000 ~ 90 Thou+"

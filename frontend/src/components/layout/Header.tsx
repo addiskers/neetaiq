@@ -8,7 +8,7 @@ import { api } from "@/lib/api";
 export default function Header({ onMenuToggle }: { onMenuToggle?: () => void }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { currentElection, electionId } = useFilters();
+  const { currentElection, stateSlug } = useFilters();
   const title = pathname === "/candidate-intel" ? "Candidate Intel" : "Overview";
   const label = currentElection ? `${currentElection.state} ${currentElection.year}` : "Assam";
 
@@ -24,7 +24,7 @@ export default function Header({ onMenuToggle }: { onMenuToggle?: () => void }) 
       return;
     }
     try {
-      const data = await api.search(q);
+      const data = await api.search(q, stateSlug);
       setResults(data);
       setShowResults(true);
     } catch {
@@ -44,10 +44,6 @@ export default function Header({ onMenuToggle }: { onMenuToggle?: () => void }) 
           <Menu className="w-5 h-5" />
         </button>
         <h1 className="text-[15px] font-bold text-[#111827] tracking-tight truncate">{title}</h1>
-        <div className="hidden sm:flex items-center gap-1.5 bg-[#059669]/8 text-[#059669] text-[11px] px-3 py-1.5 rounded-full font-bold tracking-wide shrink-0">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#059669] animate-pulse" />
-          LIVE: {label.toUpperCase()}
-        </div>
       </div>
       <div className="relative hidden md:block">
         <div className="flex items-center gap-2.5 bg-[#F3F4F6] rounded-xl px-4 py-2.5 w-72 transition-all focus-within:ring-2 focus-within:ring-[#4F46E5]/20 focus-within:bg-white focus-within:border-[#4F46E5]/30 border border-transparent">

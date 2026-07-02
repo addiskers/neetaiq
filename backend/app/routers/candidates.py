@@ -4,13 +4,13 @@ from sqlalchemy import func
 from typing import List, Optional
 
 from app.database import get_db
-from app.models import Election, Candidate, Party, Constituency
+from app.models.registry import models_dependency
 from app.schemas.candidate import CandidateBrief, CandidateDetail, PartyOut
 
 router = APIRouter(prefix="/api/candidates", tags=["candidates"])
 
 
-def _resolve_eid(election_id: Optional[int], db: Session) -> int:
+def _resolve_eid(election_id: Optional[int], db: Session, Election) -> int:
     if election_id:
         return election_id
     e = db.query(Election).order_by(Election.id.desc()).first()
@@ -26,9 +26,11 @@ def list_candidates(
     exclude_nota: bool = Query(True),
     limit: int = Query(50),
     offset: int = Query(0),
+    models=Depends(models_dependency),
     db: Session = Depends(get_db),
 ):
-    eid = _resolve_eid(election_id, db)
+    Election, District, Constituency, Candidate, Party = models
+    eid = _resolve_eid(election_id, db, Election)
     q = (
         db.query(Candidate)
         .options(joinedload(Candidate.party), joinedload(Candidate.constituency))
@@ -39,9 +41,7 @@ def list_candidates(
         q = q.filter(Candidate.is_nota == False)
 
     if constituency:
-        q = q.join(Constituency).filter(
-            Constituency.name.ilike(f"%{constituency}%")
-        )
+        q = q.join(Constituency).filter(Constituency.name.ilike(f"%{constituency}%"))
 
     if party:
         q = q.join(Party).filter(
@@ -79,8 +79,13 @@ def list_candidates(
 
 
 @router.get("/parties", response_model=List[PartyOut])
-def list_parties(election_id: Optional[int] = None, db: Session = Depends(get_db)):
-    eid = _resolve_eid(election_id, db)
+def list_parties(
+    election_id: Optional[int] = None,
+    models=Depends(models_dependency),
+    db: Session = Depends(get_db),
+):
+    Election, District, Constituency, Candidate, Party = models
+    eid = _resolve_eid(election_id, db, Election)
     party_ids = (
         db.query(func.distinct(Candidate.party_id))
         .filter(
@@ -96,7 +101,12 @@ def list_parties(election_id: Optional[int] = None, db: Session = Depends(get_db
 
 
 @router.get("/{candidate_id}", response_model=CandidateDetail)
-def get_candidate(candidate_id: int, db: Session = Depends(get_db)):
+def get_candidate(
+    candidate_id: int,
+    models=Depends(models_dependency),
+    db: Session = Depends(get_db),
+):
+    Election, District, Constituency, Candidate, Party = models
     c = (
         db.query(Candidate)
         .options(

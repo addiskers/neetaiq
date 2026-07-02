@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, LayoutGrid, Users, Brain, Radio, X, ChevronDown } from "lucide-react";
+import { LayoutDashboard, LayoutGrid, Users, X, ChevronDown } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
 
 const baseModules = [
@@ -13,7 +13,7 @@ const baseModules = [
 export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void }) {
   const pathname = usePathname();
   const {
-    elections, setElectionId, currentElection,
+    elections, setElection, currentElection,
     granularity, setGranularity,
     selectedDistrict, setSelectedDistrict,
     selectedAC, setSelectedAC,
@@ -25,7 +25,7 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
   };
 
   // Derive unique states and years for split dropdowns
-  const uniqueStates = [...new Set(elections.map((e) => e.state))];
+  const uniqueStates = [...new Set(elections.map((e) => e.state))].sort();
   const selectedState = currentElection?.state || uniqueStates[0] || "";
   const yearsForState = elections
     .filter((e) => e.state === selectedState)
@@ -35,12 +35,12 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
     const latest = elections
       .filter((e) => e.state === state)
       .sort((a, b) => b.year - a.year)[0];
-    if (latest) setElectionId(latest.id);
+    if (latest) setElection(latest);
   };
 
   const handleYearChange = (year: number) => {
     const match = elections.find((e) => e.state === selectedState && e.year === year);
-    if (match) setElectionId(match.id);
+    if (match) setElection(match);
   };
 
   return (
@@ -52,6 +52,9 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
             <span className="text-white font-extrabold text-[15px]">मतदान</span>
             <span className="text-[#3B82F6] font-extrabold text-[15px]">iQ</span>
           </div>
+          <span className="text-[9px] font-extrabold tracking-widest uppercase px-1.5 py-0.5 rounded-md border border-[#EF4444]/40 text-[#EF4444] bg-[#EF4444]/10 leading-tight">
+            BETA
+          </span>
         </div>
         {onCloseMobile && (
           <button
@@ -164,15 +167,7 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
       <div className="px-5 py-4 flex-1">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Modules</div>
         <nav className="space-y-1">
-          {[
-            ...baseModules,
-            ...(currentElection?.year === 2026
-              ? [{ name: "Live Election", href: "/live-election", icon: Radio }]
-              : []),
-            ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026
-              ? [{ name: "AI Predictions", href: "/predictions", icon: Brain }]
-              : []),
-          ].map((mod) => {
+          {baseModules.map((mod) => {
             const isActive = pathname === mod.href || (mod.href !== "/" && pathname.startsWith(mod.href));
             return (
               <Link
@@ -194,7 +189,13 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
       </div>
 
       {/* Footer */}
-      <div className="px-5 py-4 border-t border-white/10">
+      <div className="px-5 py-4 border-t border-white/10 space-y-2">
+        <div className="flex items-start gap-1.5 bg-[#111B33] rounded-lg px-3 py-2">
+          <span className="text-[#F59E0B] text-[10px] mt-px">⚠</span>
+          <p className="text-[11px] text-white leading-relaxed">
+            All information is subject to verification.
+          </p>
+        </div>
         <div className="text-[10px] text-[#475569]">
           Powered by <span className="text-[#64748B] font-semibold">MatdaanIQ</span>
         </div>

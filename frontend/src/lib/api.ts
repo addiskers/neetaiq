@@ -123,57 +123,89 @@ export interface ElectionStats {
   total_parties: number;
 }
 
-function eid(electionId?: number): string {
-  return electionId ? `election_id=${electionId}` : "";
+/** Convert a state display name to the slug the backend expects */
+export function toStateSlug(stateName: string): string {
+  return stateName.toLowerCase().replace(/\s+/g, "");
 }
 
-function qs(electionId?: number, extra?: string): string {
-  const parts = [eid(electionId), extra].filter(Boolean).join("&");
+function qs(electionId?: number, extra?: string, state?: string): string {
+  const parts = [
+    state ? `state=${encodeURIComponent(state)}` : "",
+    electionId ? `election_id=${electionId}` : "",
+    extra || "",
+  ].filter(Boolean).join("&");
   return parts ? `?${parts}` : "";
 }
 
 // API functions
 export const api = {
-  getElections: () => fetchApi<Election[]>("/overview/elections"),
+  getAllElections: () => fetchApi<Election[]>("/overview/all-elections"),
+  getElections: (state?: string) =>
+    fetchApi<Election[]>(`/overview/elections${state ? `?state=${state}` : ""}`),
   getStates: () => fetchApi<StateOverview[]>("/overview/states"),
-  getDistricts: (electionId?: number) => fetchApi<DistrictOverview[]>(`/overview/districts${qs(electionId)}`),
-  getConstituencies: (electionId?: number, extra?: string) =>
-    fetchApi<ConstituencyBrief[]>(`/overview/constituencies${qs(electionId, extra)}`),
-  getConstituency: (ac: number, electionId?: number) =>
-    fetchApi<ConstituencyDetail>(`/overview/constituencies/${ac}${qs(electionId)}`),
-  getDossierTable: (electionId?: number, limit = 20, offset = 0, extra?: string) =>
-    fetchApi<DossierRow[]>(`/overview/dossier-table${qs(electionId, `limit=${limit}&offset=${offset}${extra ? `&${extra}` : ""}`)}`),
-  getStats: (electionId?: number, extra?: string) => fetchApi<ElectionStats>(`/overview/stats${qs(electionId, extra)}`),
-  getTurnoutByConstituency: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/turnout-by-constituency${qs(electionId, extra)}`),
-  getTurnoutByDistrict: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/turnout-by-district${qs(electionId, extra)}`),
-  getPartyPerformance: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/party-performance${qs(electionId, extra)}`),
-  getMarginDistribution: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/vote-margin-distribution${qs(electionId, extra)}`),
-  getCategoryMix: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/category-mix${qs(electionId, extra)}`),
-  getCountdown: (electionId?: number) => fetchApi<any>(`/overview/countdown${qs(electionId)}`),
-  getAcResults: (electionId?: number) => fetchApi<any[]>(`/overview/ac-results${qs(electionId)}`),
-  getHistoricalWave: (electionId?: number) => fetchApi<any>(`/overview/historical-wave${qs(electionId)}`),
-  getClosestContests: (electionId?: number, limit = 10) => fetchApi<any[]>(`/overview/closest-contests${qs(electionId, `limit=${limit}`)}`),
-  getNotaImpact: (electionId?: number) => fetchApi<any[]>(`/overview/nota-impact${qs(electionId)}`),
-  getCrorepatiCandidates: (electionId?: number) => fetchApi<any>(`/overview/crorepati-candidates${qs(electionId)}`),
-  getGenderDemographics: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/gender-demographics${qs(electionId, extra)}`),
-  getEducationBreakdown: (electionId?: number, extra?: string) => fetchApi<any[]>(`/overview/education-breakdown${qs(electionId, extra)}`),
-  getCriminalOverview: (electionId?: number, extra?: string) => fetchApi<any>(`/overview/criminal-overview${qs(electionId, extra)}`),
-  getMarginVsTurnout: (electionId?: number) => fetchApi<any[]>(`/overview/margin-vs-turnout${qs(electionId)}`),
-  getConstituencyTracker: (electionId?: number, extra?: string) =>
-    fetchApi<any[]>(`/overview/constituency-tracker${qs(electionId, extra)}`),
-  getPlacesToWatch: (electionId?: number) => fetchApi<any[]>(`/overview/places-to-watch${qs(electionId)}`),
-  getSwingAnalysis: (electionId?: number) => fetchApi<any[]>(`/overview/swing-analysis${qs(electionId)}`),
-  getCandidates: (electionId?: number, extra?: string) =>
-    fetchApi<CandidateBrief[]>(`/candidates${qs(electionId, extra)}`),
-  getCandidate: (id: number) => fetchApi<CandidateDetail>(`/candidates/${id}`),
-  getParties: (electionId?: number) => fetchApi<Party[]>(`/candidates/parties${qs(electionId)}`),
-  search: (q: string) => fetchApi<{ candidates: any[]; constituencies: any[] }>(`/search?q=${q}`),
+  getDistricts: (electionId?: number, state?: string) =>
+    fetchApi<DistrictOverview[]>(`/overview/districts${qs(electionId, undefined, state)}`),
+  getConstituencies: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<ConstituencyBrief[]>(`/overview/constituencies${qs(electionId, extra, state)}`),
+  getConstituency: (ac: number, electionId?: number, state?: string) =>
+    fetchApi<ConstituencyDetail>(`/overview/constituencies/${ac}${qs(electionId, undefined, state)}`),
+  getDossierTable: (electionId?: number, limit = 20, offset = 0, extra?: string, state?: string) =>
+    fetchApi<DossierRow[]>(`/overview/dossier-table${qs(electionId, `limit=${limit}&offset=${offset}${extra ? `&${extra}` : ""}`, state)}`),
+  getStats: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<ElectionStats>(`/overview/stats${qs(electionId, extra, state)}`),
+  getTurnoutByConstituency: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/turnout-by-constituency${qs(electionId, extra, state)}`),
+  getTurnoutByDistrict: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/turnout-by-district${qs(electionId, extra, state)}`),
+  getPartyPerformance: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/party-performance${qs(electionId, extra, state)}`),
+  getMarginDistribution: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/vote-margin-distribution${qs(electionId, extra, state)}`),
+  getCategoryMix: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/category-mix${qs(electionId, extra, state)}`),
+  getCountdown: (electionId?: number, state?: string) =>
+    fetchApi<any>(`/overview/countdown${qs(electionId, undefined, state)}`),
+  getAcResults: (electionId?: number, state?: string) =>
+    fetchApi<any[]>(`/overview/ac-results${qs(electionId, undefined, state)}`),
+  getHistoricalWave: (electionId?: number, state?: string) =>
+    fetchApi<any>(`/overview/historical-wave${qs(electionId, undefined, state)}`),
+  getClosestContests: (electionId?: number, limit = 10, state?: string) =>
+    fetchApi<any[]>(`/overview/closest-contests${qs(electionId, `limit=${limit}`, state)}`),
+  getNotaImpact: (electionId?: number, state?: string) =>
+    fetchApi<any[]>(`/overview/nota-impact${qs(electionId, undefined, state)}`),
+  getCrorepatiCandidates: (electionId?: number, state?: string) =>
+    fetchApi<any>(`/overview/crorepati-candidates${qs(electionId, undefined, state)}`),
+  getGenderDemographics: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/gender-demographics${qs(electionId, extra, state)}`),
+  getEducationBreakdown: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/education-breakdown${qs(electionId, extra, state)}`),
+  getCriminalOverview: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any>(`/overview/criminal-overview${qs(electionId, extra, state)}`),
+  getMarginVsTurnout: (electionId?: number, state?: string) =>
+    fetchApi<any[]>(`/overview/margin-vs-turnout${qs(electionId, undefined, state)}`),
+  getConstituencyTracker: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<any[]>(`/overview/constituency-tracker${qs(electionId, extra, state)}`),
+  getPlacesToWatch: (electionId?: number, state?: string) =>
+    fetchApi<any[]>(`/overview/places-to-watch${qs(electionId, undefined, state)}`),
+  getSwingAnalysis: (electionId?: number, state?: string) =>
+    fetchApi<any[]>(`/overview/swing-analysis${qs(electionId, undefined, state)}`),
+  getCandidates: (electionId?: number, extra?: string, state?: string) =>
+    fetchApi<CandidateBrief[]>(`/candidates${qs(electionId, extra, state)}`),
+  getCandidate: (id: number, state?: string) => fetchApi<CandidateDetail>(`/candidates/${id}${state ? `?state=${state}` : ""}`),
+  getParties: (electionId?: number, state?: string) =>
+    fetchApi<Party[]>(`/candidates/parties${qs(electionId, undefined, state)}`),
+  search: (q: string, state?: string) =>
+    fetchApi<{ candidates: any[]; constituencies: any[] }>(
+      `/search?q=${encodeURIComponent(q)}${state ? `&state=${state}` : ""}`
+    ),
   getPredictionSummary: () => fetchApi<any>("/predictions/summary"),
-  getConstituencyPredictions: (params?: string) => fetchApi<any[]>(`/predictions/constituencies${params ? `?${params}` : ""}`),
+  getConstituencyPredictions: (params?: string) =>
+    fetchApi<any[]>(`/predictions/constituencies${params ? `?${params}` : ""}`),
   getBattlegrounds: (limit = 20) => fetchApi<any[]>(`/predictions/battlegrounds?limit=${limit}`),
   getSwingMap: () => fetchApi<any[]>("/predictions/swing-map"),
-  generateTweets: (electionId?: number, category?: string) => {
+  generateTweets: (electionId?: number, category?: string, state?: string) => {
     const parts: string[] = [];
+    if (state) parts.push(`state=${state}`);
     if (electionId) parts.push(`election_id=${electionId}`);
     if (category) parts.push(`category=${category}`);
     const q = parts.length ? `?${parts.join("&")}` : "";

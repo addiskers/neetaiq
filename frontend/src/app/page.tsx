@@ -4,7 +4,7 @@ import type { Election, ElectionStats, DossierRow } from "@/lib/api";
 import OverviewClient, { type OverviewInitialData } from "./OverviewClient";
 
 export const metadata: Metadata = {
-  title: "Overview — मतदान iQ | India's Booth-Level Voter Intelligence",
+  title: "Overview - मतदान iQ | India's Booth-Level Voter Intelligence",
   description: "Election countdown, geospatial mapping, candidate intelligence, and voter demographics for Indian state elections. Booth-level data from ECI.",
 };
 

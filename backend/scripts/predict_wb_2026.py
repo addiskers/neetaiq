@@ -44,7 +44,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from sqlalchemy.orm import Session
 from app.database import engine
-from app.models import Election, Constituency, Candidate, Party, District
+from app.models.westbengal import Election, Constituency, Candidate, Party, District
 
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder

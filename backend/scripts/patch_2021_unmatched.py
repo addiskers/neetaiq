@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from sqlalchemy.orm import Session
 from app.database import engine
-from app.models import Election, Candidate, Constituency
+from app.models.assam import Election, Candidate, Constituency
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 JSON_FILE = os.path.join(PROJECT_ROOT, "assam2021", "structured_output_2021.json")
@@ -33,9 +33,16 @@ MANUAL_MAP = {
     ("GAUHATI WEST", "BALESWAR RANGPI"): "1057",    # Rongpi in CSV
     ("GAUHATI WEST", "DEBAKESH MALLA BUZAR BARUAH"): "830",
     ("MAJBAT", "GOLAM MOSTAFA"): "662",             # Mustafa in CSV
-    # These 5 have no match in CSV at all (different name entirely or not in myneta)
+    # Title/honorific prefix mismatches
+    ("KOKRAJHAR EAST", "SHRI SAILENDRA NATH BRAHMA"): "752",  # "Shri" prefix in DB
+    ("HAJO", "SRI SUMAN HARIPRIYA"): "1025",                  # "Sri" prefix in DB
+    ("BARAMA", "NABA KUMAR SARANIA"): "706",                   # "Sri" prefix in profile CSV
+    ("DHING", "Md. Anjar Hussain"): "134",                     # "Md." prefix in DB
+    ("NAHARKATIA", "NAREN SONOWAL (BOTALI)"): "275",           # "(BOTALI)" suffix in DB
+    ("TINSUKIA", "HIRA DEVI"): "278",                          # "Smt" prefix in profile CSV
+    # These have no match in CSV at all
     # ("BISWANATH", "MILICHARAN BASUMATARY"): None,
-    # ("BATADROBA", "FAKAR UDDIN"): None,
+    # ("BATADROBA", "Fakar Uddin"): None,
     # ("RUPOHIHAT", "NURUL AMIN CHOWDHURY"): None,
     # ("MAHMARA", "LOHIT GOGOI"): None,
     # ("NAOBOICHA", "BIRI JOY"): None,

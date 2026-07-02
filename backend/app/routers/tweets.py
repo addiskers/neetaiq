@@ -4,12 +4,12 @@ from sqlalchemy import func
 from typing import Optional
 
 from app.database import get_db
-from app.models import Election, District, Constituency, Candidate, Party
+from app.models.registry import models_dependency
 
 router = APIRouter(prefix="/api/tweets", tags=["tweets"])
 
 
-def _resolve_eid(election_id: Optional[int], db: Session) -> int:
+def _resolve_eid(election_id, db, Election) -> int:
     if election_id:
         return election_id
     e = db.query(Election).order_by(Election.id.desc()).first()
@@ -20,9 +20,11 @@ def _resolve_eid(election_id: Optional[int], db: Session) -> int:
 def generate_tweets(
     election_id: Optional[int] = None,
     category: Optional[str] = None,
+    models=Depends(models_dependency),
     db: Session = Depends(get_db),
 ):
-    eid = _resolve_eid(election_id, db)
+    Election, District, Constituency, Candidate, Party = models
+    eid = _resolve_eid(election_id, db, Election)
     election = db.query(Election).filter(Election.id == eid).first()
     if not election:
         return []

@@ -26,7 +26,7 @@ function formatRupees(n: number | null | undefined): string {
 }
 
 export default function ElectionTrackerClient({ initialData }: { initialData?: { data: any[] } }) {
-  const { electionId, currentElection, districts } = useFilters();
+  const { electionId, currentElection, stateSlug, districts } = useFilters();
   const [data, setData] = useState<any[]>(initialData?.data ?? []);
   const [loading, setLoading] = useState(!initialData?.data?.length);
   const [searchQ, setSearchQ] = useState("");
@@ -34,7 +34,10 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
   const [categoryFilter, setCategoryFilter] = useState("");
   const [expandedAC, setExpandedAC] = useState<number | null>(null);
 
-  const hasResults = currentElection && currentElection.year !== 2026;
+  const hasResults = useMemo(
+    () => data.some(ac => ac.candidates?.some((c: any) => c.position === 1)),
+    [data],
+  );
 
   useEffect(() => {
     if (!electionId) return;
@@ -44,7 +47,7 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
     if (districtFilter) parts.push(`district=${encodeURIComponent(districtFilter)}`);
     if (categoryFilter) parts.push(`category=${categoryFilter}`);
     if (searchQ.length >= 2) parts.push(`search=${encodeURIComponent(searchQ)}`);
-    api.getConstituencyTracker(electionId, parts.join("&")).then((d) => {
+    api.getConstituencyTracker(electionId, parts.join("&"), stateSlug).then((d) => {
       setData(d);
       setLoading(false);
     });
@@ -167,8 +170,8 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
                   ) : (
                     <div className="flex items-center justify-between">
                       <div className="text-xs text-[#6B7280]">{ac.candidate_count} candidates contesting</div>
-                      {ac.winner_2021 && (
-                        <div className="text-[10px] text-[#9CA3AF]">2021: <span className="font-bold" style={{ color: PARTY_COLORS[ac.winner_2021.party] || "#6B7280" }}>{ac.winner_2021.party}</span></div>
+                      {ac.winner_prev && (
+                        <div className="text-[10px] text-[#9CA3AF]">{ac.winner_prev.year}: <span className="font-bold" style={{ color: PARTY_COLORS[ac.winner_prev.party] || "#6B7280" }}>{ac.winner_prev.party}</span></div>
                       )}
                     </div>
                   )}
@@ -200,9 +203,9 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
                         </div>
                       </div>
                     ))}
-                    {ac.winner_2021 && !hasResults && (
+                    {ac.winner_prev && !hasResults && (
                       <div className="pt-2 text-[10px] text-[#9CA3AF] border-t border-[#E5E7EB]">
-                        2021 winner: <span className="font-bold" style={{ color: PARTY_COLORS[ac.winner_2021.party] || "#6B7280" }}>{ac.winner_2021.party}</span> - {ac.winner_2021.name} (margin: {formatNum(ac.winner_2021.margin)})
+                        {ac.winner_prev.year} winner: <span className="font-bold" style={{ color: PARTY_COLORS[ac.winner_prev.party] || "#6B7280" }}>{ac.winner_prev.party}</span> - {ac.winner_prev.name} (margin: {formatNum(ac.winner_prev.margin)})
                       </div>
                     )}
                   </div>

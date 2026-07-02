@@ -1,0 +1,926 @@
+sno,candidate_id,candidate_name,candidate_link,constituency,party,criminal_cases,education,assets,liabilities
+1,552,Abdul Hameed Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=552,VALLIKKUNNU,IUML,6,10th Pass,"Rs 3,02,34,747 ~ 3 Crore+",Rs 0 ~
+2,557,Adv. Brm Shafeer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=557,VARKALA,INC,0,Graduate Professional,"Rs 34,14,028 ~ 34 Lacs+","Rs 46,67,500 ~ 46 Lacs+"
+3,700,Adv. Mons Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=700,KADUTHURUTHY,Kerala Congress,2,Graduate Professional,"Rs 1,89,09,273 ~ 1 Crore+","Rs 24,58,433 ~ 24 Lacs+"
+4,131,A .K Saseendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=131,ELATHUR,NCP,0,10th Pass,"Rs 2,06,37,386 ~ 2 Crore+",Rs 0 ~
+5,6,A .Saboora,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=6,THIRUVANANTHAPURAM,SUCI(C),0,12th Pass,"Rs 78,349 ~ 78 Thou+",Rs 0 ~
+6,544,A C Biju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=544,UDUMBANCHOLA,BSP,2,Graduate,"Rs 15,84,056 ~ 15 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+7,924,A C Jalaluddeen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=924,PERAVOOR,SDPI,2,8th Pass,"Rs 26,10,122 ~ 26 Lacs+",Rs 0 ~
+8,71,A G Ajayakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=71,ETTUMANOOR,SUCI(C),0,10th Pass,"Rs 10,29,464 ~ 10 Lacs+",Rs 0 ~
+9,405,A K M Ashraf,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=405,MANJESHWAR,IUML,2,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=405&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=405&col=lia
+10,576,A P Anilkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=576,WANDOOR,INC,1,12th Pass,"Rs 68,87,138 ~ 68 Lacs+",Rs 0 ~
+11,496,A P Gangadharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=496,TALIPARAMBA,BJP,2,10th Pass,"Rs 35,02,500 ~ 35 Lacs+",Rs 0 ~
+12,800,A Ramesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=800,KOZHIKODE NORTH,IND,0,10th Pass,"Rs 36,76,475 ~ 36 Lacs+","Rs 2,87,897 ~ 2 Lacs+"
+13,1027,A Velayudhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1027,UDMA,BJP,5,Graduate,"Rs 1,02,35,258 ~ 1 Crore+","Rs 1,32,248 ~ 1 Lacs+"
+14,659,A. Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=659,CHITTUR,BSP,0,8th Pass,"Rs 20,45,771 ~ 20 Lacs+",Rs 0 ~
+15,197,A. Nagesh (Parameswaran.A),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=197,PUTHUKKAD,BJP,13,10th Pass,"Rs 69,08,691 ~ 69 Lacs+","Rs 33,71,583 ~ 33 Lacs+"
+16,33,A. Prabhakaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=33,MALAMPUZHA,CPI(M),0,Graduate,"Rs 60,67,834 ~ 60 Lacs+",Rs 0 ~
+17,448,A.B. Jayaprakash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=448,PARAVUR,Bharath Dharma Jana Sena,2,12th Pass,"Rs 2,83,15,499 ~ 2 Crore+","Rs 16,68,000 ~ 16 Lacs+"
+18,168,A.C.Moideen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=168,KUNNAMKULAM,CPI(M),1,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=168&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=168&col=lia
+19,231,A.G. Ajayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=231,ALUVA,SUCI(C),0,10th Pass,"Rs 66,60,484 ~ 66 Lacs+",Rs 0 ~
+20,815,A.K.Moidheenkutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=815,KUNNAMKULAM,IND,0,5th Pass,"Rs 1,89,000 ~ 1 Lacs+",Rs 0 ~
+21,5,A.Shyju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=5,VATTIYOORKAVU,SUCI(C),0,12th Pass,"Rs 2,98,660 ~ 2 Lacs+",Rs 0 ~
+22,474,Abdu Samad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=474,POONJAR,Kerala Janatha Party,0,Graduate,"Rs 90,41,500 ~ 90 Lacs+","Rs 15,000 ~ 15 Thou+"
+23,626,Abdul Gafoor K. K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=626,BEYPORE,BSP,0,10th Pass,"Rs 7,15,000 ~ 7 Lacs+",Rs 0 ~
+24,1012,Abdul Gafoor Pulikkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1012,TIRUR,IND,0,5th Pass,"Rs 20,760 ~ 20 Thou+",Rs 0 ~
+25,1011,Abdul Gafoor Valiya Peedikakkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1011,TIRUR,IND,0,8th Pass,"Rs 15,25,068 ~ 15 Lacs+",Rs 0 ~
+26,116,Abdul Jabbar K K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=116,AZHIKODE,SDPI,3,10th Pass,"Rs 36,10,000 ~ 36 Lacs+",Rs 0 ~
+27,1013,Abdul Mahroof A.K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1013,TIRUR,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1013&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1013&col=lia
+28,539,Abdul Majeed Panakkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=539,TIRURANGADI,BSP,0,5th Pass,"Rs 52,11,000 ~ 52 Lacs+",Rs 0 ~
+29,758,Abdul Muneer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=758,KODUVALLY,IND,0,8th Pass,"Rs 8,40,802 ~ 8 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+30,530,Abdul Nazar M K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=530,THRITHALA,SDPI,0,10th Pass,"Rs 9,29,000 ~ 9 Lacs+",Rs 0 ~
+31,1061,Abdul Raheem P S/O. Abdul Kareem,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1061,KUNNAMANGALAM,IND,0,10th Pass,"Rs 24,94,004 ~ 24 Lacs+",Rs 0 ~
+32,808,Abdul Raheem S/O. Hassan Koya,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=808,KUNNAMANGALAM,IND,0,10th Pass,"Rs 27,82,628 ~ 27 Lacs+",Rs 0 ~
+33,391,Abdul Raheem. S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=391,MALAMPUZHA,IND,1,10th Pass,"Rs 13,47,000 ~ 13 Lacs+",Rs 0 ~
+34,761,Abdul Razak K S/O Ahmad Kutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=761,KODUVALLY,IND,0,10th Pass,"Rs 14,26,620 ~ 14 Lacs+",Rs 0 ~
+35,347,Abdul Razak S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=347,KODUVALLY,IND,0,10th Pass,"Rs 80,95,049 ~ 80 Lacs+","Rs 25,00,000 ~ 25 Lacs+"
+36,715,Abdul Samad. T S/O T Kunhamu Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=715,KANHANGAD,SDPI,2,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=715&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=715&col=lia
+37,165,Abdul Vahid,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=165,KUNNAMANGALAM,SDPI,1,10th Pass,"Rs 48,62,700 ~ 48 Lacs+",Rs 0 ~
+38,828,Abdulla Puthiyaparambath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=828,KUTHUPARAMBA,IND,0,8th Pass,"Rs 14,25,000 ~ 14 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+39,835,Abdulla S/O Pokker,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=835,KUTTIADI,IND,0,Literate,"Rs 26,91,047 ~ 26 Lacs+",Rs 0 ~
+40,49,Abdurahim Naha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=49,TIRURANGADI,IND,0,12th Pass,"Rs 75,24,796 ~ 75 Lacs+",Rs 0 ~
+41,943,Abdurahiman Randathani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=943,PUNALUR,IUML,0,10th Pass,"Rs 1,75,05,037 ~ 1 Crore+","Rs 87,82,011 ~ 87 Lacs+"
+42,959,Abdurahiman.V S/O Alavi Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=959,TANUR,IND,0,Literate,"Rs 30,33,500 ~ 30 Lacs+",Rs 0 ~
+43,961,Abdurahiman.V S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=961,TANUR,IND,0,Not Given,"Rs 21,18,000 ~ 21 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+44,840,Abhayan.N.A,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=840,MANALUR,BSP,0,12th Pass,"Rs 20,48,500 ~ 20 Lacs+","Rs 2,80,000 ~ 2 Lacs+"
+45,913,Abhilash K V,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=913,PAYYANNUR,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=913&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=913&col=lia
+46,199,Abhilash P P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=199,PUTHUPPALLY,BSP,0,Graduate,"Rs 71,583 ~ 71 Thou+",Rs 0 ~
+47,46,Abhilash Vadakkan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=46,THIRUVANANTHAPURAM,IND,0,10th Pass,"Rs 17,33,415 ~ 17 Lacs+",Rs 0 ~
+48,1017,Aboobacker Sidheek,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1017,TIRUR,IND,0,10th Pass,"Rs 36,00,000 ~ 36 Lacs+",Rs 0 ~
+49,1054,Adil Abdurahiman Thangal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1054,VENGARA,IND,0,12th Pass,"Rs 83,96,187 ~ 83 Lacs+","Rs 13,833 ~ 13 Thou+"
+50,929,Adv Abdul Afsal P T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=929,PERINTHALMANNA,IND,0,Graduate Professional,"Rs 18,12,294 ~ 18 Lacs+",Rs 0 ~
+51,98,Adv Eldose P Kunnapillil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=98,PERUMBAVOOR,INC,3,Post Graduate,"Rs 1,52,54,414 ~ 1 Crore+","Rs 16,53,000 ~ 16 Lacs+"
+52,259,Adv G Raman Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=259,CHANGANASSERY,BJP,2,Graduate Professional,"Rs 1,70,89,500 ~ 1 Crore+","Rs 5,00,000 ~ 5 Lacs+"
+53,457,Adv K K Sreedharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=457,PAYYANNUR,BJP,0,Graduate Professional,"Rs 1,40,11,759 ~ 1 Crore+","Rs 3,50,000 ~ 3 Lacs+"
+54,735,Adv K Shreekanth,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=735,KASARAGOD,BJP,10,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=735&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=735&col=lia
+55,245,Adv. A Sreedharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=245,ATTINGAL,Revolutionary Socialist Party,0,Post Graduate,"Rs 53,27,139 ~ 53 Lacs+","Rs 2,27,847 ~ 2 Lacs+"
+56,103,Adv. A. N. Shamseer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=103,THALASSERY,CPI(M),6,Post Graduate,"Rs 34,28,638 ~ 34 Lacs+",Rs 0 ~
+57,130,Adv. A. Raja,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=130,DEVIKULAM,CPI(M),1,Graduate Professional,"Rs 33,15,231 ~ 33 Lacs+","Rs 95,697 ~ 95 Thou+"
+58,473,Adv. A.M. Rohith,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=473,PONNANI,INC,8,Graduate Professional,"Rs 5,82,540 ~ 5 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+59,140,Adv. Anju Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=140,KADUTHURUTHY,BSP,0,Graduate Professional,"Rs 12,20,500 ~ 12 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+60,950,Adv. Anumol N.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=950,RANNI,BSP,0,Graduate Professional,"Rs 11,000 ~ 11 Thou+","Rs 35,000 ~ 35 Thou+"
+61,437,Adv. B Gopalakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=437,OLLUR,BJP,12,Graduate Professional,"Rs 4,39,77,042 ~ 4 Crore+","Rs 50,44,555 ~ 50 Lacs+"
+62,350,Adv. Bindhu Krishna,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=350,KOLLAM,INC,35,Post Graduate,"Rs 55,37,000 ~ 55 Lacs+","Rs 69,414 ~ 69 Thou+"
+63,709,Adv. Brijesh Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=709,KALLIASSERI,INC,2,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=709&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=709&col=lia
+64,132,Adv. C. Dinesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=132,ERANAD,BJP,0,Post Graduate,"Rs 89,55,111 ~ 89 Lacs+","Rs 30,00,000 ~ 30 Lacs+"
+65,417,Adv. C.N. Prakash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=417,MUVATTUPUZHA,Twenty 20 Party,0,Post Graduate,"Rs 1,26,25,650 ~ 1 Crore+","Rs 9,19,789 ~ 9 Lacs+"
+66,91,Adv. C.P. Promod,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=91,PALAKKAD,CPI(M),0,Graduate Professional,"Rs 2,58,94,422 ~ 2 Crore+","Rs 24,22,909 ~ 24 Lacs+"
+67,214,Adv. D. K. Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=214,VAMANAPURAM,CPI(M),4,Graduate Professional,"Rs 1,77,62,013 ~ 1 Crore+",Rs 0 ~
+68,543,Adv. E.M. Augusthy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=543,UDUMBANCHOLA,INC,11,Graduate Professional,"Rs 3,85,89,956 ~ 3 Crore+","Rs 1,63,05,146 ~ 1 Crore+"
+69,453,Adv. Faizy. M. Pasha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=453,PATHANAPURAM,SDPI,0,Graduate Professional,"Rs 53,99,689 ~ 53 Lacs+","Rs 8,06,159 ~ 8 Lacs+"
+70,181,Adv. G. R. Anil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=181,NEDUMANGAD,CPI,3,Graduate Professional,"Rs 1,28,32,849 ~ 1 Crore+","Rs 11,02,196 ~ 11 Lacs+"
+71,244,Adv. G. Steephen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=244,ARUVIKKARA,CPI(M),0,Graduate Professional,"Rs 37,28,543 ~ 37 Lacs+","Rs 5,51,511 ~ 5 Lacs+"
+72,209,Adv. Gafoor P Lillis,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=209,TIRUR,CPI(M),0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=209&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=209&col=lia
+73,425,Adv. J. R. Padmakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=425,NEDUMANGAD,BJP,3,Graduate Professional,"Rs 3,68,02,595 ~ 3 Crore+",Rs 0 ~
+74,832,Adv. Jacob Abraham,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=832,KUTTANAD,Kerala Congress,0,Graduate Professional,"Rs 1,68,11,096 ~ 1 Crore+",Rs 0 ~
+75,299,Adv. Jaimon Thankachan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=299,KADUTHURUTHY,Samajwadi Jan Parishad,0,Graduate Professional,"Rs 7,64,000 ~ 7 Lacs+","Rs 5,38,000 ~ 5 Lacs+"
+76,260,Adv. Job Maichil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=260,CHANGANASSERY,Kerala Congress (M),3,Graduate Professional,"Rs 1,12,47,336 ~ 1 Crore+","Rs 25,25,000 ~ 25 Lacs+"
+77,112,Adv. Jose Thettayil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=112,ANGAMALY,JD(S),0,Graduate Professional,"Rs 2,58,65,686 ~ 2 Crore+","Rs 14,32,809 ~ 14 Lacs+"
+78,685,Adv. K Francis George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=685,IDUKKI,Kerala Congress,4,Graduate Professional,"Rs 6,22,01,976 ~ 6 Crore+","Rs 42,84,282 ~ 42 Lacs+"
+79,241,Adv. K V Sabu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=241,ANGAMALY,BJP,0,Post Graduate,"Rs 2,59,95,000 ~ 2 Crore+","Rs 52,00,000 ~ 52 Lacs+"
+80,461,Adv. K V Sudheer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=461,PERAMBRA,BJP,5,Graduate Professional,"Rs 1,45,94,452 ~ 1 Crore+","Rs 6,32,843 ~ 6 Lacs+"
+81,864,Adv. K. Praveen Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=864,NADAPURAM,INC,15,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=864&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=864&col=lia
+82,38,Adv. K. Premkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=38,OTTAPALAM,CPI(M),4,Graduate Professional,"Rs 1,12,93,759 ~ 1 Crore+","Rs 5,00,000 ~ 5 Lacs+"
+83,243,Adv. K. Sivadasan Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=243,ARANMULA,INC,1,Post Graduate,"Rs 92,12,961 ~ 92 Lacs+","Rs 25,000 ~ 25 Thou+"
+84,377,Adv. K.K.Aneeshkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=377,KUNNAMKULAM,BJP,7,Post Graduate,"Rs 68,40,528 ~ 68 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+85,253,Adv. K.M. Sachindev,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=253,BALUSSERI,CPI(M),7,Graduate Professional,"Rs 2,68,23,208 ~ 2 Crore+",Rs 0 ~
+86,28,Adv. K.U Jenish Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=28,KONNI,CPI(M),7,Graduate Professional,"Rs 36,17,244 ~ 36 Lacs+","Rs 14,10,000 ~ 14 Lacs+"
+87,206,Adv. M. Swaraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=206,THRIPUNITHURA,CPI(M),7,Post Graduate,"Rs 71,88,822 ~ 71 Lacs+",Rs 0 ~
+88,83,Adv. M. Vincent,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=83,KOVALAM,INC,8,Graduate Professional,"Rs 21,45,924 ~ 21 Lacs+","Rs 39,84,810 ~ 39 Lacs+"
+89,486,Adv. Manju K. Nair (Kottarathil),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=486,RANNI,IND,0,Graduate Professional,"Rs 1,50,000 ~ 1 Lacs+","Rs 12,000 ~ 12 Thou+"
+90,508,Adv. Mathew T Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=508,THIRUVALLA,JD(S),0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=508&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=508&col=lia
+91,803,Adv. Mubeena,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=803,KOZHIKODE SOUTH,IND,0,Graduate Professional,"Rs 14,92,000 ~ 14 Lacs+","Rs 10,000 ~ 10 Thou+"
+92,684,Adv. Niyaz Bharati,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=684,HARIPAD,IND,1,Graduate Professional,"Rs 69,67,392 ~ 69 Lacs+","Rs 24,39,152 ~ 24 Lacs+"
+93,367,Adv. Noorbeena Rasheed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=367,KOZHIKODE SOUTH,IUML,0,Graduate Professional,"Rs 1,53,26,940 ~ 1 Crore+",Rs 0 ~
+94,617,Adv. P Sudheer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=617,ATTINGAL,BJP,7,Graduate Professional,"Rs 4,35,272 ~ 4 Lacs+",Rs 0 ~
+95,119,Adv. P. A Mohamed Riyas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=119,BEYPORE,CPI(M),12,Graduate Professional,"Rs 1,82,64,276 ~ 1 Crore+","Rs 5,40,013 ~ 5 Lacs+"
+96,316,Adv. P. M Niyas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=316,BEYPORE,INC,6,Post Graduate,"Rs 41,99,190 ~ 41 Lacs+","Rs 19,49,000 ~ 19 Lacs+"
+97,166,Adv. P. T. A Rahim,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=166,KUNNAMANGALAM,IND,0,Graduate Professional,"Rs 1,20,48,264 ~ 1 Crore+",Rs 0 ~
+98,169,Adv. P.V.Sreenijin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=169,KUNNATHUNAD,CPI(M),0,Post Graduate,"Rs 15,36,52,638 ~ 15 Crore+","Rs 3,99,19,248 ~ 3 Crore+"
+99,226,Adv. Pandalam Prathapan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=226,ADOOR,BJP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=226&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=226&col=lia
+100,254,Adv. Prakashbabu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=254,BEYPORE,BJP,24,Post Graduate,"Rs 31,34,052 ~ 31 Lacs+","Rs 2,43,000 ~ 2 Lacs+"
+101,489,Adv. Pramod Narayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=489,RANNI,Kerala Congress (M),0,Graduate Professional,"Rs 2,83,16,397 ~ 2 Crore+","Rs 13,66,246 ~ 13 Lacs+"
+102,682,Adv. Prince Lukose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=682,ETTUMANOOR,Kerala Congress,4,Graduate Professional,"Rs 1,96,22,111 ~ 1 Crore+","Rs 11,38,486 ~ 11 Lacs+"
+103,289,Adv. R. Sajilal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=289,HARIPAD,CPI,2,Graduate Professional,"Rs 20,06,008 ~ 20 Lacs+",Rs 0 ~
+104,938,Adv. Roshith. M.P.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=938,PONNANI,IND,0,Graduate Professional,"Rs 40,60,500 ~ 40 Lacs+",Rs 0 ~
+105,294,Adv. Sajeev Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=294,IRIKKUR,INC,2,Graduate Professional,"Rs 1,03,51,202 ~ 1 Crore+","Rs 5,62,338 ~ 5 Lacs+"
+106,290,Adv. Sangeetha Viswanathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=290,IDUKKI,Bharath Dharma Jana Sena,1,Post Graduate,"Rs 3,96,28,226 ~ 3 Crore+","Rs 24,37,303 ~ 24 Lacs+"
+107,581,Adv. Sebastian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=581,ERANAD,IND,0,Graduate Professional,"Rs 1,56,52,132 ~ 1 Crore+",Rs 0 ~
+108,195,Adv. Sebastian Kulathunkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=195,POONJAR,Kerala Congress (M),1,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=195&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=195&col=lia
+109,752,Adv. Sen A. G.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=752,KAZHAKKOOTTAM,IND,0,Graduate Professional,"Rs 1,03,45,000 ~ 1 Crore+","Rs 10,00,000 ~ 10 Lacs+"
+110,607,Adv. Shanimol Osman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=607,AROOR,INC,7,Post Graduate,"Rs 2,50,60,619 ~ 2 Crore+","Rs 16,73,922 ~ 16 Lacs+"
+111,332,Adv. Sumayya Najeeb,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=332,KARUNAGAPPALLY,SDPI,0,Graduate Professional,"Rs 16,46,750 ~ 16 Lacs+",Rs 0 ~
+112,658,Adv. Sumesh Achuthan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=658,CHITTUR,INC,4,Graduate Professional,"Rs 2,27,44,663 ~ 2 Crore+","Rs 1,89,97,745 ~ 1 Crore+"
+113,424,Adv. Sunil Laloor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=424,NATTIKA,INC,20,Graduate Professional,"Rs 79,93,000 ~ 79 Lacs+","Rs 55,37,709 ~ 55 Lacs+"
+114,923,Adv. Sunny Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=923,PERAVOOR,INC,0,Graduate Professional,"Rs 87,15,057 ~ 87 Lacs+","Rs 51,30,585 ~ 51 Lacs+"
+115,884,Adv. T. K Ashokkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=884,NILAMBUR,BJP,8,Graduate Professional,"Rs 40,15,744 ~ 40 Lacs+","Rs 19,73,392 ~ 19 Lacs+"
+116,176,Adv. T.K. Rasheedali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=176,MANKADA,CPI(M),0,Graduate Professional,"Rs 3,35,44,457 ~ 3 Crore+","Rs 8,51,686 ~ 8 Lacs+"
+117,507,Adv. Thomas Mathew (Roy),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=507,THIRUVALLA,IND,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=507&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=507&col=lia
+118,476,Adv. Tomy Kallany,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=476,POONJAR,INC,1,Graduate Professional,"Rs 2,07,22,258 ~ 2 Crore+","Rs 67,48,327 ~ 67 Lacs+"
+119,333,Adv. U. Prathibha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=333,KAYAMKULAM,CPI(M),4,Graduate Professional,"Rs 49,57,316 ~ 49 Lacs+","Rs 24,92,505 ~ 24 Lacs+"
+120,401,Adv. U.A. Latheef,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=401,MANJERI,IUML,2,Graduate Professional,"Rs 2,83,94,930 ~ 2 Crore+","Rs 10,40,145 ~ 10 Lacs+"
+121,17,Adv. V Joy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=17,VARKALA,CPI(M),1,Graduate Professional,"Rs 59,74,083 ~ 59 Lacs+","Rs 14,00,000 ~ 14 Lacs+"
+122,498,Adv. V P Abdul Rasheed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=498,TALIPARAMBA,INC,11,Graduate Professional,"Rs 26,72,260 ~ 26 Lacs+",Rs 0 ~
+123,816,Adv. V. E. Abdul Gafoor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=816,KALAMASSERY,IUML,5,Graduate Professional,"Rs 4,81,65,649 ~ 4 Crore+","Rs 1,34,20,826 ~ 1 Crore+"
+124,151,Adv. V. R. Sunilkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=151,KODUNGALLUR,CPI,0,Graduate Professional,"Rs 2,42,75,312 ~ 2 Crore+","Rs 1,42,900 ~ 1 Lacs+"
+125,787,Adv. Vayakkal Soman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=787,KOTTARAKKARA,BJP,6,Graduate Professional,"Rs 66,69,090 ~ 66 Lacs+","Rs 22,00,000 ~ 22 Lacs+"
+126,47,Adv.Antony Raju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=47,THIRUVANANTHAPURAM,Janadhipathiya Kerala Congress,1,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=47&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=47&col=lia
+127,135,Adv.K N A Khader,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=135,GURUVAYOOR,IUML,1,Graduate Professional,"Rs 1,79,54,892 ~ 1 Crore+",Rs 0 ~
+128,13,Adv.K.Anilkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=13,KOTTAYAM,CPI(M),0,Graduate Professional,"Rs 1,87,80,952 ~ 1 Crore+",Rs 0 ~
+129,1055,Adv.K.S. Shaiju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1055,VYPEN,BJP,6,Graduate Professional,"Rs 42,05,000 ~ 42 Lacs+","Rs 15,88,000 ~ 15 Lacs+"
+130,327,Adv.P S Jyothis,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=327,CHERTHALA,Bharath Dharma Jana Sena,0,Graduate Professional,"Rs 1,09,54,698 ~ 1 Crore+","Rs 45,90,000 ~ 45 Lacs+"
+131,522,Adv.P.T.Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=522,THRIKKAKARA,INC,9,Post Graduate,"Rs 1,49,07,116 ~ 1 Crore+","Rs 58,19,035 ~ 58 Lacs+"
+132,650,Adv.S Sarath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=650,CHERTHALA,INC,7,Post Graduate,"Rs 53,51,013 ~ 53 Lacs+","Rs 26,75,394 ~ 26 Lacs+"
+133,325,Adv.Sonnymon K Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=325,CHERTHALA,IND,0,Graduate Professional,"Rs 2,50,00,000 ~ 2 Crore+","Rs 1,25,000 ~ 1 Lacs+"
+134,931,Adv.T P Sindhumol,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=931,PERUMBAVOOR,BJP,6,Post Graduate,"Rs 74,65,309 ~ 74 Lacs+","Rs 5,75,000 ~ 5 Lacs+"
+135,711,Adv.T Siddiqu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=711,KALPETTA,INC,14,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=711&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=711&col=lia
+136,51,Adv.V.K.Prasanth,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=51,VATTIYOORKAVU,CPI(M),6,Graduate Professional,"Rs 87,28,325 ~ 87 Lacs+",Rs 0 ~
+137,564,Adv.V.V.Rajesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=564,VATTIYOORKAVU,BJP,7,Graduate Professional,"Rs 1,02,27,708 ~ 1 Crore+",Rs 0 ~
+138,565,Adv.Veena.S.Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=565,VATTIYOORKAVU,INC,18,Post Graduate,"Rs 1,09,05,242 ~ 1 Crore+","Rs 13,89,312 ~ 13 Lacs+"
+139,186,Adv: V.V. Prakash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=186,NILAMBUR,INC,3,Graduate Professional,"Rs 1,82,37,500 ~ 1 Crore+","Rs 26,42,248 ~ 26 Lacs+"
+140,529,Adv:Sanku T Das,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=529,THRITHALA,BJP,0,Graduate Professional,"Rs 52,64,000 ~ 52 Lacs+",Rs 0 ~
+141,328,Advocate G. Anil Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=328,CHIRAYINKEEZHU,Welfare Party Of India,0,Graduate Professional,"Rs 6,48,666 ~ 6 Lacs+","Rs 1,86,000 ~ 1 Lacs+"
+142,545,Advocate M. Rajesh Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=545,VADAKARA,BJP,0,Graduate Professional,"Rs 39,38,508 ~ 39 Lacs+",Rs 0 ~
+143,729,Advocate. N. Samsudheen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=729,MANNARKAD,IUML,3,Graduate Professional,"Rs 1,46,47,583 ~ 1 Crore+",Rs 0 ~
+144,408,Agali Naseema P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=408,MANNARKAD,AIADMK,1,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=408&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=408&col=lia
+145,862,Agusthy N A,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=862,MATTANNUR,IND,0,5th Pass,"Rs 75,56,000 ~ 75 Lacs+",Rs 0 ~
+146,369,Ahammad Devarkovil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=369,KOZHIKODE SOUTH,Indian National League,0,10th Pass,"Rs 4,38,34,892 ~ 4 Crore+","Rs 1,10,55,504 ~ 1 Crore+"
+147,951,Aji B. Ranni,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=951,RANNI,IND,2,Graduate,"Rs 4,123 ~ 4 Thou+",Rs 0 ~
+148,908,Aji Kadassery,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=908,PATHANAPURAM,IND,0,8th Pass,"Rs 5,000 ~ 5 Thou+",Rs 0 ~
+149,409,Ajikumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=409,MANNARKAD,IND,0,8th Pass,"Rs 1,500 ~ 1 Thou+",Rs 0 ~
+150,365,Ajil R.A.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=365,KOVALAM,IND,0,12th Pass,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+151,1005,Ajith Menon Ponnemkattil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1005,THRISSUR,IND,1,Graduate,"Rs 10,00,000 ~ 10 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+152,1042,Ajitha Sabu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1042,VAIKOM,Bharath Dharma Jana Sena,0,12th Pass,"Rs 48,99,892 ~ 48 Lacs+","Rs 27,26,408 ~ 27 Lacs+"
+153,215,Ajmal Ismail,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=215,VAMANAPURAM,SDPI,2,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=215&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=215&col=lia
+154,468,Ajmal K Mujeeb,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=468,PERUMBAVOOR,SDPI,2,12th Pass,"Rs 42,30,000 ~ 42 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+155,212,Akhiljith Kallara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=212,VAIKOM,BSP,0,Graduate Professional,"Rs 4,52,000 ~ 4 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+156,439,Albin Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=439,PALA,IND,1,Graduate,"Rs 72,000 ~ 72 Thou+",Rs 0 ~
+157,15,Albin Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=15,POONJAR,IND,1,Graduate Professional,"Rs 73,500 ~ 73 Thou+",Rs 0 ~
+158,852,Ali S/O Alavi Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=852,MANKADA,IND,0,5th Pass,"Rs 43,24,700 ~ 43 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+159,856,Ali S/O Musthafa,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=856,MANKADA,IND,0,10th Pass,"Rs 6,30,510 ~ 6 Lacs+","Rs 15,000 ~ 15 Thou+"
+160,313,Alphons Kannanthanam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=313,KANJIRAPPALLY,BJP,0,Post Graduate,"Rs 12,77,56,475 ~ 12 Crore+",Rs 0 ~
+161,114,Ambika K N (Priyanka Anup),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=114,AROOR,Democratic Social Justice Party,1,10th Pass,"Rs 14,10,000 ~ 14 Lacs+",Rs 0 ~
+162,616,Ambili,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=616,ATTINGAL,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=616&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=616&col=lia
+163,636,Amruth Dev T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=636,CHANGANASSERY,BSP,0,Graduate,"Rs 5,349 ~ 5 Thou+","Rs 74,405 ~ 74 Thou+"
+164,446,An Sajitha Ressal.R.K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=446,PARASSALA,INC,3,Graduate Professional,"Rs 1,77,20,000 ~ 1 Crore+","Rs 1,05,00,000 ~ 1 Crore+"
+165,1045,Anad Jayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1045,VAMANAPURAM,INC,14,10th Pass,"Rs 1,25,14,010 ~ 1 Crore+","Rs 27,85,000 ~ 27 Lacs+"
+166,1053,Anannyahkumari Alex,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1053,VENGARA,Democratic Social Justice Party,1,10th Pass,"Rs 3,06,320 ~ 3 Lacs+",Rs 0 ~
+167,475,Ancy George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=475,POONJAR,BSP,0,10th Pass,"Rs 10,00,000 ~ 10 Lacs+",Rs 0 ~
+168,293,Aniamma M K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=293,IRIKKUR,BJP,0,Graduate,"Rs 15,88,573 ~ 15 Lacs+",Rs 0 ~
+169,52,Anil Akkara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=52,WADAKKANCHERY,INC,10,12th Pass,"Rs 1,37,97,849 ~ 1 Crore+","Rs 42,11,873 ~ 42 Lacs+"
+170,268,Anil Mangalapuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=268,CHIRAYINKEEZHU,BSP,0,10th Pass,"Rs 8,39,700 ~ 8 Lacs+",Rs 0 ~
+171,887,Anila Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=887,NILAMBUR,Indian Christian Secular Party,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=887&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=887&col=lia
+172,558,Anilkumar P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=558,VARKALA,Democratic Human Rights Movement Party,0,10th Pass,"Rs 44,000 ~ 44 Thou+",Rs 0 ~
+173,113,Aniyappan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=113,AROOR,Bharath Dharma Jana Sena,0,Post Graduate,"Rs 3,00,12,506 ~ 3 Crore+","Rs 76,90,081 ~ 76 Lacs+"
+174,235,Anoop Antony Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=235,AMBALAPUZHA,BJP,2,Graduate Professional,"Rs 78,39,282 ~ 78 Lacs+",Rs 0 ~
+175,656,Anoop Gangan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=656,CHIRAYINKEEZHU,IND,0,Graduate,"Rs 5,000 ~ 5 Thou+",Rs 0 ~
+176,60,Anoop Jacob,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=60,PIRAVOM,Kerala Congress (Jacob),8,Graduate Professional,"Rs 18,72,89,677 ~ 18 Crore+","Rs 12,00,000 ~ 12 Lacs+"
+177,780,Anto Johny,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=780,KOTHAMANGALAM,IND,2,Graduate,"Rs 5,58,950 ~ 5 Lacs+","Rs 5,35,000 ~ 5 Lacs+"
+178,329,Antony,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=329,GURUVAYOOR,IND,0,10th Pass,"Rs 1,06,000 ~ 1 Lacs+",Rs 0 ~
+179,29,Antony John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=29,KOTHAMANGALAM,CPI(M),0,Graduate,"Rs 1,40,83,623 ~ 1 Crore+","Rs 28,65,705 ~ 28 Lacs+"
+180,990,Antony Raju S/O Raju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=990,THIRUVANANTHAPURAM,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=990&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=990&col=lia
+181,563,Anu M.C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=563,VARKALA,BSP,0,Graduate,"Rs 3,73,455 ~ 3 Lacs+",Rs 0 ~
+182,434,Anurag .A.N,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=434,NENMARA,Bharath Dharma Jana Sena,1,Post Graduate,"Rs 1,78,01,768 ~ 1 Crore+","Rs 6,20,000 ~ 6 Lacs+"
+183,194,Anvar Pazhanji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=194,PONNANI,SDPI,3,10th Pass,"Rs 2,01,52,500 ~ 2 Crore+","Rs 7,00,000 ~ 7 Lacs+"
+184,111,Anwar Sadath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=111,ALUVA,INC,18,10th Pass,"Rs 62,57,578 ~ 62 Lacs+","Rs 40,11,400 ~ 40 Lacs+"
+185,110,Ar Shelna Nishad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=110,ALUVA,IND,0,Graduate Professional,"Rs 84,40,887 ~ 84 Lacs+","Rs 47,61,419 ~ 47 Lacs+"
+186,875,Arampally Vijayaraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=875,NEMOM,IND,0,10th Pass,"Rs 7,96,000 ~ 7 Lacs+","Rs 4,01,000 ~ 4 Lacs+"
+187,970,Aravindhakshan S/O Kausu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=970,THALASSERY,IND,0,8th Pass,"Rs 47,76,031 ~ 47 Lacs+","Rs 6,50,000 ~ 6 Lacs+"
+188,320,Archana Prajith,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=320,CHADAYAMANGALAM,Welfare Party Of India,0,Graduate,"Rs 10,77,093 ~ 10 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+189,725,Archana Vandichal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=725,KANNUR,BJP,1,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=725&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=725&col=lia
+190,173,Areekkad Sethumadhavan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=173,MALAPPURAM,BJP,0,10th Pass,"Rs 28,40,000 ~ 28 Lacs+","Rs 37,50,000 ~ 37 Lacs+"
+191,336,Aritha Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=336,KAYAMKULAM,INC,9,Graduate,"Rs 1,89,387 ~ 1 Lacs+","Rs 32,124 ~ 32 Thou+"
+192,603,Arjunan C. K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=603,ARANMULA,IND,0,10th Pass,"Rs 2,90,000 ~ 2 Lacs+",Rs 0 ~
+193,469,Arshad K M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=469,PERUMBAVOOR,Welfare Party Of India,0,Others,"Rs 84,09,811 ~ 84 Lacs+",Rs 0 ~
+194,1002,Arun Babu. P. C.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1002,THRIPUNITHURA,SHS,2,8th Pass,"Rs 5,11,000 ~ 5 Lacs+",Rs 0 ~
+195,305,Arun Kaithapram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=305,KALLIASSERI,BJP,7,12th Pass,"Rs 97,328 ~ 97 Thou+","Rs 45,000 ~ 45 Thou+"
+196,416,Arun Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=416,MAVELIKARA,CPI(M),5,Graduate,"Rs 12,56,500 ~ 12 Lacs+","Rs 3,07,021 ~ 3 Lacs+"
+197,364,Arun Mangattu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=364,KOTTAYAM,Akhil Bharat Hindu Mahasabha,0,Graduate,"Rs 11,05,000 ~ 11 Lacs+","Rs 50,000 ~ 50 Thou+"
+198,821,Arunkumar S Uliyacovil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=821,KUNNATHUR,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=821&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=821&col=lia
+199,246,Asha Prakash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=246,ATTINGAL,Anna Democratic Human Rights Movement Party of India,0,8th Pass,"Rs 4,71,000 ~ 4 Lacs+","Rs 70,000 ~ 70 Thou+"
+200,657,Ashanath G. S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=657,CHIRAYINKEEZHU,BJP,2,Graduate,"Rs 7,03,384 ~ 7 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+201,491,Asharaf Pezhumkattil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=491,RANNI,SDPI,0,8th Pass,"Rs 60,60,000 ~ 60 Lacs+","Rs 25,00,000 ~ 25 Lacs+"
+202,288,Asharaf Vadakkoot,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=288,GURUVAYOOR,SDPI,5,10th Pass,"Rs 20,81,500 ~ 20 Lacs+",Rs 0 ~
+203,311,Ashik M M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=311,KANJIRAPPALLY,BSP,0,Graduate,"Rs 11,97,000 ~ 11 Lacs+",Rs 0 ~
+204,675,Ashokan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=675,ERANAKULAM,IND,0,8th Pass,"Rs 15,78,131 ~ 15 Lacs+","Rs 3,396 ~ 3 Thou+"
+205,509,Ashokan Kulanada,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=509,THIRUVALLA,BJP,1,Graduate,"Rs 85,25,803 ~ 85 Lacs+",Rs 0 ~
+206,1048,Ashokan T. Vamanapuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1048,VAMANAPURAM,Ambedkarite Party of India,0,10th Pass,"Rs 6,58,200 ~ 6 Lacs+",Rs 0 ~
+207,534,Ashraf,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=534,TIRUR,SDPI,1,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=534&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=534&col=lia
+208,310,Aswin Bhimnath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=310,KALPETTA,BSP,0,12th Pass,"Rs 11,76,673 ~ 11 Lacs+",Rs 0 ~
+209,1046,Attukal Aji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1046,VAMANAPURAM,IND,0,10th Pass,"Rs 70,63,000 ~ 70 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+210,720,Augustin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=720,KANHANGAD,IND,1,12th Pass,"Rs 87,05,000 ~ 87 Lacs+","Rs 13,05,000 ~ 13 Lacs+"
+211,284,Ayathil Riyas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=284,ERAVIPURAM,SDPI,4,10th Pass,"Rs 1,15,30,000 ~ 1 Crore+","Rs 11,52,000 ~ 11 Lacs+"
+212,360,Ayisha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=360,KOTTAKKAL,IND,0,Graduate,"Rs 3,56,65,207 ~ 3 Crore+",Rs 0 ~
+213,477,Ayoor Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=477,PUNALUR,BJP,1,Graduate,"Rs 32,14,671 ~ 32 Lacs+",Rs 0 ~
+214,952,Ayyappan Kutty. T.C.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=952,SHORNUR,BSP,0,10th Pass,"Rs 5,55,500 ~ 5 Lacs+",Rs 0 ~
+215,727,B Shamsudheen Moulavi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=727,KANNUR,SDPI,0,10th Pass,"Rs 15,97,000 ~ 15 Lacs+",Rs 0 ~
+216,639,B. B. Gopakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=639,CHATHANNUR,BJP,7,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=639&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=639&col=lia
+217,399,Babitha K B,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=399,MANANTHAVADY,SDPI,0,10th Pass,"Rs 65,937 ~ 65 Thou+",Rs 0 ~
+218,933,Babu Joseph Irumala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=933,PERUMBAVOOR,IND,1,12th Pass,"Rs 55,81,200 ~ 55 Lacs+",Rs 0 ~
+219,192,Babu Joseph Perumbavoor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=192,PERUMBAVOOR,Kerala Congress (M),0,Graduate,"Rs 5,10,26,135 ~ 5 Crore+","Rs 1,17,439 ~ 1 Lacs+"
+220,373,Babu K G,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=373,KUNNAMANGALAM,IND,0,10th Pass,"Rs 2,41,184 ~ 2 Lacs+",Rs 0 ~
+221,879,Babu S/O Kunchu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=879,NENMARA,IND,0,5th Pass,"Rs 10,000 ~ 10 Thou+",Rs 0 ~
+222,689,Babu Varghese Vattoli,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=689,IDUKKI,BSP,2,10th Pass,"Rs 23,25,171 ~ 23 Lacs+",Rs 0 ~
+223,283,Babudivakaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=283,ERAVIPURAM,Revolutionary Socialist Party,8,Graduate Professional,"Rs 4,05,53,449 ~ 4 Crore+",Rs 0 ~
+224,511,Baby Ambattu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=511,THIRUVAMBADY,BJP,0,10th Pass,"Rs 51,86,811 ~ 51 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+225,156,Baby S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=156,KOLLAM,Anna Democratic Human Rights Movement Party of India,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=156&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=156&col=lia
+226,261,Babychen Mukkadan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=261,CHANGANASSERY,IND,0,10th Pass,"Rs 10,68,750 ~ 10 Lacs+",Rs 0 ~
+227,452,Baiju Pathanapuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=452,PATHANAPURAM,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+228,877,Balachandran Valkannadi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=877,NEMOM,IND,0,Literate,"Rs 86,000 ~ 86 Thou+",Rs 0 ~
+229,1029,Balakrishnan Periye,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1029,UDMA,INC,4,Graduate,"Rs 3,16,99,055 ~ 3 Crore+","Rs 1,50,62,773 ~ 1 Crore+"
+230,1009,Balaraman K S/O Kunjunni,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1009,THRITHALA,IND,0,8th Pass,"Rs 10,40,000 ~ 10 Lacs+",Rs 0 ~
+231,274,Basheer Kannadiparamba,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=274,DHARMADAM,SDPI,3,10th Pass,"Rs 5,54,000 ~ 5 Lacs+",Rs 0 ~
+232,889,Benny Kodiyatil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=889,OLLUR,IND,6,10th Pass,"Rs 3,10,900 ~ 3 Lacs+",Rs 0 ~
+233,485,Benny Puthenparampil (Thomas Mathew),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=485,RANNI,IND,0,Graduate Professional,"Rs 65,34,103 ~ 65 Lacs+","Rs 34,70,000 ~ 34 Lacs+"
+234,555,Bharathanoor Maniraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=555,VAMANAPURAM,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=555&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=555&col=lia
+235,80,Bhargavan S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=80,KARUNAGAPPALLY,SUCI(C),0,12th Pass,"Rs 6,45,300 ~ 6 Lacs+","Rs 1,66,860 ~ 1 Lacs+"
+236,688,Bijeesh Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=688,IDUKKI,IND,1,10th Pass,"Rs 5,26,958 ~ 5 Lacs+","Rs 48,00,000 ~ 48 Lacs+"
+237,412,Biju Elakkuzhi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=412,MATTANNUR,BJP,3,10th Pass,"Rs 2,84,000 ~ 2 Lacs+","Rs 1,25,000 ~ 1 Lacs+"
+238,602,Biju Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=602,ARANMULA,BJP,3,12th Pass,"Rs 1,69,05,842 ~ 1 Crore+","Rs 50,42,344 ~ 50 Lacs+"
+239,458,Biju Mattappally,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=458,PEERUMADE,BSP,1,8th Pass,"Rs 9,93,000 ~ 9 Lacs+","Rs 85,000 ~ 85 Thou+"
+240,385,Biju Xavier,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=385,KUTTANAD,SUCI(C),3,10th Pass,"Rs 7,06,550 ~ 7 Lacs+",Rs 0 ~
+241,782,Bindhu Devarajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=782,KOTTAKKAL,IND,0,8th Pass,"Rs 4,32,904 ~ 4 Lacs+",Rs 0 ~
+242,698,Bindu W/O Ramachandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=698,IRINJALAKKUDA,IND,0,8th Pass,"Rs 11,71,000 ~ 11 Lacs+",Rs 0 ~
+243,697,Bindu W/O Shivadasan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=697,IRINJALAKKUDA,IND,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=697&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=697&col=lia
+244,999,Binoj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=999,THRIKKAKARA,IND,0,10th Pass,"Rs 1,87,500 ~ 1 Lacs+",Rs 0 ~
+245,429,Bipin Pallipuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=429,NEDUMANGAD,BSP,0,Graduate,"Rs 10,000 ~ 10 Thou+",Rs 0 ~
+246,732,Bitty Sudheer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=732,KARUNAGAPPALLY,BJP,2,Graduate Professional,"Rs 3,09,15,212 ~ 3 Crore+","Rs 1,04,36,000 ~ 1 Crore+"
+247,710,Brijeshkumar M. S/O Ambu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=710,KALLIASSERI,IND,0,10th Pass,"Rs 6,73,260 ~ 6 Lacs+","Rs 60,300 ~ 60 Thou+"
+248,499,C Balakrishnan Yadav,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=499,TALIPARAMBA,IND,0,Post Graduate,"Rs 77,89,111 ~ 77 Lacs+","Rs 95,048 ~ 95 Thou+"
+249,180,C C Mukundhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=180,NATTIKA,CPI,0,8th Pass,"Rs 16,02,366 ~ 16 Lacs+",Rs 0 ~
+250,125,C C Sreekumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=125,CHELAKKARA,INC,4,Graduate Professional,"Rs 15,27,029 ~ 15 Lacs+","Rs 33,50,000 ~ 33 Lacs+"
+251,703,C D Sreelal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=703,KAIPAMANGALAM,Bharath Dharma Jana Sena,0,10th Pass,"Rs 31,17,935 ~ 31 Lacs+","Rs 76,19,915 ~ 76 Lacs+"
+252,918,C H Ebrahimkutty S/O Kunjammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=918,PERAMBRA,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=918&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=918&col=lia
+253,108,C H Kunhambu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=108,UDMA,CPI(M),5,Graduate Professional,"Rs 95,13,145 ~ 95 Lacs+","Rs 14,49,677 ~ 14 Lacs+"
+254,99,C N Mukundan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=99,PIRAVOM,SUCI(C),0,10th Pass,"Rs 6,22,714 ~ 6 Lacs+",Rs 0 ~
+255,870,C S Jitheshkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=870,NATTIKA,IND,2,Graduate,"Rs 5,000 ~ 5 Thou+",Rs 0 ~
+256,770,C V Ibrahim S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=770,KONDOTTY,IND,0,Literate,"Rs 9,12,700 ~ 9 Lacs+",Rs 0 ~
+257,526,C. B. Ashokan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=526,THRIPUNITHURA,SUCI(C),0,12th Pass,"Rs 30,68,500 ~ 30 Lacs+",Rs 0 ~
+258,273,C. K. Padmanabhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=273,DHARMADAM,BJP,0,10th Pass,"Rs 35,21,200 ~ 35 Lacs+",Rs 0 ~
+259,86,C. K. Thampi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=86,MUVATTUPUZHA,SUCI(C),0,10th Pass,"Rs 8,45,787 ~ 8 Lacs+",Rs 0 ~
+260,966,C. O. T. Naseer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=966,THALASSERY,Indian Gandhiyan Party,2,12th Pass,"Rs 18,000 ~ 18 Thou+",Rs 0 ~
+261,510,C. P. Cheriya Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=510,THIRUVAMBADY,IUML,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=510&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=510&col=lia
+262,664,C. P. Maharoof,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=664,DHARMADAM,IND,3,8th Pass,"Rs 18,11,000 ~ 18 Lacs+","Rs 9,08,065 ~ 9 Lacs+"
+263,733,C. R Mahesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=733,KARUNAGAPPALLY,INC,9,Graduate,"Rs 19,10,946 ~ 19 Lacs+","Rs 30,56,209 ~ 30 Lacs+"
+264,272,C. Raghunathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=272,DHARMADAM,INC,1,Post Graduate,"Rs 1,90,56,470 ~ 1 Crore+","Rs 75,11,793 ~ 75 Lacs+"
+265,613,C. Sivankutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=613,ARUVIKKARA,BJP,1,Graduate,"Rs 51,58,025 ~ 51 Lacs+",Rs 0 ~
+266,896,C. V. John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=896,PALA,IND,0,Graduate,"Rs 7,76,994 ~ 7 Lacs+","Rs 32,16,085 ~ 32 Lacs+"
+267,503,C.A.Ushakumari,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=503,TARUR,Welfare Party Of India,0,Others,"Rs 1,31,767 ~ 1 Lacs+",Rs 0 ~
+268,342,C.G.Rajagopal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=342,KOCHI,BJP,20,Graduate,"Rs 45,77,225 ~ 45 Lacs+",Rs 0 ~
+269,109,C.K Asha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=109,VAIKOM,CPI,0,Graduate,"Rs 56,99,025 ~ 56 Lacs+","Rs 22,64,400 ~ 22 Lacs+"
+270,495,C.K Janu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=495,SULTHANBATHERY,BJP,2,Illiterate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=495&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=495&col=lia
+271,187,C.K.Hareendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=187,PARASSALA,CPI(M),3,12th Pass,"Rs 27,36,592 ~ 27 Lacs+","Rs 26,61,487 ~ 26 Lacs+"
+272,184,C.N.Vijayakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=184,NENMARA,Communist Marxist Party Kerala State Committee,2,8th Pass,"Rs 96,96,794 ~ 96 Lacs+","Rs 22,59,544 ~ 22 Lacs+"
+273,296,Chacko Karimbil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=296,IRIKKUR,IND,0,Graduate,"Rs 1,30,95,000 ~ 1 Crore+","Rs 16,50,000 ~ 16 Lacs+"
+274,513,Chala Mohanan D,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=513,THIRUVANANTHAPURAM,IND,0,12th Pass,"Rs 15,27,000 ~ 15 Lacs+",Rs 0 ~
+275,608,Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=608,AROOR,IND,0,12th Pass,"Rs 21,21,000 ~ 21 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+276,228,Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=228,ALATHUR,BSP,0,12th Pass,"Rs 64,11,556 ~ 64 Lacs+","Rs 4,33,400 ~ 4 Lacs+"
+277,540,Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=540,TIRURANGADI,IND,0,8th Pass,"Rs 16,11,960 ~ 16 Lacs+",Rs 0 ~
+278,646,Chandran Thiyyath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=646,CHELAKKARA,SDPI,1,10th Pass,"Rs 2,01,000 ~ 2 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+279,621,Chandrika,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=621,BALUSSERI,Welfare Party Of India,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=621&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=621&col=lia
+280,683,Charley Thomas Panikkaridam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=683,ETTUMANOOR,IND,0,10th Pass,"Rs 2,60,088 ~ 2 Lacs+",Rs 0 ~
+281,435,Chenkal. S. Rajasekharan Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=435,NEYYATTINKARA,BJP,0,10th Pass,"Rs 64,22,34,872 ~ 64 Crore+","Rs 1,10,30,184 ~ 1 Crore+"
+282,632,Cheriya,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=632,CHALAKKUDY,IND,0,Literate,"Rs 36,50,000 ~ 36 Lacs+","Rs 15,000 ~ 15 Thou+"
+283,467,Chithra Sukumaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=467,PERUMBAVOOR,Twenty 20 Party,0,12th Pass,"Rs 14,39,96,545 ~ 14 Crore+","Rs 21,85,774 ~ 21 Lacs+"
+284,224,Chittayam Gopakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=224,ADOOR,CPI,0,12th Pass,"Rs 31,21,897 ~ 31 Lacs+","Rs 27,33,810 ~ 27 Lacs+"
+285,666,Chovva Raghunathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=666,DHARMADAM,IND,1,8th Pass,"Rs 52,14,599 ~ 52 Lacs+","Rs 90,000 ~ 90 Thou+"
+286,663,D. Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=663,DEVIKULAM,INC,14,10th Pass,"Rs 35,43,509 ~ 35 Lacs+","Rs 3,29,540 ~ 3 Lacs+"
+287,431,D.Vijayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=431,NEMOM,BSP,1,Post Graduate,"Rs 36,63,000 ~ 36 Lacs+",Rs 0 ~
+288,65,Daleema,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=65,AROOR,CPI(M),0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=65&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=65&col=lia
+289,571,Deepak Joy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=571,VYPEN,INC,17,10th Pass,"Rs 22,98,765 ~ 22 Lacs+",Rs 0 ~
+290,255,Dennies K Antony,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=255,CHALAKKUDY,Kerala Congress (M),1,10th Pass,"Rs 59,82,497 ~ 59 Lacs+","Rs 36,76,513 ~ 36 Lacs+"
+291,252,Dharmajan Bolgatty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=252,BALUSSERI,INC,0,10th Pass,"Rs 2,71,76,160 ~ 2 Crore+","Rs 12,00,000 ~ 12 Lacs+"
+292,630,Dharmajan P K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=630,CHALAKKUDY,SUCI(C),0,Others,"Rs 4,229 ~ 4 Thou+",Rs 0 ~
+293,623,Dharmendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=623,BALUSSERI,IND,0,10th Pass,"Rs 7,80,000 ~ 7 Lacs+",Rs 0 ~
+294,72,Dileep Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=72,GURUVAYOOR,Democratic Social Justice Party,0,Graduate,"Rs 12,67,000 ~ 12 Lacs+",Rs 0 ~
+295,811,Dinesan Mundakkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=811,KUNNAMANGALAM,IND,0,10th Pass,"Rs 18,58,350 ~ 18 Lacs+",Rs 0 ~
+296,810,Dinesh Perumanna,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=810,KUNNAMANGALAM,IND,4,12th Pass,"Rs 43,20,735 ~ 43 Lacs+","Rs 28,82,271 ~ 28 Lacs+"
+297,374,Dineshan Pakkath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=374,KUNNAMANGALAM,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=374&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=374&col=lia
+298,89,Doctor P. Sarin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=89,OTTAPALAM,INC,6,Graduate Professional,"Rs 3,53,02,177 ~ 3 Crore+","Rs 63,48,811 ~ 63 Lacs+"
+299,535,Dr. Abdul Salam M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=535,TIRUR,BJP,0,Doctorate,"Rs 6,47,85,333 ~ 6 Crore+",Rs 0 ~
+300,358,Dr. Joe Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=358,KOTHAMANGALAM,Twenty 20 Party,0,Post Graduate,"Rs 12,83,96,662 ~ 12 Crore+","Rs 26,00,000 ~ 26 Lacs+"
+301,523,Dr. K. S. Radhakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=523,THRIPUNITHURA,BJP,211,Doctorate,"Rs 1,20,58,700 ~ 1 Crore+",Rs 0 ~
+302,346,Dr. M.K Muneer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=346,KODUVALLY,IUML,11,Graduate Professional,"Rs 4,34,25,895 ~ 4 Crore+","Rs 92,00,000 ~ 92 Lacs+"
+303,419,Dr. Mathew Kuzhalnadan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=419,MUVATTUPUZHA,INC,3,Doctorate,"Rs 34,77,02,751 ~ 34 Crore+","Rs 33,51,076 ~ 33 Lacs+"
+304,577,Dr. P C Vijayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=577,WANDOOR,BJP,0,Graduate Professional,"Rs 2,39,60,000 ~ 2 Crore+",Rs 0 ~
+305,339,Dr. S. S. Lal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=339,KAZHAKKOOTTAM,INC,0,Doctorate,"Rs 10,22,29,337 ~ 10 Crore+","Rs 4,94,36,598 ~ 4 Crore+"
+306,936,Dr. Sindhumol Jacob,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=936,PIRAVOM,Kerala Congress (M),0,Others,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=936&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=936&col=lia
+307,380,Dr. Sujith.P.Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=380,KUNNATHUNAD,Twenty 20 Party,0,Doctorate,"Rs 87,68,494 ~ 87 Lacs+","Rs 30,85,283 ~ 30 Lacs+"
+308,32,Dr. Vinu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=32,KUTTANAD,Democratic Social Justice Party,0,Doctorate,"Rs 89,77,007 ~ 89 Lacs+","Rs 12,66,419 ~ 12 Lacs+"
+309,521,Dr.J.Jacob,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=521,THRIKKAKARA,IND,0,Post Graduate,"Rs 2,98,34,715 ~ 2 Crore+","Rs 1,32,00,000 ~ 1 Crore+"
+310,572,Dr.Job Chakalakal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=572,VYPEN,Twenty 20 Party,0,Doctorate,"Rs 1,60,94,872 ~ 1 Crore+","Rs 50,29,813 ~ 50 Lacs+"
+311,591,Dr.K.S Manoj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=591,ALAPPUZHA,INC,0,Graduate Professional,"Rs 5,87,91,026 ~ 5 Crore+",Rs 0 ~
+312,45,Dr.K.T.Jaleel,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=45,THAVANUR,IND,1,Doctorate,"Rs 1,10,11,455 ~ 1 Crore+","Rs 95,000 ~ 95 Thou+"
+313,1056,Dr.M.K. Mukundan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1056,VYPEN,IND,0,Doctorate,"Rs 5,71,97,000 ~ 5 Crore+",Rs 0 ~
+314,312,Dr.N.Jayaraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=312,KANJIRAPPALLY,Kerala Congress (M),0,Doctorate,"Rs 2,68,31,036 ~ 2 Crore+","Rs 17,85,600 ~ 17 Lacs+"
+315,1041,Dr.P.R Sona,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1041,VAIKOM,INC,3,Doctorate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1041&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1041&col=lia
+316,323,Dr.Sujith Vijayanpillai,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=323,CHAVARA,IND,0,Post Graduate,"Rs 4,30,68,009 ~ 4 Crore+","Rs 2,21,01,424 ~ 2 Crore+"
+317,78,E Chandrashekaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=78,KANHANGAD,CPI,0,10th Pass,"Rs 38,81,351 ~ 38 Lacs+",Rs 0 ~
+318,141,E T Taison Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=141,KAIPAMANGALAM,CPI,0,Others,"Rs 1,01,60,235 ~ 1 Crore+",Rs 0 ~
+319,420,E. K. Vijayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=420,NADAPURAM,CPI,0,12th Pass,"Rs 57,46,625 ~ 57 Lacs+",Rs 0 ~
+320,162,E. Kunjumon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=162,KOTTARAKKARA,SUCI(C),0,10th Pass,Rs 500 ~ 5 Hund+,Rs 0 ~
+321,807,E. P. Anwar Sadath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=807,KUNNAMANGALAM,Welfare Party Of India,2,10th Pass,"Rs 40,78,019 ~ 40 Lacs+",Rs 0 ~
+322,442,E. Sreedharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=442,PALAKKAD,BJP,0,Graduate Professional,"Rs 7,79,15,496 ~ 7 Crore+",Rs 0 ~
+323,394,E.C. Ayisha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=394,MALAPPURAM,Welfare Party Of India,0,Others,"Rs 60,77,201 ~ 60 Lacs+",Rs 0 ~
+324,570,E.K. Kunhahamedkutty Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=570,VENGARA,Welfare Party Of India,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=570&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=570&col=lia
+325,625,E.M Niyas S/O Saleem Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=625,BEYPORE,IND,0,Graduate,"Rs 8,54,540 ~ 8 Lacs+",Rs 0 ~
+326,445,E.T.K. Valsan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=445,PALAKKAD,BSP,0,Others,"Rs 88,80,466 ~ 88 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+327,37,Ebinu. S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=37,NEDUMANGAD,IND,0,10th Pass,"Rs 25,30,000 ~ 25 Lacs+",Rs 0 ~
+328,179,Eldho Abraham,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=179,MUVATTUPUZHA,CPI,6,Graduate,"Rs 22,70,113 ~ 22 Lacs+","Rs 6,25,553 ~ 6 Lacs+"
+329,788,Eyyamkodu Manikuttan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=788,KOTTARAKKARA,IND,0,10th Pass,"Rs 1,76,000 ~ 1 Lacs+",Rs 0 ~
+330,396,Faisal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=396,MANALUR,SDPI,1,10th Pass,"Rs 2,00,300 ~ 2 Lacs+",Rs 0 ~
+331,304,Faizal Madayi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=304,KALLIASSERI,Welfare Party Of India,0,10th Pass,"Rs 24,56,491 ~ 24 Lacs+","Rs 2,58,738 ~ 2 Lacs+"
+332,978,Firos Kunnamparambil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=978,THAVANUR,INC,2,8th Pass,"Rs 54,27,246 ~ 54 Lacs+","Rs 16,22,671 ~ 16 Lacs+"
+333,974,Firos Kunnathparambil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=974,THAVANUR,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=974&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=974&col=lia
+334,977,Firos Nellamkunnath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=977,THAVANUR,IND,0,10th Pass,"Rs 1,114 ~ 1 Thou+",Rs 0 ~
+335,972,Firos Paruvingal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=972,THAVANUR,IND,0,10th Pass,"Rs 1,67,000 ~ 1 Lacs+",Rs 0 ~
+336,493,Firoz Babu.T.H,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=493,SHORNUR,INC,10,Post Graduate,"Rs 69,55,747 ~ 69 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+337,963,Firoz S/O Avarankutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=963,TANUR,IND,0,10th Pass,"Rs 1,02,000 ~ 1 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+338,958,Firoz S/O Kunhumarakkar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=958,TANUR,IND,0,10th Pass,"Rs 4,84,400 ~ 4 Lacs+",Rs 0 ~
+339,604,G. Sugathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=604,ARANMULA,IND,1,10th Pass,"Rs 2,34,25,000 ~ 2 Crore+","Rs 40,00,000 ~ 40 Lacs+"
+340,264,G.S. Jayalal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=264,CHATHANNUR,CPI,3,10th Pass,"Rs 1,99,38,831 ~ 1 Crore+","Rs 59,31,736 ~ 59 Lacs+"
+341,270,Ganesan. S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=270,DEVIKULAM,IND,0,8th Pass,"Rs 33,00,000 ~ 33 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+342,471,Ganesh Vaderi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=471,PONNANI,Welfare Party Of India,2,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=471&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=471&col=lia
+343,547,Gangadharan Madappally,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=547,VADAKARA,IND,0,10th Pass,"Rs 4,97,000 ~ 4 Lacs+","Rs 4,93,000 ~ 4 Lacs+"
+344,334,Geevarghese Samuel,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=334,KAYAMKULAM,IND,0,8th Pass,"Rs 62,50,000 ~ 62 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+345,482,George Joseph Vathappally,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=482,PUTHUPPALLY,IND,0,Post Graduate,"Rs 20,36,53,573 ~ 20 Crore+","Rs 77,18,900 ~ 77 Lacs+"
+346,127,Gopinathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=127,CHENGANNUR,SUCI(C),0,10th Pass,"Rs 3,13,218 ~ 3 Lacs+",Rs 0 ~
+347,1031,Govindan B Alinthaze,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1031,UDMA,Ambedkarite Party of India,0,Literate,"Rs 35,500 ~ 35 Thou+",Rs 0 ~
+348,772,Guruvayoorappan P E,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=772,KONGAD,BSP,0,8th Pass,"Rs 98,500 ~ 98 Thou+",Rs 0 ~
+349,64,H.Salam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=64,AMBALAPUZHA,CPI(M),7,12th Pass,"Rs 40,30,336 ~ 40 Lacs+","Rs 1,20,736 ~ 1 Lacs+"
+350,1058,Haji Aboobaker Kundukadan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1058,WADAKKANCHERY,IND,0,8th Pass,"Rs 85,57,500 ~ 85 Lacs+",Rs 0 ~
+351,872,Hari Vellanadu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=872,NEDUMANGAD,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=872&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=872&col=lia
+352,969,Haridasan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=969,THALASSERY,IND,0,5th Pass,"Rs 15,81,000 ~ 15 Lacs+","Rs 1,60,000 ~ 1 Lacs+"
+353,204,Hassan Chiyanoor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=204,THAVANUR,SDPI,1,12th Pass,"Rs 19,59,738 ~ 19 Lacs+",Rs 0 ~
+354,208,Hussain Thattathazhath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=208,THRITHALA,IND,0,10th Pass,"Rs 26,21,000 ~ 26 Lacs+","Rs 7,25,000 ~ 7 Lacs+"
+355,955,I.C Balakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=955,SULTHANBATHERY,INC,9,8th Pass,"Rs 64,17,760 ~ 64 Lacs+","Rs 18,64,977 ~ 18 Lacs+"
+356,919,Ibrahimkutty M S/O Pokker,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=919,PERAMBRA,IND,0,8th Pass,"Rs 24,24,146 ~ 24 Lacs+","Rs 5,08,686 ~ 5 Lacs+"
+357,410,Illikkal Augusthy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=410,MATTANNUR,Revolutionary Socialist Party,1,10th Pass,"Rs 32,54,200 ~ 32 Lacs+","Rs 21,44,112 ~ 21 Lacs+"
+358,427,Irshad Kanyakulangara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=427,NEDUMANGAD,SDPI,1,Graduate,"Rs 4,88,000 ~ 4 Lacs+",Rs 0 ~
+359,462,Ismail Kammana,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=462,PERAMBRA,SDPI,0,10th Pass,"Rs 37,01,525 ~ 37 Lacs+",Rs 0 ~
+360,317,J.Chinchurani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=317,CHADAYAMANGALAM,CPI,2,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=317&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=317&col=lia
+361,58,J.Mercykutty Amma,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=58,KUNDARA,CPI(M),1,Post Graduate,"Rs 56,63,509 ~ 56 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+362,902,J.R.Jayakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=902,PARASSALA,BSP,0,10th Pass,"Rs 6,36,000 ~ 6 Lacs+",Rs 0 ~
+363,695,Jacob Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=695,IRINJALAKKUDA,BJP,3,Doctorate,"Rs 42,10,71,704 ~ 42 Crore+","Rs 53,36,177 ~ 53 Lacs+"
+364,198,Jaick C Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=198,PUTHUPPALLY,CPI(M),11,Post Graduate,"Rs 2,11,27,129 ~ 2 Crore+","Rs 3,71,000 ~ 3 Lacs+"
+365,430,Jain Wilson,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=430,NEMOM,IND,0,Graduate,"Rs 25,000 ~ 25 Thou+",Rs 0 ~
+366,786,Jaineendran T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=786,KOTTARAKKARA,SHS,0,10th Pass,"Rs 23,20,000 ~ 23 Lacs+","Rs 11,80,000 ~ 11 Lacs+"
+367,973,Jaleel S/O. Muhammad Kutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=973,THAVANUR,IND,0,10th Pass,"Rs 4,30,000 ~ 4 Lacs+",Rs 0 ~
+368,120,Jamal Chaliyam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=120,BEYPORE,SDPI,0,10th Pass,"Rs 4,22,000 ~ 4 Lacs+",Rs 0 ~
+369,949,Jameela. P.P.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=949,QUILANDY,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=949&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=949&col=lia
+370,35,James Mash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=35,MANNARKAD,IND,0,Post Graduate,"Rs 46,10,630 ~ 46 Lacs+","Rs 21,92,609 ~ 21 Lacs+"
+371,813,James Panadan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=813,KUNNAMKULAM,IND,1,12th Pass,"Rs 13,01,000 ~ 13 Lacs+",Rs 0 ~
+372,397,Jayalakshmi P K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=397,MANANTHAVADY,INC,9,12th Pass,"Rs 30,94,127 ~ 30 Lacs+","Rs 1,11,000 ~ 1 Lacs+"
+373,502,Jayaprakasan K.P.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=502,TARUR,BJP,1,Graduate,"Rs 20,68,500 ~ 20 Lacs+","Rs 8,89,654 ~ 8 Lacs+"
+374,418,Jiji Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=418,MUVATTUPUZHA,BJP,0,Graduate,"Rs 78,41,090 ~ 78 Lacs+","Rs 70,770 ~ 70 Thou+"
+375,286,Jijith K Joy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=286,ETTUMANOOR,BSP,0,12th Pass,"Rs 4,000 ~ 4 Thou+","Rs 11,000 ~ 11 Thou+"
+376,1001,Jinu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1001,THRIKKAKARA,IND,0,12th Pass,"Rs 4,91,600 ~ 4 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+377,250,Jobish Balussery,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=250,BALUSSERI,BSP,0,Post Graduate,"Rs 3,24,000 ~ 3 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+378,21,Joemon Joseph Srampickal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=21,CHANGANASSERY,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=21&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=21&col=lia
+379,846,John D Souza I,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=846,MANJESHWAR,IND,0,10th Pass,"Rs 25,85,000 ~ 25 Lacs+","Rs 40,000 ~ 40 Thou+"
+380,926,John Pallikkamalil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=926,PERAVOOR,Secular Democratic Congress,0,Graduate,"Rs 2,02,27,832 ~ 2 Crore+","Rs 27,00,000 ~ 27 Lacs+"
+381,644,Johnson Kandachira,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=644,CHAVARA,IND,0,12th Pass,"Rs 73,20,324 ~ 73 Lacs+","Rs 15,46,000 ~ 15 Lacs+"
+382,487,Jomon Kochethu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=487,RANNI,RJD,0,10th Pass,"Rs 13,95,000 ~ 13 Lacs+","Rs 2,20,000 ~ 2 Lacs+"
+383,90,Jose K. Mani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=90,PALA,Kerala Congress (M),0,Post Graduate,"Rs 5,16,97,657 ~ 5 Crore+",Rs 0 ~
+384,436,Jose Valloor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=436,OLLUR,INC,10,Graduate,"Rs 1,17,52,420 ~ 1 Crore+","Rs 11,33,991 ~ 11 Lacs+"
+385,145,Joseph Vazhackan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=145,KANJIRAPPALLY,INC,1,Graduate,"Rs 2,12,51,119 ~ 2 Crore+","Rs 81,50,000 ~ 81 Lacs+"
+386,297,Joshy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=297,IRINJALAKKUDA,IND,0,10th Pass,"Rs 27,12,000 ~ 27 Lacs+",Rs 0 ~
+387,635,Joshy Vattoly,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=635,CHALAKKUDY,IND,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=635&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=635&col=lia
+388,238,Jothilakshmi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=238,ANGAMALY,SUCI(C),0,10th Pass,"Rs 34,28,853 ~ 34 Lacs+","Rs 50,000 ~ 50 Thou+"
+389,1023,Joy John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1023,TRIKARIPUR,IND,0,Post Graduate,"Rs 79,83,771 ~ 79 Lacs+","Rs 10,60,000 ~ 10 Lacs+"
+390,295,Joy John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=295,IRIKKUR,IND,0,Post Graduate,"Rs 79,83,771 ~ 79 Lacs+","Rs 10,60,000 ~ 10 Lacs+"
+391,897,Joy Thomas Vazhamattom,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=897,PALA,BSP,0,8th Pass,"Rs 6,70,000 ~ 6 Lacs+",Rs 0 ~
+392,909,Jyothikumar Chamakkala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=909,PATHANAPURAM,INC,11,Graduate Professional,"Rs 2,19,24,021 ~ 2 Crore+","Rs 14,05,358 ~ 14 Lacs+"
+393,979,K .P Yesudas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=979,THIRUVALLA,IND,0,12th Pass,"Rs 1,94,558 ~ 1 Lacs+","Rs 6,89,220 ~ 6 Lacs+"
+394,891,K K George Kakkassery,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=891,OLLUR,IND,3,10th Pass,"Rs 16,20,000 ~ 16 Lacs+","Rs 12,50,975 ~ 12 Lacs+"
+395,836,K K Kunhammad Kutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=836,KUTTIADI,IND,0,5th Pass,"Rs 13,37,507 ~ 13 Lacs+",Rs 0 ~
+396,85,K K Shailaja Teacher,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=85,MATTANNUR,CPI(M),5,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=85&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=85&col=lia
+397,799,K M Abhijith,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=799,KOZHIKODE NORTH,INC,38,Post Graduate,"Rs 18,69,008 ~ 18 Lacs+","Rs 1,73,343 ~ 1 Lacs+"
+398,583,K M Shaji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=583,AZHIKODE,IUML,9,12th Pass,"Rs 2,75,42,676 ~ 2 Crore+","Rs 2,20,000 ~ 2 Lacs+"
+399,618,K M Shaji (Mamba),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=618,AZHIKODE,IND,0,12th Pass,"Rs 58,92,000 ~ 58 Lacs+",Rs 0 ~
+400,4,K Mahesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=4,PUNALUR,SUCI(C),0,12th Pass,"Rs 3,00,000 ~ 3 Lacs+","Rs 30,000 ~ 30 Thou+"
+401,56,K N Balagopal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=56,KOTTARAKKARA,CPI(M),1,Post Graduate,"Rs 91,22,865 ~ 91 Lacs+","Rs 20,91,961 ~ 20 Lacs+"
+402,536,K P A Majeed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=536,TIRURANGADI,IUML,0,10th Pass,"Rs 1,83,13,112 ~ 1 Crore+",Rs 0 ~
+403,388,K P Kunhammed Kutti Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=388,KUTTIADI,CPI(M),4,10th Pass,"Rs 82,67,781 ~ 82 Lacs+",Rs 0 ~
+404,191,K P M Musthafa S/O Muhammedali Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=191,PERINTHALMANNA,IND,0,Graduate,"Rs 37,76,01,314 ~ 37 Crore+","Rs 20,59,50,000 ~ 20 Crore+"
+405,315,K Prathapan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=315,AROOR,SUCI(C),0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=315&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=315&col=lia
+406,124,K Radhakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=124,CHELAKKARA,CPI(M),1,Graduate,"Rs 34,97,780 ~ 34 Lacs+","Rs 4,91,392 ~ 4 Lacs+"
+407,164,K Rahim,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=164,KOZHIKODE NORTH,SUCI(C),0,12th Pass,"Rs 74,158 ~ 74 Thou+",Rs 0 ~
+408,88,K Rajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=88,OLLUR,CPI,0,Graduate Professional,"Rs 99,02,271 ~ 99 Lacs+","Rs 11,71,623 ~ 11 Lacs+"
+409,472,K Sadanandan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=472,PONNANI,IND,0,8th Pass,"Rs 50,000 ~ 50 Thou+",Rs 0 ~
+410,1069,K Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1069,MANJESHWAR,BJP,248,Graduate,"Rs 40,43,809 ~ 40 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+411,95,K V Sakkeer Hussain,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=95,PERAVOOR,CPI(M),0,12th Pass,"Rs 34,00,171 ~ 34 Lacs+","Rs 17,23,402 ~ 17 Lacs+"
+412,66,K V Sumesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=66,AZHIKODE,CPI(M),2,Graduate Professional,"Rs 48,49,595 ~ 48 Lacs+",Rs 0 ~
+413,185,K. Ansalan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=185,NEYYATTINKARA,CPI(M),3,12th Pass,"Rs 52,18,752 ~ 52 Lacs+","Rs 17,67,000 ~ 17 Lacs+"
+414,524,K. Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=524,THRIPUNITHURA,INC,12,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=524&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=524&col=lia
+415,10,K. Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=10,NENMARA,CPI(M),5,Graduate,"Rs 44,16,181 ~ 44 Lacs+","Rs 90,000 ~ 90 Thou+"
+416,87,K. Babu Mani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=87,NILAMBUR,SDPI,0,10th Pass,"Rs 14,74,037 ~ 14 Lacs+",Rs 0 ~
+417,421,K. K. Naser,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=421,NADAPURAM,SDPI,2,Post Graduate,"Rs 1,63,03,253 ~ 1 Crore+","Rs 42,99,103 ~ 42 Lacs+"
+418,69,K. Krishnankutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=69,CHITTUR,JD(S),0,8th Pass,"Rs 3,10,10,907 ~ 3 Crore+","Rs 16,41,031 ~ 16 Lacs+"
+419,1003,K. P. Ayappen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1003,THRIPUNITHURA,IND,1,12th Pass,"Rs 45,11,500 ~ 45 Lacs+","Rs 85,000 ~ 85 Thou+"
+420,985,K. P. Cheriya Muhammed S/O Kunhoyi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=985,THIRUVAMBADY,IND,0,Literate,"Rs 1,59,80,500 ~ 1 Crore+","Rs 6,60,000 ~ 6 Lacs+"
+421,36,K. P. Suresh Raj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=36,MANNARKAD,CPI,0,12th Pass,"Rs 2,21,13,623 ~ 2 Crore+","Rs 43,97,892 ~ 43 Lacs+"
+422,488,K. Padmakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=488,RANNI,Bharath Dharma Jana Sena,2,Others,"Rs 3,89,72,909 ~ 3 Crore+","Rs 29,22,869 ~ 29 Lacs+"
+423,899,K. Rajesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=899,PALAKKAD,Akhil Bharat Hindu Mahasabha,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=899&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=899&col=lia
+424,673,K. S. Anilkumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=673,ERANAKULAM,IND,0,8th Pass,"Rs 6,71,043 ~ 6 Lacs+",Rs 0 ~
+425,615,K. S. Sabarinadhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=615,ARUVIKKARA,INC,21,Graduate Professional,"Rs 2,37,64,841 ~ 2 Crore+","Rs 63,62,031 ~ 63 Lacs+"
+426,74,K. Soman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=74,HARIPAD,BJP,5,10th Pass,"Rs 18,28,490 ~ 18 Lacs+","Rs 1,60,000 ~ 1 Lacs+"
+427,158,K. Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=158,KONNI,BJP,248,Graduate,"Rs 40,43,809 ~ 40 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+428,227,K.A Vinod,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=227,ALAPPUZHA,SUCI(C),0,Graduate,"Rs 67,397 ~ 67 Thou+",Rs 0 ~
+429,504,K.A.Sheeba,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=504,TARUR,INC,0,Graduate Professional,"Rs 31,40,478 ~ 31 Lacs+","Rs 16,43,000 ~ 16 Lacs+"
+430,41,K.B. Ganesh Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=41,PATHANAPURAM,Kerala Congress (B),0,12th Pass,"Rs 19,38,00,496 ~ 19 Crore+","Rs 98,37,103 ~ 98 Lacs+"
+431,20,K.D.Prasenan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=20,ALATHUR,CPI(M),0,12th Pass,"Rs 2,50,00,000 ~ 2 Crore+","Rs 31,032 ~ 31 Thou+"
+432,8,K.J. Maxy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=8,KOCHI,CPI(M),1,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=8&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=8&col=lia
+433,376,K.Jayasankar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=376,KUNNAMKULAM,INC,3,Graduate,"Rs 1,11,47,510 ~ 1 Crore+","Rs 27,09,554 ~ 27 Lacs+"
+434,196,K.K. Ramachandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=196,PUTHUKKAD,CPI(M),4,10th Pass,"Rs 59,82,989 ~ 59 Lacs+",Rs 0 ~
+435,548,K.K.Rema,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=548,VADAKARA,Revolutionary Marxist Party of India,2,Graduate Professional,"Rs 96,80,507 ~ 96 Lacs+",Rs 0 ~
+436,233,K.M. Shefrin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=233,ALUVA,Welfare Party Of India,0,Post Graduate,"Rs 7,43,520 ~ 7 Lacs+","Rs 1,49,185 ~ 1 Lacs+"
+437,455,K.M.Haridas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=455,PATTAMBI,BJP,4,10th Pass,"Rs 37,04,426 ~ 37 Lacs+",Rs 0 ~
+438,219,K.N. Unnikrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=219,VYPEN,CPI(M),1,10th Pass,"Rs 1,19,48,598 ~ 1 Crore+",Rs 0 ~
+439,501,K.Narayanan Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=501,TANUR,BJP,0,Others,"Rs 2,24,38,155 ~ 2 Crore+","Rs 37,19,620 ~ 37 Lacs+"
+440,170,K.P. Mohanan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=170,KUTHUPARAMBA,Loktantrik Janta Dal,0,12th Pass,"Rs 2,71,28,507 ~ 2 Crore+","Rs 6,16,438 ~ 6 Lacs+"
+441,9,K.Prasad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=9,MALAMPUZHA,SUCI(C),0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=9&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=9&col=lia
+442,578,K.T. Abdurahiman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=578,ERANAD,IND,1,Others,"Rs 4,11,73,697 ~ 4 Crore+","Rs 25,00,000 ~ 25 Lacs+"
+443,1039,K.T.K Rama Padannayil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1039,VADAKARA,IND,0,10th Pass,"Rs 13,03,106 ~ 13 Lacs+",Rs 0 ~
+444,595,K.V. Sarala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=595,ALUVA,IND,1,8th Pass,"Rs 34,50,000 ~ 34 Lacs+",Rs 0 ~
+445,149,Kadakampally Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=149,KAZHAKKOOTTAM,CPI(M),13,Graduate,"Rs 1,31,67,394 ~ 1 Crore+",Rs 0 ~
+446,1020,Kalliyath Sathar Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1020,TIRURANGADI,BJP,1,10th Pass,"Rs 2,19,21,103 ~ 2 Crore+",Rs 0 ~
+447,101,Kanathil Jameela,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=101,QUILANDY,CPI(M),1,10th Pass,"Rs 1,90,93,781 ~ 1 Crore+",Rs 0 ~
+448,794,Kanchampazhinji Sasikumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=794,KOVALAM,BSP,1,8th Pass,"Rs 95,000 ~ 95 Thou+",Rs 0 ~
+449,741,Kandala Suresh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=741,KATTAKKADA,BSP,4,8th Pass,"Rs 2,13,800 ~ 2 Lacs+",Rs 0 ~
+450,92,Karamana Jayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=92,PARASSALA,BJP,9,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=92&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=92&col=lia
+451,155,Karat Razack,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=155,KODUVALLY,IND,0,8th Pass,"Rs 73,49,942 ~ 73 Lacs+",Rs 0 ~
+452,649,Karthikeyan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=649,CHERTHALA,IND,0,12th Pass,"Rs 18,93,773 ~ 18 Lacs+","Rs 1,11,000 ~ 1 Lacs+"
+453,1064,Kattuparuthy Sulaiman Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1064,KONDOTTY,IND,0,8th Pass,"Rs 46,90,75,253 ~ 46 Crore+","Rs 2,71,45,095 ~ 2 Crore+"
+454,1050,Keeran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1050,VENGARA,BSP,0,10th Pass,"Rs 11,60,000 ~ 11 Lacs+","Rs 65,000 ~ 65 Thou+"
+455,843,Kelu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=843,MANANTHAVADY,IND,0,5th Pass,"Rs 10,83,605 ~ 10 Lacs+",Rs 0 ~
+456,175,Kelu O.R.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=175,MANANTHAVADY,CPI(M),1,8th Pass,"Rs 37,70,086 ~ 37 Lacs+","Rs 16,24,800 ~ 16 Lacs+"
+457,751,Kochumani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=751,KAZHAKKOOTTAM,BSP,0,12th Pass,"Rs 7,90,000 ~ 7 Lacs+",Rs 0 ~
+458,822,Kovoor Kunjumon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=822,KUNNATHUR,IND,1,10th Pass,"Rs 11,28,000 ~ 11 Lacs+",Rs 0 ~
+459,989,Krishnakumar G,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=989,THIRUVANANTHAPURAM,BJP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=989&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=989&col=lia
+460,988,Krishnakumar T .S S/O Sankarankutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=988,THIRUVANANTHAPURAM,IND,0,Graduate,"Rs 82,000 ~ 82 Thou+",Rs 0 ~
+461,390,Krishnakumar.C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=390,MALAMPUZHA,BJP,15,Graduate,"Rs 1,50,82,500 ~ 1 Crore+","Rs 17,93,752 ~ 17 Lacs+"
+462,575,Krishnan C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=575,WANDOOR,Welfare Party Of India,0,10th Pass,"Rs 16,81,207 ~ 16 Lacs+",Rs 0 ~
+463,379,Krishnan Eranhikal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=379,KUNNATHUNAD,SDPI,0,Graduate,"Rs 6,70,000 ~ 6 Lacs+",Rs 0 ~
+464,721,Krishnan Parappachal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=721,KANHANGAD,IND,0,8th Pass,"Rs 41,82,000 ~ 41 Lacs+",Rs 0 ~
+465,612,Krishnankutty. M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=612,ARUVIKKARA,BSP,0,10th Pass,"Rs 2,83,000 ~ 2 Lacs+",Rs 0 ~
+466,998,Krishnaprasad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=998,THRIKKAKARA,Democratic Social Justice Party,0,Graduate,"Rs 85,24,022 ~ 85 Lacs+",Rs 0 ~
+467,182,Kummanam Rajasekharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=182,NEMOM,BJP,4,Graduate,"Rs 10,52,584 ~ 10 Lacs+",Rs 0 ~
+468,1028,Kunhambu K S/O Kuttappan K C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1028,UDMA,IND,0,5th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1028&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=1028&col=lia
+469,500,Kunhi Mohamed Muthanikkad Bapputty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=500,TANUR,IND,0,Others,"Rs 87,50,000 ~ 87 Lacs+",Rs 0 ~
+470,981,Kunju Koshy Paul,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=981,THIRUVALLA,Kerala Congress,1,12th Pass,"Rs 1,12,84,614 ~ 1 Crore+","Rs 2,44,000 ~ 2 Lacs+"
+471,550,Kuttan Kattachira,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=550,VAIKOM,IND,1,10th Pass,"Rs 12,22,619 ~ 12 Lacs+","Rs 2,10,000 ~ 2 Lacs+"
+472,432,L Sathyan Nadar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=432,NEMOM,IND,0,10th Pass,"Rs 55,03,750 ~ 55 Lacs+","Rs 7,00,000 ~ 7 Lacs+"
+473,349,Lakshmanan.K.P.Thamarassery,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=349,KODUVALLY,IND,0,10th Pass,"Rs 22,37,971 ~ 22 Lacs+","Rs 1,48,000 ~ 1 Lacs+"
+474,844,Lakshmi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=844,MANANTHAVADY,IND,0,5th Pass,"Rs 10,06,000 ~ 10 Lacs+",Rs 0 ~
+475,785,Lal Viswan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=785,KOTTARAKKARA,IND,0,10th Pass,"Rs 2,61,000 ~ 2 Lacs+",Rs 0 ~
+476,628,Lalu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=628,CHADAYAMANGALAM,BSP,0,10th Pass,"Rs 4,46,133 ~ 4 Lacs+","Rs 65,000 ~ 65 Thou+"
+477,750,Lalumon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=750,KAZHAKKOOTTAM,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=750&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=750&col=lia
+478,679,Lathika Subhash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=679,ETTUMANOOR,IND,5,Post Graduate,"Rs 84,21,731 ~ 84 Lacs+","Rs 43,68,040 ~ 43 Lacs+"
+479,516,Leethesh P T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=516,THODUPUZHA,BSP,0,Graduate,"Rs 24,95,222 ~ 24 Lacs+","Rs 11,00,290 ~ 11 Lacs+"
+480,984,Lenilal. T. D.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=984,THIRUVAMBADY,IND,0,Graduate,"Rs 29,11,000 ~ 29 Lacs+","Rs 16,26,000 ~ 16 Lacs+"
+481,701,Ligin Lal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=701,KADUTHURUTHY,BJP,3,Post Graduate,"Rs 83,02,000 ~ 83 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+482,234,Liju M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=234,AMBALAPUZHA,INC,36,Graduate Professional,"Rs 46,72,915 ~ 46 Lacs+","Rs 21,61,500 ~ 21 Lacs+"
+483,205,Linto Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=205,THIRUVAMBADY,CPI(M),4,Post Graduate,"Rs 76,92,000 ~ 76 Lacs+","Rs 14,06,000 ~ 14 Lacs+"
+484,983,Linto Joseph S/O Sali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=983,THIRUVAMBADY,IND,0,Graduate,"Rs 22,000 ~ 22 Thou+",Rs 0 ~
+485,1021,Liyakathali P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1021,TRIKARIPUR,SDPI,1,10th Pass,"Rs 29,18,207 ~ 29 Lacs+","Rs 11,00,000 ~ 11 Lacs+"
+486,422,Lojanan Ambatt,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=422,NATTIKA,BJP,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=422&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=422&col=lia
+487,739,M A Latheef,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=739,KASARAGOD,Indian National League,0,Graduate,"Rs 75,39,000 ~ 75 Lacs+","Rs 56,25,552 ~ 56 Lacs+"
+488,934,M Ashish,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=934,PIRAVOM,BJP,2,12th Pass,"Rs 18,33,123 ~ 18 Lacs+","Rs 14,000 ~ 14 Thou+"
+489,300,M K Aslam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=300,KAIPAMANGALAM,Welfare Party Of India,2,10th Pass,"Rs 24,34,486 ~ 24 Lacs+","Rs 3,58,189 ~ 3 Lacs+"
+490,842,M K Devarajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=842,MANALUR,IND,2,Graduate,"Rs 57,32,000 ~ 57 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+491,702,M K Shameer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=702,KAIPAMANGALAM,SDPI,2,10th Pass,"Rs 14,30,850 ~ 14 Lacs+",Rs 0 ~
+492,764,M Mukesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=764,KOLLAM,CPI(M),1,Graduate,"Rs 14,24,20,240 ~ 14 Crore+","Rs 82,390 ~ 82 Thou+"
+493,1024,M P Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1024,TRIKARIPUR,Kerala Congress,0,Post Graduate,"Rs 11,15,93,735 ~ 11 Crore+","Rs 15,22,118 ~ 15 Lacs+"
+494,94,M Pradeep Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=94,PAYYANNUR,INC,2,12th Pass,"Rs 91,55,859 ~ 91 Lacs+","Rs 15,50,000 ~ 15 Lacs+"
+495,107,M Rajagopalan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=107,TRIKARIPUR,CPI(M),3,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=107&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=107&col=lia
+496,634,M S Asokan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=634,CHALAKKUDY,BSP,0,8th Pass,"Rs 13,98,424 ~ 13 Lacs+","Rs 9,69,000 ~ 9 Lacs+"
+497,366,M T Ramesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=366,KOZHIKODE NORTH,BJP,3,Graduate,"Rs 20,58,464 ~ 20 Lacs+","Rs 8,50,000 ~ 8 Lacs+"
+498,995,M T Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=995,THODUPUZHA,IND,0,Literate,"Rs 80,04,813 ~ 80 Lacs+",Rs 0 ~
+499,200,M V Cherian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=200,PUTHUPPALLY,SUCI(C),0,Graduate,"Rs 15,76,261 ~ 15 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+500,102,M V Govindan Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=102,TALIPARAMBA,CPI(M),4,10th Pass,"Rs 1,19,41,626 ~ 1 Crore+",Rs 0 ~
+501,1022,M V Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1022,TRIKARIPUR,IND,0,8th Pass,"Rs 21,86,744 ~ 21 Lacs+","Rs 5,19,500 ~ 5 Lacs+"
+502,306,M Vijin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=306,KALLIASSERI,CPI(M),10,Graduate,"Rs 14,56,486 ~ 14 Lacs+","Rs 9,78,000 ~ 9 Lacs+"
+503,225,M. G. Kannan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=225,ADOOR,INC,5,Graduate,"Rs 13,94,799 ~ 13 Lacs+","Rs 50,000 ~ 50 Thou+"
+504,258,M. K. Nizamuddin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=258,CHANGANASSERY,SDPI,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=258&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=258&col=lia
+505,211,M. M. Mani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=211,UDUMBANCHOLA,CPI(M),1,5th Pass,"Rs 2,42,94,224 ~ 2 Crore+",Rs 0 ~
+506,134,M. Noushad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=134,ERAVIPURAM,CPI(M),4,12th Pass,"Rs 56,58,667 ~ 56 Lacs+","Rs 11,09,780 ~ 11 Lacs+"
+507,505,M. P. Aravindakshan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=505,THALASSERY,INC,2,10th Pass,"Rs 30,09,357 ~ 30 Lacs+","Rs 1,79,000 ~ 1 Lacs+"
+508,756,M. P. Jackson,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=756,KODUNGALLUR,INC,0,12th Pass,"Rs 36,93,64,630 ~ 36 Crore+","Rs 39,35,815 ~ 39 Lacs+"
+509,866,M. P. Rajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=866,NADAPURAM,BJP,1,10th Pass,"Rs 16,42,000 ~ 16 Lacs+","Rs 7,00,000 ~ 7 Lacs+"
+510,941,M. P. Sen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=941,POONJAR,Bharath Dharma Jana Sena,0,Graduate,"Rs 1,01,40,170 ~ 1 Crore+","Rs 19,00,000 ~ 19 Lacs+"
+511,133,M. Unnikrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=133,ERAVIPURAM,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 97,000 ~ 97 Thou+",Rs 0 ~
+512,940,M. V. George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=940,POONJAR,IND,0,Post Graduate,"Rs 1,41,71,300 ~ 1 Crore+","Rs 15,00,000 ~ 15 Lacs+"
+513,267,M. V. Gopakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=267,CHENGANNUR,BJP,21,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=267&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=267&col=lia
+514,853,M.Ali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=853,MANKADA,IND,0,Literate,"Rs 54,11,200 ~ 54 Lacs+",Rs 0 ~
+515,2,M.K.Shahazad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=2,KOTTAYAM,SUCI(C),0,Graduate Professional,"Rs 2,882 ~ 2 Thou+",Rs 0 ~
+516,136,M.Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=136,GURUVAYOOR,SUCI(C),0,10th Pass,"Rs 48,60,054 ~ 48 Lacs+",Rs 0 ~
+517,318,M.M.Naseer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=318,CHADAYAMANGALAM,INC,0,Graduate Professional,"Rs 3,81,59,804 ~ 3 Crore+","Rs 55,26,000 ~ 55 Lacs+"
+518,596,M.N. Gopi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=596,ALUVA,BJP,6,10th Pass,"Rs 75,48,327 ~ 75 Lacs+","Rs 10,18,873 ~ 10 Lacs+"
+519,62,M.S Viswanathan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=62,SULTHANBATHERY,CPI(M),0,10th Pass,"Rs 2,64,98,888 ~ 2 Crore+","Rs 58,16,945 ~ 58 Lacs+"
+520,188,M.T. Nixon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=188,PARAVUR,CPI,0,12th Pass,"Rs 1,37,02,517 ~ 1 Crore+","Rs 7,00,000 ~ 7 Lacs+"
+521,1068,M.V.Shreyamskumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1068,KALPETTA,Loktantrik Janta Dal,3,Post Graduate,"Rs 87,99,00,913 ~ 87 Crore+","Rs 6,89,71,176 ~ 6 Crore+"
+522,331,Madhu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=331,KARUNAGAPPALLY,Anna Democratic Human Rights Movement Party of India,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=331&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=331&col=lia
+523,137,Madhu. T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=137,HARIPAD,SUCI(C),0,12th Pass,"Rs 9,25,500 ~ 9 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+524,740,Malayinkeezhu Venugopal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=740,KATTAKKADA,INC,5,12th Pass,"Rs 96,06,675 ~ 96 Lacs+","Rs 2,88,209 ~ 2 Lacs+"
+525,1060,Manayath Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1060,VADAKARA,Loktantrik Janta Dal,2,Post Graduate,"Rs 1,95,45,072 ~ 1 Crore+","Rs 23,63,109 ~ 23 Lacs+"
+526,59,Mani C Kappen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=59,PALA,IND,12,12th Pass,"Rs 27,93,30,624 ~ 27 Crore+","Rs 4,95,64,402 ~ 4 Crore+"
+527,893,Mani C. Kuriakose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=893,PALA,IND,0,8th Pass,"Rs 21,372 ~ 21 Thou+",Rs 0 ~
+528,818,Manikuttan.A.T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=818,KUNNATHUNAD,BSP,0,10th Pass,"Rs 5,31,000 ~ 5 Lacs+",Rs 0 ~
+529,746,Maniyappan Achari,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=746,KAYAMKULAM,IND,0,Graduate,"Rs 11,41,607 ~ 11 Lacs+",Rs 0 ~
+530,406,Manjalamkuzhi Ali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=406,MANKADA,IUML,2,12th Pass,"Rs 15,59,69,505 ~ 15 Crore+","Rs 2,65,85,511 ~ 2 Crore+"
+531,773,Manoharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=773,KONNI,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=773&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=773&col=lia
+532,718,Manoj Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=718,KANHANGAD,IND,0,Graduate,"Rs 78,88,500 ~ 78 Lacs+","Rs 10,45,000 ~ 10 Lacs+"
+533,825,Manthara Velayudhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=825,KUNNATHUR,IND,1,12th Pass,"Rs 32,24,000 ~ 32 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+534,240,Martin Paul,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=240,ANGAMALY,IND,0,10th Pass,"Rs 32,82,800 ~ 32 Lacs+",Rs 0 ~
+535,161,Mathews K Lukose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=161,KOTTARAKKARA,IND,0,Others,"Rs 61,32,000 ~ 61 Lacs+",Rs 0 ~
+536,146,Mayamol K P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=146,KANJIRAPPALLY,SUCI(C),0,Post Graduate,"Rs 1,54,797 ~ 1 Lacs+",Rs 0 ~
+537,126,Melvin. K. Mathew,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=126,CHENGANNUR,Democratic Social Justice Party,0,Graduate Professional,"Rs 82,80,000 ~ 82 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+538,222,Midhuna P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=222,WANDOOR,CPI(M),0,Post Graduate,"Rs 8,39,528 ~ 8 Lacs+","Rs 2,05,000 ~ 2 Lacs+"
+539,791,Minerva Mohan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=791,KOTTAYAM,BJP,0,Post Graduate,"Rs 45,07,452 ~ 45 Lacs+","Rs 35,00,000 ~ 35 Lacs+"
+540,160,Mohamed Kutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=160,KOTTAKKAL,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=160&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=160&col=lia
+541,971,Mohammed Firos Nurukkuprambil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=971,THAVANUR,IND,0,10th Pass,"Rs 3,82,100 ~ 3 Lacs+",Rs 0 ~
+542,829,Mohanan K.P. Kaithavecha Parambath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=829,KUTHUPARAMBA,IND,0,8th Pass,"Rs 3,56,398 ~ 3 Lacs+",Rs 0 ~
+543,676,Mohanan Mayyanad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=676,ERAVIPURAM,BSP,0,10th Pass,"Rs 2,700 ~ 2 Thou+",Rs 0 ~
+544,622,Mohandas Unnikulam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=622,BALUSSERI,RPI(A),0,10th Pass,"Rs 5,67,500 ~ 5 Lacs+","Rs 96,000 ~ 96 Thou+"
+545,1015,Moideen Meenthrathakath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1015,TIRUR,IND,0,8th Pass,"Rs 15,98,000 ~ 15 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+546,1016,Moideen Valiyakath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1016,TIRUR,IND,0,Literate,"Rs 10,91,700 ~ 10 Lacs+","Rs 70,000 ~ 70 Thou+"
+547,814,Moideen.K.M S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=814,KUNNAMKULAM,IND,0,Literate,"Rs 17,25,000 ~ 17 Lacs+",Rs 0 ~
+548,537,Moosa Jarathingal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=537,TIRURANGADI,Swaraj India,0,Graduate,"Rs 1,96,11,859 ~ 1 Crore+","Rs 66,90,000 ~ 66 Lacs+"
+549,964,Mueenudheen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=964,TANUR,BSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=964&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=964&col=lia
+550,492,Muhammad Musthafa,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=492,SHORNUR,SDPI,2,10th Pass,"Rs 20,54,900 ~ 20 Lacs+",Rs 0 ~
+551,189,Muhammed Muhassin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=189,PATTAMBI,CPI,0,Graduate Professional,"Rs 67,91,054 ~ 67 Lacs+","Rs 29,42,100 ~ 29 Lacs+"
+552,930,Muhammed Musthafa K P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=930,PERINTHALMANNA,IND,0,10th Pass,"Rs 16,80,620 ~ 16 Lacs+","Rs 2,56,000 ~ 2 Lacs+"
+553,400,Mukundan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=400,MANANTHAVADY,BJP,2,10th Pass,"Rs 31,40,200 ~ 31 Lacs+",Rs 0 ~
+554,759,Muneer M.K S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=759,KODUVALLY,IND,0,10th Pass,"Rs 12,43,883 ~ 12 Lacs+",Rs 0 ~
+555,876,Muraleedharan Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=876,NEMOM,IND,0,10th Pass,"Rs 1,53,000 ~ 1 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+556,174,Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=174,MANALUR,CPI(M),0,Graduate,"Rs 36,22,805 ~ 36 Lacs+","Rs 7,25,300 ~ 7 Lacs+"
+557,68,Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=68,CHENGANNUR,INC,2,Post Graduate,"Rs 3,04,68,197 ~ 3 Crore+","Rs 34,00,000 ~ 34 Lacs+"
+558,154,Musthafa Kommeri,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=154,KODUVALLY,SDPI,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=154&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=154&col=lia
+559,465,Musthafa P K S/O Saidalavi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=465,PERINTHALMANNA,IND,0,5th Pass,"Rs 4,69,032 ~ 4 Lacs+","Rs 25,000 ~ 25 Thou+"
+560,549,Musthafa Paleri,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=549,VADAKARA,SDPI,1,8th Pass,"Rs 31,16,818 ~ 31 Lacs+","Rs 7,00,000 ~ 7 Lacs+"
+561,586,Musthafa S/O Muhammed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=586,PERINTHALMANNA,IND,0,10th Pass,"Rs 30,35,712 ~ 30 Lacs+","Rs 5,50,000 ~ 5 Lacs+"
+562,24,Myna Gopinath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=24,KAYAMKULAM,SUCI(C),0,Graduate,"Rs 5,52,750 ~ 5 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+563,147,N A Nellikkunnu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=147,KASARAGOD,IUML,0,12th Pass,"Rs 1,72,77,779 ~ 1 Crore+",Rs 0 ~
+564,796,N Abhijith,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=796,KOZHIKODE NORTH,IND,0,12th Pass,"Rs 62,500 ~ 62 Thou+","Rs 21,600 ~ 21 Thou+"
+565,483,N Hari,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=483,PUTHUPPALLY,BJP,4,10th Pass,"Rs 6,02,776 ~ 6 Lacs+","Rs 97,612 ~ 97 Thou+"
+566,726,N K Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=726,KANNUR,IND,0,5th Pass,Nil,Rs 0 ~
+567,781,N. A. Muhammed Kutty (Mammuty),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=781,KOTTAKKAL,NCP,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=781&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=781&col=lia
+568,263,N. Peethambarakurup,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=263,CHATHANNUR,INC,1,Graduate,"Rs 43,92,478 ~ 43 Lacs+",Rs 0 ~
+569,677,N. Shihabudeen,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=677,ERAVIPURAM,IND,0,12th Pass,"Rs 1,11,55,000 ~ 1 Crore+",Rs 0 ~
+570,202,N. Subramaniyan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=202,QUILANDY,INC,11,10th Pass,"Rs 1,59,56,852 ~ 1 Crore+","Rs 1,53,64,841 ~ 1 Crore+"
+571,73,N.K.Akbar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=73,GURUVAYOOR,CPI(M),1,Graduate,"Rs 47,03,139 ~ 47 Lacs+","Rs 5,04,222 ~ 5 Lacs+"
+572,906,N.K.Biju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=906,PARAVUR,BSP,0,10th Pass,"Rs 34,57,770 ~ 34 Lacs+","Rs 3,47,927 ~ 3 Lacs+"
+573,567,N.Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=567,VATTIYOORKAVU,BSP,0,Graduate Professional,"Rs 1,12,94,100 ~ 1 Crore+",Rs 0 ~
+574,484,N.P. Radhakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=484,QUILANDY,BJP,1,10th Pass,"Rs 4,14,139 ~ 4 Lacs+",Rs 0 ~
+575,463,Najeeb Kanthapuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=463,PERINTHALMANNA,IUML,21,Graduate Professional,"Rs 1,91,36,090 ~ 1 Crore+",Rs 0 ~
+576,928,Najeeb Kutteeri,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=928,PERINTHALMANNA,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=928&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=928&col=lia
+577,96,Narayanakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=96,PERAVOOR,IND,1,10th Pass,"Rs 15,12,270 ~ 15 Lacs+",Rs 0 ~
+578,911,Narayanan. T.P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=911,PATTAMBI,BSP,0,12th Pass,"Rs 74,51,750 ~ 74 Lacs+",Rs 0 ~
+579,1049,Navas C. M.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1049,VAMANAPURAM,IND,1,8th Pass,"Rs 40,23,500 ~ 40 Lacs+",Rs 0 ~
+580,368,Navya Haridas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=368,KOZHIKODE SOUTH,BJP,0,Graduate Professional,"Rs 1,29,56,264 ~ 1 Crore+","Rs 1,64,979 ~ 1 Lacs+"
+581,706,Nayana Unnikrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=706,KALAMASSERY,IND,0,12th Pass,"Rs 25,000 ~ 25 Thou+",Rs 0 ~
+582,403,Nazar Debona,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=403,MANJERI,CPI,0,8th Pass,"Rs 1,56,79,100 ~ 1 Crore+","Rs 19,00,360 ~ 19 Lacs+"
+583,30,Neelalohithadasan Nadar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=30,KOVALAM,JD(S),3,Doctorate,"Rs 2,17,48,075 ~ 2 Crore+","Rs 20,24,244 ~ 20 Lacs+"
+584,150,Nipun Cherian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=150,KOCHI,IND,6,Graduate Professional,"Rs 45,37,122 ~ 45 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+585,81,Nishanth Kumar I B,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=81,KASARAGOD,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=81&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=81&col=lia
+586,538,Niyas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=538,TIRURANGADI,IND,0,12th Pass,"Rs 4,16,516 ~ 4 Lacs+",Rs 0 ~
+587,627,Niyas K S/O Koya Kuniyil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=627,BEYPORE,IND,0,10th Pass,"Rs 28,000 ~ 28 Thou+",Rs 0 ~
+588,1006,Noorudheen E V,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1006,THRITHALA,IND,0,8th Pass,"Rs 18,10,048 ~ 18 Lacs+","Rs 5,36,033 ~ 5 Lacs+"
+589,129,Nsk Puram Sasikumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=129,CHITTUR,IND,1,8th Pass,Nil,"Rs 1,00,000 ~ 1 Lacs+"
+590,115,O S Ambika,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=115,ATTINGAL,CPI(M),0,10th Pass,"Rs 1,14,91,296 ~ 1 Crore+","Rs 3,00,000 ~ 3 Lacs+"
+591,152,O. M. Sreeja,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=152,KODUNGALLUR,SUCI(C),0,10th Pass,"Rs 31,32,530 ~ 31 Lacs+","Rs 1,46,000 ~ 1 Lacs+"
+592,601,Omalloor Ramachandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=601,ARANMULA,Ambedkarite Party of India,0,10th Pass,"Rs 1,95,000 ~ 1 Lacs+",Rs 0 ~
+593,954,Ondan Paniyan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=954,SULTHANBATHERY,IND,0,5th Pass,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+594,100,Oommen Chandy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=100,PUTHUPPALLY,INC,4,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=100&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=100&col=lia
+595,207,P Balachandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=207,THRISSUR,CPI,14,Post Graduate,"Rs 63,92,811 ~ 63 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+596,992,P J Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=992,THODUPUZHA,Kerala Congress,2,Post Graduate,"Rs 4,26,33,559 ~ 4 Crore+","Rs 7,71,282 ~ 7 Lacs+"
+597,921,P K Saji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=921,PERAVOOR,New Labour Party,0,10th Pass,"Rs 40,00,000 ~ 40 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+598,890,P K Subramanian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=890,OLLUR,BSP,0,8th Pass,"Rs 2,45,550 ~ 2 Lacs+",Rs 0 ~
+599,193,P Nandakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=193,PONNANI,CPI(M),0,10th Pass,"Rs 1,08,10,284 ~ 1 Crore+",Rs 0 ~
+600,387,P P Murali Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=387,KUTTIADI,BJP,1,Post Graduate,"Rs 45,74,000 ~ 45 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+601,326,P Prasad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=326,CHERTHALA,CPI,2,Graduate,"Rs 14,18,689 ~ 14 Lacs+",Rs 0 ~
+602,479,P S Supal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=479,PUNALUR,CPI,4,Graduate,"Rs 96,27,038 ~ 96 Lacs+","Rs 6,50,000 ~ 6 Lacs+"
+603,714,P V Suresh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=714,KANHANGAD,INC,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=714&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=714&col=lia
+604,84,P. Hareendranath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=84,KOZHIKODE SOUTH,Democratic Social Justice Party,0,Post Graduate,"Rs 17,96,200 ~ 17 Lacs+","Rs 1,74,401 ~ 1 Lacs+"
+605,569,P. Jiji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=569,VENGARA,CPI(M),5,Post Graduate,"Rs 2,33,958 ~ 2 Lacs+","Rs 6,08,101 ~ 6 Lacs+"
+606,451,P. Krishnammal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=451,PATHANAPURAM,Marxist Communist Party of India (United),0,10th Pass,"Rs 13,40,700 ~ 13 Lacs+","Rs 25,000 ~ 25 Thou+"
+607,705,P. M. K. Bava,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=705,KALAMASSERY,IND,0,10th Pass,"Rs 1,64,29,934 ~ 1 Crore+","Rs 14,24,270 ~ 14 Lacs+"
+608,61,P. Mammikutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=61,SHORNUR,CPI(M),0,10th Pass,"Rs 57,01,646 ~ 57 Lacs+","Rs 2,25,000 ~ 2 Lacs+"
+609,624,P. P Muhammad Riyas S/O Mamukkoya,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=624,BEYPORE,IND,0,8th Pass,"Rs 11,18,450 ~ 11 Lacs+","Rs 5,59,524 ~ 5 Lacs+"
+610,361,P. P. Ganesan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=361,KOTTAKKAL,BJP,1,10th Pass,"Rs 74,39,560 ~ 74 Lacs+","Rs 8,19,144 ~ 8 Lacs+"
+611,142,P. Rajeeve,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=142,KALAMASSERY,CPI(M),3,Graduate Professional,"Rs 5,33,49,321 ~ 5 Crore+","Rs 13,43,496 ~ 13 Lacs+"
+612,707,P. S. Jayaraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=707,KALAMASSERY,Bharath Dharma Jana Sena,1,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=707&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=707&col=lia
+613,428,P. S. Prasanth,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=428,NEDUMANGAD,INC,1,Graduate Professional,"Rs 29,63,414 ~ 29 Lacs+",Rs 0 ~
+614,708,P. S. Unnikrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=708,KALAMASSERY,BSP,0,12th Pass,"Rs 5,90,398 ~ 5 Lacs+","Rs 1,66,000 ~ 1 Lacs+"
+615,393,P. Ubaidulla,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=393,MALAPPURAM,IUML,1,8th Pass,"Rs 72,77,610 ~ 72 Lacs+","Rs 32,68,287 ~ 32 Lacs+"
+616,438,P. Venugopalan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=438,OTTAPALAM,BJP,7,12th Pass,"Rs 34,44,295 ~ 34 Lacs+","Rs 3,95,000 ~ 3 Lacs+"
+617,481,P.C. Pushpakaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=481,PUTHUKKAD,BSP,0,12th Pass,"Rs 28,17,525 ~ 28 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+618,42,P.C.George Plathottam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=42,POONJAR,Kerala Janapaksham (Secular),8,Graduate,"Rs 2,78,32,497 ~ 2 Crore+","Rs 3,03,05,000 ~ 3 Crore+"
+619,372,P.C.Vishnunadh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=372,KUNDARA,INC,6,Graduate,"Rs 53,18,918 ~ 53 Lacs+","Rs 4,80,000 ~ 4 Lacs+"
+620,915,P.K Gopalakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=915,PEERUMADE,IND,0,Literate,"Rs 13,01,932 ~ 13 Lacs+","Rs 1,72,503 ~ 1 Lacs+"
+621,742,P.K Krishnadas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=742,KATTAKKADA,BJP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=742&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=742&col=lia
+622,218,P.K Kunjhalikutty,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=218,VENGARA,IUML,3,Graduate,"Rs 5,49,04,480 ~ 5 Crore+",Rs 0 ~
+623,280,P.K. Basheer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=280,ERANAD,IUML,2,10th Pass,"Rs 4,48,46,959 ~ 4 Crore+","Rs 20,00,000 ~ 20 Lacs+"
+624,203,P.K.Firos,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=203,TANUR,IUML,12,Post Graduate,"Rs 63,39,596 ~ 63 Lacs+","Rs 47,89,714 ~ 47 Lacs+"
+625,1000,P.M.Shibu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1000,THRIKKAKARA,BSP,0,Graduate,"Rs 10,700 ~ 10 Thou+","Rs 1,19,000 ~ 1 Lacs+"
+626,19,P.P Chitharanjan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=19,ALAPPUZHA,CPI(M),8,10th Pass,"Rs 97,53,406 ~ 97 Lacs+",Rs 0 ~
+627,892,P.P. Sivan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=892,OTTAPALAM,BSP,0,Literate,"Rs 4,25,000 ~ 4 Lacs+",Rs 0 ~
+628,43,P.P.Sumod,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=43,TARUR,CPI(M),5,Post Graduate,"Rs 9,94,497 ~ 9 Lacs+","Rs 3,42,000 ~ 3 Lacs+"
+629,402,P.R. Rasmil Nath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=402,MANJERI,BJP,1,Graduate,"Rs 1,23,28,439 ~ 1 Crore+","Rs 8,50,000 ~ 8 Lacs+"
+630,885,P.V. Anvar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=885,NILAMBUR,IND,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=885&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=885&col=lia
+631,282,Padmaja S. Menon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=282,ERANAKULAM,BJP,6,Post Graduate,"Rs 7,70,12,186 ~ 7 Crore+","Rs 11,30,000 ~ 11 Lacs+"
+632,63,Padmaja Venugopal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=63,THRISSUR,INC,0,Graduate,"Rs 19,09,53,255 ~ 19 Crore+",Rs 0 ~
+633,845,Palathingal Aboobacker,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=845,MANJERI,IND,0,8th Pass,"Rs 43,00,200 ~ 43 Lacs+","Rs 9,00,000 ~ 9 Lacs+"
+634,229,Palayam Pradeep,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=229,ALATHUR,INC,5,12th Pass,"Rs 1,92,64,688 ~ 1 Crore+","Rs 27,19,797 ~ 27 Lacs+"
+635,172,Paloli Abdurahiman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=172,MALAPPURAM,CPI(M),0,10th Pass,"Rs 3,56,06,154 ~ 3 Crore+","Rs 14,29,600 ~ 14 Lacs+"
+636,386,Parakkal Abdulla,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=386,KUTTIADI,IUML,4,5th Pass,"Rs 6,00,70,881 ~ 6 Crore+","Rs 15,88,149 ~ 15 Lacs+"
+637,994,Parthasaradhi K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=994,THODUPUZHA,IND,2,Graduate Professional,Rs 200 ~ 2 Hund+,Rs 0 ~
+638,620,Pavithran Kurikkalot,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=620,AZHIKODE,New Labour Party,0,10th Pass,"Rs 57,000 ~ 57 Thou+","Rs 2,00,000 ~ 2 Lacs+"
+639,554,Peethambaran Palat,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=554,VALLIKKUNNU,BJP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=554&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=554&col=lia
+640,12,Pinarayi Vijayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=12,DHARMADAM,CPI(M),2,12th Pass,"Rs 1,18,75,766 ~ 1 Crore+",Rs 0 ~
+641,384,Pottankandi Abdulla,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=384,KUTHUPARAMBA,IUML,4,Graduate,"Rs 17,35,62,034 ~ 17 Crore+",Rs 0 ~
+642,647,Poulose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=647,CHENGANNUR,IND,0,Graduate Professional,"Rs 2,48,65,000 ~ 2 Crore+",Rs 0 ~
+643,745,Pradeeplal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=745,KAYAMKULAM,Bharath Dharma Jana Sena,0,12th Pass,"Rs 1,61,96,500 ~ 1 Crore+","Rs 60,91,311 ~ 60 Lacs+"
+644,478,Prakash Anchal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=478,PUNALUR,Anna Democratic Human Rights Movement Party of India,0,12th Pass,"Rs 6,20,000 ~ 6 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+645,433,Prakash.C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=433,NENMARA,BSP,0,12th Pass,"Rs 5,49,447 ~ 5 Lacs+","Rs 2,50,000 ~ 2 Lacs+"
+646,269,Prameela. K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=269,CHITTUR,IND,0,10th Pass,"Rs 40,21,602 ~ 40 Lacs+","Rs 12,30,660 ~ 12 Lacs+"
+647,440,Prameeladevi .J,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=440,PALA,BJP,3,Doctorate,"Rs 4,37,70,528 ~ 4 Crore+","Rs 60,89,790 ~ 60 Lacs+"
+648,314,Pramod Perumpuzha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=314,AROOR,Anna Democratic Human Rights Movement Party of India,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=314&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=314&col=lia
+649,248,Prasad V P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=248,AZHIKODE,IND,0,10th Pass,"Rs 3,83,75,000 ~ 3 Crore+",Rs 0 ~
+650,605,Prasanth Aranmula,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=605,ARANMULA,IND,0,Graduate,"Rs 65,05,120 ~ 65 Lacs+","Rs 9,39,293 ~ 9 Lacs+"
+651,594,Prasanth Sivan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=594,ALATHUR,BJP,17,Post Graduate,"Rs 14,55,000 ~ 14 Lacs+","Rs 60,000 ~ 60 Thou+"
+652,871,Prasanth. C S/O Chandran. K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=871,NEDUMANGAD,IND,0,10th Pass,"Rs 39,500 ~ 39 Thou+",Rs 0 ~
+653,838,Prasobh .T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=838,MALAPPURAM,BSP,0,Post Graduate,"Rs 16,42,519 ~ 16 Lacs+","Rs 95,000 ~ 95 Thou+"
+654,201,Praveen Cheruvath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=201,QUILANDY,SUCI(C),0,10th Pass,"Rs 51,65,000 ~ 51 Lacs+","Rs 14,000 ~ 14 Thou+"
+655,850,Praveen Kumar S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=850,MANJESHWAR,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 1,52,000 ~ 1 Lacs+",Rs 0 ~
+656,882,Premakumar. T. R,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=882,NEYYATTINKARA,BSP,0,12th Pass,"Rs 2,31,539 ~ 2 Lacs+","Rs 52,000 ~ 52 Thou+"
+657,568,Preman Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=568,VENGARA,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=568&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=568&col=lia
+658,561,Prince,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=561,VARKALA,IND,0,10th Pass,"Rs 34,13,466 ~ 34 Lacs+",Rs 0 ~
+659,792,Prince V.S.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=792,KOVALAM,IND,0,10th Pass,"Rs 12,46,000 ~ 12 Lacs+","Rs 7,50,000 ~ 7 Lacs+"
+660,1043,Prof. A.P. Abdul Vahab,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1043,VALLIKKUNNU,Indian National League,0,Post Graduate,"Rs 1,64,40,226 ~ 1 Crore+",Rs 0 ~
+661,359,Prof. Abid Hussain Thangal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=359,KOTTAKKAL,IUML,2,Post Graduate,"Rs 1,95,95,855 ~ 1 Crore+","Rs 4,06,495 ~ 4 Lacs+"
+662,1062,Prof. K I Antony,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1062,THODUPUZHA,Kerala Congress (M),0,Post Graduate,"Rs 3,22,46,393 ~ 3 Crore+","Rs 41,287 ~ 41 Thou+"
+663,671,Prof. Leslie Pallath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=671,ERANAKULAM,Twenty 20 Party,0,Post Graduate,"Rs 30,36,97,923 ~ 30 Crore+",Rs 0 ~
+664,986,Prof.George Mathew Thottathimyalil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=986,THIRUVAMBADY,IND,0,Post Graduate,"Rs 1,61,23,714 ~ 1 Crore+","Rs 19,34,250 ~ 19 Lacs+"
+665,139,R Bindu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=139,IRINJALAKKUDA,CPI(M),0,Doctorate,"Rs 1,22,24,783 ~ 1 Crore+",Rs 0 ~
+666,362,R Resmi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=362,KOTTARAKKARA,INC,2,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=362&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=362&col=lia
+667,587,R. Kannan S/O Rajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=587,ADOOR,IND,0,10th Pass,"Rs 57,000 ~ 57 Thou+",Rs 0 ~
+668,1047,R. Murali,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1047,VAMANAPURAM,IND,0,5th Pass,"Rs 15,55,635 ~ 15 Lacs+",Rs 0 ~
+669,55,R. Ramachandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=55,KARUNAGAPPALLY,CPI,1,Graduate Professional,"Rs 85,00,000 ~ 85 Lacs+","Rs 8,55,580 ~ 8 Lacs+"
+670,382,R. Sukumaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=382,KUNNATHUR,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 32,28,000 ~ 32 Lacs+",Rs 0 ~
+671,57,R.Rahul,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=57,KUNDARA,SUCI(C),0,Graduate Professional,"Rs 58,124 ~ 58 Thou+",Rs 0 ~
+672,824,R.S. Anju,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=824,KUNNATHUR,BSP,0,10th Pass,"Rs 2,10,500 ~ 2 Lacs+","Rs 28,000 ~ 28 Thou+"
+673,841,Radhakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=841,MANALUR,BJP,176,Graduate,"Rs 1,04,44,800 ~ 1 Crore+","Rs 48,00,000 ~ 48 Lacs+"
+674,411,Rafeek Keechery,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=411,MATTANNUR,SDPI,3,10th Pass,"Rs 16,25,000 ~ 16 Lacs+","Rs 6,70,000 ~ 6 Lacs+"
+675,355,Raghu P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=355,KONNI,Anna Democratic Human Rights Movement Party of India,1,5th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=355&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=355&col=lia
+676,532,Rajagopal Thrithala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=532,THRITHALA,BSP,0,12th Pass,"Rs 61,41,000 ~ 61 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+677,153,Rajan Painat,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=153,KODUNGALLUR,IND,0,10th Pass,"Rs 3,61,62,851 ~ 3 Crore+","Rs 89,000 ~ 89 Thou+"
+678,754,Rajaneesh Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=754,KOCHI,IND,1,8th Pass,"Rs 24,168 ~ 24 Thou+",Rs 0 ~
+679,223,Rajankulakkada,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=223,ADOOR,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 22,000 ~ 22 Thou+","Rs 5,00,000 ~ 5 Lacs+"
+680,878,Rajasekharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=878,NEMOM,IND,0,10th Pass,"Rs 10,48,816 ~ 10 Lacs+",Rs 0 ~
+681,335,Rajeev R,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=335,KAYAMKULAM,IND,1,10th Pass,"Rs 27,000 ~ 27 Thou+",Rs 0 ~
+682,980,Rajendradas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=980,THIRUVALLA,BSP,0,10th Pass,"Rs 7,85,000 ~ 7 Lacs+","Rs 3,50,000 ~ 3 Lacs+"
+683,946,Rajesh Appatt,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=946,PUTHUKKAD,CPI(ML)(L) Red Star,1,10th Pass,"Rs 17,32,000 ~ 17 Lacs+",Rs 0 ~
+684,525,Rajesh Pairoad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=525,THRIPUNITHURA,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=525&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=525&col=lia
+685,1010,Rajesh S/O Raman E,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1010,THRITHALA,IND,0,10th Pass,"Rs 58,500 ~ 58 Thou+",Rs 0 ~
+686,593,Rajesh.M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=593,ALATHUR,IND,1,12th Pass,"Rs 12,80,000 ~ 12 Lacs+","Rs 3,60,000 ~ 3 Lacs+"
+687,383,Rajiprasad,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=383,KUNNATHUR,BJP,0,10th Pass,"Rs 38,12,000 ~ 38 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+688,512,Raju Antony,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=512,THIRUVANANTHAPURAM,IND,6,10th Pass,"Rs 10,05,000 ~ 10 Lacs+",Rs 0 ~
+689,1033,Rama Cheriya Kayyil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1033,VADAKARA,IND,0,5th Pass,"Rs 8,11,500 ~ 8 Lacs+",Rs 0 ~
+690,1038,Rama Kuniyil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1038,VADAKARA,IND,0,10th Pass,"Rs 15,26,664 ~ 15 Lacs+",Rs 0 ~
+691,14,Ramachandran Kadannappalli,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=14,KANNUR,Congress (Secular),1,Graduate,"Rs 75,93,999 ~ 75 Lacs+","Rs 22,00,000 ~ 22 Lacs+"
+692,724,Ramachandran P V,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=724,KANNUR,IND,0,10th Pass,"Rs 41,99,530 ~ 41 Lacs+",Rs 0 ~
+693,75,Ramesh Chennithala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=75,HARIPAD,INC,7,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=75&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=75&col=lia
+694,506,Ramesh Kottayapurath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=506,THAVANUR,Bharath Dharma Jana Sena,0,10th Pass,"Rs 2,11,96,000 ~ 2 Crore+","Rs 1,10,00,000 ~ 1 Crore+"
+695,1030,Rameshan K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1030,UDMA,IND,0,10th Pass,"Rs 45,000 ~ 45 Thou+",Rs 0 ~
+696,734,Ranjith Raj M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=734,KASARAGOD,Anna Democratic Human Rights Movement Party of India,0,Illiterate,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+697,855,Rasheedali S/O Mammunni,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=855,MANKADA,IND,0,8th Pass,"Rs 22,30,189 ~ 22 Lacs+","Rs 50,000 ~ 50 Thou+"
+698,121,Ratheesh Kadakkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=121,CHADAYAMANGALAM,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 85,000 ~ 85 Thou+",Rs 0 ~
+699,769,Razak Paleri,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=769,KONDOTTY,Welfare Party Of India,2,Post Graduate,"Rs 28,21,690 ~ 28 Lacs+",Rs 0 ~
+700,67,Rejitha Jayaram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=67,CHANGANASSERY,SUCI(C),0,10th Pass,"Rs 90,439 ~ 90 Thou+",Rs 0 ~
+701,765,Remanan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=765,KOLLAM,BSP,0,10th Pass,"Rs 31,07,450 ~ 31 Lacs+","Rs 4,21,000 ~ 4 Lacs+"
+702,755,Remya Mohanan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=755,KODUNGALLUR,BSP,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=755&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=755&col=lia
+703,285,Renjith Ravindran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=285,ERAVIPURAM,Bharath Dharma Jana Sena,0,Graduate,"Rs 73,95,740 ~ 73 Lacs+","Rs 52,72,185 ~ 52 Lacs+"
+704,470,Renju P B,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=470,PIRAVOM,IND,0,Post Graduate,"Rs 2,37,20,000 ~ 2 Crore+","Rs 50,000 ~ 50 Thou+"
+705,820,Renu Suresh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=820,KUNNATHUNAD,BJP,6,Graduate,"Rs 29,95,600 ~ 29 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+706,719,Reshma Karivedakam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=719,KANHANGAD,Anna Democratic Human Rights Movement Party of India,0,12th Pass,"Rs 1,52,000 ~ 1 Lacs+",Rs 0 ~
+707,1,Resmi Ravi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1,AZHIKODE,SUCI(C),0,Post Graduate,"Rs 37,393 ~ 37 Thou+",Rs 0 ~
+708,490,Rinku Cherian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=490,RANNI,INC,2,Graduate Professional,"Rs 6,98,44,435 ~ 6 Crore+","Rs 54,51,035 ~ 54 Lacs+"
+709,520,Riyas Yusuf,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=520,THRIKKAKARA,IND,0,Post Graduate,"Rs 1,13,000 ~ 1 Lacs+","Rs 8,50,000 ~ 8 Lacs+"
+710,356,Robin Peter,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=356,KONNI,INC,5,Graduate,"Rs 1,00,12,737 ~ 1 Crore+","Rs 18,69,917 ~ 18 Lacs+"
+711,239,Roji M John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=239,ANGAMALY,INC,5,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=239&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=239&col=lia
+712,686,Roshy Augustine,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=686,IDUKKI,Kerala Congress (M),3,Graduate,"Rs 2,47,84,164 ~ 2 Crore+",Rs 0 ~
+713,633,Rosilin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=633,CHALAKKUDY,IND,0,Graduate,"Rs 79,00,000 ~ 79 Lacs+",Rs 0 ~
+714,610,Rugma Pradeep,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=610,AROOR,BSP,0,10th Pass,"Rs 29,500 ~ 29 Thou+",Rs 0 ~
+715,518,S Saji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=518,THRIKKAKARA,BJP,0,Post Graduate,"Rs 1,37,92,585 ~ 1 Crore+","Rs 13,19,073 ~ 13 Lacs+"
+716,389,S. K. Ananthakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=389,MALAMPUZHA,INC,4,10th Pass,"Rs 1,30,89,231 ~ 1 Crore+","Rs 51,06,000 ~ 51 Lacs+"
+717,910,S. Mujeeb Rehman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=910,PATTAMBI,Welfare Party Of India,2,Graduate,"Rs 12,25,990 ~ 12 Lacs+",Rs 0 ~
+718,23,S. Sudhilal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=23,ERAVIPURAM,SUCI(C),0,Graduate Professional,"Rs 45,90,902 ~ 45 Lacs+",Rs 0 ~
+719,1051,Sabah Kundupuzhakkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1051,VENGARA,IND,0,10th Pass,"Rs 15,50,56,972 ~ 15 Crore+","Rs 1,81,18,571 ~ 1 Crore+"
+720,783,Sainul Abid Thangal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=783,KOTTAKKAL,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=783&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=783&col=lia
+721,1067,Sajadurahman.C.P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1067,NILAMBUR,IND,0,12th Pass,"Rs 43,247 ~ 43 Thou+",Rs 0 ~
+722,690,Sajan Kuttiyanikkal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=690,IRIKKUR,IND,0,10th Pass,"Rs 28,86,050 ~ 28 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+723,292,Sajeev,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=292,IDUKKI,IND,0,10th Pass,"Rs 15,74,160 ~ 15 Lacs+","Rs 2,30,000 ~ 2 Lacs+"
+724,854,Sajesh Elayil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=854,MANKADA,BJP,2,12th Pass,"Rs 11,50,952 ~ 11 Lacs+",Rs 0 ~
+725,53,Saji Cherian,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=53,CHENGANNUR,CPI(M),0,Graduate,"Rs 68,10,153 ~ 68 Lacs+","Rs 2,93,369 ~ 2 Lacs+"
+726,76,Saji Kuttiyanimattam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=76,IRIKKUR,Kerala Congress (M),0,Graduate,"Rs 63,97,598 ~ 63 Lacs+","Rs 21,90,000 ~ 21 Lacs+"
+727,927,Sakkeer E K S/O Asiya,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=927,PERAVOOR,IND,0,10th Pass,"Rs 3,60,000 ~ 3 Lacs+",Rs 0 ~
+728,1065,Sakkeer Hussain S/O Hamsa,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1065,PERAVOOR,IND,0,10th Pass,"Rs 3,44,924 ~ 3 Lacs+",Rs 0 ~
+729,345,Saleem Nechole,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=345,KODUVALLY,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=345&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=345&col=lia
+730,494,Sandeep Varier,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=494,SHORNUR,BJP,8,10th Pass,"Rs 45,03,760 ~ 45 Lacs+",Rs 0 ~
+731,589,Sandeep.R,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=589,ALAPPUZHA,BJP,0,Post Graduate,"Rs 55,42,364 ~ 55 Lacs+","Rs 4,50,000 ~ 4 Lacs+"
+732,257,Saneeshkumar Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=257,CHALAKKUDY,INC,10,Graduate,"Rs 2,81,99,852 ~ 2 Crore+","Rs 51,86,200 ~ 51 Lacs+"
+733,415,Sanju K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=415,MAVELIKARA,BJP,5,10th Pass,"Rs 4,73,500 ~ 4 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+734,26,Santhakumari K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=26,KONGAD,CPI(M),0,Graduate Professional,"Rs 41,30,431 ~ 41 Lacs+","Rs 25,04,386 ~ 25 Lacs+"
+735,242,Santhi Omalloor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=242,ARANMULA,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 50,000 ~ 50 Thou+","Rs 82,000 ~ 82 Thou+"
+736,806,Santhosh Adooran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=806,KUNDARA,IND,0,12th Pass,"Rs 11,41,500 ~ 11 Lacs+",Rs 0 ~
+737,542,Santhosh Madhavan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=542,UDUMBANCHOLA,Bharath Dharma Jana Sena,0,10th Pass,"Rs 3,70,094 ~ 3 Lacs+","Rs 74,080 ~ 74 Thou+"
+738,441,Santhosh Pulickal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=441,PALA,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=441&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=441&col=lia
+739,556,Santhosh T.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=556,VAMANAPURAM,BSP,0,12th Pass,"Rs 8,02,000 ~ 8 Lacs+",Rs 0 ~
+740,3,Saranyaraj,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=3,ADOOR,SUCI(C),0,Graduate,"Rs 1,77,620 ~ 1 Lacs+","Rs 92,467 ~ 92 Thou+"
+741,652,Sarath S Kannattuveli,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=652,CHERTHALA,IND,0,Others,"Rs 15,07,480 ~ 15 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+742,553,Sasi Kizhakkan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=553,VALLIKKUNNU,BSP,0,10th Pass,"Rs 32,42,000 ~ 32 Lacs+",Rs 0 ~
+743,177,Sasikumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=177,MAVELIKARA,SUCI(C),0,10th Pass,"Rs 11,36,179 ~ 11 Lacs+","Rs 1,58,896 ~ 1 Lacs+"
+744,728,Satheesan P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=728,KANNUR,IND,0,8th Pass,"Rs 5,01,664 ~ 5 Lacs+","Rs 20,00,000 ~ 20 Lacs+"
+745,748,Sathyanarayanan S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=748,KAYAMKULAM,IND,0,Post Graduate,"Rs 2,76,05,000 ~ 2 Crore+",Rs 0 ~
+746,447,Sathyanesan Ezhikkara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=447,PARAVUR,IND,0,Literate,"Rs 3,25,000 ~ 3 Lacs+",Rs 0 ~
+747,883,Selvaraj. R,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=883,NEYYATTINKARA,INC,5,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=883&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=883&col=lia
+748,903,Selvaraj.J.R,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=903,PARASSALA,IND,0,10th Pass,"Rs 9,41,000 ~ 9 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+749,640,Sethu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=640,CHATHANNUR,IND,0,8th Pass,"Rs 55,000 ~ 55 Thou+",Rs 0 ~
+750,443,Shafi Parambil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=443,PALAKKAD,INC,25,Post Graduate,"Rs 56,21,410 ~ 56 Lacs+","Rs 13,25,849 ~ 13 Lacs+"
+751,344,Shahin K C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=344,KODUVALLY,Samajwadi Forward Bloc,0,10th Pass,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+752,653,Shajahan V A,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=653,CHERTHALA,IND,0,10th Pass,"Rs 20,900 ~ 20 Thou+",Rs 0 ~
+753,54,Shaji George Plakkil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=54,ERANAKULAM,IND,5,8th Pass,"Rs 3,83,36,423 ~ 3 Crore+","Rs 1,95,00,000 ~ 1 Crore+"
+754,1063,Shaji George Pranatha,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1063,ERANAKULAM,IND,0,Others,"Rs 68,58,685 ~ 68 Lacs+","Rs 5,30,206 ~ 5 Lacs+"
+755,648,Shaji.T.George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=648,CHENGANNUR,BSP,0,12th Pass,"Rs 13,13,000 ~ 13 Lacs+",Rs 0 ~
+756,39,Shaju Paliyodu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=39,PARASSALA,IND,2,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=39&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=39&col=lia
+757,967,Shamseer Ibhrahim,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=967,THALASSERY,Welfare Party Of India,0,Post Graduate,"Rs 7,85,246 ~ 7 Lacs+",Rs 0 ~
+758,407,Shamsuddeen S/O. Hamza,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=407,MANNARKAD,IND,1,12th Pass,"Rs 11,500 ~ 11 Thou+",Rs 0 ~
+759,730,Shamsuddeen S/O. Yusaf,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=730,MANNARKAD,IND,0,8th Pass,"Rs 87,000 ~ 87 Thou+",Rs 0 ~
+760,122,Shanmughan Paravur,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=122,CHATHANNUR,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 5,10,000 ~ 5 Lacs+",Rs 0 ~
+761,322,Sharafath Mallam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=322,CHADAYAMANGALAM,SDPI,1,Graduate,"Rs 53,72,213 ~ 53 Lacs+","Rs 10,60,500 ~ 10 Lacs+"
+762,352,Sheeba Unnikrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=352,KONDOTTY,BJP,0,10th Pass,"Rs 2,300 ~ 2 Thou+",Rs 0 ~
+763,560,Shefeer,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=560,VARKALA,IND,0,8th Pass,"Rs 1,37,300 ~ 1 Lacs+",Rs 0 ~
+764,210,Shibin T V,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=210,TRIKARIPUR,BJP,1,Others,"Rs 93,400 ~ 93 Thou+",Rs 0 ~
+765,777,Shibu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=777,KOTHAMANGALAM,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=777&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=777&col=lia
+766,123,Shibu Baby John,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=123,CHAVARA,Revolutionary Socialist Party,4,Graduate Professional,"Rs 14,81,78,498 ~ 14 Crore+","Rs 35,500 ~ 35 Thou+"
+767,860,Shibu George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=860,MANNARKAD,IND,0,8th Pass,"Rs 62,500 ~ 62 Thou+",Rs 0 ~
+768,944,Shibu M Skaria,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=944,PUNALUR,IND,0,12th Pass,"Rs 69,42,690 ~ 69 Lacs+",Rs 0 ~
+769,775,Shibu Thekkan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=775,KOTHAMANGALAM,IND,0,Others,"Rs 1,54,500 ~ 1 Lacs+",Rs 0 ~
+770,776,Shibu Thekkumpuram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=776,KOTHAMANGALAM,Kerala Congress,4,Graduate Professional,"Rs 51,69,92,483 ~ 51 Crore+","Rs 26,23,90,827 ~ 26 Crore+"
+771,321,Shibu.K.Chadayamangalam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=321,CHADAYAMANGALAM,IND,0,10th Pass,"Rs 49,000 ~ 49 Thou+",Rs 0 ~
+772,497,Shijith K O P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=497,TALIPARAMBA,IND,0,10th Pass,"Rs 9,83,051 ~ 9 Lacs+",Rs 0 ~
+773,805,Shiju M Varghese,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=805,KUNDARA,Democratic Social Justice Party,0,Others,"Rs 10,000 ~ 10 Thou+",Rs 0 ~
+774,357,Shine K Krishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=357,KOTHAMANGALAM,Bharath Dharma Jana Sena,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=357&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=357&col=lia
+775,874,Shine Raj.B,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=874,NEMOM,IND,0,Graduate,"Rs 7,06,500 ~ 7 Lacs+","Rs 6,50,000 ~ 6 Lacs+"
+776,340,Shiny Antony,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=340,KOCHI,Twenty 20 Party,0,Others,"Rs 4,65,76,375 ~ 4 Crore+","Rs 1,20,11,036 ~ 1 Crore+"
+777,993,Shyamraj P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=993,THODUPUZHA,BJP,3,Graduate Professional,"Rs 23,488 ~ 23 Thou+",Rs 0 ~
+778,592,Shylendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=592,ALAPPUZHA,Bahujan Dravida Party,0,8th Pass,"Rs 2,46,000 ~ 2 Lacs+",Rs 0 ~
+779,143,Shylesh.K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=143,KALPETTA,IND,0,8th Pass,"Rs 3,69,000 ~ 3 Lacs+",Rs 0 ~
+780,370,Sibu Karamcodu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=370,KUNDARA,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 42,000 ~ 42 Thou+","Rs 2,50,000 ~ 2 Lacs+"
+781,674,Siciliamma Teacher,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=674,ERANAKULAM,IND,0,Graduate Professional,"Rs 40,54,000 ~ 40 Lacs+",Rs 0 ~
+782,935,Sindhumol C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=935,PIRAVOM,IND,0,8th Pass,"Rs 1,78,000 ~ 1 Lacs+",Rs 0 ~
+783,857,Sivadasan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=857,MANNARKAD,BSP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=857&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=857&col=lia
+784,606,Sivadasan Nair S/O Raghavan Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=606,ARANMULA,IND,0,10th Pass,"Rs 85,40,864 ~ 85 Lacs+","Rs 8,31,003 ~ 8 Lacs+"
+785,767,Sivadasan T,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=767,KONDOTTY,BSP,0,10th Pass,"Rs 47,39,200 ~ 47 Lacs+","Rs 7,000 ~ 7 Thou+"
+786,987,Sivakumar. K S/O Kumara Swamy,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=987,THIRUVANANTHAPURAM,IND,0,10th Pass,"Rs 1,58,000 ~ 1 Lacs+",Rs 0 ~
+787,423,Sivarathnan Alathi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=423,NATTIKA,IND,0,10th Pass,"Rs 1,36,500 ~ 1 Lacs+",Rs 0 ~
+788,922,Smitha Jayamohan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=922,PERAVOOR,BJP,5,12th Pass,"Rs 36,86,000 ~ 36 Lacs+","Rs 2,38,036 ~ 2 Lacs+"
+789,301,Sobha Subin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=301,KAIPAMANGALAM,INC,21,Graduate,"Rs 12,74,023 ~ 12 Lacs+","Rs 48,000 ~ 48 Thou+"
+790,753,Sobha Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=753,KAZHAKKOOTTAM,BJP,40,Graduate,"Rs 61,11,709 ~ 61 Lacs+","Rs 6,79,000 ~ 6 Lacs+"
+791,916,Soman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=916,PEERUMADE,IND,0,10th Pass,"Rs 28,04,218 ~ 28 Lacs+",Rs 0 ~
+792,868,Sreedharan K K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=868,NADAPURAM,National Labour Party,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=868&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=868&col=lia
+793,894,Sreejith V S,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=894,PALA,IND,0,10th Pass,"Rs 6,24,000 ~ 6 Lacs+",Rs 0 ~
+794,744,Sreekala Nadar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=744,KATTAKKADA,IND,0,10th Pass,"Rs 89,72,000 ~ 89 Lacs+",Rs 0 ~
+795,789,Sreekumar Chakkala,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=789,KOTTAYAM,BSP,0,10th Pass,"Rs 4,00,000 ~ 4 Lacs+",Rs 0 ~
+796,914,Sreenagari Rajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=914,PEERUMADE,BJP,0,10th Pass,"Rs 75,31,641 ~ 75 Lacs+","Rs 31,38,445 ~ 31 Lacs+"
+797,717,Sreenath Sasi. T C V,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=717,KANHANGAD,IND,0,Others,"Rs 8,14,321 ~ 8 Lacs+",Rs 0 ~
+798,1008,Sreenivas Kuruppath,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1008,THRITHALA,IND,1,12th Pass,"Rs 1,73,000 ~ 1 Lacs+",Rs 0 ~
+799,599,Stalin Nikathithara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=599,ANGAMALY,BSP,0,Illiterate,"Rs 10,55,600 ~ 10 Lacs+",Rs 0 ~
+800,298,Stephen George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=298,KADUTHURUTHY,Kerala Congress (M),0,Post Graduate,"Rs 1,68,38,677 ~ 1 Crore+","Rs 46,95,478 ~ 46 Lacs+"
+801,237,Subaida,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=237,AMBALAPUZHA,SUCI(C),0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=237&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=237&col=lia
+802,590,Subeendran K.C,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=590,ALAPPUZHA,BSP,2,8th Pass,"Rs 10,144 ~ 10 Thou+",Rs 0 ~
+803,307,Subeesh T M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=307,KALPETTA,BJP,6,10th Pass,"Rs 23,62,350 ~ 23 Lacs+","Rs 77,000 ~ 77 Thou+"
+804,598,Subhadramani,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=598,AMBALAPUZHA,Welfare Party Of India,0,10th Pass,"Rs 41,28,128 ~ 41 Lacs+","Rs 11,51,000 ~ 11 Lacs+"
+805,178,Subhash,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=178,MAVELIKARA,IND,0,12th Pass,"Rs 5,500 ~ 5 Thou+","Rs 25,000 ~ 25 Thou+"
+806,996,Subin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=996,THRIKKAKARA,IND,0,12th Pass,"Rs 1,52,050 ~ 1 Lacs+",Rs 0 ~
+807,947,Subrahmanyan Kanaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=947,QUILANDY,IND,0,8th Pass,"Rs 21,08,000 ~ 21 Lacs+",Rs 0 ~
+808,937,Subramannian Chunkappallii,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=937,PONNANI,Bharath Dharma Jana Sena,0,Graduate,"Rs 1,34,11,511 ~ 1 Crore+","Rs 27,00,000 ~ 27 Lacs+"
+809,466,Suchithra,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=466,PERINTHALMANNA,BJP,0,Graduate Professional,"Rs 28,56,000 ~ 28 Lacs+",Rs 0 ~
+810,737,Sudhakaran K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=737,KASARAGOD,IND,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=737&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=737&col=lia
+811,1026,Sudhan Vellarikkund,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1026,TRIKARIPUR,Anna Democratic Human Rights Movement Party of India,0,8th Pass,"Rs 3,20,000 ~ 3 Lacs+",Rs 0 ~
+812,672,Sujith C. Sukumaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=672,ERANAKULAM,IND,1,Graduate Professional,"Rs 3,05,68,480 ~ 3 Crore+",Rs 0 ~
+813,817,Sujith.K.Surendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=817,KUNNATHUNAD,IND,0,10th Pass,"Rs 1,24,604 ~ 1 Lacs+",Rs 0 ~
+814,645,Sujithmon,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=645,CHAVARA,IND,0,10th Pass,"Rs 3,000 ~ 3 Thou+",Rs 0 ~
+815,774,Suku Balan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=774,KONNI,Ambedkarite Party of India,0,5th Pass,"Rs 10,64,500 ~ 10 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+816,157,Sulaiman Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=157,KONDOTTY,IND,0,5th Pass,"Rs 84,40,704 ~ 84 Lacs+",Rs 0 ~
+817,619,Sumesh M (Mauvery House),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=619,AZHIKODE,IND,0,10th Pass,"Rs 2,37,205 ~ 2 Lacs+","Rs 20,000 ~ 20 Thou+"
+818,898,Sunil Alancheril,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=898,PALA,IND,0,10th Pass,"Rs 25,000 ~ 25 Thou+",Rs 0 ~
+819,480,Sunil Anthikkad (Sunilkumar. P.V),https://www.myneta.info/Kerala2021/candidate.php?candidate_id=480,PUTHUKKAD,INC,5,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=480&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=480&col=lia
+820,763,Sunil M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=763,KOLLAM,BJP,2,Graduate,"Rs 1,16,39,274 ~ 1 Crore+","Rs 56,22,892 ~ 56 Lacs+"
+821,1066,Sunny Muthukulathel,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1066,PERAVOOR,IND,0,5th Pass,"Rs 22,90,360 ~ 22 Lacs+","Rs 13,48,521 ~ 13 Lacs+"
+822,925,Sunny Vazhakkamalayil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=925,PERAVOOR,IND,0,10th Pass,"Rs 31,12,400 ~ 31 Lacs+","Rs 5,22,000 ~ 5 Lacs+"
+823,982,Sunny. V. Joseph,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=982,THIRUVAMBADY,IND,0,Post Graduate,"Rs 44,25,166 ~ 44 Lacs+","Rs 34,34,817 ~ 34 Lacs+"
+824,642,Sunu Bhaskaran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=642,CHATHANNUR,BSP,0,10th Pass,"Rs 10,95,500 ~ 10 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+825,7,Surendran Kottoorathil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=7,THIRUVALLA,IND,0,8th Pass,"Rs 1,36,54,150 ~ 1 Crore+",Rs 0 ~
+826,849,Surendran M S/O Padmavathi M,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=849,MANJESHWAR,IND,0,10th Pass,"Rs 8,15,500 ~ 8 Lacs+",Rs 0 ~
+827,861,Suresh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=861,MANNARKAD,IND,0,8th Pass,"Rs 40,800 ~ 40 Thou+",Rs 0 ~
+828,859,Suresh Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=859,MANNARKAD,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=859&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=859&col=lia
+829,833,Suresh Babu M K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=833,KUTTIADI,IND,0,8th Pass,"Rs 13,65,600 ~ 13 Lacs+",Rs 0 ~
+830,354,Suresh Babu M.,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=354,KONGAD,BJP,3,10th Pass,"Rs 13,69,314 ~ 13 Lacs+","Rs 35,000 ~ 35 Thou+"
+831,863,Suresh D,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=863,MAVELIKARA,Ambedkarite Party of India,0,10th Pass,"Rs 2,20,500 ~ 2 Lacs+","Rs 73,000 ~ 73 Thou+"
+832,528,Suresh Gopi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=528,THRISSUR,BJP,1,Post Graduate,"Rs 10,94,71,453 ~ 10 Crore+","Rs 68,00,478 ~ 68 Lacs+"
+833,716,Suresh. B C S/O Cheniyan Naik,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=716,KANHANGAD,IND,0,10th Pass,"Rs 28,040 ~ 28 Thou+",Rs 0 ~
+834,749,Syamlal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=749,KAZHAKKOOTTAM,IND,0,12th Pass,"Rs 4,90,267 ~ 4 Lacs+",Rs 0 ~
+835,743,Syriac Damian V. P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=743,KATTAKKADA,IND,0,Others,"Rs 9,47,663 ~ 9 Lacs+",Rs 0 ~
+836,1007,T .T Balaraman S/O Krishnan Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1007,THRITHALA,IND,0,10th Pass,"Rs 23,65,201 ~ 23 Lacs+","Rs 2,20,000 ~ 2 Lacs+"
+837,584,T Abdul Samad S/O T Kunhikoya Haji,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=584,KANHANGAD,JD(U),0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=584&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=584&col=lia
+838,348,T Balasoman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=348,KODUVALLY,BJP,3,10th Pass,"Rs 28,05,984 ~ 28 Lacs+",Rs 0 ~
+839,93,T I Madhusoodanan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=93,PAYYANNUR,CPI(M),3,Graduate,"Rs 98,06,915 ~ 98 Lacs+","Rs 3,67,039 ~ 3 Lacs+"
+840,723,T K Ganesh Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=723,KANNUR,New Labour Party,0,12th Pass,"Rs 1,62,000 ~ 1 Lacs+",Rs 0 ~
+841,541,T Mahesh Master,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=541,TRIKARIPUR,Welfare Party Of India,0,Graduate,"Rs 3,23,900 ~ 3 Lacs+","Rs 3,20,000 ~ 3 Lacs+"
+842,678,T N Harikumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=678,ETTUMANOOR,BJP,3,Graduate,"Rs 77,70,000 ~ 77 Lacs+","Rs 22,00,000 ~ 22 Lacs+"
+843,629,T N Rajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=629,CHALAKKUDY,IND,0,10th Pass,"Rs 19,37,604 ~ 19 Lacs+",Rs 0 ~
+844,991,T R Sreedharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=991,THODUPUZHA,SUCI(C),0,Illiterate,"Rs 14,39,639 ~ 14 Lacs+",Rs 0 ~
+845,351,T V Ibrahim,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=351,KONDOTTY,IUML,1,Post Graduate,"Rs 2,42,79,135 ~ 2 Crore+","Rs 98,39,093 ~ 98 Lacs+"
+846,281,T. J. Vinod,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=281,ERANAKULAM,INC,23,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=281&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=281&col=lia
+847,50,T.K Sabu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=50,VAIKOM,SUCI(C),0,10th Pass,"Rs 22,70,200 ~ 22 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+848,392,T.K. Bose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=392,MALAPPURAM,SUCI(C),0,12th Pass,"Rs 1,401 ~ 1 Thou+",Rs 0 ~
+849,159,T.M. Moosa,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=159,KOTHAMANGALAM,SDPI,0,10th Pass,"Rs 66,15,365 ~ 66 Lacs+",Rs 0 ~
+850,190,T.P. Ramakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=190,PERAMBRA,CPI(M),1,10th Pass,"Rs 53,77,881 ~ 53 Lacs+",Rs 0 ~
+851,867,T.Praveen Kumar S/O Kannan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=867,NADAPURAM,IND,0,Others,"Rs 22,55,909 ~ 22 Lacs+",Rs 0 ~
+852,1057,T.S Ullas Babu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1057,WADAKKANCHERY,BJP,13,Graduate Professional,"Rs 1,74,91,077 ~ 1 Crore+","Rs 60,44,444 ~ 60 Lacs+"
+853,712,T.Sidique S/O Abdulla,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=712,KALPETTA,IND,0,8th Pass,"Rs 2,00,383 ~ 2 Lacs+",Rs 0 ~
+854,1059,Tahir Mokkandi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1059,ELATHUR,Welfare Party Of India,0,10th Pass,"Rs 53,03,000 ~ 53 Lacs+",Rs 0 ~
+855,236,Thahir,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=236,AMBALAPUZHA,SDPI,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=236&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=236&col=lia
+856,831,Thampi Mettuthara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=831,KUTTANAD,Bharath Dharma Jana Sena,0,12th Pass,"Rs 1,46,19,495 ~ 1 Crore+","Rs 48,42,071 ~ 48 Lacs+"
+857,704,Thankamany Tharayil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=704,KAIPAMANGALAM,BSP,0,12th Pass,"Rs 2,02,932 ~ 2 Lacs+",Rs 0 ~
+858,426,Thathankodu Kannan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=426,NEDUMANGAD,IND,0,10th Pass,"Rs 7,00,000 ~ 7 Lacs+",Rs 0 ~
+859,213,Thazhava Sahadevan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=213,VAMANAPURAM,Bharath Dharma Jana Sena,1,12th Pass,"Rs 53,37,735 ~ 53 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+860,945,Thenmala Nagarajan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=945,PUNALUR,IND,0,10th Pass,"Rs 6,10,000 ~ 6 Lacs+","Rs 1,50,000 ~ 1 Lacs+"
+861,790,Thiruvanchoor Radhakrishnan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=790,KOTTAYAM,INC,1,Graduate Professional,"Rs 2,40,60,184 ~ 2 Crore+","Rs 1,60,000 ~ 1 Lacs+"
+862,694,Thomas J Unniyadan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=694,IRINJALAKKUDA,Kerala Congress,3,Graduate Professional,"Rs 3,73,11,703 ~ 3 Crore+","Rs 43,00,537 ~ 43 Lacs+"
+863,895,Thomas J. Nidiry,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=895,PALA,IND,0,Post Graduate,"Rs 1,47,41,709 ~ 1 Crore+",Rs 0 ~
+864,171,Thomas K Thomas,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=171,KUTTANAD,NCP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=171&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=171&col=lia
+865,163,Thottathil Ravindran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=163,KOZHIKODE NORTH,CPI(M),0,10th Pass,"Rs 4,30,94,550 ~ 4 Crore+","Rs 1,45,024 ~ 1 Lacs+"
+866,1004,Thrissur Mukundan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1004,THRISSUR,Indian Gandhiyan Party,0,8th Pass,"Rs 41,97,000 ~ 41 Lacs+",Rs 0 ~
+867,262,Tijo Karikkandam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=262,CHANGANASSERY,IND,0,Graduate Professional,"Rs 4,08,64,526 ~ 4 Crore+","Rs 2,40,00,000 ~ 2 Crore+"
+868,942,Tomy Chemarapallil,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=942,POONJAR,IND,1,10th Pass,"Rs 10,95,202 ~ 10 Lacs+",Rs 0 ~
+869,341,Tony Chammany,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=341,KOCHI,INC,10,Graduate,"Rs 7,14,82,292 ~ 7 Crore+","Rs 1,25,98,120 ~ 1 Crore+"
+870,771,U C Raman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=771,KONGAD,IUML,0,12th Pass,"Rs 1,10,00,000 ~ 1 Crore+","Rs 36,63,553 ~ 36 Lacs+"
+871,381,Ullas Kovoor,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=381,KUNNATHUR,Revolutionary Socialist Party,3,Graduate,"Rs 3,92,000 ~ 3 Lacs+","Rs 8,10,000 ~ 8 Lacs+"
+872,256,Unnikrishnan K.A,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=256,CHALAKKUDY,Bharath Dharma Jana Sena,3,10th Pass,"Rs 48,42,247 ~ 48 Lacs+",Rs 0 ~
+873,798,Urandiyil Raveendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=798,KOZHIKODE NORTH,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=798&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=798&col=lia
+874,363,Usha Kottarakkara,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=363,KOTTARAKKARA,Anna Democratic Human Rights Movement Party of India,0,10th Pass,"Rs 5,79,000 ~ 5 Lacs+",Rs 0 ~
+875,531,V .T Balram,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=531,THRITHALA,INC,3,Post Graduate,"Rs 67,83,057 ~ 67 Lacs+",Rs 0 ~
+876,917,V K Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=917,PERAMBRA,IND,0,8th Pass,"Rs 30,37,000 ~ 30 Lacs+",Rs 0 ~
+877,287,V N Vasavan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=287,ETTUMANOOR,CPI(M),1,10th Pass,"Rs 94,63,784 ~ 94 Lacs+",Rs 0 ~
+878,834,V P Pratheesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=834,KUTTIADI,IND,0,12th Pass,"Rs 36,35,520 ~ 36 Lacs+","Rs 9,93,134 ~ 9 Lacs+"
+879,797,V P Ramesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=797,KOZHIKODE NORTH,IND,0,10th Pass,"Rs 25,53,772 ~ 25 Lacs+",Rs 0 ~
+880,515,V S Sivakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=515,THIRUVANANTHAPURAM,INC,11,Graduate Professional,"Rs 2,28,70,740 ~ 2 Crore+","Rs 30,22,837 ~ 30 Lacs+"
+881,851,V V Rameshan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=851,MANJESHWAR,CPI(M),2,12th Pass,"Rs 1,00,27,914 ~ 1 Crore+","Rs 1,80,703 ~ 1 Lacs+"
+882,82,V Venugopal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=82,KOTTARAKKARA,Democratic Social Justice Party,0,Others,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=82&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=82&col=lia
+883,638,V. J. Laly,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=638,CHANGANASSERY,Kerala Congress,0,Post Graduate,"Rs 2,33,50,625 ~ 2 Crore+",Rs 0 ~
+884,303,V. M. Faisal,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=303,KALAMASSERY,SDPI,3,10th Pass,"Rs 32,78,784 ~ 32 Lacs+","Rs 4,68,000 ~ 4 Lacs+"
+885,444,V. Sachidanandan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=444,PALAKKAD,IND,0,12th Pass,"Rs 40,72,444 ~ 40 Lacs+","Rs 2,80,000 ~ 2 Lacs+"
+886,128,V. Sasi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=128,CHIRAYINKEEZHU,CPI,1,Graduate Professional,"Rs 61,55,120 ~ 61 Lacs+","Rs 10,27,452 ~ 10 Lacs+"
+887,338,V. Sasikumaran Nair,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=338,KAZHAKKOOTTAM,IND,0,Graduate,"Rs 3,13,53,026 ~ 3 Crore+","Rs 3,82,000 ~ 3 Lacs+"
+888,230,V.A Rasheed,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=230,ALUVA,SDPI,4,10th Pass,"Rs 2,16,565 ~ 2 Lacs+",Rs 0 ~
+889,965,V.Abdurahiman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=965,TANUR,National Secular Conference,0,10th Pass,"Rs 17,17,80,192 ~ 17 Crore+","Rs 7,26,06,353 ~ 7 Crore+"
+890,962,V.Abdurahiman S/O Kathiyamu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=962,TANUR,IND,0,5th Pass,"Rs 37,78,000 ~ 37 Lacs+",Rs 0 ~
+891,40,V.D. Satheesan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=40,PARAVUR,INC,7,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=40&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=40&col=lia
+892,31,V.P.Sajeendran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=31,KUNNATHUNAD,INC,4,Graduate Professional,"Rs 1,45,89,546 ~ 1 Crore+","Rs 8,61,264 ~ 8 Lacs+"
+893,449,V.S. Jithin Dev,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=449,PATHANAPURAM,BJP,5,Graduate,"Rs 19,70,232 ~ 19 Lacs+","Rs 10,53,283 ~ 10 Lacs+"
+894,375,V.S.Aboobacker,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=375,KUNNAMKULAM,SDPI,1,10th Pass,"Rs 9,35,702 ~ 9 Lacs+",Rs 0 ~
+895,665,Vadi Harindran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=665,DHARMADAM,IND,0,10th Pass,"Rs 48,86,000 ~ 48 Lacs+",Rs 0 ~
+896,275,Valayar Bhagyavathi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=275,DHARMADAM,IND,0,5th Pass,"Rs 7,58,573 ~ 7 Lacs+",Rs 0 ~
+897,371,Vanaja Vidyadharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=371,KUNDARA,Bharath Dharma Jana Sena,1,10th Pass,"Rs 24,98,309 ~ 24 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+898,641,Varinjam Rajeev,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=641,CHATHANNUR,IND,0,10th Pass,"Rs 18,25,000 ~ 18 Lacs+","Rs 14,89,445 ~ 14 Lacs+"
+899,696,Vaxerin,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=696,IRINJALAKKUDA,IND,0,Others,"Rs 7,64,50,839 ~ 7 Crore+","Rs 3,80,081 ~ 3 Lacs+"
+900,651,Vayalar Jayakumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=651,CHERTHALA,BSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=651&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=651&col=lia
+901,609,Vayalar Rajeevan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=609,AROOR,Bahujan Dravida Party,0,12th Pass,"Rs 18,98,348 ~ 18 Lacs+","Rs 4,17,900 ~ 4 Lacs+"
+902,460,Vazhoor Soman,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=460,PEERUMADE,CPI,0,10th Pass,"Rs 69,28,600 ~ 69 Lacs+","Rs 2,05,000 ~ 2 Lacs+"
+903,16,Veena George,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=16,ARANMULA,CPI(M),0,Post Graduate,"Rs 2,17,17,808 ~ 2 Crore+","Rs 1,08,62,823 ~ 1 Crore+"
+904,579,Velayudhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=579,ERANAD,BSP,0,10th Pass,"Rs 37,87,000 ~ 37 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+905,600,Velayudhan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=600,ANGAMALY,IND,0,Literate,"Rs 9,38,500 ~ 9 Lacs+","Rs 1,99,602 ~ 1 Lacs+"
+906,378,Velayudhan.V.K,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=378,KUNNATHUNAD,IND,0,10th Pass,"Rs 34,36,000 ~ 34 Lacs+",Rs 0 ~
+907,975,Vellarikkat Mohammed Rafi,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=975,THAVANUR,IND,1,5th Pass,"Rs 41,30,000 ~ 41 Lacs+","Rs 30,00,000 ~ 30 Lacs+"
+908,1036,Velluparambath Chandran,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=1036,VADAKARA,IND,0,8th Pass,"Rs 10,000 ~ 10 Thou+",Rs 0 ~
+909,795,Venganoor Asokan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=795,KOVALAM,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=795&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=795&col=lia
+910,395,Vijay Hari,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=395,MANALUR,INC,0,Graduate,"Rs 32,28,25,118 ~ 32 Crore+","Rs 58,12,937 ~ 58 Lacs+"
+911,398,Vijaya,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=398,MANANTHAVADY,BSP,0,5th Pass,"Rs 1,00,000 ~ 1 Lacs+","Rs 60,000 ~ 60 Thou+"
+912,736,Vijaya K P,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=736,KASARAGOD,BSP,0,8th Pass,Nil,Rs 0 ~
+913,265,Viji Ratheesh,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=265,CHAVARA,IND,0,12th Pass,"Rs 1,11,000 ~ 1 Lacs+",Rs 0 ~
+914,869,Vimal Mallika Vijayan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=869,NATTIKA,BSP,0,12th Pass,"Rs 5,13,446 ~ 5 Lacs+",Rs 0 ~
+915,138,Vincent Jacob,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=138,IDUKKI,IND,0,10th Pass,"Rs 51,68,726 ~ 51 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+916,804,Vinod Bahuleyan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=804,KUNDARA,RJD,1,Post Graduate,"Rs 90,61,000 ~ 90 Lacs+","Rs 15,50,000 ~ 15 Lacs+"
+917,699,Vinod K Jose,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=699,KADUTHURUTHY,IND,0,Post Graduate,"Rs 3,25,16,835 ~ 3 Crore+","Rs 6,58,430 ~ 6 Lacs+"
+918,104,Vinod Kumar,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=104,THIRUVALLA,Democratic Social Justice Party,0,Others,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=104&col=ta,https://myneta.info/image_v2.php?myneta_folder=Kerala2021&candidate_id=104&col=lia
+919,588,Vipin Kanikonathu,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=588,ADOOR,BSP,0,10th Pass,"Rs 72,500 ~ 72 Thou+","Rs 32,000 ~ 32 Thou+"
+920,247,Vipinlal Vidhyadharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=247,ATTINGAL,BSP,1,Post Graduate,"Rs 12,76,997 ~ 12 Lacs+","Rs 9,81,667 ~ 9 Lacs+"
+921,319,Vishnu Pattathanam,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=319,CHADAYAMANGALAM,BJP,32,10th Pass,"Rs 18,77,477 ~ 18 Lacs+",Rs 0 ~
+922,793,Vishnupuram Chandrasekharan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=793,KOVALAM,BJP,10,10th Pass,"Rs 31,59,600 ~ 31 Lacs+","Rs 1,85,000 ~ 1 Lacs+"
+923,232,Viswakala Thankappan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=232,ALUVA,Marxist Communist Party of India (United),0,8th Pass,"Rs 31,32,579 ~ 31 Lacs+","Rs 16,88,000 ~ 16 Lacs+"
+924,324,Vivek Gopan,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=324,CHAVARA,BJP,0,12th Pass,"Rs 34,90,399 ~ 34 Lacs+","Rs 18,00,000 ~ 18 Lacs+"
+925,220,Xavier Chittilappilly,https://www.myneta.info/Kerala2021/candidate.php?candidate_id=220,WADAKKANCHERY,CPI(M),10,8th Pass,"Rs 42,10,407 ~ 42 Lacs+",Rs 0 ~

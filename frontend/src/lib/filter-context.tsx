@@ -1,14 +1,15 @@
 "use client";
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
-import { api, type DistrictOverview, type ConstituencyBrief, type Election } from "./api";
+import { api, toStateSlug, type DistrictOverview, type ConstituencyBrief, type Election } from "./api";
 
 export type Granularity = "STATE" | "DISTRICT" | "AC";
 
 interface FilterState {
   elections: Election[];
   electionId: number | undefined;
-  setElectionId: (id: number) => void;
   currentElection: Election | null;
+  stateSlug: string;
+  setElection: (e: Election) => void;
   granularity: Granularity;
   setGranularity: (g: Granularity) => void;
   selectedDistrict: string | null;
@@ -20,52 +21,58 @@ interface FilterState {
   filteredConstituencies: ConstituencyBrief[];
 }
 
+function electionKey(e: Election) {
+  return `${e.state}:${e.id}`;
+}
+
 const FilterContext = createContext<FilterState | null>(null);
 
 export function FilterProvider({ children }: { children: ReactNode }) {
   const [elections, setElections] = useState<Election[]>([]);
-  const [electionId, setElectionIdRaw] = useState<number | undefined>(undefined);
+  // Key is "State Name:id" — unique across both states
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [granularity, setGranularity] = useState<Granularity>("DISTRICT");
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
   const [selectedAC, setSelectedAC] = useState<number | null>(null);
   const [districts, setDistricts] = useState<DistrictOverview[]>([]);
   const [constituencies, setConstituencies] = useState<ConstituencyBrief[]>([]);
 
-  // Load elections on mount
+  // Load all elections (WB + Assam) on mount
   useEffect(() => {
-    api.getElections().then((data) => {
-      // Sort: latest year first
-      const sorted = data.sort((a, b) => b.year - a.year);
+    api.getAllElections().then((data) => {
+      const sorted = data.sort((a, b) => b.year - a.year || a.state.localeCompare(b.state));
       setElections(sorted);
       if (sorted.length > 0) {
-        setElectionIdRaw(sorted[0].id);
+        setSelectedKey(electionKey(sorted[0]));
       }
     });
   }, []);
 
+  // Derive current election unambiguously via composite key
+  const currentElection = selectedKey
+    ? elections.find((e) => electionKey(e) === selectedKey) ?? null
+    : null;
+
+  const electionId = currentElection?.id;
+  const stateSlug = currentElection ? toStateSlug(currentElection.state) : "westbengal";
+
   // Reload districts + constituencies when election changes
   useEffect(() => {
-    if (!electionId) return;
-    api.getDistricts(electionId).then(setDistricts);
-    api.getConstituencies(electionId).then(setConstituencies);
-  }, [electionId]);
+    if (!electionId || !stateSlug) return;
+    api.getDistricts(electionId, stateSlug).then(setDistricts);
+    api.getConstituencies(electionId, undefined, stateSlug).then(setConstituencies);
+  }, [selectedKey]); // use selectedKey so both id AND state must match
 
-  // When changing election, reset filters
-  const setElectionId = (id: number) => {
-    setElectionIdRaw(id);
+  const setElection = (e: Election) => {
+    setSelectedKey(electionKey(e));
     setGranularity("DISTRICT");
     setSelectedDistrict(null);
     setSelectedAC(null);
   };
 
-  // Reset selections when granularity changes
   useEffect(() => {
-    if (granularity === "DISTRICT") {
-      setSelectedAC(null);
-    }
+    if (granularity === "DISTRICT") setSelectedAC(null);
   }, [granularity]);
-
-  const currentElection = elections.find((e) => e.id === electionId) || null;
 
   const filteredConstituencies = selectedDistrict
     ? constituencies.filter((c) => c.district_name.toLowerCase() === selectedDistrict.toLowerCase())
@@ -74,7 +81,8 @@ export function FilterProvider({ children }: { children: ReactNode }) {
   return (
     <FilterContext.Provider
       value={{
-        elections, electionId, setElectionId, currentElection,
+        elections, electionId, currentElection, stateSlug,
+        setElection,
         granularity, setGranularity,
         selectedDistrict, setSelectedDistrict,
         selectedAC, setSelectedAC,
@@ -86,8 +94,23 @@ export function FilterProvider({ children }: { children: ReactNode }) {
   );
 }
 
+const EMPTY_FILTERS: FilterState = {
+  elections: [],
+  electionId: undefined,
+  currentElection: null,
+  stateSlug: "westbengal",
+  setElection: () => {},
+  granularity: "DISTRICT",
+  setGranularity: () => {},
+  selectedDistrict: null,
+  setSelectedDistrict: () => {},
+  selectedAC: null,
+  setSelectedAC: () => {},
+  districts: [],
+  constituencies: [],
+  filteredConstituencies: [],
+};
+
 export function useFilters() {
-  const ctx = useContext(FilterContext);
-  if (!ctx) throw new Error("useFilters must be used within FilterProvider");
-  return ctx;
+  return useContext(FilterContext) ?? EMPTY_FILTERS;
 }

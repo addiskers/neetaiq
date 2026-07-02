@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from sqlalchemy.orm import Session
 from app.database import engine
-from app.models import Election, Candidate, Constituency
+from app.models.assam import Election, Candidate, Constituency
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 JSON_FILE = os.path.join(PROJECT_ROOT, "assam2021", "structured_output_2021.json")

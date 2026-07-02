@@ -6,7 +6,7 @@ import CandidateIntelClient from "./CandidateIntelClient";
 export const metadata: Metadata = {
   title: "Candidate Database — मतदान iQ | Candidate Intelligence",
   description:
-    "Search and explore candidate profiles with verified financials, criminal records, education, and vote share data from ECI affidavits.",
+    "Search and explore candidate profiles with verified financials, cases, education, and vote share data from ECI affidavits.",
 };
 
 export default async function CandidateIntelPage() {

@@ -3,7 +3,7 @@ import { serverFetch } from "@/lib/server-api";
 import PredictionsClient from "./PredictionsClient";
 
 export const metadata: Metadata = {
-  title: "AI Predictions — मतदान iQ | ML-Powered Election Forecasts",
+  title: "AI Predictions - मतदान iQ | ML-Powered Election Forecasts",
   description: "AI-powered constituency-level election predictions using GradientBoosting models trained on historical data, demographics, and candidate profiles.",
 };
 

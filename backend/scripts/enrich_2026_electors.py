@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import openpyxl
 from sqlalchemy.orm import Session
 from app.database import engine
-from app.models import Election, Constituency
+from app.models.assam import Election, Constituency
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 ELECTOR_FILE = os.path.join(PROJECT_ROOT, "data", "Assam_Final_Electors_10-02-2026.xlsx")

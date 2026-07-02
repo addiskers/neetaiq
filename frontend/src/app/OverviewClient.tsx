@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { api, type ElectionStats, type DossierRow } from "@/lib/api";
 import { useFilters } from "@/lib/filter-context";
 import { MapPin, TrendingUp, Users, ChevronRight, Search, BarChart3, AlertTriangle, GraduationCap, Shield, Clock, Maximize2, Minimize2 } from "lucide-react";
-import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area, Treemap } from "recharts";
+import { PieChart, Pie, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area, Treemap } from "recharts";
 import dynamic from "next/dynamic";
 
 const MapView = dynamic(() => import("@/components/overview/MapView"), { ssr: false });
@@ -13,6 +13,9 @@ const PARTY_COLORS: Record<string, string> = {
   BOPF: "#228B22", UPPL: "#FFD700", "CPI(M)": "#FF0000", IND: "#808080",
   AITC: "#00FF00", NCP: "#004080",
   AINRC: "#800080", DMK: "#FF0000", AIADMK: "#228B22", PMK: "#FFFF00",
+  // Goa parties
+  MGP: "#006400", MAG: "#006400", GFP: "#FF4500", AAP: "#0066CC",
+  RVLTGONP: "#8B008B", RGP: "#800080",
 };
 
 function formatNum(n: number | null | undefined): string {
@@ -67,7 +70,7 @@ interface OverviewClientProps {
 }
 
 export default function OverviewClient({ initialData }: OverviewClientProps) {
-  const { electionId, currentElection, granularity, setGranularity, selectedDistrict, setSelectedDistrict, selectedAC, setSelectedAC, districts, constituencies, filteredConstituencies } = useFilters();
+  const { electionId, currentElection, stateSlug, granularity, setGranularity, selectedDistrict, setSelectedDistrict, selectedAC, setSelectedAC, districts, constituencies, filteredConstituencies } = useFilters();
   const [stats, setStats] = useState<ElectionStats | null>(initialData?.stats ?? null);
   const [dossier, setDossier] = useState<DossierRow[]>(initialData?.dossier ?? []);
   const [searchDistrict, setSearchDistrict] = useState("");
@@ -90,11 +93,24 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
   const hasResults = currentElection && currentElection.year !== 2026;
   const [mapMode, setMapMode] = useState<"results" | "category" | "prev_winner" | "prediction">("category");
   const [mapExpanded, setMapExpanded] = useState(false);
+  const [prevPartyPerformance, setPrevPartyPerformance] = useState<any[]>([]);
 
   // Reset map mode when election changes
   useEffect(() => {
     setMapMode(hasResults ? "results" : "category");
+    setPrevPartyPerformance([]);
   }, [hasResults]);
+
+  // Load previous election's party performance for the Prev Winner legend
+  useEffect(() => {
+    if (mapMode !== "prev_winner" || !currentElection || !stateSlug) return;
+    api.getElections(stateSlug).then((elections: any[]) => {
+      const prev = elections
+        .filter((e: any) => e.state === currentElection.state && e.year < currentElection.year)
+        .sort((a: any, b: any) => b.year - a.year)[0];
+      if (prev) api.getPartyPerformance(prev.id, "", stateSlug).then(setPrevPartyPerformance);
+    });
+  }, [mapMode, currentElection, stateSlug]);
 
   const filterParams = useMemo(() => {
     const parts: string[] = [];
@@ -105,24 +121,24 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
 
   useEffect(() => {
     if (!electionId) return;
-    api.getStats(electionId, filterParams).then(setStats);
-    api.getDossierTable(electionId, 20, 0, filterParams).then(setDossier);
-    api.getPartyPerformance(electionId, filterParams).then(setPartyPerformance);
-    api.getTurnoutByDistrict(electionId, filterParams).then(setTurnoutByDistrict);
-    api.getMarginDistribution(electionId, filterParams).then(setMarginDistribution);
-    api.getCategoryMix(electionId, filterParams).then(setCategoryMix);
-    api.getHistoricalWave(electionId).then(setHistoricalWave);
-    api.getClosestContests(electionId).then(setClosestContests);
-    api.getNotaImpact(electionId).then(setNotaImpact);
-    api.getCrorepatiCandidates(electionId).then(setCrorepati);
-    api.getGenderDemographics(electionId, filterParams).then(setGenderDemo);
-    api.getEducationBreakdown(electionId, filterParams).then(setEducationData);
-    api.getCriminalOverview(electionId, filterParams).then(setCriminalData);
-    api.getMarginVsTurnout(electionId).then(setMarginTurnout);
-    api.getCountdown(electionId).then(setCountdown);
-    api.getPlacesToWatch(electionId).then(setPlacesToWatch);
-    api.getSwingAnalysis(electionId).then(setSwingAnalysis);
-  }, [electionId, filterParams]);
+    api.getStats(electionId, filterParams, stateSlug).then(setStats);
+    api.getDossierTable(electionId, 20, 0, filterParams, stateSlug).then(setDossier);
+    api.getPartyPerformance(electionId, filterParams, stateSlug).then(setPartyPerformance);
+    api.getTurnoutByDistrict(electionId, filterParams, stateSlug).then(setTurnoutByDistrict);
+    api.getMarginDistribution(electionId, filterParams, stateSlug).then(setMarginDistribution);
+    api.getCategoryMix(electionId, filterParams, stateSlug).then(setCategoryMix);
+    api.getHistoricalWave(electionId, stateSlug).then(setHistoricalWave);
+    api.getClosestContests(electionId, 10, stateSlug).then(setClosestContests);
+    api.getNotaImpact(electionId, stateSlug).then(setNotaImpact);
+    api.getCrorepatiCandidates(electionId, stateSlug).then(setCrorepati);
+    api.getGenderDemographics(electionId, filterParams, stateSlug).then(setGenderDemo);
+    api.getEducationBreakdown(electionId, filterParams, stateSlug).then(setEducationData);
+    api.getCriminalOverview(electionId, filterParams, stateSlug).then(setCriminalData);
+    api.getMarginVsTurnout(electionId, stateSlug).then(setMarginTurnout);
+    api.getCountdown(electionId, stateSlug).then(setCountdown);
+    api.getPlacesToWatch(electionId, stateSlug).then(setPlacesToWatch);
+    api.getSwingAnalysis(electionId, stateSlug).then(setSwingAnalysis);
+  }, [electionId, filterParams, stateSlug]);
 
   const searchQ = searchDistrict.toLowerCase().trim();
   const isSearching = searchQ.length >= 2;
@@ -171,11 +187,6 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                 T-MINUS {currentElection?.state.toUpperCase()} {currentElection?.year}
               </div>
               <LiveCountdown electionDate={countdown.election_date} />
-            </div>
-          )}
-          {countdown?.is_past && (
-            <div className="bg-white rounded-2xl border border-[#E5E7EB] px-5 py-3 shadow-sm text-sm text-[#6B7280]">
-              Election held {countdown.days_ago} days ago
             </div>
           )}
           {/* Stats */}
@@ -262,7 +273,6 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                 {([
                   ["category", "Category"],
                   ["prev_winner", "Prev Winner"],
-                  ...(currentElection?.state === "West Bengal" && currentElection?.year === 2026 ? [["prediction", "\u{1F916} AI Prediction"]] : []),
                 ] as [string, string][]).map(([mode, label]) => (
                   <button key={mode} type="button" onClick={() => setMapMode(mode as any)}
                     className={`text-[11px] font-semibold px-3 py-1.5 rounded-md transition-all ${mapMode === mode ? "bg-white text-[#111827] shadow-sm" : "text-[#6B7280] hover:text-[#111827]"}`}
@@ -289,15 +299,22 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                     <span className="text-[10px] text-[#374151]">Swing</span>
                   </div>
                 </>
-              ) : (hasResults || mapMode === "prev_winner") && partyPerformance.length > 0 ? (
+              ) : hasResults || mapMode === "prev_winner" ? (
                 <>
                   <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">{hasResults ? "Winner" : "Prev Winner"}</div>
-                  {["BJP", "INC", "AIUDF", "AGP", "BOPF", "UPPL", "AITC", "CPI(M)"].filter((p) => partyPerformance.some((pp: any) => pp.abbr === p)).map((p) => (
-                    <div key={p} className="flex items-center gap-1.5 py-0.5">
-                      <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
-                      <span className="text-[10px] text-[#374151]">{p}</span>
-                    </div>
-                  ))}
+                  {(hasResults ? partyPerformance : prevPartyPerformance)
+                    .filter((pp: any) => pp.seats_won > 0)
+                    .sort((a: any, b: any) => b.seats_won - a.seats_won)
+                    .slice(0, 6)
+                    .map((pp: any) => (
+                      <div key={pp.abbr} className="flex items-center gap-1.5 py-0.5">
+                        <span className="w-2.5 h-2.5 rounded-sm" style={{ background: pp.color || PARTY_COLORS[pp.abbr] || "#94A3B8" }} />
+                        <span className="text-[10px] text-[#374151]">{pp.abbr}</span>
+                      </div>
+                    ))}
+                  {(hasResults ? partyPerformance : prevPartyPerformance).filter((pp: any) => pp.seats_won > 0).length === 0 && (
+                    <div className="text-[9px] text-[#9CA3AF] italic">Loading...</div>
+                  )}
                 </>
               ) : (
                 <>
@@ -357,15 +374,22 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                     <span className="text-[10px] text-[#374151]">Swing</span>
                   </div>
                 </>
-              ) : (hasResults || mapMode === "prev_winner") && partyPerformance.length > 0 ? (
+              ) : hasResults || mapMode === "prev_winner" ? (
                 <>
                   <div className="text-[9px] font-bold text-[#6B7280] uppercase mb-1">{hasResults ? "Winner" : "Prev Winner"}</div>
-                  {["BJP", "INC", "AIUDF", "AGP", "BOPF", "UPPL", "AITC", "CPI(M)"].filter((p) => partyPerformance.some((pp: any) => pp.abbr === p)).map((p) => (
-                    <div key={p} className="flex items-center gap-1.5 py-0.5">
-                      <span className="w-2.5 h-2.5 rounded-sm" style={{ background: PARTY_COLORS[p] || "#94A3B8" }} />
-                      <span className="text-[10px] text-[#374151]">{p}</span>
-                    </div>
-                  ))}
+                  {(hasResults ? partyPerformance : prevPartyPerformance)
+                    .filter((pp: any) => pp.seats_won > 0)
+                    .sort((a: any, b: any) => b.seats_won - a.seats_won)
+                    .slice(0, 6)
+                    .map((pp: any) => (
+                      <div key={pp.abbr} className="flex items-center gap-1.5 py-0.5">
+                        <span className="w-2.5 h-2.5 rounded-sm" style={{ background: pp.color || PARTY_COLORS[pp.abbr] || "#94A3B8" }} />
+                        <span className="text-[10px] text-[#374151]">{pp.abbr}</span>
+                      </div>
+                    ))}
+                  {(hasResults ? partyPerformance : prevPartyPerformance).filter((pp: any) => pp.seats_won > 0).length === 0 && (
+                    <div className="text-[9px] text-[#9CA3AF] italic">Loading...</div>
+                  )}
                 </>
               ) : (
                 <>
@@ -417,18 +441,19 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
               </div>
               <ResponsiveContainer width="100%" height={110}>
                 <PieChart>
-                  <Pie data={genderDemo} cx="50%" cy="50%" innerRadius={28} outerRadius={48} dataKey="count" paddingAngle={3}>
-                    {genderDemo.map((g) => <Cell key={g.gender} fill={GENDER_COLORS[g.gender] || "#94A3B8"} />)}
-                  </Pie>
+                  <Pie data={genderDemo.map((g) => ({ ...g, fill: GENDER_COLORS[g.gender] || "#94A3B8" }))} cx="50%" cy="50%" innerRadius={28} outerRadius={48} dataKey="count" paddingAngle={3} />
                   <Tooltip formatter={(v: any, _: any, props: any) => [formatNum(v), props.payload.gender]} />
                 </PieChart>
               </ResponsiveContainer>
-              <div className="flex justify-center gap-4 mt-2">
+              <div className="grid grid-cols-3 gap-2 mt-3">
                 {genderDemo.map((g) => (
-                  <div key={g.gender} className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full" style={{ background: GENDER_COLORS[g.gender] || "#94A3B8" }} />
-                    <span className="text-[11px] font-semibold" style={{ color: GENDER_COLORS[g.gender] || "#6B7280" }}>{g.gender} {g.pct}%</span>
-                    <span className="text-[10px] text-[#9CA3AF]">({formatNum(g.count)})</span>
+                  <div key={g.gender} className="flex flex-col items-center gap-0.5 rounded-xl py-2 px-1" style={{ background: (GENDER_COLORS[g.gender] || "#94A3B8") + "18" }}>
+                    <div className="flex items-center gap-1">
+                      <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: GENDER_COLORS[g.gender] || "#94A3B8" }} />
+                      <span className="text-[8px] font-bold uppercase tracking-wide text-[#6B7280] leading-none">{g.gender}</span>
+                    </div>
+                    <span className="text-base font-extrabold leading-tight" style={{ color: GENDER_COLORS[g.gender] || "#6B7280" }}>{g.pct}%</span>
+                    <span className="text-[9px] text-[#9CA3AF] leading-none">{formatNum(g.count)}</span>
                   </div>
                 ))}
               </div>
@@ -443,9 +468,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
             <>
               <ResponsiveContainer width="100%" height={130}>
                 <PieChart>
-                  <Pie data={categoryMix} cx="50%" cy="50%" innerRadius={30} outerRadius={55} dataKey="count" paddingAngle={2}>
-                    {categoryMix.map((c) => <Cell key={c.category} fill={CATEGORY_COLORS[c.category] || "#94A3B8"} />)}
-                  </Pie>
+                  <Pie data={categoryMix.map((c) => ({ ...c, fill: CATEGORY_COLORS[c.category] || "#94A3B8" }))} cx="50%" cy="50%" innerRadius={30} outerRadius={55} dataKey="count" paddingAngle={2} />
                   <Tooltip />
                 </PieChart>
               </ResponsiveContainer>
@@ -557,7 +580,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         </div>
       )}
 
-      {/* Crorepati Treemap + Criminal Overview */}
+      {/* Crorepati Treemap + Cases Overview */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <Card>
           <CardTitle icon={TrendingUp} title="Crorepati Candidates" />
@@ -569,11 +592,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
               </div>
               {crorepati.by_party?.length > 0 && (
                 <ResponsiveContainer width="100%" height={180}>
-                  <Treemap data={crorepati.by_party.slice(0, 10).map((p: any) => ({ name: p.party, size: p.count, fill: PARTY_COLORS[p.party] || "#94A3B8" }))} dataKey="size" nameKey="name" stroke="#fff" fill="#3B82F6">
-                    {crorepati.by_party.slice(0, 10).map((p: any, i: number) => (
-                      <Cell key={i} fill={PARTY_COLORS[p.party] || ["#3B82F6","#EF4444","#10B981","#F59E0B","#8B5CF6","#EC4899"][i % 6]} />
-                    ))}
-                  </Treemap>
+                  <Treemap data={crorepati.by_party.slice(0, 10).map((p: any, i: number) => ({ name: p.party, size: p.count, fill: PARTY_COLORS[p.party] || ["#3B82F6","#EF4444","#10B981","#F59E0B","#8B5CF6","#EC4899"][i % 6] }))} dataKey="size" nameKey="name" stroke="#fff" fill="#3B82F6" />
                 </ResponsiveContainer>
               )}
             </>
@@ -581,12 +600,12 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         </Card>
 
         <Card>
-          <CardTitle icon={Shield} title="Criminal Cases Overview" />
+          <CardTitle icon={Shield} title="Cases Overview" />
           {criminalData ? (
             <>
               <div className="flex items-center gap-4 mb-3">
                 <div className="text-3xl font-extrabold text-[#EF4444]">{criminalData.with_criminal_cases}</div>
-                <div><div className="text-xs text-[#6B7280]">of {criminalData.total_candidates} candidates</div><div className="text-sm font-bold text-[#EF4444]">{criminalData.pct}% have criminal cases</div></div>
+                <div><div className="text-xs text-[#6B7280]">of {criminalData.total_candidates} candidates</div><div className="text-sm font-bold text-[#EF4444]">{criminalData.pct}% have cases</div></div>
               </div>
               {criminalData.by_party?.length > 0 && (
                 <div className="space-y-2 max-h-[180px] overflow-y-auto">
@@ -608,14 +627,12 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         <Card>
           <CardTitle icon={BarChart3} title="Margin Impact on Voter Turnout" />
           <ResponsiveContainer width="100%" height={250}>
-            <BarChart data={marginTurnout}>
+            <BarChart data={marginTurnout.map((d, i) => ({ ...d, fill: i < 2 ? "#EF4444" : "#10B981" }))}>
               <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" />
               <XAxis dataKey="range" tick={{ fill: "#64748B", fontSize: 10 }} axisLine={false} tickLine={false} />
               <YAxis domain={[60, 90]} tick={{ fill: "#64748B", fontSize: 10 }} axisLine={false} tickLine={false} />
               <Tooltip contentStyle={{ background: "#fff", border: "1px solid #E2E8F0", borderRadius: 8, fontSize: 12 }} formatter={(v: any) => [`${v}%`, "Avg Turnout"]} />
-              <Bar dataKey="avg_turnout" fill="#10B981" radius={[4, 4, 0, 0]}>
-                {marginTurnout.map((_, i) => <Cell key={i} fill={i < 2 ? "#EF4444" : "#10B981"} />)}
-              </Bar>
+              <Bar dataKey="avg_turnout" radius={[4, 4, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
           <div className="flex justify-center gap-4 mt-2 text-[10px] text-[#6B7280]">
@@ -685,11 +702,11 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         </div>
         <table className="w-full min-w-[700px]">
           <thead>
-            <tr className="text-[10px] uppercase text-[#6B7280] border-b border-[#E5E7EB]">
+              <tr className="text-[10px] uppercase text-[#6B7280] border-b border-[#E5E7EB]">
               <th className="text-left py-2 px-3 font-medium">Candidate / Region</th>
               <th className="text-left py-2 px-3 font-medium">Party</th>
               <th className="text-left py-2 px-3 font-medium">Declared Assets</th>
-              <th className="text-left py-2 px-3 font-medium">Criminal Cases</th>
+              <th className="text-left py-2 px-3 font-medium">Cases</th>
               {hasResults && <th className="text-left py-2 px-3 font-medium">Votes</th>}
             </tr>
           </thead>

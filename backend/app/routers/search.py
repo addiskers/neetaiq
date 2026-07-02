@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session, joinedload
 from typing import Optional
 
 from app.database import get_db
-from app.models import Candidate, Constituency, Party
+from app.models.registry import models_dependency
 
 router = APIRouter(prefix="/api/search", tags=["search"])
 
@@ -14,8 +14,10 @@ def search(
     type: Optional[str] = None,
     election_id: int = Query(1),
     limit: int = Query(10),
+    models=Depends(models_dependency),
     db: Session = Depends(get_db),
 ):
+    Election, District, Constituency, Candidate, Party = models
     results = {"candidates": [], "constituencies": []}
 
     if type is None or type == "constituency":

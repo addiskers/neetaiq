@@ -15,7 +15,7 @@ import openpyxl
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from app.database import engine, Base
-from app.models import Election, District, Constituency, Party, Candidate, DistrictMapping
+from app.models.assam import Election, District, Constituency, Party, Candidate, DistrictMapping
 
 PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 MAPPING_FILE = os.path.join(PROJECT_ROOT, "Assam District and AC name (2016,2021,2026).xlsx")
@@ -51,6 +51,11 @@ PARTY_ABBR = {
     "Aam Aadmi Party": "AAP",
     "Bahujan Samaj Party": "BSP",
     "Independent": "IND",
+    # Explicit mappings to avoid 10-char truncation collisions
+    "Apni Janta Party": "AJP",
+    "Apni Jantantrik Party": "AJTP",
+    "Republican Party of India (Athawale)": "RPI(A)",
+    "Republican Party of India (A)": "RPI(A)",  # same party, different name in data
 }
 
 

@@ -64,7 +64,8 @@
       "Bash(python backend/scripts/generate_puducherry_geojson.py)",
       "Bash(python -m scripts.import_puducherry_2011)",
       "WebFetch(domain:results.eci.gov.in)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(python -c ' *)"
     ]
   }
 }

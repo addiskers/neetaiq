@@ -1,0 +1,627 @@
+sno,candidate_id,candidate_name,candidate_link,constituency,party,criminal_cases,education,assets,liabilities
+1,680,(Engineer) Kartik Tamta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=680,PITHORAGARH,Aazad Samaj Party (Kanshi Ram),0,Graduate Professional,"Rs 21,586 ~ 21 Thou+","Rs 4,70,000 ~ 4 Lacs+"
+2,249,Abdul Gaffar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=249,RAMNAGAR,SP,0,8th Pass,"Rs 51,12,000 ~ 51 Lacs+",Rs 0 ~
+3,612,Abdul Mateen Siddiqui,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=612,HALDWANI,AIMIM,3,8th Pass,"Rs 1,43,19,229 ~ 1 Crore+","Rs 17,50,000 ~ 17 Lacs+"
+4,395,Abdul Wahid,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=395,PIRANKALIYAR,Aazad Samaj Party (Kanshi Ram),0,5th Pass,"Rs 7,81,19,397 ~ 7 Crore+","Rs 7,00,000 ~ 7 Lacs+"
+5,105,Adesh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=105,B.H.E.L. RANIPUR,BJP,1,12th Pass,"Rs 1,41,73,497 ~ 1 Crore+","Rs 19,81,636 ~ 19 Lacs+"
+6,177,Adesh Kumar Marwari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=177,HARIDWAR,UKD,0,Graduate,"Rs 11,32,000 ~ 11 Lacs+",Rs 0 ~
+7,185,Adesh Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=185,JASPUR,INC,1,Graduate,"Rs 3,93,11,664 ~ 3 Crore+","Rs 32,75,976 ~ 32 Lacs+"
+8,125,Aditya Brajwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=125,JHABRERA (SC),BSP,0,Post Graduate,"Rs 62,38,412 ~ 62 Lacs+","Rs 32,90,000 ~ 32 Lacs+"
+9,530,Advocate Brij Bhushan Karanwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=530,DHARAMPUR,Rashtriya Samaj Dal (R),0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=530&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=530&col=lia
+10,415,Ajay,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=415,LAKSAR,Rashtrawadi Janlok Party (Satya),1,Post Graduate,"Rs 1,04,16,517 ~ 1 Crore+","Rs 12,00,000 ~ 12 Lacs+"
+11,576,Ajay,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=576,B.H.E.L. RANIPUR,IND,0,12th Pass,"Rs 3,65,28,530 ~ 3 Crore+",Rs 0 ~
+12,183,Ajay Agarwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=183,JASPUR,BSP,3,10th Pass,"Rs 4,47,19,327 ~ 4 Crore+","Rs 1,05,33,579 ~ 1 Crore+"
+13,268,Ajay Jaiswal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=268,SITARGANJ,AAP,0,10th Pass,"Rs 2,58,91,459 ~ 2 Crore+","Rs 59,84,205 ~ 59 Lacs+"
+14,174,Ajay Kothiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=174,GANGOTRI,AAP,0,Graduate,"Rs 1,09,22,631 ~ 1 Crore+",Rs 0 ~
+15,394,Ajay Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=394,PIRANKALIYAR,Peoples Party of India (Democratic),0,10th Pass,"Rs 1,15,000 ~ 1 Lacs+","Rs 15,000 ~ 15 Thou+"
+16,179,Ajay Kumar Gupta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=179,HARIDWAR,Rashtravadi Vikas Party,0,Post Graduate,"Rs 39,51,696 ~ 39 Lacs+","Rs 3,904 ~ 3 Thou+"
+17,598,Ajay Kumar Kaushik,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=598,DOIWALA,Right to Recall Party,0,Graduate,"Rs 27,03,720 ~ 27 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+18,422,Ajay Kumar Tiwari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=422,KICHHA,IND,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=422&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=422&col=lia
+19,639,Akash Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=639,KOTDWAR,Right to Recall Party,0,Graduate,"Rs 4,548 ~ 4 Thou+",Rs 0 ~
+20,42,Amar Singh Swedia,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=42,RAJPUR ROAD (SC),IND,1,Graduate,"Rs 3,00,000 ~ 3 Lacs+",Rs 0 ~
+21,114,Amendra Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=114,DHANOLTI,AAP,1,Graduate,"Rs 4,00,767 ~ 4 Lacs+",Rs 0 ~
+22,294,Amit Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=294,ALMORA,AAP,0,Graduate Professional,"Rs 15,59,052 ~ 15 Lacs+","Rs 11,50,000 ~ 11 Lacs+"
+23,359,Amit Yadav,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=359,SAHASPUR,SP,0,Graduate,"Rs 99,70,000 ~ 99 Lacs+","Rs 20,00,000 ~ 20 Lacs+"
+24,578,Amrish Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=578,BHAGWANPUR(SC),Aazad Samaj Party (Kanshi Ram),0,Post Graduate,"Rs 1,48,009 ~ 1 Lacs+",Rs 0 ~
+25,521,Anand Ballabh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=521,DWARAHAT,BSP,0,10th Pass,"Rs 12,87,000 ~ 12 Lacs+","Rs 50,000 ~ 50 Thou+"
+26,218,Anand Prakash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=218,LANSDOWNE,UKD,1,Graduate Professional,"Rs 1,10,49,500 ~ 1 Crore+","Rs 1,42,000 ~ 1 Lacs+"
+27,80,Anand Singh Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=80,NANAKMATTA (ST),AAP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=80&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=80&col=lia
+28,655,Anik Ahmed,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=655,MANGLORE,IND,0,Illiterate,"Rs 37,000 ~ 37 Thou+","Rs 17,000 ~ 17 Thou+"
+29,385,Anil Dobhal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=385,RAIPUR,UKD,1,10th Pass,"Rs 43,67,200 ~ 43 Lacs+","Rs 16,34,000 ~ 16 Lacs+"
+30,608,Anil Kumar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=608,HALDWANI,Jan Ekta Party,0,12th Pass,"Rs 16,09,000 ~ 16 Lacs+",Rs 0 ~
+31,71,Anil Nautiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=71,KARANPRAYAG,BJP,0,10th Pass,"Rs 1,07,21,066 ~ 1 Crore+",Rs 0 ~
+32,593,Anil Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=593,DIDIHAT,IND,0,10th Pass,"Rs 15,66,000 ~ 15 Lacs+",Rs 0 ~
+33,56,Anil Singh Shahi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=56,DWARAHAT,BJP,0,Graduate,"Rs 1,09,50,000 ~ 1 Crore+","Rs 27,43,664 ~ 27 Lacs+"
+34,168,Anirudh Kala,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=168,DEHRADUN CANTONMENT,UKD,0,Post Graduate,"Rs 1,83,39,500 ~ 1 Crore+","Rs 1,03,50,000 ~ 1 Crore+"
+35,473,Anita Agarwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=473,JASPUR,IND,0,Post Graduate,"Rs 4,47,19,327 ~ 4 Crore+","Rs 1,05,33,579 ~ 1 Crore+"
+36,154,Anoop Singh Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=154,RISHIKESH,Uttarakhand Janata Party,2,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=154&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=154&col=lia
+37,214,Antriksh Saini,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=214,LAKSAR,INC,0,Doctorate,"Rs 1,23,90,89,427 ~ 123 Crore+","Rs 68,55,67,214 ~ 68 Crore+"
+38,14,Anu Pant,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=14,CHAUBATTAKHAL,Uttarakhand Kranti Dal (Democratic),0,Graduate Professional,"Rs 1,08,74,000 ~ 1 Crore+","Rs 2,00,000 ~ 2 Lacs+"
+39,649,Anukriti Gusain Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=649,LANSDOWNE,INC,0,Graduate Professional,"Rs 4,44,16,838 ~ 4 Crore+","Rs 28,55,696 ~ 28 Lacs+"
+40,485,Anupama Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=485,HARIDWAR RURAL,INC,0,Post Graduate,"Rs 13,46,46,476 ~ 13 Crore+","Rs 20,09,250 ~ 20 Lacs+"
+41,597,Anurag Kukreti,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=597,DOIWALA,SP,0,Graduate,"Rs 73,53,000 ~ 73 Lacs+",Rs 0 ~
+42,176,Anurag Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=176,HARIDWAR,Nyaydharmsabha,0,Post Graduate,"Rs 15,58,946 ~ 15 Lacs+","Rs 3,42,385 ~ 3 Lacs+"
+43,292,Arjun Singh Bhakuni,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=292,ALMORA,SP,0,Graduate,"Rs 6,31,000 ~ 6 Lacs+",Rs 0 ~
+44,326,Arun Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=326,CHAUBATTAKHAL,IND,0,Graduate,"Rs 30,60,000 ~ 30 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+45,419,Arvind Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=419,KOTDWAR,AAP,1,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=419&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=419&col=lia
+46,516,Arvind Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=516,GADARPUR,BJP,2,Graduate,"Rs 1,85,68,223 ~ 1 Crore+",Rs 0 ~
+47,265,Aryendra Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=265,SAHASPUR,INC,0,Graduate,"Rs 3,39,09,020 ~ 3 Crore+",Rs 0 ~
+48,587,Ashok Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=587,ALMORA,BSP,0,Not Given,"Rs 37,25,000 ~ 37 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+49,445,Ashok Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=445,KASHIPUR,IND,0,5th Pass,"Rs 10,90,412 ~ 10 Lacs+",Rs 0 ~
+50,660,Ashok Panwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=660,MUSSOORIE,BSP,0,Graduate,"Rs 2,68,23,000 ~ 2 Crore+","Rs 18,00,000 ~ 18 Lacs+"
+51,327,Ashwani Gusain,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=327,CHAUBATTAKHAL,IND,0,Post Graduate,"Rs 6,93,000 ~ 6 Lacs+",Rs 0 ~
+52,430,Asif Miyan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=430,KHATIMA,AIMIM,0,Graduate Professional,"Rs 34,50,000 ~ 34 Lacs+",Rs 0 ~
+53,487,Aslam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=487,HARIDWAR RURAL,Naki Bharatiya Ekta Party,0,8th Pass,"Rs 3,00,000 ~ 3 Lacs+",Rs 0 ~
+54,341,Aviral,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=341,YAMKESHWAR,AAP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=341&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=341&col=lia
+55,513,Babita Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=513,GANGOLIHAT (SC),AAP,0,Post Graduate,"Rs 26,17,195 ~ 26 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+56,701,Babli Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=701,RISHIKESH,Uttarakhand Raksha Morcha,0,12th Pass,"Rs 15,15,230 ~ 15 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+57,507,Babu Lal Ghoghiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=507,GANGOTRI,Jai Maha Bharath Party,0,Literate,"Rs 50,00,000 ~ 50 Lacs+",Rs 0 ~
+58,429,Baburam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=429,KHATIMA,IND,0,12th Pass,"Rs 32,32,754 ~ 32 Lacs+","Rs 1,07,000 ~ 1 Lacs+"
+59,630,Badrish,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=630,KEDARNATH,SP,0,Graduate,"Rs 12,03,000 ~ 12 Lacs+",Rs 0 ~
+60,3,Bahadur Singh Jangi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=3,LALKUAN,CPI(ML)(L),0,Literate,"Rs 63,67,000 ~ 63 Lacs+",Rs 0 ~
+61,510,Bal Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=510,GANGOLIHAT (SC),SP,0,Literate,"Rs 5,50,000 ~ 5 Lacs+",Rs 0 ~
+62,536,Balbir Kumar Talwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=536,DHARAMPUR,Bharatiya Jan Jagriti Party,0,12th Pass,"Rs 1,11,49,468 ~ 1 Crore+","Rs 45,00,000 ~ 45 Lacs+"
+63,200,Baljinder Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=200,KASHIPUR,SP,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=200&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=200&col=lia
+64,304,Balkrishna,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=304,BAGESHWAR (SC),IND,0,10th Pass,"Rs 21,00,000 ~ 21 Lacs+",Rs 0 ~
+65,181,Balram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=181,HARIDWAR RURAL,IND,0,10th Pass,"Rs 81,40,000 ~ 81 Lacs+",Rs 0 ~
+66,271,Balwant Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=271,SOMESHWAR (SC),SP,0,10th Pass,"Rs 10,00,000 ~ 10 Lacs+",Rs 0 ~
+67,196,Balwant Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=196,KARANPRAYAG,IND,0,Literate,"Rs 5,18,55,000 ~ 5 Crore+",Rs 0 ~
+68,459,Banshidhar Bhagat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=459,KALADHUNGI,BJP,0,8th Pass,"Rs 3,04,48,906 ~ 3 Crore+",Rs 0 ~
+69,541,Beer Singh Panwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=541,DHARAMPUR,IND,0,Graduate,"Rs 2,32,75,057 ~ 2 Crore+","Rs 11,05,863 ~ 11 Lacs+"
+70,460,Bhagwan Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=460,KALADHUNGI,IND,0,10th Pass,"Rs 38,55,000 ~ 38 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+71,368,Bhagwati Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=368,RUDRAPRAYAG,IND,0,12th Pass,"Rs 26,70,000 ~ 26 Lacs+",Rs 0 ~
+72,300,Bhagwati Prasad Mandoli,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=300,BADRINATH,AAP,6,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=300&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=300&col=lia
+73,295,Bhanu Prakash Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=295,ALMORA,UKD,0,Post Graduate,"Rs 65,00,680 ~ 65 Lacs+",Rs 0 ~
+74,357,Bharat Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=357,SAHASPUR,AAP,0,8th Pass,"Rs 3,06,76,000 ~ 3 Crore+","Rs 1,24,50,000 ~ 1 Crore+"
+75,92,Bharat Singh Chaudhary,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=92,RUDRAPRAYAG,BJP,0,Graduate,"Rs 2,32,05,421 ~ 2 Crore+","Rs 50,00,000 ~ 50 Lacs+"
+76,335,Bharav Nath Tamta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=335,BAGESHWAR (SC),IND,0,Graduate,"Rs 1,84,49,392 ~ 1 Crore+",Rs 0 ~
+77,567,Bheem Dutt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=567,CHAKRATA (ST),BSP,0,12th Pass,"Rs 41,33,500 ~ 41 Lacs+","Rs 21,000 ~ 21 Thou+"
+78,175,Bheem Lal Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=175,GHANSHALI (SC),IND,1,12th Pass,"Rs 1,11,30,247 ~ 1 Crore+","Rs 54,00,000 ~ 54 Lacs+"
+79,356,Bhole Shankar Arya (Advocate),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=356,SALT,BSP,0,Graduate Professional,"Rs 11,45,000 ~ 11 Lacs+",Rs 0 ~
+80,129,Bhoopesh Upadhyay,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=129,KAPKOTE,AAP,0,10th Pass,"Rs 20,68,02,000 ~ 20 Crore+","Rs 81,12,000 ~ 81 Lacs+"
+81,279,Bhupal Ram Tamta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=279,THARALI (SC),BJP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=279&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=279&col=lia
+82,55,Bhupal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=55,DWARAHAT,IND,0,10th Pass,"Rs 44,09,418 ~ 44 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+83,744,Bhupendra Kumar Tomar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=744,VIKASNAGAR,IND,0,12th Pass,"Rs 57,000 ~ 57 Thou+",Rs 0 ~
+84,354,Bhupendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=354,SALT,SP,0,Post Graduate,"Rs 67,000 ~ 67 Thou+",Rs 0 ~
+85,317,Bhuwan Chandra Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=317,BHIMTAL,BSP,0,12th Pass,"Rs 7,20,000 ~ 7 Lacs+",Rs 0 ~
+86,204,Bhuwan Chandra Kapri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=204,KHATIMA,INC,0,Graduate Professional,"Rs 49,27,481 ~ 49 Lacs+","Rs 12,82,994 ~ 12 Lacs+"
+87,560,Bijendra Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=560,DEVPRAYAG,Bahujan Mukti Party,0,Post Graduate,"Rs 28,97,000 ~ 28 Lacs+","Rs 1,39,000 ~ 1 Lacs+"
+88,155,Birendra Pratap Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=155,RUDRAPRAYAG,Bahujan Mukti Party,0,12th Pass,"Rs 35,40,000 ~ 35 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+89,599,Brij Bhushan Gairola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=599,DOIWALA,BJP,0,Post Graduate,"Rs 1,03,93,110 ~ 1 Crore+",Rs 0 ~
+90,299,Brijmohan Singh (Beeru Sajwan),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=299,BADRINATH,UKD,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=299&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=299&col=lia
+91,508,Budhi Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=508,GANGOTRI,BSP,0,8th Pass,"Rs 61,13,000 ~ 61 Lacs+",Rs 0 ~
+92,388,Chain Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=388,PUROLA (SC),SP,0,8th Pass,"Rs 53,100 ~ 53 Thou+",Rs 0 ~
+93,337,Chandan Ram Dass,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=337,BAGESHWAR (SC),BJP,0,Graduate,"Rs 1,24,70,000 ~ 1 Crore+","Rs 6,60,000 ~ 6 Lacs+"
+94,83,Chandra Pant,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=83,PITHORAGARH,BJP,0,Post Graduate,"Rs 4,00,53,774 ~ 4 Crore+",Rs 0 ~
+95,679,Chandra Prakash Punera,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=679,PITHORAGARH,AAP,0,Post Graduate,"Rs 2,70,65,473 ~ 2 Crore+","Rs 12,84,752 ~ 12 Lacs+"
+96,140,Chandra Sekhar Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=140,LALKUAN,AAP,0,12th Pass,"Rs 87,90,000 ~ 87 Lacs+",Rs 0 ~
+97,625,Chandra Shekhar Tewari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=625,KALADHUNGI,IND,0,Graduate Professional,"Rs 1,63,91,970 ~ 1 Crore+",Rs 0 ~
+98,716,Chandrakeshwar Rao,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=716,RUDRAPUR,BSP,0,10th Pass,"Rs 12,01,011 ~ 12 Lacs+",Rs 0 ~
+99,494,Charan Singh Saini,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=494,HARIDWAR,BSP,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=494&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=494&col=lia
+100,88,Chinta Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=88,RAMNAGAR,Uttarakhand Parivartan Party,0,Literate,"Rs 5,02,123 ~ 5 Lacs+",Rs 0 ~
+101,142,Daleep Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=142,LANSDOWNE,BJP,2,Graduate,"Rs 1,90,27,193 ~ 1 Crore+","Rs 29,30,722 ~ 29 Lacs+"
+102,315,Dan Singh Bhandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=315,BHIMTAL,INC,0,12th Pass,"Rs 92,31,425 ~ 92 Lacs+","Rs 1,13,49,569 ~ 1 Crore+"
+103,321,Darshan Dobhal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=321,CHAKRATA (ST),AAP,0,8th Pass,"Rs 1,99,74,300 ~ 1 Crore+","Rs 16,27,572 ~ 16 Lacs+"
+104,123,Darshan Lal Das,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=123,GHANSHALI (SC),IND,0,8th Pass,"Rs 13,87,000 ~ 13 Lacs+",Rs 0 ~
+105,322,Daulat Kunvar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=322,CHAKRATA (ST),IND,0,10th Pass,"Rs 69,77,702 ~ 69 Lacs+","Rs 9,08,000 ~ 9 Lacs+"
+106,194,Dayal Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=194,KARANPRAYAG,AAP,0,Post Graduate,"Rs 23,76,000 ~ 23 Lacs+",Rs 0 ~
+107,539,Deepak,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=539,DHARAMPUR,Peoples Party of India (Democratic),0,Illiterate,"Rs 5,40,000 ~ 5 Lacs+",Rs 0 ~
+108,133,Deepak Bali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=133,KASHIPUR,AAP,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=133&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=133&col=lia
+109,111,Deepak Belwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=111,CHAMPAWAT,IND,5,Graduate,"Rs 15,000 ~ 15 Thou+",Rs 0 ~
+110,748,Deepak Bijalwan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=748,YAMUNOTRI,INC,1,12th Pass,"Rs 38,04,278 ~ 38 Lacs+",Rs 0 ~
+111,697,Deepak Kargeti,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=697,RANIKHET,IND,0,Graduate,"Rs 1,36,076 ~ 1 Lacs+",Rs 0 ~
+112,283,Deshraj,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=283,VIKASNAGAR,BSP,0,Graduate,"Rs 87,25,000 ~ 87 Lacs+",Rs 0 ~
+113,134,Devesh Nautiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=134,KEDARNATH,IND,0,Post Graduate,"Rs 60,77,000 ~ 60 Lacs+",Rs 0 ~
+114,361,Deveshwar K Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=361,SAHASPUR,IND,2,Graduate,"Rs 5,59,88,000 ~ 5 Crore+",Rs 0 ~
+115,115,Dhan Singh Dhami (Dhan Da),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=115,DHARCHULA,BJP,1,Graduate,"Rs 70,04,500 ~ 70 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+116,346,Dhan Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=346,TEHRI,INC,0,Post Graduate,"Rs 2,74,48,988 ~ 2 Crore+","Rs 37,60,993 ~ 37 Lacs+"
+117,504,Dhani Lal Shah,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=504,GHANSHALI (SC),INC,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=504&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=504&col=lia
+118,306,Dhanraj Bharti,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=306,BAJPUR (SC),SP,0,8th Pass,"Rs 28,18,000 ~ 28 Lacs+",Rs 0 ~
+119,691,Dhansingh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=691,RAJPUR ROAD (SC),BSP,0,Post Graduate,"Rs 83,27,000 ~ 83 Lacs+",Rs 0 ~
+120,19,Dheeraj Singh Ladwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=19,LOHAGHAT,IND,0,12th Pass,"Rs 2,65,000 ~ 2 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+121,301,Dheerendra Pal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=301,BADRINATH,IND,0,Post Graduate,"Rs 25,53,764 ~ 25 Lacs+","Rs 7,47,920 ~ 7 Lacs+"
+122,636,Dherandra Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=636,KOTDWAR,IND,0,Post Graduate,"Rs 3,33,34,996 ~ 3 Crore+",Rs 0 ~
+123,411,Dhramraj,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=411,LAKSAR,IND,0,Literate,"Rs 11,73,000 ~ 11 Lacs+","Rs 58,000 ~ 58 Thou+"
+124,631,Didar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=631,KHANPUR,SP,0,Literate,"Rs 94,72,155 ~ 94 Lacs+","Rs 2,70,000 ~ 2 Lacs+"
+125,167,Digmohan Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=167,CHAUBATTAKHAL,AAP,0,Graduate,"Rs 54,18,220 ~ 54 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+126,38,Dimpal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=38,RAJPUR ROAD (SC),AAP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=38&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=38&col=lia
+127,543,Dinesh Agarwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=543,DHARAMPUR,INC,0,Graduate Professional,"Rs 5,42,92,880 ~ 5 Crore+","Rs 45,26,000 ~ 45 Lacs+"
+128,95,Dinesh Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=95,SOMESHWAR (SC),Peoples Party of India (Democratic),0,8th Pass,"Rs 48,50,897 ~ 48 Lacs+","Rs 5,69,000 ~ 5 Lacs+"
+129,27,Dinesh Dhanai,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=27,TEHRI,Uttarakhand Janekta Party,0,Graduate,"Rs 4,33,64,723 ~ 4 Crore+","Rs 29,11,352 ~ 29 Lacs+"
+130,305,Dinesh Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=305,BAGESHWAR (SC),IND,0,10th Pass,"Rs 34,000 ~ 34 Thou+",Rs 0 ~
+131,331,Dinesh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=331,DEHRADUN CANTONMENT,IND,0,Graduate,"Rs 1,69,40,459 ~ 1 Crore+","Rs 9,57,187 ~ 9 Lacs+"
+132,224,Dinesh Singh Pawar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=224,MANGLORE,BJP,0,Graduate Professional,"Rs 3,30,08,628 ~ 3 Crore+",Rs 0 ~
+133,500,Divyanshu Verma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=500,HALDWANI,IND,0,Graduate,"Rs 2,52,583 ~ 2 Lacs+",Rs 0 ~
+134,31,Diwakar Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=31,DEVPRAYAG,UKD,0,10th Pass,"Rs 47,14,408 ~ 47 Lacs+",Rs 0 ~
+135,7,Diwan Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=7,RAMNAGAR,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=7&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=7&col=lia
+136,291,Diwan Singh Mehta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=291,DIDIHAT,AAP,0,12th Pass,"Rs 33,27,000 ~ 33 Lacs+","Rs 3,72,000 ~ 3 Lacs+"
+137,448,Dr Mukesh Pant,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=448,KARANPRAYAG,Uttarakhand Janekta Party,0,Doctorate,"Rs 85,39,000 ~ 85 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+138,215,Dr. Bhagwan Dass Rathor,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=215,LAKSAR,SP,0,Graduate Professional,"Rs 1,19,71,400 ~ 1 Crore+","Rs 2,04,478 ~ 2 Lacs+"
+139,96,Dr. Dhan Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=96,SRINAGAR,BJP,0,Doctorate,"Rs 2,67,63,303 ~ 2 Crore+",Rs 0 ~
+140,281,Dr. Jeet Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=281,THARALI (SC),INC,0,Doctorate,"Rs 2,24,44,495 ~ 2 Crore+","Rs 25,13,590 ~ 25 Lacs+"
+141,499,Dr. Jogender Pal Singh Rautela,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=499,HALDWANI,BJP,0,Doctorate,"Rs 1,03,62,671 ~ 1 Crore+",Rs 0 ~
+142,409,Dr. Mohan Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=409,LALKUAN,BJP,0,Doctorate,"Rs 2,99,04,277 ~ 2 Crore+",Rs 0 ~
+143,57,Dr. Pramod Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=57,DWARAHAT,Peoples Party of India (Democratic),0,Doctorate,"Rs 10,30,000 ~ 10 Lacs+","Rs 1,70,000 ~ 1 Lacs+"
+144,330,Dr. R K Pathak,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=330,DEHRADUN CANTONMENT,SP,0,Doctorate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=330&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=330&col=lia
+145,182,Dr. Shailendra Mohan Singhal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=182,JASPUR,BJP,0,Graduate,"Rs 44,67,46,959 ~ 44 Crore+",Rs 0 ~
+146,389,Durgeshwar Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=389,PUROLA (SC),BJP,1,12th Pass,"Rs 6,50,000 ~ 6 Lacs+",Rs 0 ~
+147,621,Er. Ravi Bahadur,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=621,JWALAPUR (SC),INC,2,Graduate Professional,"Rs 12,73,014 ~ 12 Lacs+","Rs 2,52,593 ~ 2 Lacs+"
+148,40,Fakeer Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=40,GANGOLIHAT (SC),BJP,0,Literate,"Rs 1,80,27,973 ~ 1 Crore+","Rs 1,28,979 ~ 1 Lacs+"
+149,234,Furkan Ahmad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=234,PIRANKALIYAR,INC,4,10th Pass,"Rs 2,94,08,398 ~ 2 Crore+","Rs 6,50,000 ~ 6 Lacs+"
+150,197,Gagan Singh Kamboj,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=197,KASHIPUR,BSP,1,12th Pass,"Rs 78,64,522 ~ 78 Lacs+","Rs 52,90,248 ~ 52 Lacs+"
+151,97,Gajender Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=97,SRINAGAR,AAP,0,12th Pass,"Rs 1,58,06,786 ~ 1 Crore+","Rs 24,49,932 ~ 24 Lacs+"
+152,319,Gajendra Dutt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=319,CHAKRATA (ST),IND,1,Post Graduate,"Rs 9,35,422 ~ 9 Lacs+",Rs 0 ~
+153,73,Gajpal Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=73,KEDARNATH,UKD,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=73&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=73&col=lia
+154,518,Ganesh Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=518,DWARAHAT,SP,0,Graduate,"Rs 1,32,59,000 ~ 1 Crore+","Rs 36,50,000 ~ 36 Lacs+"
+155,733,Ganesh Godiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=733,SRINAGAR,INC,2,Graduate,"Rs 7,49,15,811 ~ 7 Crore+","Rs 2,66,25,052 ~ 2 Crore+"
+156,659,Ganesh Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=659,MUSSOORIE,BJP,0,10th Pass,"Rs 9,74,33,938 ~ 9 Crore+","Rs 64,76,881 ~ 64 Lacs+"
+157,344,Ganesh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=344,THARALI (SC),IND,0,8th Pass,"Rs 35,42,575 ~ 35 Lacs+",Rs 0 ~
+158,347,Ganesh Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=347,SRINAGAR,Akhand Bharat Vikas Party,0,8th Pass,"Rs 16,500 ~ 16 Thou+","Rs 12,000 ~ 12 Thou+"
+159,756,Ganesh Prasad Kala,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=756,SAHASPUR,UKD,0,10th Pass,"Rs 1,20,11,700 ~ 1 Crore+","Rs 7,00,000 ~ 7 Lacs+"
+160,687,Ganga Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=687,RAIPUR,Aazad Samaj Party (Kanshi Ram),0,Graduate,"Rs 70,00,000 ~ 70 Lacs+",Rs 0 ~
+161,712,Ganga Sagar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=712,RUDRAPUR,Bharatiya Subhash Sena,0,Literate,"Rs 10,75,000 ~ 10 Lacs+",Rs 0 ~
+162,595,Gaurav (Ginni),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=595,DOIWALA,INC,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=595&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=595&col=lia
+163,557,Gaurav Tiwari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=557,DHANOLTI,IND,0,12th Pass,"Rs 72,88,113 ~ 72 Lacs+","Rs 42,20,000 ~ 42 Lacs+"
+164,52,Geeta Chandola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=52,DEHRADUN CANTONMENT,IND,0,12th Pass,"Rs 57,58,500 ~ 57 Lacs+",Rs 0 ~
+165,402,Godavari Thapli,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=402,MUSSOORIE,INC,0,Graduate,"Rs 2,02,51,283 ~ 2 Crore+",Rs 0 ~
+166,293,Gopal Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=293,ALMORA,Uttarakhand Parivartan Party,0,Graduate Professional,"Rs 2,29,273 ~ 2 Lacs+",Rs 0 ~
+167,229,Gopal Singh Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=229,NANAKMATTA (ST),INC,0,Graduate Professional,"Rs 3,31,63,000 ~ 3 Crore+","Rs 45,25,000 ~ 45 Lacs+"
+168,619,Goutam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=619,JWALAPUR (SC),Loktantrik Janshakti Party,1,10th Pass,"Rs 1,85,000 ~ 1 Lacs+",Rs 0 ~
+169,157,Govind Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=157,SOMESHWAR (SC),IND,0,Doctorate,"Rs 1,93,56,151 ~ 1 Crore+",Rs 0 ~
+170,551,Govind Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=551,DHARCHULA,BSP,0,8th Pass,"Rs 14,02,000 ~ 14 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+171,528,Govind Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=528,DIDIHAT,UKD,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=528&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=528&col=lia
+172,483,Govind Singh Kunjwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=483,JAGESHWAR,INC,0,12th Pass,"Rs 2,03,28,314 ~ 2 Crore+",Rs 0 ~
+173,280,Guddu Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=280,THARALI (SC),AAP,1,5th Pass,"Rs 48,000 ~ 48 Thou+",Rs 0 ~
+174,538,Gulbahar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=538,DHARAMPUR,IND,0,Graduate Professional,"Rs 1,73,100 ~ 1 Lacs+",Rs 0 ~
+175,258,Gulbahar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=258,ROORKEE,Aazad Samaj Party (Kanshi Ram),0,8th Pass,"Rs 2,96,98,733 ~ 2 Crore+",Rs 0 ~
+176,282,Gurumel Singh Rathod,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=282,VIKASNAGAR,IND,0,Graduate Professional,"Rs 83,19,000 ~ 83 Lacs+","Rs 1,35,000 ~ 1 Lacs+"
+177,417,Haji Tasleem Ahmad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=417,LAKSAR,Aazad Samaj Party (Kanshi Ram),0,8th Pass,"Rs 3,33,95,082 ~ 3 Crore+","Rs 9,00,000 ~ 9 Lacs+"
+178,455,Har Govind Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=455,KAPKOTE,BSP,0,Post Graduate,"Rs 2,50,000 ~ 2 Lacs+",Rs 0 ~
+179,210,Hareram Rai,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=210,KICHHA,IND,0,Graduate,"Rs 10,64,817 ~ 10 Lacs+",Rs 0 ~
+180,150,Hari Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=150,PAURI (SC),Akhand Bharat Vikas Party,1,8th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=150&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=150&col=lia
+181,512,Hari Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=512,GANGOLIHAT (SC),UKD,0,Post Graduate,"Rs 82,00,000 ~ 82 Lacs+",Rs 0 ~
+182,450,Hari Ram Shastry,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=450,KAPKOTE,SP,0,Post Graduate,"Rs 9,33,500 ~ 9 Lacs+",Rs 0 ~
+183,348,Harish Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=348,SOMESHWAR (SC),AAP,0,Graduate,"Rs 4,82,45,402 ~ 4 Crore+","Rs 50,000 ~ 50 Thou+"
+184,318,Harish Chandra Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=318,BHIMTAL,UKD,0,Post Graduate,"Rs 3,80,31,222 ~ 3 Crore+","Rs 12,00,000 ~ 12 Lacs+"
+185,644,Harish Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=644,LALKUAN,INC,1,Graduate Professional,"Rs 7,69,50,000 ~ 7 Crore+","Rs 1,65,25,569 ~ 1 Crore+"
+186,32,Harish Singh Dhami,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=32,DHARCHULA,INC,1,12th Pass,"Rs 4,55,85,000 ~ 4 Crore+","Rs 2,45,00,000 ~ 2 Crore+"
+187,663,Hem Chandra Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=663,NAINITAL(SC),AAP,0,Graduate,"Rs 16,79,38,419 ~ 16 Crore+","Rs 18,50,000 ~ 18 Lacs+"
+188,2,Hem Chandra Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=2,RAMNAGAR,BSP,0,10th Pass,"Rs 4,93,22,019 ~ 4 Crore+","Rs 1,74,45,619 ~ 1 Crore+"
+189,163,Hemesh Kharkwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=163,CHAMPAWAT,INC,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=163&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=163&col=lia
+190,223,Himesh Chandra Kalkhuriya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=223,LOHAGHAT,IND,0,12th Pass,"Rs 1,05,02,672 ~ 1 Crore+","Rs 49,10,000 ~ 49 Lacs+"
+191,240,Hira Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=240,RAIPUR,INC,0,Post Graduate,"Rs 6,00,37,873 ~ 6 Crore+","Rs 2,50,000 ~ 2 Lacs+"
+192,69,Indresh Maikhuri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=69,KARANPRAYAG,CPI(ML)(L),1,Post Graduate,"Rs 12,52,311 ~ 12 Lacs+","Rs 45,000 ~ 45 Thou+"
+193,575,Irfan Ali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=575,B.H.E.L. RANIPUR,Bharatiya Jan Jagriti Party,0,5th Pass,"Rs 1,10,31,000 ~ 1 Crore+",Rs 0 ~
+194,577,Ishant Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=577,B.H.E.L. RANIPUR,SP,0,Graduate,"Rs 1,02,500 ~ 1 Lacs+",Rs 0 ~
+195,461,Jagat Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=461,KALADHUNGI,IND,0,Post Graduate,"Rs 1,25,70,000 ~ 1 Crore+",Rs 0 ~
+196,750,Jagaveer Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=750,YAMUNOTRI,BSP,0,Post Graduate,"Rs 10,63,000 ~ 10 Lacs+",Rs 0 ~
+197,324,Jagdish Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=324,CHAMPAWAT,IND,0,5th Pass,"Rs 1,68,48,872 ~ 1 Crore+",Rs 0 ~
+198,725,Jagdish Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=725,SALT,Uttarakhand Parivartan Party,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=725&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=725&col=lia
+199,248,Jagdish Chandra Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=248,RAMNAGAR,IND,0,Graduate,"Rs 20,62,000 ~ 20 Lacs+",Rs 0 ~
+200,149,Jagdish Kuliyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=149,NARENDRANAGAR,CPI,0,Post Graduate,"Rs 89,67,274 ~ 89 Lacs+",Rs 0 ~
+201,254,Jagjeet Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=254,RISHIKESH,Shiromani Akali Dal (Amritsar)(Simranjit Singh Mann),1,12th Pass,"Rs 1,13,69,948 ~ 1 Crore+","Rs 4,89,000 ~ 4 Lacs+"
+202,683,Jaipal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=683,PRATAPNAGAR,IND,0,12th Pass,"Rs 35,15,000 ~ 35 Lacs+",Rs 0 ~
+203,124,Jameel Ahamad Mansoori,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=124,JASPUR,SP,2,8th Pass,"Rs 28,09,825 ~ 28 Lacs+",Rs 0 ~
+204,119,Jarnail Singh Kali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=119,GADARPUR,AAP,0,8th Pass,"Rs 3,45,90,000 ~ 3 Crore+",Rs 0 ~
+205,562,Jaspal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=562,DEHRADUN CANTONMENT,BSP,2,12th Pass,"Rs 52,000 ~ 52 Thou+",Rs 0 ~
+206,120,Jasvant Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=120,GADARPUR,BSP,0,10th Pass,"Rs 5,94,645 ~ 5 Lacs+",Rs 0 ~
+207,121,Jasveer Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=121,GANGOTRI,UKD,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=121&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=121&col=lia
+208,533,Javed Khan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=533,DHARAMPUR,IND,2,Graduate Professional,"Rs 1,22,46,685 ~ 1 Crore+",Rs 0 ~
+209,113,Jay Narayan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=113,DHANOLTI,Uttarakhand Janekta Party,0,12th Pass,"Rs 16,72,000 ~ 16 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+210,51,Jay Parkash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=51,CHAUBATTAKHAL,SP,0,10th Pass,"Rs 13,42,000 ~ 13 Lacs+",Rs 0 ~
+211,376,Jayendra Chand Ramola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=376,RISHIKESH,INC,4,Post Graduate,"Rs 1,05,96,948 ~ 1 Crore+","Rs 27,12,931 ~ 27 Lacs+"
+212,554,Jeevan Singh Thakur,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=554,DHARCHULA,IND,0,Post Graduate,"Rs 6,10,000 ~ 6 Lacs+",Rs 0 ~
+213,427,Jeewan Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=427,KICHHA,UKD,0,Post Graduate,"Rs 16,09,925 ~ 16 Lacs+","Rs 50,000 ~ 50 Thou+"
+214,67,Jitendra Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=67,JHABRERA (SC),Aazad Samaj Party (Kanshi Ram),1,Graduate Professional,"Rs 27,98,623 ~ 27 Lacs+","Rs 3,09,790 ~ 3 Lacs+"
+215,613,Jitendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=613,HALDWANI,BSP,0,8th Pass,"Rs 3,46,500 ~ 3 Lacs+",Rs 0 ~
+216,596,Jitendra Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=596,DOIWALA,IND,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=596&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=596&col=lia
+217,685,Jitendra Srivastava,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=685,RAIPUR,Rashtravadi Vikas Party,0,12th Pass,"Rs 23,38,697 ~ 23 Lacs+","Rs 17,95,870 ~ 17 Lacs+"
+218,15,Jot Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=15,DHANOLTI,INC,0,12th Pass,"Rs 68,55,575 ~ 68 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+219,79,Jyoti Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=79,NANAKMATTA (ST),SP,0,Graduate,"Rs 70,000 ~ 70 Thou+",Rs 0 ~
+220,703,Kadam Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=703,RISHIKESH,SP,0,12th Pass,"Rs 10,95,000 ~ 10 Lacs+",Rs 0 ~
+221,9,Kailash Chandra Gahtori,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=9,CHAMPAWAT,BJP,0,Graduate,"Rs 10,65,43,567 ~ 10 Crore+",Rs 0 ~
+222,298,Kailash Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=298,ALMORA,BJP,0,Graduate,"Rs 3,50,95,856 ~ 3 Crore+","Rs 22,86,193 ~ 22 Lacs+"
+223,550,Kailash Singh Pangtey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=550,DHARCHULA,IND,0,12th Pass,"Rs 5,76,99,475 ~ 5 Crore+","Rs 6,50,000 ~ 6 Lacs+"
+224,721,Kalpana Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=721,SAHASPUR,IND,0,12th Pass,"Rs 78,74,000 ~ 78 Lacs+",Rs 0 ~
+225,61,Kamal Das,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=61,GHANSHALI (SC),UKD,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=61&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=61&col=lia
+226,570,Kamlesh Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=570,CHAKRATA (ST),IND,1,12th Pass,"Rs 31,000 ~ 31 Thou+",Rs 0 ~
+227,695,Kamlesh Mathur,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=695,RAJPUR ROAD (SC),SP,0,Graduate,"Rs 2,70,000 ~ 2 Lacs+",Rs 0 ~
+228,94,Kamrudeen,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=94,SAHASPUR,CPI(M),0,12th Pass,"Rs 2,75,25,000 ~ 2 Crore+","Rs 5,00,000 ~ 5 Lacs+"
+229,255,Kanak Dhanai,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=255,RISHIKESH,Uttarakhand Janekta Party,4,Post Graduate,"Rs 78,44,269 ~ 78 Lacs+","Rs 13,64,856 ~ 13 Lacs+"
+230,90,Karan Mahara,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=90,RANIKHET,INC,0,Graduate Professional,"Rs 2,58,71,061 ~ 2 Crore+","Rs 33,76,521 ~ 33 Lacs+"
+231,737,Kasbi Lal Shah,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=737,THARALI (SC),UKD,0,Graduate,"Rs 13,10,000 ~ 13 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+232,160,Kedar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=160,YAMUNOTRI,BJP,0,Graduate Professional,"Rs 5,86,93,124 ~ 5 Crore+",Rs 0 ~
+233,565,Keshar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=565,CHAUBATTAKHAL,INC,0,12th Pass,"Rs 10,49,05,131 ~ 10 Crore+","Rs 1,50,39,606 ~ 1 Crore+"
+234,509,Khajan Chandra Guddu,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=509,GANGOLIHAT (SC),INC,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=509&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=509&col=lia
+235,246,Khajan Dass,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=246,RAJPUR ROAD (SC),BJP,0,8th Pass,"Rs 2,38,12,861 ~ 2 Crore+","Rs 3,42,000 ~ 3 Lacs+"
+236,681,Khursid Ahmad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=681,PITHORAGARH,BSP,0,8th Pass,"Rs 18,11,000 ~ 18 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+237,20,Khushal Singh Adhikari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=20,LOHAGHAT,INC,0,10th Pass,"Rs 30,50,17,339 ~ 30 Crore+","Rs 3,78,45,711 ~ 3 Crore+"
+238,274,Kiran Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=274,SOMESHWAR (SC),Uttarakhand Parivartan Party,0,Post Graduate,"Rs 2,21,820 ~ 2 Lacs+",Rs 0 ~
+239,548,Kiran Rawat Kashyap,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=548,DHARAMPUR,UKD,0,Graduate Professional,"Rs 2,05,29,000 ~ 2 Crore+","Rs 16,00,000 ~ 16 Lacs+"
+240,529,Kishan Bhandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=529,DIDIHAT,IND,0,10th Pass,"Rs 5,10,36,810 ~ 5 Crore+","Rs 2,10,74,607 ~ 2 Crore+"
+241,739,Kishore Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=739,THARALI (SC),SP,0,Graduate,"Rs 6,14,000 ~ 6 Lacs+",Rs 0 ~
+242,736,Kishore Upadhyay,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=736,TEHRI,BJP,0,Doctorate,"Rs 2,69,27,176 ~ 2 Crore+","Rs 38,68,241 ~ 38 Lacs+"
+243,616,Komal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=616,JHABRERA (SC),SP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=616&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=616&col=lia
+244,426,Kulavanta Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=426,KICHHA,AAP,0,Literate,"Rs 2,65,71,444 ~ 2 Crore+","Rs 9,91,000 ~ 9 Lacs+"
+245,753,Kuldeep Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=753,KEDARNATH,IND,0,8th Pass,"Rs 5,20,000 ~ 5 Lacs+",Rs 0 ~
+246,323,Kuldeep Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=323,CHAKRATA (ST),IND,1,Others,"Rs 71,000 ~ 71 Thou+",Rs 0 ~
+247,10,Kuldeep Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=10,KEDARNATH,IND,0,8th Pass,"Rs 3,25,80,327 ~ 3 Crore+",Rs 0 ~
+248,37,Kundan Singh Mehta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=37,LALKUAN,IND,0,5th Pass,"Rs 54,39,630 ~ 54 Lacs+",Rs 0 ~
+249,98,Kunwar Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=98,THARALI (SC),CPI(M),0,8th Pass,"Rs 31,60,800 ~ 31 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+250,135,Kunwarani Devyani Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=135,KHANPUR,BJP,0,Post Graduate,"Rs 6,51,45,542 ~ 6 Crore+","Rs 88,00,000 ~ 88 Lacs+"
+251,110,Lakhan Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=110,BHIMTAL,IND,5,12th Pass,"Rs 4,41,53,664 ~ 4 Crore+","Rs 30,07,648 ~ 30 Lacs+"
+252,517,Lal Bahadur Yadav,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=517,GADARPUR,Nyaydharmsabha,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=517&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=517&col=lia
+253,190,Lalit Farswan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=190,KAPKOTE,INC,0,Post Graduate,"Rs 3,09,53,785 ~ 3 Crore+","Rs 1,29,784 ~ 1 Lacs+"
+254,726,Lalit Mohan Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=726,SALT,IND,0,Graduate,"Rs 70,000 ~ 70 Thou+",Rs 0 ~
+255,540,Lalit Thapa,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=540,DHARAMPUR,BSP,0,12th Pass,"Rs 57,73,500 ~ 57 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+256,476,Lalman Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=476,JASPUR,IND,0,12th Pass,"Rs 82,16,000 ~ 82 Lacs+",Rs 0 ~
+257,738,Laxman Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=738,THARALI (SC),BSP,0,8th Pass,"Rs 1,56,620 ~ 1 Lacs+",Rs 0 ~
+258,260,Laxman Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=260,RUDRAPRAYAG,Nyaydharmsabha,0,12th Pass,"Rs 11,02,572 ~ 11 Lacs+",Rs 0 ~
+259,303,Laxmi Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=303,BAGESHWAR (SC),SP,0,12th Pass,"Rs 5,25,000 ~ 5 Lacs+",Rs 0 ~
+260,263,Lt Col Girish Chandra (Retired),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=263,SAHASPUR,Sainik Samaj Party,0,12th Pass,"Rs 73,01,491 ~ 73 Lacs+","Rs 9,38,758 ~ 9 Lacs+"
+261,63,Madan Kaushik,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=63,HARIDWAR,BJP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=63&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=63&col=lia
+262,192,Madan Mohan Singh Bhandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=192,KARANPRAYAG,IND,0,Post Graduate,"Rs 14,30,000 ~ 14 Lacs+","Rs 5,80,000 ~ 5 Lacs+"
+263,35,Madan Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=35,DWARAHAT,INC,0,Graduate Professional,"Rs 1,02,23,000 ~ 1 Crore+","Rs 1,50,000 ~ 1 Lacs+"
+264,49,Madan Singh Mahar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=49,CHAMPAWAT,AAP,0,Post Graduate,"Rs 3,89,67,152 ~ 3 Crore+","Rs 6,55,000 ~ 6 Lacs+"
+265,730,Madhubala,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=730,SOMESHWAR (SC),IND,0,Graduate,"Rs 80,000 ~ 80 Thou+",Rs 0 ~
+266,24,Mahabir Singh Jagwan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=24,RUDRAPRAYAG,IND,0,12th Pass,"Rs 1,12,95,000 ~ 1 Crore+","Rs 13,00,000 ~ 13 Lacs+"
+267,558,Mahaveer Singh Rangarh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=558,DHANOLTI,IND,0,Graduate Professional,"Rs 3,11,94,978 ~ 3 Crore+",Rs 0 ~
+268,59,Mahavir Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=59,GANGOTRI,CPI,0,Post Graduate,"Rs 35,26,912 ~ 35 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+269,101,Mahendra Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=101,BADRINATH,BJP,0,Post Graduate,"Rs 1,27,73,693 ~ 1 Crore+","Rs 3,35,109 ~ 3 Lacs+"
+270,250,Mahendra Singh Pal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=250,RAMNAGAR,INC,0,Doctorate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=250&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=250&col=lia
+271,457,Mahesh Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=457,KALADHUNGI,INC,0,Graduate,"Rs 13,51,52,000 ~ 13 Crore+","Rs 1,05,00,000 ~ 1 Crore+"
+272,156,Mahesh Jeena,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=156,SALT,BJP,2,Graduate,"Rs 3,32,57,573 ~ 3 Crore+",Rs 0 ~
+273,421,Mahima Chaudhary,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=421,KOTDWAR,IND,0,Post Graduate,"Rs 3,64,500 ~ 3 Lacs+",Rs 0 ~
+274,609,Mahipal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=609,HALDWANI,Janta Brigade Party,0,12th Pass,"Rs 55,00,000 ~ 55 Lacs+",Rs 0 ~
+275,390,Malchand,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=390,PUROLA (SC),INC,4,10th Pass,"Rs 10,77,40,000 ~ 10 Crore+","Rs 14,00,000 ~ 14 Lacs+"
+276,467,Mampal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=467,JHABRERA (SC),IND,0,8th Pass,"Rs 21,66,000 ~ 21 Lacs+",Rs 0 ~
+277,651,Mamta Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=651,LANSDOWNE,IND,0,Post Graduate,"Rs 34,700 ~ 34 Thou+",Rs 0 ~
+278,162,Mamta Rakesh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=162,BHAGWANPUR(SC),INC,0,Post Graduate,"Rs 4,88,83,833 ~ 4 Crore+",Rs 0 ~
+279,127,Mamta Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=127,JWALAPUR (SC),AAP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=127&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=127&col=lia
+280,568,Manbir Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=568,CHAKRATA (ST),IND,0,Post Graduate,"Rs 3,83,450 ~ 3 Lacs+",Rs 0 ~
+281,22,Manish Gauniyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=22,MUSSOORIE,IND,1,10th Pass,"Rs 35,21,334 ~ 35 Lacs+",Rs 0 ~
+282,478,Manish Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=478,JAGESHWAR,UKD,0,Others,"Rs 13,50,235 ~ 13 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+283,579,Manju Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=579,BAJPUR (SC),IND,0,Graduate,"Rs 10,93,500 ~ 10 Lacs+",Rs 0 ~
+284,552,Manju Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=552,DHARCHULA,SP,0,8th Pass,"Rs 65,000 ~ 65 Thou+",Rs 0 ~
+285,626,Manju Tiwari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=626,KALADHUNGI,AAP,0,12th Pass,"Rs 4,46,38,425 ~ 4 Crore+","Rs 33,76,000 ~ 33 Lacs+"
+286,397,Manohar Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=397,PAURI (SC),AAP,1,5th Pass,"Rs 13,42,174 ~ 13 Lacs+","Rs 80,000 ~ 80 Thou+"
+287,749,Manoj Kohli Shyam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=749,YAMUNOTRI,AAP,0,Others,"Rs 63,78,597 ~ 63 Lacs+","Rs 17,00,000 ~ 17 Lacs+"
+288,253,Manoj Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=253,RANIKHET,BSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=253&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=253&col=lia
+289,72,Manoj Kumar Dobariyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=72,KASHIPUR,UKD,0,Graduate Professional,"Rs 4,37,93,534 ~ 4 Crore+",Rs 0 ~
+290,202,Manoj Kumar Tinsola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=202,KEDARNATH,Peoples Party of India (Democratic),0,Post Graduate,"Rs 41,18,000 ~ 41 Lacs+",Rs 0 ~
+291,648,Manoj Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=648,LALKUAN,SP,0,Literate,"Rs 14,01,364 ~ 14 Lacs+",Rs 0 ~
+292,74,Manoj Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=74,KEDARNATH,INC,2,Post Graduate,"Rs 1,45,75,093 ~ 1 Crore+","Rs 2,50,000 ~ 2 Lacs+"
+293,313,Manoj Sah,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=313,BHIMTAL,IND,0,Graduate,"Rs 1,51,80,035 ~ 1 Crore+",Rs 0 ~
+294,100,Manoj Tewari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=100,ALMORA,INC,0,Graduate,"Rs 2,09,24,568 ~ 2 Crore+",Rs 0 ~
+295,137,Manorma Tyagi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=137,KHANPUR,AAP,0,Literate,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+296,29,Mantri Prasad Naithani,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=29,DEVPRAYAG,INC,0,Graduate Professional,"Rs 1,27,99,119 ~ 1 Crore+",Rs 0 ~
+297,370,Matbar Singh Kandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=370,RUDRAPRAYAG,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=370&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=370&col=lia
+298,1,Mayukh Mahar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=1,PITHORAGARH,INC,0,Post Graduate,"Rs 9,61,85,984 ~ 9 Crore+","Rs 2,00,38,149 ~ 2 Crore+"
+299,675,Md Shahjad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=675,PIRANKALIYAR,IND,0,8th Pass,"Rs 5,18,343 ~ 5 Lacs+",Rs 0 ~
+300,364,Meena Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=364,RUDRAPUR,INC,0,Graduate,"Rs 69,76,480 ~ 69 Lacs+","Rs 1,08,000 ~ 1 Lacs+"
+301,413,Mehar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=413,LAKSAR,IND,0,Literate,"Rs 65,02,000 ~ 65 Lacs+","Rs 3,20,000 ~ 3 Lacs+"
+302,727,Mobeen Ali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=727,SITARGANJ,IND,0,Literate,"Rs 17,11,500 ~ 17 Lacs+",Rs 0 ~
+303,574,Moh Mursleen Qureshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=574,B.H.E.L. RANIPUR,IND,4,Literate,Nil,Rs 0 ~
+304,26,Mohan Kala,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=26,SRINAGAR,UKD,17,Graduate Professional,"Rs 82,52,08,200 ~ 82 Crore+","Rs 1,60,06,998 ~ 1 Crore+"
+305,456,Mohan Kandpal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=456,KALADHUNGI,UKD,0,Post Graduate,"Rs 7,37,348 ~ 7 Lacs+","Rs 8,73,048 ~ 8 Lacs+"
+306,479,Mohan Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=479,JAGESHWAR,BJP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=479&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=479&col=lia
+307,537,Mohar Singh Kataria,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=537,DHARAMPUR,Rashtriya Adarsh Party,0,Graduate,"Rs 82,02,000 ~ 82 Lacs+",Rs 0 ~
+308,496,Mohd Aazam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=496,HARIDWAR,IND,0,5th Pass,"Rs 90,450 ~ 90 Thou+",Rs 0 ~
+309,566,Mohd Haarun,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=566,CHAMPAWAT,SP,0,Graduate,"Rs 16,000 ~ 16 Thou+",Rs 0 ~
+310,184,Mohd Yoonus Chaudhari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=184,JASPUR,AAP,0,Graduate Professional,"Rs 6,56,97,707 ~ 6 Crore+","Rs 5,59,00,312 ~ 5 Crore+"
+311,216,Mohd Yusuf,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=216,LAKSAR,AAP,0,Graduate Professional,"Rs 36,58,000 ~ 36 Lacs+","Rs 14,84,000 ~ 14 Lacs+"
+312,423,Mohd. Ajam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=423,KICHHA,AIMIM,0,Post Graduate,"Rs 81,68,841 ~ 81 Lacs+",Rs 0 ~
+313,564,Mohd. Salim,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=564,DEHRADUN CANTONMENT,Peace Party,0,Graduate,"Rs 1,00,000 ~ 1 Lacs+",Rs 0 ~
+314,381,Mohd.Ehasan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=381,RAIPUR,IND,0,8th Pass,"Rs 29,40,000 ~ 29 Lacs+",Rs 0 ~
+315,369,Mohit,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=369,RUDRAPRAYAG,SP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=369&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=369&col=lia
+316,259,Mohit Dimri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=259,RUDRAPRAYAG,UKD,0,Post Graduate,"Rs 2,08,441 ~ 2 Lacs+",Rs 0 ~
+317,728,Mohmmad Ali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=728,SITARGANJ,SP,0,8th Pass,"Rs 23,67,637 ~ 23 Lacs+","Rs 50,000 ~ 50 Thou+"
+318,380,Mohsin Khan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=380,RAMNAGAR,IND,1,Literate,"Rs 18,15,013 ~ 18 Lacs+",Rs 0 ~
+319,486,Mubarak,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=486,HARIDWAR RURAL,IND,0,Graduate Professional,"Rs 1,65,85,000 ~ 1 Crore+",Rs 0 ~
+320,492,Muhammad Yunus,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=492,HARIDWAR RURAL,BSP,0,10th Pass,"Rs 2,91,68,047 ~ 2 Crore+","Rs 78,07,710 ~ 78 Lacs+"
+321,638,Mukesh Kumar Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=638,KOTDWAR,UKD,0,10th Pass,"Rs 39,66,772 ~ 39 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+322,584,Mukesh Lal Koshwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=584,BADRINATH,BSP,0,Literate,"Rs 6,49,000 ~ 6 Lacs+",Rs 0 ~
+323,191,Mukesh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=191,KARANPRAYAG,INC,0,Graduate,"Rs 2,23,68,133 ~ 2 Crore+","Rs 1,50,000 ~ 1 Lacs+"
+324,400,Mukesh Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=400,NANAKMATTA (ST),IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=400&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=400&col=lia
+325,339,Mukund Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=339,BADRINATH,IND,0,Illiterate,"Rs 14,85,000 ~ 14 Lacs+","Rs 3,62,270 ~ 3 Lacs+"
+326,433,Munesh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=433,KHANPUR,Rashtrawadi Janlok Party (Satya),0,12th Pass,"Rs 2,35,65,411 ~ 2 Crore+","Rs 31,66,209 ~ 31 Lacs+"
+327,393,Munish Kumar Saini,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=393,PIRANKALIYAR,BJP,1,Graduate,"Rs 9,22,46,280 ~ 9 Crore+","Rs 43,08,620 ~ 43 Lacs+"
+328,285,Munna Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=285,VIKASNAGAR,BJP,0,Post Graduate,"Rs 6,03,21,457 ~ 6 Crore+","Rs 1,67,90,497 ~ 1 Crore+"
+329,212,Mursleen,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=212,LAKSAR,IND,0,10th Pass,"Rs 1,04,011 ~ 1 Lacs+",Rs 0 ~
+330,470,Nafees Azad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=470,JASPUR,Bharatiya Jan Jagriti Party,0,8th Pass,"Rs 7,891 ~ 7 Thou+",Rs 0 ~
+331,345,Naini Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=345,THARALI (SC),Uttarakhand Janekta Party,0,12th Pass,"Rs 14,04,935 ~ 14 Lacs+",Rs 0 ~
+332,718,Nand Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=718,RUDRAPUR,AAP,0,Post Graduate,"Rs 55,90,292 ~ 55 Lacs+","Rs 4,55,322 ~ 4 Lacs+"
+333,592,Nanda Kishor Semwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=592,DEHRADUN CANTONMENT,IND,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=592&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=592&col=lia
+334,696,Nandan Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=696,RANIKHET,AAP,0,Graduate,"Rs 2,08,86,340 ~ 2 Crore+",Rs 0 ~
+335,351,Narayan Pal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=351,SITARGANJ,BSP,0,Graduate,"Rs 24,49,41,220 ~ 24 Crore+","Rs 2,06,31,985 ~ 2 Crore+"
+336,555,Narayan Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=555,DHARCHULA,AAP,0,8th Pass,"Rs 55,03,000 ~ 55 Lacs+","Rs 1,53,000 ~ 1 Lacs+"
+337,480,Narayan Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=480,JAGESHWAR,Uttarakhand Parivartan Party,0,Graduate,"Rs 1,23,38,721 ~ 1 Crore+",Rs 0 ~
+338,752,Narayan Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=752,JAGESHWAR,BSP,0,5th Pass,"Rs 5,06,000 ~ 5 Lacs+",Rs 0 ~
+339,239,Narayan Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=239,PRATAPNAGAR,IND,0,Post Graduate,"Rs 9,10,000 ~ 9 Lacs+","Rs 1,43,000 ~ 1 Lacs+"
+340,199,Narendra Chand Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=199,KASHIPUR,INC,0,12th Pass,"Rs 12,06,22,680 ~ 12 Crore+","Rs 51,57,922 ~ 51 Lacs+"
+341,219,Narendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=219,LANSDOWNE,AAP,0,10th Pass,"Rs 19,15,086 ~ 19 Lacs+",Rs 0 ~
+342,650,Narendra Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=650,LANSDOWNE,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=650&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=650&col=lia
+343,688,Narendra Singh Varma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=688,RAIPUR,SP,0,10th Pass,"Rs 25,31,000 ~ 25 Lacs+","Rs 1,40,000 ~ 1 Lacs+"
+344,531,Naresh Chandra Bounthiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=531,DHARAMPUR,IND,0,Post Graduate,"Rs 1,23,47,144 ~ 1 Crore+",Rs 0 ~
+345,371,Naresh Kumar (Prince),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=371,ROORKEE,AAP,0,5th Pass,"Rs 1,69,94,220 ~ 1 Crore+","Rs 5,80,000 ~ 5 Lacs+"
+346,64,Naresh Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=64,HARIDWAR RURAL,AAP,0,Graduate,"Rs 1,43,54,997 ~ 1 Crore+","Rs 38,21,373 ~ 38 Lacs+"
+347,284,Nav Prabhat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=284,VIKASNAGAR,INC,0,Graduate Professional,"Rs 10,87,31,438 ~ 10 Crore+","Rs 1,96,92,217 ~ 1 Crore+"
+348,233,Naval Kishor,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=233,PAURI (SC),INC,0,12th Pass,"Rs 31,64,720 ~ 31 Lacs+","Rs 5,49,706 ~ 5 Lacs+"
+349,170,Naveen Chandra Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=170,DWARAHAT,IND,0,12th Pass,"Rs 1,30,000 ~ 1 Lacs+",Rs 0 ~
+350,410,Naveen Chandra Pant,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=410,LALKUAN,IND,0,10th Pass,"Rs 1,17,000 ~ 1 Lacs+",Rs 0 ~
+351,382,Navin Pirshali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=382,RAIPUR,AAP,2,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=382&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=382&col=lia
+352,78,Navneet Kumar (Guddu Bhaiya),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=78,MANGLORE,AAP,1,Graduate,"Rs 32,99,036 ~ 32 Lacs+","Rs 1,11,160 ~ 1 Lacs+"
+353,173,Navneet Uniyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=173,GANGOTRI,IND,0,Others,"Rs 8,77,000 ~ 8 Lacs+",Rs 0 ~
+354,270,Navtej Pal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=270,SITARGANJ,INC,2,Graduate,"Rs 4,63,77,629 ~ 4 Crore+","Rs 42,29,097 ~ 42 Lacs+"
+355,632,Neelu Choudhary,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=632,KHANPUR,IND,0,Graduate,"Rs 20,22,76,803 ~ 20 Crore+","Rs 94,73,534 ~ 94 Lacs+"
+356,652,Nisar Khan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=652,LOHAGHAT,SP,0,8th Pass,"Rs 1,500 ~ 1 Thou+","Rs 3,00,000 ~ 3 Lacs+"
+357,5,Nitin Markana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=5,PITHORAGARH,IND,0,Graduate,"Rs 49,20,050 ~ 49 Lacs+",Rs 0 ~
+358,373,Nitin Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=373,ROORKEE,IND,1,Graduate Professional,"Rs 1,38,82,744 ~ 1 Crore+","Rs 30,00,000 ~ 30 Lacs+"
+359,230,Om Gopal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=230,NARENDRANAGAR,INC,2,12th Pass,"Rs 11,25,097 ~ 11 Lacs+",Rs 0 ~
+360,581,Om Prakash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=581,BAGESHWAR (SC),BSP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=581&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=581&col=lia
+361,401,Om Prakash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=401,NAINITAL(SC),UKD,0,10th Pass,"Rs 81,70,872 ~ 81 Lacs+","Rs 7,78,470 ~ 7 Lacs+"
+362,107,Ompal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=107,B.H.E.L. RANIPUR,BSP,0,Post Graduate,"Rs 1,86,08,292 ~ 1 Crore+","Rs 13,00,000 ~ 13 Lacs+"
+363,672,Onkar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=672,PAURI (SC),Uttarakhand Janekta Party,0,12th Pass,"Rs 20,49,400 ~ 20 Lacs+","Rs 50,000 ~ 50 Thou+"
+364,47,Pankaj Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=47,B.H.E.L. RANIPUR,IND,0,Post Graduate,"Rs 3,89,895 ~ 3 Lacs+",Rs 0 ~
+365,488,Pankaj Kumar Saini,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=488,HARIDWAR RURAL,Aazad Samaj Party (Kanshi Ram),0,10th Pass,"Rs 1,07,49,592 ~ 1 Crore+","Rs 29,00,000 ~ 29 Lacs+"
+366,85,Pankaj Vyas,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=85,PRATAPNAGAR,IND,0,Graduate,"Rs 17,60,000 ~ 17 Lacs+",Rs 0 ~
+367,408,Pawan Kumar Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=408,LALKUAN,IND,0,10th Pass,"Rs 2,19,68,998 ~ 2 Crore+","Rs 2,39,00,000 ~ 2 Crore+"
+368,671,Poonam Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=671,PAURI (SC),UKD,0,Graduate,"Rs 1,12,000 ~ 1 Lacs+",Rs 0 ~
+369,23,Pradeep Batra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=23,ROORKEE,BJP,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=23&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=23&col=lia
+370,262,Pradeep Prasad Thapliyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=262,RUDRAPRAYAG,INC,0,Post Graduate,"Rs 2,91,48,597 ~ 2 Crore+","Rs 61,69,000 ~ 61 Lacs+"
+371,289,Pradeep Singh Pal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=289,DIDIHAT,INC,0,12th Pass,"Rs 1,54,03,316 ~ 1 Crore+","Rs 26,31,599 ~ 26 Lacs+"
+372,391,Prakash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=391,PUROLA (SC),AAP,0,10th Pass,"Rs 2,29,000 ~ 2 Lacs+",Rs 0 ~
+373,189,Prakash Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=189,KALADHUNGI,Uttarakhand Parivartan Party,0,Post Graduate,"Rs 7,33,500 ~ 7 Lacs+",Rs 0 ~
+374,316,Prakash Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=316,BHIMTAL,IND,0,Graduate,"Rs 6,61,000 ~ 6 Lacs+","Rs 6,00,000 ~ 6 Lacs+"
+375,519,Prakash Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=519,DWARAHAT,AAP,0,Post Graduate,"Rs 44,60,000 ~ 44 Lacs+","Rs 9,00,000 ~ 9 Lacs+"
+376,221,Prakash Singh Dhami,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=221,LOHAGHAT,IND,0,10th Pass,"Rs 12,04,000 ~ 12 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+377,138,Pramod Kumar Shukla,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=138,KICHHA,Nyaydharmsabha,0,Graduate Professional,"Rs 51,70,645 ~ 51 Lacs+","Rs 9,00,000 ~ 9 Lacs+"
+378,252,Pramod Nainwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=252,RANIKHET,BJP,0,Doctorate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=252&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=252&col=lia
+379,611,Prashant Kumar Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=611,HALDWANI,IND,1,10th Pass,"Rs 11,80,264 ~ 11 Lacs+","Rs 5,81,000 ~ 5 Lacs+"
+380,13,Prashant Rai,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=13,B.H.E.L. RANIPUR,AAP,0,12th Pass,"Rs 3,04,06,487 ~ 3 Crore+","Rs 95,00,000 ~ 95 Lacs+"
+381,594,Prateek Bahuguna,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=594,DOIWALA,Uttarakhand Parivartan Party,0,Graduate,"Rs 5,98,000 ~ 5 Lacs+",Rs 0 ~
+382,466,Pratibha,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=466,JHABRERA (SC),IND,0,8th Pass,"Rs 85,10,682 ~ 85 Lacs+","Rs 1,80,000 ~ 1 Lacs+"
+383,343,Praveen Bansal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=343,VIKASNAGAR,AAP,0,12th Pass,"Rs 90,66,200 ~ 90 Lacs+","Rs 9,30,110 ~ 9 Lacs+"
+384,311,Praveen Surya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=311,B.H.E.L. RANIPUR,Aazad Samaj Party (Kanshi Ram),0,Graduate Professional,"Rs 8,20,916 ~ 8 Lacs+",Rs 0 ~
+385,91,Prem Chand Aggarwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=91,RISHIKESH,BJP,0,Post Graduate,"Rs 5,03,88,527 ~ 5 Crore+",Rs 0 ~
+386,277,Prem Dutt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=277,TEHRI,Right to Recall Party,0,Graduate,"Rs 70,00,000 ~ 70 Lacs+","Rs 50,000 ~ 50 Thou+"
+387,403,Prem Kishan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=403,MUSSOORIE,AAP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=403&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=403&col=lia
+388,104,Prem Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=104,BHAGWANPUR(SC),AAP,0,Graduate,"Rs 84,86,655 ~ 84 Lacs+","Rs 21,00,000 ~ 21 Lacs+"
+389,228,Prem Singh Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=228,NANAKMATTA (ST),BJP,0,Doctorate,"Rs 1,43,02,075 ~ 1 Crore+","Rs 61,79,919 ~ 61 Lacs+"
+390,514,Premanand Mahajan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=514,GADARPUR,INC,0,12th Pass,"Rs 1,69,74,417 ~ 1 Crore+","Rs 26,06,000 ~ 26 Lacs+"
+391,320,Pritam Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=320,CHAKRATA (ST),INC,3,Graduate Professional,"Rs 10,84,96,303 ~ 10 Crore+","Rs 99,27,674 ~ 99 Lacs+"
+392,112,Pritam Singh Panwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=112,DHANOLTI,BJP,0,Graduate,"Rs 3,11,51,385 ~ 3 Crore+","Rs 6,15,091 ~ 6 Lacs+"
+393,645,Prithvipal Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=645,LALKUAN,BSP,0,Graduate Professional,"Rs 64,87,000 ~ 64 Lacs+","Rs 90,000 ~ 90 Thou+"
+394,241,Priti Dimri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=241,RAIPUR,Nyaydharmsabha,0,Post Graduate,"Rs 11,93,797 ~ 11 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+395,741,Priti Thapliyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=741,VIKASNAGAR,UKD,0,Graduate,"Rs 86,50,802 ~ 86 Lacs+",Rs 0 ~
+396,21,Puran Singh Fartyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=21,LOHAGHAT,BJP,0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=21&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=21&col=lia
+397,102,Pushkar Lal Baichhwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=102,BADRINATH,Peoples Party of India (Democratic),0,Post Graduate,"Rs 2,10,96,000 ~ 2 Crore+","Rs 49,00,000 ~ 49 Lacs+"
+398,205,Pushkar Singh Dhami,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=205,KHATIMA,BJP,0,Post Graduate,"Rs 3,34,50,708 ~ 3 Crore+","Rs 49,67,584 ~ 49 Lacs+"
+399,147,Pushpa Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=147,NARENDRANAGAR,AAP,1,Graduate,"Rs 42,12,500 ~ 42 Lacs+",Rs 0 ~
+400,522,Pushpesh Tripathi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=522,DWARAHAT,UKD,0,Post Graduate,"Rs 91,03,282 ~ 91 Lacs+",Rs 0 ~
+401,367,Pyar Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=367,RUDRAPRAYAG,AAP,0,Graduate Professional,"Rs 27,31,000 ~ 27 Lacs+","Rs 70,000 ~ 70 Thou+"
+402,405,Qazi Mohammad Nizamuddin,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=405,MANGLORE,INC,3,Graduate,"Rs 32,10,90,452 ~ 32 Crore+","Rs 60,02,000 ~ 60 Lacs+"
+403,657,Qazi Mohd Monis,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=657,MANGLORE,Aazad Samaj Party (Kanshi Ram),0,Graduate,"Rs 75,01,231 ~ 75 Lacs+","Rs 8,50,000 ~ 8 Lacs+"
+404,740,Raghuveer Singh Mehta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=740,VIKASNAGAR,SP,1,8th Pass,"Rs 17,35,000 ~ 17 Lacs+",Rs 0 ~
+405,350,Raghuvir,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=350,SITARGANJ,Bharatiya Subhash Sena,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=350&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=350&col=lia
+406,75,Rajaram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=75,KEDARNATH,CPI(M),0,Graduate,"Rs 48,18,584 ~ 48 Lacs+","Rs 1,02,855 ~ 1 Lacs+"
+407,312,Rajbir Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=312,B.H.E.L. RANIPUR,INC,0,12th Pass,"Rs 3,57,10,664 ~ 3 Crore+","Rs 47,02,540 ~ 47 Lacs+"
+408,377,Raje Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=377,RISHIKESH,AAP,0,Graduate Professional,"Rs 63,85,330 ~ 63 Lacs+","Rs 50,20,000 ~ 50 Lacs+"
+409,615,Rajendra Kumar Gupta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=615,HALDWANI,IND,2,8th Pass,"Rs 24,37,219 ~ 24 Lacs+",Rs 0 ~
+410,458,Rajendra Kumar Waliya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=458,KALADHUNGI,SP,0,5th Pass,"Rs 48,03,953 ~ 48 Lacs+",Rs 0 ~
+411,272,Rajendra Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=272,SOMESHWAR (SC),INC,0,10th Pass,"Rs 64,67,742 ~ 64 Lacs+","Rs 7,25,239 ~ 7 Lacs+"
+412,667,Rajendra Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=667,PAURI (SC),SP,0,Post Graduate,"Rs 2,85,000 ~ 2 Lacs+",Rs 0 ~
+413,534,Rajendra Prasad Gairola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=534,DHARAMPUR,IND,0,12th Pass,"Rs 1,20,000 ~ 1 Lacs+",Rs 0 ~
+414,453,Rajendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=453,KAPKOTE,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=453&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=453&col=lia
+415,171,Rajendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=171,DWARAHAT,IND,0,12th Pass,"Rs 13,66,185 ~ 13 Lacs+",Rs 0 ~
+416,43,Rajendra Singh Bhandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=43,BADRINATH,INC,0,Post Graduate,"Rs 98,08,768 ~ 98 Lacs+","Rs 10,00,000 ~ 10 Lacs+"
+417,207,Rajesh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=207,KHATIMA,Bharatiya Subhash Sena,0,8th Pass,"Rs 6,08,500 ~ 6 Lacs+",Rs 0 ~
+418,46,Rajesh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=46,BAJPUR (SC),BJP,1,Post Graduate,"Rs 61,80,857 ~ 61 Lacs+",Rs 0 ~
+419,211,Rajesh Shukla,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=211,KICHHA,BJP,0,Graduate,"Rs 28,36,35,978 ~ 28 Crore+","Rs 18,11,804 ~ 18 Lacs+"
+420,143,Rajesh Singh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=143,LOHAGHAT,AAP,0,12th Pass,"Rs 2,01,57,318 ~ 2 Crore+","Rs 59,11,969 ~ 59 Lacs+"
+421,435,Rajesh Walia,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=435,KHANPUR,IND,0,Graduate,"Rs 7,11,090 ~ 7 Lacs+",Rs 0 ~
+422,664,Rajkamal Sonkar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=664,NAINITAL(SC),BSP,0,5th Pass,"Rs 12,50,800 ~ 12 Lacs+",Rs 0 ~
+423,33,Rajkishore Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=33,DOIWALA,Uttarakhand Kranti Dal (Democratic),0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=33&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=33&col=lia
+424,245,Rajkumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=245,RAJPUR ROAD (SC),INC,0,12th Pass,"Rs 1,92,87,185 ~ 1 Crore+","Rs 25,24,274 ~ 25 Lacs+"
+425,81,Rajkumar Pori,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=81,PAURI (SC),BJP,0,Graduate,"Rs 25,24,958 ~ 25 Lacs+","Rs 11,22,780 ~ 11 Lacs+"
+426,715,Rajkumar Thukral,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=715,RUDRAPUR,IND,1,Post Graduate,"Rs 2,36,75,574 ~ 2 Crore+","Rs 41,29,257 ~ 41 Lacs+"
+427,186,Rajoo Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=186,JHABRERA (SC),AAP,0,8th Pass,"Rs 67,03,000 ~ 67 Lacs+",Rs 0 ~
+428,187,Rajpal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=187,JHABRERA (SC),BJP,1,8th Pass,"Rs 1,49,13,000 ~ 1 Crore+",Rs 0 ~
+429,34,Raju Maurya (Ketan),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=34,DOIWALA,AAP,0,Graduate,"Rs 1,12,60,798 ~ 1 Crore+","Rs 17,50,000 ~ 17 Lacs+"
+430,654,Rajveer Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=654,MANGLORE,IND,0,Graduate,"Rs 24,708 ~ 24 Thou+",Rs 0 ~
+431,243,Rakesh Barthwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=243,RAIPUR,Right to Recall Party,0,Post Graduate,"Rs 4,35,596 ~ 4 Lacs+",Rs 0 ~
+432,164,Rakesh Chandra Verma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=164,CHAMPAWAT,BSP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=164&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=164&col=lia
+433,247,Rakesh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=247,RAMNAGAR,UKD,1,Graduate,"Rs 82,46,000 ~ 82 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+434,355,Rakesh Nath,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=355,SALT,UKD,0,Graduate,"Rs 5,26,600 ~ 5 Lacs+",Rs 0 ~
+435,719,Ram Bachan Ram,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=719,SAHASPUR,Jai Maha Bharath Party,0,12th Pass,"Rs 3,02,62,897 ~ 3 Crore+","Rs 1,50,000 ~ 1 Lacs+"
+436,18,Ram Naresh Dohare,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=18,KICHHA,Peoples Party of India (Democratic),0,Post Graduate,"Rs 1,70,41,278 ~ 1 Crore+","Rs 8,46,471 ~ 8 Lacs+"
+437,384,Ram Pal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=384,RAIPUR,Peoples Party of India (Democratic),0,Post Graduate,"Rs 2,98,74,033 ~ 2 Crore+","Rs 20,00,000 ~ 20 Lacs+"
+438,684,Ram Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=684,PUROLA (SC),Rashtriya Lokneeti Party,0,Graduate,"Rs 35,000 ~ 35 Thou+",Rs 0 ~
+439,48,Ram Sharan Nautiyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=48,CHAKRATA (ST),BJP,0,Post Graduate,"Rs 19,17,30,690 ~ 19 Crore+","Rs 1,08,78,398 ~ 1 Crore+"
+440,647,Ram Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=647,LALKUAN,RPI(A),0,Literate,"Rs 12,47,100 ~ 12 Lacs+",Rs 0 ~
+441,314,Ram Singh Kaira,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=314,BHIMTAL,BJP,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=314&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=314&col=lia
+442,569,Ramanand Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=569,CHAKRATA (ST),UKD,0,10th Pass,"Rs 12,20,000 ~ 12 Lacs+","Rs 50,000 ~ 50 Thou+"
+443,106,Ramesh Chand Dhiman,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=106,B.H.E.L. RANIPUR,CPI(M),0,10th Pass,"Rs 1,46,11,139 ~ 1 Crore+",Rs 0 ~
+444,161,Ramesh Chand Ramola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=161,YAMUNOTRI,UKD,0,Post Graduate,"Rs 1,24,43,921 ~ 1 Crore+","Rs 9,72,073 ~ 9 Lacs+"
+445,669,Ramesh Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=669,PAURI (SC),BSP,0,8th Pass,"Rs 20,40,500 ~ 20 Lacs+",Rs 0 ~
+446,220,Ramesh Chandra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=220,LANSDOWNE,Uttarakhand Raksha Morcha,0,10th Pass,"Rs 33,58,000 ~ 33 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+447,481,Ramesh Sanwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=481,JAGESHWAR,SP,0,Graduate,"Rs 5,00,000 ~ 5 Lacs+","Rs 11,21,032 ~ 11 Lacs+"
+448,432,Ramesh Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=432,KHATIMA,BSP,1,12th Pass,"Rs 93,62,500 ~ 93 Lacs+","Rs 34,00,000 ~ 34 Lacs+"
+449,553,Ramesh Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=553,DHARCHULA,UKD,0,Graduate,"Rs 44,63,000 ~ 44 Lacs+","Rs 5,00,000 ~ 5 Lacs+"
+450,692,Ramu Rajoria,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=692,RAJPUR ROAD (SC),Aazad Samaj Party (Kanshi Ram),0,10th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=692&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=692&col=lia
+451,231,Ranbeer Singh Aswal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=231,NARENDRANAGAR,Uttarakhand Janata Party,0,Graduate,"Rs 32,74,000 ~ 32 Lacs+","Rs 80,000 ~ 80 Thou+"
+452,336,Ranjeet Das,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=336,BAGESHWAR (SC),INC,0,Graduate,"Rs 53,82,700 ~ 53 Lacs+",Rs 0 ~
+453,724,Ranjeet Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=724,SALT,INC,1,10th Pass,"Rs 3,99,49,380 ~ 3 Crore+","Rs 1,12,31,537 ~ 1 Crore+"
+454,193,Ranjna Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=193,KARANPRAYAG,Nyaydharmsabha,0,Graduate,"Rs 31,85,000 ~ 31 Lacs+",Rs 0 ~
+455,614,Ravi Valmiki,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=614,HALDWANI,Uttarakhand Kranti Dal(P),0,8th Pass,"Rs 11,17,530 ~ 11 Lacs+",Rs 0 ~
+456,53,Ravinder Singh Anand,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=53,DEHRADUN CANTONMENT,AAP,1,12th Pass,"Rs 1,71,32,200 ~ 1 Crore+","Rs 8,79,564 ~ 8 Lacs+"
+457,188,Ravindra Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=188,JWALAPUR (SC),Nyaydharmsabha,0,Graduate,"Rs 82,96,500 ~ 82 Lacs+","Rs 5,22,000 ~ 5 Lacs+"
+458,437,Ravindra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=437,KHANPUR,BSP,0,8th Pass,"Rs 25,36,75,315 ~ 25 Crore+",Rs 0 ~
+459,414,Reenu Kashyap,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=414,LAKSAR,IND,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=414&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=414&col=lia
+460,511,Rekha,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=511,GANGOLIHAT (SC),BSP,0,10th Pass,"Rs 3,10,000 ~ 3 Lacs+",Rs 0 ~
+461,273,Rekha Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=273,SOMESHWAR (SC),BJP,0,Post Graduate,"Rs 25,20,18,003 ~ 25 Crore+","Rs 82,81,104 ~ 82 Lacs+"
+462,491,Rekha Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=491,HARIDWAR RURAL,Rashtrawadi Janlok Party (Satya),0,8th Pass,"Rs 50,36,000 ~ 50 Lacs+","Rs 12,20,000 ~ 12 Lacs+"
+463,441,Rekha Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=441,KEDARNATH,IND,0,10th Pass,"Rs 58,20,000 ~ 58 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+464,159,Renu Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=159,YAMKESHWAR,BJP,0,12th Pass,"Rs 72,40,000 ~ 72 Lacs+",Rs 0 ~
+465,637,Ritu Khanduri Bhushan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=637,KOTDWAR,BJP,0,Graduate,"Rs 7,26,28,356 ~ 7 Crore+",Rs 0 ~
+466,634,Riyaz Ahmed,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=634,KICHHA,IND,0,5th Pass,"Rs 71,00,000 ~ 71 Lacs+","Rs 1,00,000 ~ 1 Lacs+"
+467,4,Rohit Dandriyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=4,KOTDWAR,Uttarakhand Kranti Dal (Democratic),0,Graduate Professional,"Rs 23,89,264 ~ 23 Lacs+",Rs 0 ~
+468,710,Rohit Tyagi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=710,ROORKEE,SP,0,Literate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=710&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=710&col=lia
+469,66,Rupesh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=66,HARIDWAR RURAL,Nyaydharmsabha,0,Post Graduate,"Rs 35,56,334 ~ 35 Lacs+",Rs 0 ~
+470,622,S.P.Singh Engineer,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=622,JWALAPUR (SC),Aazad Samaj Party (Kanshi Ram),0,Graduate Professional,"Rs 5,43,25,031 ~ 5 Crore+","Rs 2,29,323 ~ 2 Lacs+"
+471,329,Sachin Chhetri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=329,DEHRADUN CANTONMENT,IND,0,Graduate,"Rs 25,50,000 ~ 25 Lacs+",Rs 0 ~
+472,151,Sadab Alam,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=151,PIRANKALIYAR,AAP,0,Post Graduate,"Rs 93,35,174 ~ 93 Lacs+",Rs 0 ~
+473,238,Sagar Singh Bhandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=238,PRATAPNAGAR,AAP,3,Others,"Rs 15,500 ~ 15 Thou+",Rs 0 ~
+474,264,Sahdev Singh Pundir,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=264,SAHASPUR,BJP,0,Graduate,"Rs 3,32,17,876 ~ 3 Crore+","Rs 26,83,500 ~ 26 Lacs+"
+475,489,Sajid Ali,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=489,HARIDWAR RURAL,SP,0,8th Pass,"Rs 62,33,356 ~ 62 Lacs+","Rs 1,20,000 ~ 1 Lacs+"
+476,662,Sakuntla Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=662,MUSSOORIE,UKD,0,10th Pass,"Rs 7,000 ~ 7 Thou+",Rs 0 ~
+477,472,Saleem Ahmad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=472,JASPUR,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=472&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=472&col=lia
+478,36,Samit Tikkoo,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=36,HALDWANI,AAP,1,Post Graduate,"Rs 21,82,55,912 ~ 21 Crore+","Rs 49,10,834 ~ 49 Lacs+"
+479,620,Sanatan Sonker,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=620,JWALAPUR (SC),SP,0,Graduate,"Rs 3,81,95,046 ~ 3 Crore+","Rs 51,45,000 ~ 51 Lacs+"
+480,375,Sandeep Basnet,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=375,RISHIKESH,IND,0,Graduate Professional,"Rs 5,35,000 ~ 5 Lacs+",Rs 0 ~
+481,742,Sandeep Duby,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=742,VIKASNAGAR,IND,5,12th Pass,"Rs 41,000 ~ 41 Thou+",Rs 0 ~
+482,731,Sandeep Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=731,SRINAGAR,SUCI(C),0,Post Graduate,"Rs 1,000 ~ 1 Thou+",Rs 0 ~
+483,28,Sandesh Sharma,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=28,B.H.E.L. RANIPUR,Nyaydharmsabha,0,Post Graduate,"Rs 21,30,037 ~ 21 Lacs+",Rs 0 ~
+484,646,Sandhya Dalakoti,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=646,LALKUAN,IND,0,Post Graduate,"Rs 3,94,57,785 ~ 3 Crore+","Rs 1,27,21,212 ~ 1 Crore+"
+485,288,Sanjay Dobhal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=288,YAMUNOTRI,IND,1,12th Pass,"Rs 47,67,228 ~ 47 Lacs+","Rs 70,000 ~ 70 Thou+"
+486,474,Sanjay Dutt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=474,JASPUR,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=474&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=474&col=lia
+487,213,Sanjay Gupta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=213,LAKSAR,BJP,0,Graduate,"Rs 6,72,11,405 ~ 6 Crore+",Rs 0 ~
+488,108,Sanjay Kumar Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=108,BHIMTAL,AAP,0,Post Graduate,"Rs 9,24,700 ~ 9 Lacs+",Rs 0 ~
+489,378,Sanjay Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=378,RAMNAGAR,IND,1,Post Graduate,"Rs 24,45,000 ~ 24 Lacs+","Rs 8,54,639 ~ 8 Lacs+"
+490,498,Sanjay Saini,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=498,HARIDWAR,AAP,0,12th Pass,"Rs 15,76,11,839 ~ 15 Crore+","Rs 2,50,69,680 ~ 2 Crore+"
+491,256,Sanjay Srivastava,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=256,RISHIKESH,Nyaydharmsabha,0,Post Graduate,"Rs 98,10,484 ~ 98 Lacs+","Rs 38,800 ~ 38 Thou+"
+492,146,Sanjeev Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=146,NAINITAL(SC),INC,1,Post Graduate,"Rs 8,52,41,688 ~ 8 Crore+",Rs 0 ~
+493,605,Santosh Dixit,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=605,DOIWALA,IND,0,8th Pass,"Rs 2,20,000 ~ 2 Lacs+",Rs 0 ~
+494,547,Sardar Harkishan Singh Bawa,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=547,DHARAMPUR,IND,0,Graduate,"Rs 59,47,000 ~ 59 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+495,544,Sardar Khan Pappu,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=544,DHARAMPUR,RLD,0,8th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=544&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=544&col=lia
+496,148,Sardar Singh Pundir,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=148,NARENDRANAGAR,UKD,1,Post Graduate,"Rs 8,96,000 ~ 8 Lacs+",Rs 0 ~
+497,495,Sarita Agarwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=495,HARIDWAR,SP,0,Graduate,"Rs 66,23,736 ~ 66 Lacs+","Rs 13,50,000 ~ 13 Lacs+"
+498,225,Sarita Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=225,NAINITAL(SC),BJP,0,10th Pass,"Rs 55,47,086 ~ 55 Lacs+",Rs 0 ~
+499,244,Sarmista Praliyan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=244,RAIPUR,BSP,0,Graduate,"Rs 62,10,000 ~ 62 Lacs+","Rs 14,85,810 ~ 14 Lacs+"
+500,77,Sarwat Kareem Ansari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=77,MANGLORE,BSP,2,8th Pass,"Rs 14,95,35,470 ~ 14 Crore+",Rs 0 ~
+501,640,Satish Chandra,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=640,KOTDWAR,Bahujan Mukti Party,0,Graduate,"Rs 25,38,062 ~ 25 Lacs+",Rs 0 ~
+502,656,Satish Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=656,MANGLORE,IND,0,12th Pass,"Rs 45,95,000 ~ 45 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+503,178,Satpal Brahmachari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=178,HARIDWAR,INC,0,Graduate,"Rs 47,71,371 ~ 47 Lacs+",Rs 0 ~
+504,165,Satpal Maharaj,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=165,CHAUBATTAKHAL,BJP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=165&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=165&col=lia
+505,362,Satpal Singh Thukral,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=362,RUDRAPUR,SP,0,8th Pass,"Rs 27,21,294 ~ 27 Lacs+",Rs 0 ~
+506,310,Satyapal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=310,BHAGWANPUR(SC),BJP,0,Post Graduate,"Rs 76,47,942 ~ 76 Lacs+",Rs 0 ~
+507,267,Saurabh Bahuguna,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=267,SITARGANJ,BJP,0,Graduate Professional,"Rs 7,85,95,219 ~ 7 Crore+","Rs 12,54,820 ~ 12 Lacs+"
+508,6,Savita Kapoor,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=6,DEHRADUN CANTONMENT,BJP,0,12th Pass,"Rs 1,26,18,314 ~ 1 Crore+","Rs 39,34,000 ~ 39 Lacs+"
+509,203,Sawinderjeet Singh Kaler,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=203,KHATIMA,AAP,4,10th Pass,"Rs 21,80,93,869 ~ 21 Crore+","Rs 1,64,04,801 ~ 1 Crore+"
+510,676,Shahban,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=676,PIRANKALIYAR,SP,0,8th Pass,"Rs 5,21,422 ~ 5 Lacs+",Rs 0 ~
+511,515,Shaheroom,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=515,GADARPUR,SP,1,10th Pass,"Rs 20,46,000 ~ 20 Lacs+",Rs 0 ~
+512,755,Shahid Raza,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=755,RAIPUR,IND,0,Graduate Professional,"Rs 7,47,428 ~ 7 Lacs+",Rs 0 ~
+513,153,Shahjahan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=153,PIRANKALIYAR,IND,0,Literate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=153&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=153&col=lia
+514,11,Shahzad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=11,LAKSAR,BSP,0,Literate,"Rs 4,35,88,239 ~ 4 Crore+",Rs 0 ~
+515,442,Shaila Rani Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=442,KEDARNATH,BJP,0,Post Graduate,"Rs 3,08,43,470 ~ 3 Crore+",Rs 0 ~
+516,585,Shailendra Prakash Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=585,BADRINATH,IND,0,Graduate,"Rs 26,96,000 ~ 26 Lacs+",Rs 0 ~
+517,342,Shailendra Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=342,YAMKESHWAR,INC,0,12th Pass,"Rs 3,68,47,000 ~ 3 Crore+","Rs 54,00,000 ~ 54 Lacs+"
+518,16,Shakti Lal Shah,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=16,GHANSHALI (SC),BJP,0,12th Pass,"Rs 31,93,000 ~ 31 Lacs+","Rs 2,00,000 ~ 2 Lacs+"
+519,469,Shalabh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=469,JHABRERA (SC),RLD,0,Post Graduate,"Rs 2,00,000 ~ 2 Lacs+",Rs 0 ~
+520,444,Shameem Jahan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=444,KASHIPUR,RLD,0,5th Pass,"Rs 3,05,400 ~ 3 Lacs+",Rs 0 ~
+521,136,Shamem,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=136,KHANPUR,Aazad Samaj Party (Kanshi Ram),0,8th Pass,"Rs 2,98,10,650 ~ 2 Crore+","Rs 8,45,000 ~ 8 Lacs+"
+522,158,Shanti Prasad Bhatt,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=158,YAMKESHWAR,UKD,2,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=158&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=158&col=lia
+523,653,Sharad Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=653,MANGLORE,SP,0,Post Graduate,"Rs 78,46,000 ~ 78 Lacs+",Rs 0 ~
+524,82,Sheela Rai,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=82,PIRANKALIYAR,Nyaydharmsabha,0,Graduate Professional,"Rs 29,084 ~ 29 Thou+",Rs 0 ~
+525,166,Shekhar Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=166,CHAUBATTAKHAL,Uttarakhand Raksha Morcha,0,10th Pass,"Rs 68,50,000 ~ 68 Lacs+","Rs 12,00,000 ~ 12 Lacs+"
+526,308,Sher Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=308,BHAGWANPUR(SC),IND,0,10th Pass,"Rs 49,29,618 ~ 49 Lacs+",Rs 0 ~
+527,463,Shishpal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=463,JWALAPUR (SC),BSP,0,Post Graduate,"Rs 2,32,67,000 ~ 2 Crore+","Rs 31,00,000 ~ 31 Lacs+"
+528,87,Shishupal Singh Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=87,RAMNAGAR,AAP,1,12th Pass,"Rs 1,91,38,644 ~ 1 Crore+","Rs 45,12,827 ~ 45 Lacs+"
+529,717,Shiv Arora,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=717,RUDRAPUR,BJP,1,Graduate,"Rs 10,89,92,600 ~ 10 Crore+","Rs 48,38,013 ~ 48 Lacs+"
+530,523,Shiv Prasad Semwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=523,DOIWALA,UKD,8,Graduate,"Rs 78,27,480 ~ 78 Lacs+","Rs 37,54,473 ~ 37 Lacs+"
+531,62,Shoeb Ahmed,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=62,HALDWANI,SP,2,Literate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=62&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=62&col=lia
+532,60,Shoorveer Lal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=60,GHANSHALI (SC),IND,0,Post Graduate,"Rs 40,56,963 ~ 40 Lacs+","Rs 7,40,000 ~ 7 Lacs+"
+533,707,Shreshthata,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=707,ROORKEE,IND,1,Literate,"Rs 6,22,01,774 ~ 6 Crore+",Rs 0 ~
+534,374,Shri Mohan Singh Aswal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=374,RISHIKESH,UKD,0,10th Pass,"Rs 1,13,04,000 ~ 1 Crore+",Rs 0 ~
+535,251,Shweta Mashiwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=251,RAMNAGAR,IND,0,Graduate,"Rs 55,95,102 ~ 55 Lacs+",Rs 0 ~
+536,629,Shyam Lal Chandraval,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=629,KEDARNATH,BSP,0,Post Graduate,"Rs 79,62,500 ~ 79 Lacs+","Rs 15,00,000 ~ 15 Lacs+"
+537,365,Soni Srivastav,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=365,RUDRAPUR,Nyaydharmsabha,0,12th Pass,"Rs 48,54,000 ~ 48 Lacs+","Rs 7,10,000 ~ 7 Lacs+"
+538,734,Subhash Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=734,SRINAGAR,SP,0,10th Pass,"Rs 6,14,500 ~ 6 Lacs+",Rs 0 ~
+539,438,Subhash Singh Choudhary,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=438,KHANPUR,INC,8,10th Pass,"Rs 20,22,76,803 ~ 20 Crore+","Rs 94,73,534 ~ 94 Lacs+"
+540,307,Subodh Rakesh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=307,BHAGWANPUR(SC),BSP,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=307&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=307&col=lia
+541,232,Subodh Uniyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=232,NARENDRANAGAR,BJP,0,Post Graduate,"Rs 1,61,96,232 ~ 1 Crore+","Rs 1,03,00,000 ~ 1 Crore+"
+542,93,Sudhir Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=93,RUDRAPRAYAG,IND,0,Post Graduate,"Rs 60,46,000 ~ 60 Lacs+","Rs 14,00,000 ~ 14 Lacs+"
+543,261,Sudhir Rauthan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=261,RUDRAPRAYAG,CPI,0,Graduate Professional,"Rs 15,29,500 ~ 15 Lacs+","Rs 1,85,000 ~ 1 Lacs+"
+544,465,Sulochana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=465,JHABRERA (SC),IND,0,8th Pass,"Rs 1,49,96,000 ~ 1 Crore+","Rs 11,05,000 ~ 11 Lacs+"
+545,686,Suman Karanwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=686,RAIPUR,Rashtriya Samaj Dal (R),0,Post Graduate,"Rs 3,93,65,000 ~ 3 Crore+",Rs 0 ~
+546,627,Suman Lata,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=627,KALADHUNGI,IND,0,12th Pass,"Rs 1,31,910 ~ 1 Lacs+","Rs 39,012 ~ 39 Thou+"
+547,201,Sumant,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=201,KEDARNATH,AAP,0,Graduate,"Rs 92,81,000 ~ 92 Lacs+","Rs 23,60,000 ~ 23 Lacs+"
+548,501,Sumit Hridayesh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=501,HALDWANI,INC,6,Graduate,"Rs 10,84,97,086 ~ 10 Crore+","Rs 26,47,583 ~ 26 Lacs+"
+549,689,Sundar Singh Rawat (Aazad),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=689,RAIPUR,Rashtrawadi Janlok Party (Satya),0,Doctorate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=689&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=689&col=lia
+550,754,Sundarlal Thapliyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=754,DHARAMPUR,IND,0,Graduate,"Rs 1,85,371 ~ 1 Lacs+",Rs 0 ~
+551,462,Sunder Lal Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=462,KALADHUNGI,BSP,2,12th Pass,"Rs 1,26,56,250 ~ 1 Crore+","Rs 6,00,000 ~ 6 Lacs+"
+552,302,Sunil,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=302,BADRINATH,IND,0,Graduate,"Rs 12,40,000 ~ 12 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+553,418,Sunil Bahukhandi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=418,KOTDWAR,IND,0,Graduate,"Rs 46,11,450 ~ 46 Lacs+",Rs 0 ~
+554,68,Sunil Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=68,JHABRERA (SC),IND,0,Graduate,"Rs 7,69,497 ~ 7 Lacs+",Rs 0 ~
+555,700,Sunita Rikhari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=700,RANIKHET,SP,0,Graduate Professional,"Rs 40,000 ~ 40 Thou+",Rs 0 ~
+556,340,Sunita Tamta,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=340,BAJPUR (SC),AAP,0,Graduate,"Rs 18,13,262 ~ 18 Lacs+","Rs 40,00,000 ~ 40 Lacs+"
+557,628,Suraj Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=628,KEDARNATH,IND,0,Others,"Rs 8,83,000 ~ 8 Lacs+",Rs 0 ~
+558,266,Surendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=266,SALT,IND,0,Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=266&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=266&col=lia
+559,366,Surendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=366,RUDRAPUR,IND,0,Graduate,"Rs 58,366 ~ 58 Thou+",Rs 0 ~
+560,152,Surendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=152,PIRANKALIYAR,BSP,1,12th Pass,"Rs 5,98,20,673 ~ 5 Crore+","Rs 63,65,257 ~ 63 Lacs+"
+561,208,Surendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=208,KICHHA,Bhartiya Shakti Chetna Party,0,10th Pass,"Rs 1,57,605 ~ 1 Lacs+",Rs 0 ~
+562,290,Surendra Singh Gurung,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=290,DIDIHAT,SP,1,10th Pass,"Rs 1,07,07,000 ~ 1 Crore+",Rs 0 ~
+563,76,Surendra Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=76,KOTDWAR,INC,0,Graduate,"Rs 4,20,32,960 ~ 4 Crore+",Rs 0 ~
+564,352,Suresh Bisht,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=352,SALT,AAP,0,Graduate,"Rs 5,39,23,255 ~ 5 Crore+",Rs 0 ~
+565,572,Suresh Chander Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=572,BHIMTAL,IND,0,Post Graduate,"Rs 94,176 ~ 94 Thou+","Rs 8,21,123 ~ 8 Lacs+"
+566,128,Suresh Gariya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=128,KAPKOTE,BJP,0,Graduate Professional,"Rs 1,99,37,901 ~ 1 Crore+","Rs 12,75,000 ~ 12 Lacs+"
+567,126,Suresh Rathore,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=126,JWALAPUR (SC),BJP,1,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=126&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=126&col=lia
+568,122,Suresh Singh Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=122,GANGOTRI,BJP,0,12th Pass,"Rs 11,50,000 ~ 11 Lacs+",Rs 0 ~
+569,70,Sureshi Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=70,KARANPRAYAG,Peoples Party of India (Democratic),0,10th Pass,"Rs 21,05,000 ~ 21 Lacs+",Rs 0 ~
+570,561,Suryakant Dhasmana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=561,DEHRADUN CANTONMENT,INC,1,Post Graduate,"Rs 3,81,10,454 ~ 3 Crore+",Rs 0 ~
+571,99,Swaraj Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=99,VIKASNAGAR,IND,0,Post Graduate,"Rs 2,22,84,400 ~ 2 Crore+","Rs 15,00,000 ~ 15 Lacs+"
+572,709,Tanveer Ahamad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=709,ROORKEE,BSP,0,10th Pass,"Rs 1,57,66,398 ~ 1 Crore+","Rs 20,00,000 ~ 20 Lacs+"
+573,482,Taradatt Pandey,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=482,JAGESHWAR,AAP,0,Graduate Professional,"Rs 10,05,000 ~ 10 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+574,449,Teeka Prasad Maikhuri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=449,KARANPRAYAG,IND,0,Post Graduate,"Rs 1,02,02,000 ~ 1 Crore+","Rs 13,00,000 ~ 13 Lacs+"
+575,209,Tilak Raj Behar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=209,KICHHA,INC,1,10th Pass,"Rs 6,88,71,466 ~ 6 Crore+",Rs 0 ~
+576,117,Tribirendra Singh Rawat (Trivendra),https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=117,DOIWALA,IND,0,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=117&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=117&col=lia
+577,198,Trilok Singh Cheema,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=198,KASHIPUR,BJP,0,Graduate,"Rs 44,15,46,441 ~ 44 Crore+","Rs 9,20,57,899 ~ 9 Crore+"
+578,278,Trilok Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=278,TEHRI,AAP,0,Post Graduate,"Rs 71,51,661 ~ 71 Lacs+",Rs 0 ~
+579,699,Tula Singh Tariyal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=699,RANIKHET,UKD,0,Not Given,"Rs 1,16,01,980 ~ 1 Crore+",Rs 0 ~
+580,425,Ubaid Ullah Khan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=425,KICHHA,BSP,0,Graduate,"Rs 1,10,00,000 ~ 1 Crore+",Rs 0 ~
+581,406,Ubedur Rehaman,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=406,MANGLORE,IND,0,Post Graduate,"Rs 37,71,859 ~ 37 Lacs+",Rs 0 ~
+582,387,Ujali Devi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=387,PUROLA (SC),BSP,0,8th Pass,"Rs 3,08,000 ~ 3 Lacs+",Rs 0 ~
+583,610,Umesh Chandra Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=610,HALDWANI,IND,0,Post Graduate,"Rs 90,000 ~ 90 Thou+",Rs 0 ~
+584,195,Umesh Khanduri,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=195,KARANPRAYAG,UKD,0,Graduate,"Rs 2,24,804 ~ 2 Lacs+",Rs 0 ~
+585,757,Umesh Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=757,KHANPUR,IND,14,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=757&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=757&col=lia
+586,8,Umesh Sharma Kau,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=8,RAIPUR,BJP,0,Graduate,"Rs 7,40,97,767 ~ 7 Crore+","Rs 18,22,927 ~ 18 Lacs+"
+587,180,Upender Singh Malik,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=180,HARIDWAR RURAL,UKD,0,Graduate,"Rs 85,45,000 ~ 85 Lacs+","Rs 17,00,000 ~ 17 Lacs+"
+588,276,Urmila,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=276,TEHRI,UKD,0,Others,"Rs 59,01,000 ~ 59 Lacs+","Rs 8,00,000 ~ 8 Lacs+"
+589,556,Usha Panwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=556,DHANOLTI,UKD,0,Post Graduate,"Rs 5,19,94,126 ~ 5 Crore+",Rs 0 ~
+590,257,Usha Rawat,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=257,RISHIKESH,IND,0,Graduate,"Rs 74,00,000 ~ 74 Lacs+",Rs 0 ~
+591,332,Uttam Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=332,DEVPRAYAG,AAP,2,Doctorate,"Rs 1,89,50,100 ~ 1 Crore+","Rs 47,00,000 ~ 47 Lacs+"
+592,706,Vaidya Tek Vallabh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=706,ROORKEE,IND,0,Graduate,"Rs 3,24,61,000 ~ 3 Crore+","Rs 2,50,000 ~ 2 Lacs+"
+593,286,Veerendra Prasad,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=286,YAMKESHWAR,SP,0,8th Pass,"Rs 6,49,000 ~ 6 Lacs+",Rs 0 ~
+594,506,Vijay Bahuguna,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=506,GANGOTRI,SP,0,Graduate Professional,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=506&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=506&col=lia
+595,86,Vijay Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=86,RAJPUR ROAD (SC),Rashtriya Uttarakhand Party,0,Graduate,"Rs 36,41,200 ~ 36 Lacs+","Rs 40,899 ~ 40 Thou+"
+596,206,Vijay Pal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=206,KHATIMA,SP,0,8th Pass,"Rs 7,60,000 ~ 7 Lacs+",Rs 0 ~
+597,580,Vijay Pal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=580,BAJPUR (SC),BSP,1,12th Pass,"Rs 2,56,33,966 ~ 2 Crore+",Rs 0 ~
+598,503,Vijay Prakash,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=503,GHANSHALI (SC),AAP,0,8th Pass,"Rs 1,75,000 ~ 1 Lacs+",Rs 0 ~
+599,735,Vijay Semwal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=735,TEHRI,IND,0,Post Graduate,"Rs 15,10,000 ~ 15 Lacs+",Rs 0 ~
+600,84,Vijay Singh Panwar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=84,PRATAPNAGAR,BJP,0,Post Graduate,"Rs 3,96,65,400 ~ 3 Crore+",Rs 0 ~
+601,666,Vijay Singh Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=666,NANAKMATTA (ST),BSP,0,Post Graduate,"Rs 1,09,764 ~ 1 Lacs+",Rs 0 ~
+602,12,Vijaypal Singh Sajwan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=12,GANGOTRI,INC,1,Post Graduate,"Rs 3,14,79,511 ~ 3 Crore+","Rs 3,70,644 ~ 3 Lacs+"
+603,658,Vijendra Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=658,MANGLORE,RLD,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=658&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=658&col=lia
+604,635,Vikas Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=635,KOTDWAR,BSP,0,Graduate,"Rs 29,16,900 ~ 29 Lacs+",Rs 0 ~
+605,571,Vikram Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=571,BHIMTAL,SP,0,Graduate Professional,"Rs 15,37,500 ~ 15 Lacs+",Rs 0 ~
+606,237,Vikram Singh Negi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=237,PRATAPNAGAR,INC,0,Post Graduate,"Rs 2,36,97,600 ~ 2 Crore+","Rs 3,84,50,000 ~ 3 Crore+"
+607,296,Vinay Kirola,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=296,ALMORA,IND,0,Graduate Professional,"Rs 80,16,000 ~ 80 Lacs+","Rs 8,42,497 ~ 8 Lacs+"
+608,588,Vinod Aswal,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=588,DEHRADUN CANTONMENT,Rashtriya Uttarakhand Party,0,Literate,"Rs 2,98,876 ~ 2 Lacs+","Rs 3,00,000 ~ 3 Lacs+"
+609,532,Vinod Chamoli,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=532,DHARAMPUR,BJP,0,Graduate,"Rs 3,00,61,221 ~ 3 Crore+","Rs 16,19,438 ~ 16 Lacs+"
+610,297,Vinod Chandra Tiwari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=297,ALMORA,IND,0,Post Graduate,"Rs 14,69,000 ~ 14 Lacs+",Rs 0 ~
+611,44,Vinod Joshi,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=44,BADRINATH,CPI,0,Graduate,"Rs 2,66,96,000 ~ 2 Crore+","Rs 34,00,000 ~ 34 Lacs+"
+612,30,Vinod Kandari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=30,DEVPRAYAG,BJP,0,Post Graduate,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=30&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=30&col=lia
+613,600,Vinod Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=600,DOIWALA,BSP,0,10th Pass,"Rs 20,000 ~ 20 Thou+",Rs 0 ~
+614,287,Vipin,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=287,YAMUNOTRI,Satya Bahumat Party,0,Graduate Professional,"Rs 1,28,399 ~ 1 Lacs+",Rs 0 ~
+615,236,Virendera Vir Vikram Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=236,PITHORAGARH,SP,0,8th Pass,"Rs 8,23,278 ~ 8 Lacs+","Rs 24,000 ~ 24 Thou+"
+616,141,Virenderpuri Maharaj,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=141,LALKUAN,IND,0,Literate,"Rs 6,01,33,700 ~ 6 Crore+",Rs 0 ~
+617,464,Virendra Kumar,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=464,JHABRERA (SC),INC,0,Graduate,"Rs 85,10,682 ~ 85 Lacs+","Rs 1,80,000 ~ 1 Lacs+"
+618,746,Vishal Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=746,YAMUNOTRI,Rashtriya Uttarakhand Party,0,8th Pass,"Rs 1,14,500 ~ 1 Lacs+",Rs 0 ~
+619,169,Vishan Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=169,DIDIHAT,BJP,2,Post Graduate,"Rs 2,62,68,231 ~ 2 Crore+","Rs 91,197 ~ 91 Thou+"
+620,103,Yashpal Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=103,BAJPUR (SC),INC,1,Graduate,"Rs 10,97,64,115 ~ 10 Crore+",Rs 0 ~
+621,139,Yashpal Arya,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=139,LALKUAN,IND,1,12th Pass,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=139&col=ta,https://myneta.info/image_v2.php?myneta_folder=uttarakhand2022&candidate_id=139&col=lia
+622,708,Yashpal Rana,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=708,ROORKEE,INC,4,Literate,"Rs 6,28,01,774 ~ 6 Crore+",Rs 0 ~
+623,65,Yatishwaranand,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=65,HARIDWAR RURAL,BJP,0,Post Graduate,"Rs 1,51,53,161 ~ 1 Crore+","Rs 88,308 ~ 88 Thou+"
+624,549,Yogendra Chauhan,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=549,DHARAMPUR,AAP,0,Graduate,"Rs 26,01,973 ~ 26 Lacs+","Rs 4,00,000 ~ 4 Lacs+"
+625,720,Yograj Singh,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=720,SAHASPUR,BSP,3,8th Pass,"Rs 18,24,279 ~ 18 Lacs+","Rs 9,00,000 ~ 9 Lacs+"
+626,490,Zulfikar Ansari,https://www.myneta.info/uttarakhand2022/candidate.php?candidate_id=490,HARIDWAR RURAL,AIMIM,0,5th Pass,"Rs 1,03,48,898 ~ 1 Crore+",Rs 0 ~
