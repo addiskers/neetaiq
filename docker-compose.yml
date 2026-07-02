@@ -1,19 +1,20 @@
 services:
   db:
-    image: postgres:16-alpine
+    image: mysql:8.0
     restart: unless-stopped
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-      POSTGRES_DB: ${POSTGRES_DB:-matdaaniq_db}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-Tiger}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-matdaaniq_db}
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - mysqldata:/var/lib/mysql
     ports:
-      - "5432:5432"
+      - "127.0.0.1:3306:3306"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p\"$$MYSQL_ROOT_PASSWORD\" --silent"]
       interval: 5s
-      retries: 5
+      timeout: 5s
+      retries: 10
 
   backend:
     build: ./backend
@@ -22,7 +23,7 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-matdaaniq_db}
+      DATABASE_URL: mysql+pymysql://root:${MYSQL_ROOT_PASSWORD:-Tiger}@db:3306/${MYSQL_DATABASE:-matdaaniq_db}?charset=utf8mb4
       CORS_ORIGINS: ${CORS_ORIGINS:-https://www.matdaaniq.com}
       ENVIRONMENT: production
       ZYTE_API_KEY: ${ZYTE_API_KEY:-}
@@ -63,7 +64,7 @@ services:
       - certbot-www:/var/www/certbot
 
 volumes:
-  pgdata:
+  mysqldata:
   certbot-etc:
   certbot-var:
   certbot-www:
