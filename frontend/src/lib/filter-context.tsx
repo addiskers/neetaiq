@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
-import { api, toStateSlug, type DistrictOverview, type ConstituencyBrief, type Election } from "./api";
+import { api, pickDefaultElection, toStateSlug, type DistrictOverview, type ConstituencyBrief, type Election } from "./api";
+import { guard } from "./guard";
 
 export type Granularity = "STATE" | "DISTRICT" | "AC";
 
@@ -37,15 +38,21 @@ export function FilterProvider({ children }: { children: ReactNode }) {
   const [districts, setDistricts] = useState<DistrictOverview[]>([]);
   const [constituencies, setConstituencies] = useState<ConstituencyBrief[]>([]);
 
-  // Load all elections (WB + Assam) on mount
+  // Load every state's elections on mount
   useEffect(() => {
-    api.getAllElections().then((data) => {
-      const sorted = data.sort((a, b) => b.year - a.year || a.state.localeCompare(b.state));
-      setElections(sorted);
-      if (sorted.length > 0) {
-        setSelectedKey(electionKey(sorted[0]));
-      }
-    });
+    guard(
+      api.getAllElections().then((data) => {
+        const sorted = data.sort((a, b) => b.year - a.year || a.state.localeCompare(b.state));
+        setElections(sorted);
+        // Same choice the server render made, so the two agree on the first
+        // paint instead of briefly disagreeing about which state is on screen.
+        const initial = pickDefaultElection(sorted);
+        if (initial) {
+          setSelectedKey(electionKey(initial));
+        }
+      }),
+      "elections",
+    );
   }, []);
 
   // Derive current election unambiguously via composite key
@@ -59,8 +66,15 @@ export function FilterProvider({ children }: { children: ReactNode }) {
   // Reload districts + constituencies when election changes
   useEffect(() => {
     if (!electionId || !stateSlug) return;
-    api.getDistricts(electionId, stateSlug).then(setDistricts);
-    api.getConstituencies(electionId, undefined, stateSlug).then(setConstituencies);
+    // Clear first. These are guarded, so a failed request leaves whatever was
+    // here before — and what was here before belongs to the previously selected
+    // election. That showed Chhattisgarh's districts under a Jammu & Kashmir
+    // heading when the API was briefly unreachable. An empty list while the
+    // request is in flight is honest; another state's districts are not.
+    setDistricts([]);
+    setConstituencies([]);
+    guard(api.getDistricts(electionId, stateSlug).then(setDistricts), "districts");
+    guard(api.getConstituencies(electionId, undefined, stateSlug).then(setConstituencies), "constituencies");
   }, [selectedKey]); // use selectedKey so both id AND state must match
 
   const setElection = (e: Election) => {

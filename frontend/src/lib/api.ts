@@ -1,9 +1,29 @@
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
 
-async function fetchApi<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`);
-  if (!res.ok) throw new Error(`API error: ${res.status}`);
-  return res.json();
+// Retries back off 300ms, 600ms, 1200ms, 2400ms — about 4.5s in total. The
+// window is sized to outlast an API restart: two attempts covered under a
+// second, which meant every panel on the page gave up and logged a failure
+// while the backend was still coming back up.
+const RETRY_DELAY_MS = 300;
+const MAX_RETRIES = 4;
+
+async function fetchApi<T>(path: string, attempt = 0): Promise<T> {
+  try {
+    const res = await fetch(`${API_BASE}${path}`);
+    if (!res.ok) throw new Error(`API error ${res.status} for ${path}`);
+    return (await res.json()) as T;
+  } catch (err) {
+    // fetch() rejects with a TypeError ("Failed to fetch") only for transport
+    // level failures: the API restarting, a dropped connection, or a browser
+    // extension that wraps window.fetch interfering with the request. Those
+    // usually succeed on a second attempt. An HTTP status error or a malformed
+    // JSON body is deterministic, so it is rethrown straight away.
+    if (err instanceof TypeError && attempt < MAX_RETRIES) {
+      await new Promise((r) => setTimeout(r, RETRY_DELAY_MS * 2 ** attempt));
+      return fetchApi<T>(path, attempt + 1);
+    }
+    throw err;
+  }
 }
 
 // Types
@@ -123,9 +143,34 @@ export interface ElectionStats {
   total_parties: number;
 }
 
-/** Convert a state display name to the slug the backend expects */
+/** The election the app opens on: the most recent one, ties broken by state
+ * name. That currently resolves to Assam 2026, which is the state the app has
+ * always opened on.
+ *
+ * The point of having it as a function is that the server render and the client
+ * picker both call it, so the two agree. They used not to: the server sent no
+ * state at all and so server-rendered West Bengal's newest election, while the
+ * client picked the newest election across every state. The first paint showed
+ * one state's numbers under another state's name, and the page only became
+ * consistent once something forced a refetch — which is why the data appeared
+ * to arrive only after switching year.
+ */
+export function pickDefaultElection(elections: Election[]): Election | undefined {
+  if (elections.length === 0) return undefined;
+  return [...elections].sort(
+    (a, b) => b.year - a.year || a.state.localeCompare(b.state),
+  )[0];
+}
+
+/** Convert a state display name to the slug the backend expects.
+ *
+ * Everything that is not a letter or digit is dropped, not just whitespace:
+ * "Jammu & Kashmir" has to become "jammukashmir", and stripping spaces alone
+ * left "jammu&kashmir", which matched no state on the backend. Every other
+ * state's name is already punctuation-free, so this changes nothing for them.
+ */
 export function toStateSlug(stateName: string): string {
-  return stateName.toLowerCase().replace(/\s+/g, "");
+  return stateName.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 function qs(electionId?: number, extra?: string, state?: string): string {

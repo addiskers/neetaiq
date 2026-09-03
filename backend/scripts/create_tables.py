@@ -17,6 +17,24 @@ from app.models.up import UPElection, UPDistrict, UPConstituency, UPParty, UPCan
 from app.models.uttarakhand import UKElection, UKDistrict, UKConstituency, UKParty, UKCandidate  # noqa
 from app.models.kerala import KeralaElection, KeralaDistrict, KeralaConstituency, KeralaParty, KeralaCandidate  # noqa
 from app.models.tripura import TripuraElection, TripuraDistrict, TripuraConstituency, TripuraParty, TripuraCandidate  # noqa
+from app.models.meghalaya import MeghalayaElection, MeghalayaDistrict, MeghalayaConstituency, MeghalayaParty, MeghalayaCandidate  # noqa
+from app.models.nagaland import NagalandElection, NagalandDistrict, NagalandConstituency, NagalandParty, NagalandCandidate  # noqa
+from app.models.karnataka import KarnatakaElection, KarnatakaDistrict, KarnatakaConstituency, KarnatakaParty, KarnatakaCandidate  # noqa
+from app.models.telangana import TelanganaElection, TelanganaDistrict, TelanganaConstituency, TelanganaParty, TelanganaCandidate  # noqa
+from app.models.madhyapradesh import MadhyaPradeshElection, MadhyaPradeshDistrict, MadhyaPradeshConstituency, MadhyaPradeshParty, MadhyaPradeshCandidate  # noqa
+from app.models.chhattisgarh import ChhattisgarhElection, ChhattisgarhDistrict, ChhattisgarhConstituency, ChhattisgarhParty, ChhattisgarhCandidate  # noqa
+from app.models.mizoram import MizoramElection, MizoramDistrict, MizoramConstituency, MizoramParty, MizoramCandidate  # noqa
+from app.models.sikkim import SikkimElection, SikkimDistrict, SikkimConstituency, SikkimParty, SikkimCandidate  # noqa
+from app.models.arunachalpradesh import ArunachalPradeshElection, ArunachalPradeshDistrict, ArunachalPradeshConstituency, ArunachalPradeshParty, ArunachalPradeshCandidate  # noqa
+from app.models.odisha import OdishaElection, OdishaDistrict, OdishaConstituency, OdishaParty, OdishaCandidate  # noqa
+from app.models.rajasthan import RajasthanElection, RajasthanDistrict, RajasthanConstituency, RajasthanParty, RajasthanCandidate  # noqa
+from app.models.haryana import HaryanaElection, HaryanaDistrict, HaryanaConstituency, HaryanaParty, HaryanaCandidate  # noqa
+from app.models.bihar import BiharElection, BiharDistrict, BiharConstituency, BiharParty, BiharCandidate  # noqa
+from app.models.jammukashmir import JammuKashmirElection, JammuKashmirDistrict, JammuKashmirConstituency, JammuKashmirParty, JammuKashmirCandidate  # noqa
+from app.models.maharashtra import MaharashtraElection, MaharashtraDistrict, MaharashtraConstituency, MaharashtraParty, MaharashtraCandidate  # noqa
+from app.models.andhrapradesh import AndhraPradeshElection, AndhraPradeshDistrict, AndhraPradeshConstituency, AndhraPradeshParty, AndhraPradeshCandidate  # noqa
+from app.models.jharkhand import JharkhandElection, JharkhandDistrict, JharkhandConstituency, JharkhandParty, JharkhandCandidate  # noqa
+from app.models.delhi import DelhiElection, DelhiDistrict, DelhiConstituency, DelhiParty, DelhiCandidate  # noqa
 
 if __name__ == "__main__":
     print("Dropping all existing tables...")

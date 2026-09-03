@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { serverFetch } from "@/lib/server-api";
+import { pickDefaultElection, toStateSlug } from "@/lib/api";
 import type { Election, ElectionStats, DossierRow } from "@/lib/api";
 import OverviewClient, { type OverviewInitialData } from "./OverviewClient";
 
@@ -12,12 +13,17 @@ export default async function OverviewPage() {
   let initialData: OverviewInitialData | undefined;
 
   try {
-    // Fetch elections and pick the latest one (sorted by year desc)
-    const elections = await serverFetch<Election[]>("/overview/elections");
-    const latest = elections.sort((a, b) => b.year - a.year)[0];
+    // Every state's elections, not just the default one's: /overview/elections
+    // is state-scoped, so calling it without a state returned West Bengal's
+    // list and this page could only ever server-render West Bengal.
+    const elections = await serverFetch<Election[]>("/overview/all-elections");
+    const latest = pickDefaultElection(elections);
 
     if (latest) {
-      const eid = `election_id=${latest.id}`;
+      // The state has to travel with every request. Without it each panel below
+      // fell back to West Bengal on the server, so the first paint showed West
+      // Bengal's figures under whichever state the client then selected.
+      const eid = `election_id=${latest.id}&state=${encodeURIComponent(toStateSlug(latest.state))}`;
 
       const [
         stats,

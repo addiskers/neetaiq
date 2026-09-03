@@ -34,6 +34,7 @@ pgdata/
 db_dump.sql
 netanly_dump.sql
 netaiq_db_dump.sql
+matdaan_db 4.sql
 
 # Raw election data (large)
 west_bengal_election_data*/

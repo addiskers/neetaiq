@@ -2,6 +2,8 @@
 import { useEffect, useState, useMemo } from "react";
 import { api } from "@/lib/api";
 import { useFilters } from "@/lib/filter-context";
+import CandidateAvatar from "@/components/CandidateAvatar";
+import { guard } from "@/lib/guard";
 import { Search, ChevronDown, ChevronUp, MapPin, AlertTriangle, GraduationCap } from "lucide-react";
 
 const PARTY_COLORS: Record<string, string> = {
@@ -47,10 +49,10 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
     if (districtFilter) parts.push(`district=${encodeURIComponent(districtFilter)}`);
     if (categoryFilter) parts.push(`category=${categoryFilter}`);
     if (searchQ.length >= 2) parts.push(`search=${encodeURIComponent(searchQ)}`);
-    api.getConstituencyTracker(electionId, parts.join("&"), stateSlug).then((d) => {
-      setData(d);
-      setLoading(false);
-    });
+    guard(
+      api.getConstituencyTracker(electionId, parts.join("&"), stateSlug).then(setData),
+      "constituency tracker",
+    ).finally(() => setLoading(false));
   }, [electionId, districtFilter, categoryFilter, searchQ]);
 
   // Party tally from data
@@ -156,7 +158,7 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
                   {hasResults && winner ? (
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        {winner.image_url ? <img src={winner.image_url} alt="" className="w-8 h-8 rounded-lg object-cover" /> : <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#4F46E5] to-[#7C3AED] flex items-center justify-center text-[10px] text-white font-bold">{winner.name?.charAt(0)}</div>}
+                        <CandidateAvatar url={winner.image_url} name={winner.name || ""} color={winner.party_color} size="8" />
                         <div>
                           <div className="text-xs font-semibold text-[#111827]">{winner.name}</div>
                           <div className="text-[10px]"><span className="font-bold" style={{ color: PARTY_COLORS[winner.party] || "#6B7280" }}>{winner.party}</span> - {formatNum(winner.votes_total)} votes</div>
@@ -183,7 +185,7 @@ export default function ElectionTrackerClient({ initialData }: { initialData?: {
                     {ac.candidates?.map((c: any, i: number) => (
                       <div key={c.id || i} className="flex items-center justify-between py-1.5 border-b border-[#E5E7EB]/50 last:border-0">
                         <div className="flex items-center gap-2.5">
-                          {c.image_url ? <img src={c.image_url} alt="" className="w-7 h-7 rounded-lg object-cover" /> : <div className="w-7 h-7 rounded-lg bg-[#E5E7EB] flex items-center justify-center text-[9px] font-bold text-[#6B7280]">{c.name?.charAt(0)}</div>}
+                          <CandidateAvatar url={c.image_url} name={c.name || ""} color={c.party_color} size="7" />
                           <div>
                             <div className="text-xs font-medium text-[#111827]">
                               {c.position && <span className="text-[#9CA3AF] mr-1">#{c.position}</span>}

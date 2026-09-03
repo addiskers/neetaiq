@@ -1,7 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { api, type CandidateBrief, type CandidateDetail } from "@/lib/api";
+import { guard } from "@/lib/guard";
 import { useFilters } from "@/lib/filter-context";
+import CandidateAvatar from "@/components/CandidateAvatar";
 import {
   Search, Users, Scale, Shield, AlertTriangle, GraduationCap,
   Briefcase, Trophy, TrendingUp, ChevronRight, Star,
@@ -26,38 +28,6 @@ interface CandidateIntelClientProps {
 const RANK_LABEL: Record<number, string> = { 1: "1st", 2: "2nd", 3: "3rd" };
 function rankLabel(n: number) { return RANK_LABEL[n] ?? `#${n}`; }
 
-function CandidateAvatar({
-  url, name, color, size,
-}: { url?: string | null; name: string; color?: string | null; size: "sm" | "lg" }) {
-  const [errored, setErrored] = useState(false);
-  const accent = color || "#4F46E5";
-  const dim = size === "lg" ? "w-20 h-20" : "w-10 h-10";
-  const rounded = size === "lg" ? "rounded-2xl" : "rounded-xl";
-
-  if (url && !errored) {
-    return (
-      <img
-        src={url}
-        alt={name}
-        className={`${dim} ${rounded} object-cover${size === "lg" ? " border-2 border-white shadow-md" : ""}`}
-        onError={() => setErrored(true)}
-      />
-    );
-  }
-
-  return (
-    <div
-      className={`${dim} ${rounded} flex items-center justify-center${size === "lg" ? " shadow-md" : ""}`}
-      style={{ background: `linear-gradient(135deg, ${accent}22, ${accent}44)`, border: `1px solid ${accent}33` }}
-    >
-      <svg viewBox="0 0 24 24" className={size === "lg" ? "w-11 h-11" : "w-5 h-5"} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="8" r="4.5" fill={accent} opacity="0.7" />
-        <path d="M3 21c0-4.4 4-8 9-8s9 3.6 9 8" fill={accent} opacity="0.4" />
-      </svg>
-    </div>
-  );
-}
-
 export default function CandidateIntelClient({ initialData }: CandidateIntelClientProps) {
   const { electionId, currentElection, stateSlug } = useFilters();
   const [candidates, setCandidates] = useState<CandidateBrief[]>(initialData?.candidates ?? []);
@@ -72,11 +42,17 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
     if (!electionId) return;
     setLoading(true);
     setSelected(null);
-    api.getCandidates(electionId, "exclude_nota=true&limit=5000", stateSlug).then((data) => {
-      setCandidates(data);
-      setLoading(false);
-      if (data.length > 0) api.getCandidate(data[0].id, stateSlug).then(setSelected);
-    });
+    guard(
+      api.getCandidates(electionId, "exclude_nota=true&limit=5000", stateSlug).then((data) => {
+        setCandidates(data);
+        if (data.length > 0) {
+          guard(api.getCandidate(data[0].id, stateSlug).then(setSelected), "candidate detail");
+        }
+      }),
+      "candidates",
+      // finally, not inside the then: a failed load must clear the spinner too,
+      // or the list sits on "Loading..." for ever.
+    ).finally(() => setLoading(false));
   }, [electionId, stateSlug]);
 
   const filteredCandidates = candidates
@@ -91,7 +67,8 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
       return a.name.localeCompare(b.name);
     });
 
-  const selectCandidate = (id: number) => api.getCandidate(id, stateSlug).then(setSelected);
+  const selectCandidate = (id: number) =>
+    guard(api.getCandidate(id, stateSlug).then(setSelected), "candidate detail");
 
   const partyAccent = selected?.party_color || "#3B82F6";
   const netWorth = selected?.declared_assets != null || selected?.liabilities != null
@@ -111,7 +88,7 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
             <h2 className="text-xl font-extrabold text-[#111827] tracking-tight">Candidate Database</h2>
           </div>
           <p className="text-sm text-[#9CA3AF]">
-            {currentElection ? `${currentElection.state} ${currentElection.year} — ${candidates.length} candidates` : "Loading..."}
+            {currentElection ? `${currentElection.state} ${currentElection.year} - ${candidates.length} candidates` : "Loading..."}
           </p>
         </div>
       </div>
@@ -171,7 +148,7 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
                     >
                       {/* Avatar */}
                       <div className="relative shrink-0">
-                        <CandidateAvatar url={c.image_url} name={c.name} color={c.party_color} size="sm" />
+                        <CandidateAvatar url={c.image_url} name={c.name} color={c.party_color} size="10" />
                         {c.position === 1 && (
                           <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#F59E0B] rounded-full flex items-center justify-center">
                             <Star className="w-2.5 h-2.5 text-white fill-white" />
@@ -231,7 +208,7 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
                   <div className="flex flex-col sm:flex-row items-start gap-5">
                     {/* Photo */}
                     <div className="relative shrink-0">
-                      <CandidateAvatar url={selected.image_url} name={selected.name} color={selected.party_color} size="lg" />
+                      <CandidateAvatar url={selected.image_url} name={selected.name} color={selected.party_color} size="20" elevated />
                       {selected.position === 1 && (
                         <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-[#F59E0B] border-2 border-white flex items-center justify-center shadow">
                           <Trophy className="w-4 h-4 text-white" />
@@ -266,7 +243,7 @@ export default function CandidateIntelClient({ initialData }: CandidateIntelClie
                           style={{ background: `${partyAccent}15`, color: partyAccent, borderColor: `${partyAccent}30` }}
                         >
                           <span className="w-2 h-2 rounded-full" style={{ background: partyAccent }} />
-                          {selected.party_abbr || "IND"}{selected.party_name && selected.party_name !== selected.party_abbr ? ` — ${selected.party_name}` : ""}
+                          {selected.party_abbr || "IND"}{selected.party_name && selected.party_name !== selected.party_abbr ? ` - ${selected.party_name}` : ""}
                         </span>
                         {selected.education && (
                           <span className="inline-flex items-center gap-1.5 text-xs text-[#6B7280] bg-[#F3F4F6] px-3 py-1.5 rounded-full">

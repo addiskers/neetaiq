@@ -2,6 +2,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { api, type ElectionStats, type DossierRow } from "@/lib/api";
 import { useFilters } from "@/lib/filter-context";
+import CandidateAvatar from "@/components/CandidateAvatar";
 import { MapPin, TrendingUp, Users, ChevronRight, Search, BarChart3, AlertTriangle, GraduationCap, Shield, Clock, Maximize2, Minimize2 } from "lucide-react";
 import { PieChart, Pie, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area, Treemap } from "recharts";
 import dynamic from "next/dynamic";
@@ -69,6 +70,22 @@ interface OverviewClientProps {
   initialData?: OverviewInitialData;
 }
 
+/**
+ * Fire a data load into state without letting a failure escape.
+ *
+ * The overview page issues ~17 of these in parallel. Left unguarded, a single
+ * rejected promise becomes an unhandled rejection, which React surfaces as a
+ * full-screen error overlay in dev and takes the whole page down rather than
+ * the one panel that actually failed. fetchApi already retries transport
+ * failures; anything still failing here leaves that panel empty and says so in
+ * the console.
+ */
+function load<T>(p: Promise<T>, set: (v: T) => void, label: string) {
+  p.then(set).catch((err: unknown) => {
+    console.warn(`[overview] ${label} failed:`, err instanceof Error ? err.message : err);
+  });
+}
+
 export default function OverviewClient({ initialData }: OverviewClientProps) {
   const { electionId, currentElection, stateSlug, granularity, setGranularity, selectedDistrict, setSelectedDistrict, selectedAC, setSelectedAC, districts, constituencies, filteredConstituencies } = useFilters();
   const [stats, setStats] = useState<ElectionStats | null>(initialData?.stats ?? null);
@@ -90,6 +107,11 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
   const [placesToWatch, setPlacesToWatch] = useState<any[]>(initialData?.placesToWatch ?? []);
   const [swingAnalysis, setSwingAnalysis] = useState<any[]>(initialData?.swingAnalysis ?? []);
 
+  // Sikkim reserves twelve seats for Bhutia-Lepcha candidates, a category no
+  // other state uses. Derive the legend row from the data rather than naming
+  // the state, so it appears wherever the category actually occurs.
+  const hasBLSeats = constituencies.some((c) => c.category === "BL");
+
   const hasResults = currentElection && currentElection.year !== 2026;
   const [mapMode, setMapMode] = useState<"results" | "category" | "prev_winner" | "prediction">("category");
   const [mapExpanded, setMapExpanded] = useState(false);
@@ -104,12 +126,16 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
   // Load previous election's party performance for the Prev Winner legend
   useEffect(() => {
     if (mapMode !== "prev_winner" || !currentElection || !stateSlug) return;
-    api.getElections(stateSlug).then((elections: any[]) => {
-      const prev = elections
-        .filter((e: any) => e.state === currentElection.state && e.year < currentElection.year)
-        .sort((a: any, b: any) => b.year - a.year)[0];
-      if (prev) api.getPartyPerformance(prev.id, "", stateSlug).then(setPrevPartyPerformance);
-    });
+    load(
+      api.getElections(stateSlug).then((elections: any[]) => {
+        const prev = elections
+          .filter((e: any) => e.state === currentElection.state && e.year < currentElection.year)
+          .sort((a: any, b: any) => b.year - a.year)[0];
+        return prev ? api.getPartyPerformance(prev.id, "", stateSlug) : [];
+      }),
+      setPrevPartyPerformance,
+      "prevPartyPerformance",
+    );
   }, [mapMode, currentElection, stateSlug]);
 
   const filterParams = useMemo(() => {
@@ -121,23 +147,23 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
 
   useEffect(() => {
     if (!electionId) return;
-    api.getStats(electionId, filterParams, stateSlug).then(setStats);
-    api.getDossierTable(electionId, 20, 0, filterParams, stateSlug).then(setDossier);
-    api.getPartyPerformance(electionId, filterParams, stateSlug).then(setPartyPerformance);
-    api.getTurnoutByDistrict(electionId, filterParams, stateSlug).then(setTurnoutByDistrict);
-    api.getMarginDistribution(electionId, filterParams, stateSlug).then(setMarginDistribution);
-    api.getCategoryMix(electionId, filterParams, stateSlug).then(setCategoryMix);
-    api.getHistoricalWave(electionId, stateSlug).then(setHistoricalWave);
-    api.getClosestContests(electionId, 10, stateSlug).then(setClosestContests);
-    api.getNotaImpact(electionId, stateSlug).then(setNotaImpact);
-    api.getCrorepatiCandidates(electionId, stateSlug).then(setCrorepati);
-    api.getGenderDemographics(electionId, filterParams, stateSlug).then(setGenderDemo);
-    api.getEducationBreakdown(electionId, filterParams, stateSlug).then(setEducationData);
-    api.getCriminalOverview(electionId, filterParams, stateSlug).then(setCriminalData);
-    api.getMarginVsTurnout(electionId, stateSlug).then(setMarginTurnout);
-    api.getCountdown(electionId, stateSlug).then(setCountdown);
-    api.getPlacesToWatch(electionId, stateSlug).then(setPlacesToWatch);
-    api.getSwingAnalysis(electionId, stateSlug).then(setSwingAnalysis);
+    load(api.getStats(electionId, filterParams, stateSlug), setStats, "stats");
+    load(api.getDossierTable(electionId, 20, 0, filterParams, stateSlug), setDossier, "dossier");
+    load(api.getPartyPerformance(electionId, filterParams, stateSlug), setPartyPerformance, "partyPerformance");
+    load(api.getTurnoutByDistrict(electionId, filterParams, stateSlug), setTurnoutByDistrict, "turnoutByDistrict");
+    load(api.getMarginDistribution(electionId, filterParams, stateSlug), setMarginDistribution, "marginDistribution");
+    load(api.getCategoryMix(electionId, filterParams, stateSlug), setCategoryMix, "categoryMix");
+    load(api.getHistoricalWave(electionId, stateSlug), setHistoricalWave, "historicalWave");
+    load(api.getClosestContests(electionId, 10, stateSlug), setClosestContests, "closestContests");
+    load(api.getNotaImpact(electionId, stateSlug), setNotaImpact, "notaImpact");
+    load(api.getCrorepatiCandidates(electionId, stateSlug), setCrorepati, "crorepati");
+    load(api.getGenderDemographics(electionId, filterParams, stateSlug), setGenderDemo, "genderDemo");
+    load(api.getEducationBreakdown(electionId, filterParams, stateSlug), setEducationData, "educationData");
+    load(api.getCriminalOverview(electionId, filterParams, stateSlug), setCriminalData, "criminalData");
+    load(api.getMarginVsTurnout(electionId, stateSlug), setMarginTurnout, "marginTurnout");
+    load(api.getCountdown(electionId, stateSlug), setCountdown, "countdown");
+    load(api.getPlacesToWatch(electionId, stateSlug), setPlacesToWatch, "placesToWatch");
+    load(api.getSwingAnalysis(electionId, stateSlug), setSwingAnalysis, "swingAnalysis");
   }, [electionId, filterParams, stateSlug]);
 
   const searchQ = searchDistrict.toLowerCase().trim();
@@ -208,7 +234,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
             <Search className="w-4 h-4 text-[#6B7280]" />
             <input type="text" placeholder="Search..." value={searchDistrict} onChange={(e) => setSearchDistrict(e.target.value)} className="bg-transparent text-sm text-[#111827] placeholder-[#64748B] outline-none flex-1" />
           </div>
-          <div className="space-y-1 max-h-[250px] sm:max-h-[400px] overflow-y-auto pr-1">
+          <div className="space-y-1 max-h-[250px] sm:max-h-[400px] overflow-y-auto pr-2">
             {isSearching ? (
               /* When searching, show matching constituencies directly */
               searchedConstituencies.length > 0 ? (
@@ -259,8 +285,15 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
             )}
           </div>
         </div>
-        <div className="lg:col-span-9 bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm">
-          <div className="flex items-center justify-between px-4 py-3 border-b border-[#E5E7EB]">
+        {/* The map card is a flex column so the map itself can take whatever
+            height is left over. Grid items stretch to the tallest in the row,
+            and the district list beside this one is taller than a fixed 350px
+            map plus its header — the difference used to show as a band of
+            empty white under the map. min-h keeps the old height as a floor for
+            when this card is the taller of the two, and on mobile where the two
+            stack and there is nothing to match. */}
+        <div className="lg:col-span-9 flex flex-col bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden shadow-sm">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-[#E5E7EB] shrink-0">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-[#3B82F6]" />
               <span className="text-sm font-semibold text-[#111827]">{viewLabel}</span>
@@ -281,7 +314,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
               </div>
             )}
           </div>
-          <div className="h-[250px] sm:h-[350px] relative">
+          <div className="relative flex-1 min-h-[250px] sm:min-h-[350px]">
             <MapView mapMode={hasResults ? "results" : mapMode} />
             {/* Map Legend */}
             <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm border border-[#E5E7EB] z-[400]">
@@ -322,6 +355,9 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#93C5FD]" /><span className="text-[10px] text-[#374151]">General</span></div>
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#FCD34D]" /><span className="text-[10px] text-[#374151]">SC</span></div>
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#6EE7B7]" /><span className="text-[10px] text-[#374151]">ST</span></div>
+                  {hasBLSeats && (
+                    <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#C4B5FD]" /><span className="text-[10px] text-[#374151]">BL</span></div>
+                  )}
                 </>
               )}
             </div>
@@ -397,6 +433,9 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#93C5FD]" /><span className="text-[10px] text-[#374151]">General</span></div>
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#FCD34D]" /><span className="text-[10px] text-[#374151]">SC</span></div>
                   <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#6EE7B7]" /><span className="text-[10px] text-[#374151]">ST</span></div>
+                  {hasBLSeats && (
+                    <div className="flex items-center gap-1.5 py-0.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#C4B5FD]" /><span className="text-[10px] text-[#374151]">BL</span></div>
+                  )}
                 </>
               )}
             </div>
@@ -485,7 +524,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         <Card>
           <CardTitle icon={GraduationCap} title="Education Levels" />
           {educationData.length > 0 ? (
-            <div className="space-y-2 max-h-[180px] overflow-y-auto">
+            <div className="space-y-2 max-h-[180px] overflow-y-auto pr-2">
               {educationData.slice(0, 8).map((e) => (
                 <div key={e.education}>
                   <div className="flex justify-between text-[11px] mb-0.5"><span className="text-[#6B7280] truncate">{e.education}</span><span className="text-[#111827] font-medium">{e.count}</span></div>
@@ -513,7 +552,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                   <Bar dataKey="seats_contested" name="Contested" fill="#E2E8F0" radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
-              <div className="mt-2 space-y-1 max-h-[100px] overflow-y-auto">
+              <div className="mt-2 space-y-1 max-h-[100px] overflow-y-auto pr-2">
                 {partyPerformance.slice(0, 6).map((p) => (
                   <div key={p.abbr} className="flex items-center justify-between text-xs">
                     <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full" style={{ background: p.color || "#94A3B8" }} /><span className="font-medium text-[#111827]">{p.abbr}</span></div>
@@ -608,11 +647,11 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
                 <div><div className="text-xs text-[#6B7280]">of {criminalData.total_candidates} candidates</div><div className="text-sm font-bold text-[#EF4444]">{criminalData.pct}% have cases</div></div>
               </div>
               {criminalData.by_party?.length > 0 && (
-                <div className="space-y-2 max-h-[180px] overflow-y-auto">
+                <div className="space-y-2 max-h-[180px] overflow-y-auto pr-2">
                   {criminalData.by_party.slice(0, 8).map((p: any) => (
-                    <div key={p.party} className="flex items-center justify-between">
-                      <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full" style={{ background: PARTY_COLORS[p.party] || "#94A3B8" }} /><span className="text-sm text-[#111827]">{p.party}</span></div>
-                      <div className="text-xs text-[#6B7280]">{p.count} candidates &middot; {p.total_cases} cases</div>
+                    <div key={p.party} className="flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-2 min-w-0"><span className="w-2 h-2 rounded-full shrink-0" style={{ background: PARTY_COLORS[p.party] || "#94A3B8" }} /><span className="text-sm text-[#111827] truncate" title={p.party}>{p.party}</span></div>
+                      <div className="text-xs text-[#6B7280] shrink-0">{p.count} candidates &middot; {p.total_cases} cases</div>
                     </div>
                   ))}
                 </div>
@@ -650,18 +689,23 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
             <CardTitle icon={TrendingUp} title={`Swing Analysis (${swingAnalysis[0]?.year_prev} vs ${swingAnalysis[0]?.year_curr})`} />
             <div className="space-y-2">
               {swingAnalysis.map((p) => (
-                <div key={p.party} className="flex items-center justify-between text-xs border-b border-[#F3F4F6] pb-2">
-                  <div className="flex items-center gap-2 w-16">
-                    <span className="font-bold text-[#111827]">{p.party}</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="text-center w-16"><div className="text-[#6B7280]">{p.seats_2016}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_prev}</div></div>
-                    <div className="text-center w-16"><div className="font-bold text-[#111827]">{p.seats_2021}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_curr}</div></div>
-                    <div className={`text-center w-16 font-bold ${p.seat_change > 0 ? "text-[#059669]" : p.seat_change < 0 ? "text-[#EF4444]" : "text-[#6B7280]"}`}>
+                /* The four figure columns are fixed width so they line up down
+                   the card, and the party name takes whatever is left rather
+                   than a width of its own — at 375px the old fixed 64+64+64+64+80
+                   plus gap-4 needed 384px inside about 311px of card, so every
+                   row ran off the right edge and pushed a scrollbar onto the
+                   whole page. Long abbreviations (Maharashtra has RSHYVSWBHM)
+                   truncate with the full name on hover. */
+                <div key={p.party} className="flex items-center gap-2 text-xs border-b border-[#F3F4F6] pb-2">
+                  <span className="font-bold text-[#111827] flex-1 min-w-0 truncate" title={p.party}>{p.party}</span>
+                  <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+                    <div className="text-center w-9 sm:w-16"><div className="text-[#6B7280]">{p.seats_2016}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_prev}</div></div>
+                    <div className="text-center w-9 sm:w-16"><div className="font-bold text-[#111827]">{p.seats_2021}</div><div className="text-[9px] text-[#9CA3AF]">{p.year_curr}</div></div>
+                    <div className={`text-center w-9 sm:w-16 font-bold ${p.seat_change > 0 ? "text-[#059669]" : p.seat_change < 0 ? "text-[#EF4444]" : "text-[#6B7280]"}`}>
                       {p.seat_change > 0 ? "+" : ""}{p.seat_change}
                     </div>
-                    <div className={`text-center w-20 ${p.vote_swing > 0 ? "text-[#059669]" : p.vote_swing < 0 ? "text-[#EF4444]" : "text-[#6B7280]"}`}>
-                      {p.vote_swing > 0 ? "+" : ""}{p.vote_swing}% vote
+                    <div className={`text-right sm:text-center w-14 sm:w-20 ${p.vote_swing > 0 ? "text-[#059669]" : p.vote_swing < 0 ? "text-[#EF4444]" : "text-[#6B7280]"}`}>
+                      {p.vote_swing > 0 ? "+" : ""}{p.vote_swing}%<span className="hidden sm:inline"> vote</span>
                     </div>
                   </div>
                 </div>
@@ -674,7 +718,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
         {placesToWatch.length > 0 && (
           <Card>
             <CardTitle icon={AlertTriangle} title="Places to Watch (Thin Margins 2021)" />
-            <div className="space-y-1.5 max-h-[350px] overflow-y-auto">
+            <div className="space-y-1.5 max-h-[350px] overflow-y-auto pr-2">
               {placesToWatch.map((p) => (
                 <div key={p.ac_no} className="flex items-center justify-between px-3 py-2 rounded-lg bg-[#F9FAFB] text-xs">
                   <div className="flex-1">
@@ -692,14 +736,20 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
       </div>
 
       {/* Candidate Dossier Table */}
-      <Card className="overflow-x-auto">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-full bg-[#3B82F6]/10 flex items-center justify-center"><Users className="w-3.5 h-3.5 text-[#3B82F6]" /></div><h3 className="text-sm font-bold text-[#111827]">Candidate Dossier Overview</h3></div>
+      {/* Only the table scrolls sideways, not the whole card: the heading and
+          the link used to sit inside the scrolling box with the 700px table,
+          so they slid out of view along with it. The heading stacks above the
+          link on small screens rather than the two squeezing each other — at
+          375px that squeeze was breaking "View Full Database" across lines. */}
+      <Card>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
+          <div className="min-w-0">
+            <div className="flex items-center gap-2"><div className="w-6 h-6 rounded-full bg-[#3B82F6]/10 flex items-center justify-center shrink-0"><Users className="w-3.5 h-3.5 text-[#3B82F6]" /></div><h3 className="text-sm font-bold text-[#111827]">Candidate Dossier Overview</h3></div>
             <p className="text-[11px] text-[#6B7280] mt-1 ml-8">Verified financials and legal declarations from ECI affidavits</p>
           </div>
-          <a href="/candidate-intel" className="flex items-center gap-1 text-xs text-[#3B82F6] hover:text-[#2563EB] font-medium border border-[#3B82F6]/30 rounded-lg px-3 py-1.5 transition-colors">View Full Database <ChevronRight className="w-3 h-3" /></a>
+          <a href="/candidate-intel" className="flex items-center justify-center gap-1 text-xs text-[#3B82F6] hover:text-[#2563EB] font-medium border border-[#3B82F6]/30 rounded-lg px-3 py-1.5 transition-colors shrink-0 whitespace-nowrap">View Full Database <ChevronRight className="w-3 h-3" /></a>
         </div>
+        <div className="overflow-x-auto -mx-5 px-5">
         <table className="w-full min-w-[700px]">
           <thead>
               <tr className="text-[10px] uppercase text-[#6B7280] border-b border-[#E5E7EB]">
@@ -715,11 +765,7 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
               <tr key={c.id} className="border-b border-[#E5E7EB]/50 hover:bg-[#F8FAFC] transition-colors">
                 <td className="py-3 px-3">
                   <div className="flex items-center gap-3">
-                    {c.image_url ? (
-                      <img src={c.image_url} alt="" className="w-9 h-9 rounded-xl object-cover shrink-0" />
-                    ) : (
-                      <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#4F46E5] to-[#7C3AED] flex items-center justify-center text-xs text-white font-bold shrink-0">{c.name.charAt(0)}</div>
-                    )}
+                    <CandidateAvatar url={c.image_url} name={c.name} color={c.party_color} size="9" />
                     <div><div className="text-sm font-medium text-[#111827]">{c.name}</div><div className="text-[10px] text-[#6B7280]">{c.constituency_name}</div></div>
                   </div>
                 </td>
@@ -737,32 +783,38 @@ export default function OverviewClient({ initialData }: OverviewClientProps) {
             ))}
           </tbody>
         </table>
+        </div>
       </Card>
     </div>
   );
 }
 
 function LiveCountdown({ electionDate }: { electionDate: string }) {
-  const [now, setNow] = useState(Date.now());
+  // This component is server-rendered too, so its first client render has to
+  // match the SSR output byte for byte. Date.now() cannot: it advances between
+  // the two, and the seconds digit is guaranteed to differ. The election date
+  // is also parsed without a timezone, so a UTC server and an IST browser would
+  // disagree on the day count as well.
+  //
+  // So hold `now` at null until after mount. Server and first client render
+  // both emit the placeholder and hydrate cleanly; ticking starts in the effect,
+  // which only ever runs in the browser.
+  const [now, setNow] = useState<number | null>(null);
 
   useEffect(() => {
+    setNow(Date.now());
     const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(timer);
   }, []);
 
   const target = new Date(electionDate + "T07:00:00").getTime();
-  const diff = Math.max(target - now, 0);
+  const diff = now === null ? null : Math.max(target - now, 0);
 
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
-  const minutes = Math.floor((diff % 3600000) / 60000);
-  const seconds = Math.floor((diff % 60000) / 1000);
-
-  const units = [
-    { value: days, label: "D" },
-    { value: hours, label: "H" },
-    { value: minutes, label: "M" },
-    { value: seconds, label: "S" },
+  const units: { value: number | null; label: string }[] = [
+    { value: diff === null ? null : Math.floor(diff / 86400000), label: "D" },
+    { value: diff === null ? null : Math.floor((diff % 86400000) / 3600000), label: "H" },
+    { value: diff === null ? null : Math.floor((diff % 3600000) / 60000), label: "M" },
+    { value: diff === null ? null : Math.floor((diff % 60000) / 1000), label: "S" },
   ];
 
   return (
@@ -770,7 +822,7 @@ function LiveCountdown({ electionDate }: { electionDate: string }) {
       {units.map((u, i) => (
         <span key={u.label} className="flex items-baseline">
           <span className={`text-xl font-extrabold tabular-nums ${i === 3 ? "text-[#4F46E5]" : "text-[#111827]"}`}>
-            {String(u.value).padStart(2, "0")}
+            {u.value === null ? "--" : String(u.value).padStart(2, "0")}
           </span>
           <span className="text-[10px] font-bold text-[#9CA3AF] mr-1.5">{u.label}</span>
         </span>

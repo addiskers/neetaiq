@@ -51,10 +51,38 @@ body {
 }
 .dark-tooltip::before,
 .district-tooltip::before { border-top-color: #E5E7EB !important; }
-.leaflet-container { background: #F7F8FC !important; cursor: default !important; }
+/* Leaflet positions its panes at z-index 400 and its controls as high as 1000,
+   but .leaflet-container itself is only `position: relative` with no z-index,
+   so it opens no stacking context and those numbers compete at page level.
+   On mobile that put the map on top of the slide-out sidebar, which sits at
+   z-50: the drawer opened underneath it and looked broken. `isolation` keeps
+   Leaflet's internal layering to itself without changing how the map paints. */
+.leaflet-container {
+  background: #F7F8FC !important;
+  cursor: default !important;
+  isolation: isolate;
+  z-index: 0;
+}
 .district-label { pointer-events: none !important; }
 .leaflet-interactive { cursor: pointer !important; }
 
 /* Card hover effect */
 .card-hover { transition: box-shadow 0.2s, transform 0.2s; }
 .card-hover:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); transform: translateY(-1px); }
+
+/* Dark-sidebar dropdown lists (state, district, constituency). The global scrollbar above is tuned for light
+   surfaces, and its light-grey thumb reads as a bright stripe on the navy
+   dropdown, so the state picker gets its own. */
+.filter-select-scroll::-webkit-scrollbar { width: 6px; }
+.filter-select-scroll::-webkit-scrollbar-track { background: transparent; }
+.filter-select-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.28);
+  border-radius: 10px;
+}
+.filter-select-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+.filter-select-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.28) transparent;
+}

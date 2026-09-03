@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, LayoutGrid, Users, X, ChevronDown } from "lucide-react";
+import { LayoutDashboard, LayoutGrid, Users, X } from "lucide-react";
 import { useFilters } from "@/lib/filter-context";
+import FilterSelect from "./FilterSelect";
 
 const baseModules = [
   { name: "Overview", href: "/", icon: LayoutDashboard },
@@ -24,12 +25,22 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
     onCloseMobile?.();
   };
 
-  // Derive unique states and years for split dropdowns
+  // Derive unique states and years for the theatre picker
   const uniqueStates = [...new Set(elections.map((e) => e.state))].sort();
   const selectedState = currentElection?.state || uniqueStates[0] || "";
   const yearsForState = elections
     .filter((e) => e.state === selectedState)
     .sort((a, b) => b.year - a.year);
+
+  // Year span shown beside each state, so the list says what data exists
+  // without having to open the state first.
+  const stateMeta = elections.reduce<Record<string, string>>((acc, e) => {
+    const years = elections.filter((x) => x.state === e.state).map((x) => x.year);
+    const lo = Math.min(...years);
+    const hi = Math.max(...years);
+    acc[e.state] = lo === hi ? `${lo}` : `${lo}–${hi}`;
+    return acc;
+  }, {});
 
   const handleStateChange = (state: string) => {
     const latest = elections
@@ -73,32 +84,42 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
       {/* Active Theatre — State + Year */}
       <div className="px-5 py-4">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#64748B] mb-2">Active Theatre</div>
-        <div className="relative">
-          <select
-            title="Select State"
-            value={selectedState}
-            onChange={(e) => handleStateChange(e.target.value)}
-            className="w-full bg-[#111B33] text-white text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none cursor-pointer"
-          >
-            {uniqueStates.map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
-        </div>
-        <div className="relative mt-2">
-          <select
-            title="Select Year"
-            value={currentElection?.year || ""}
-            onChange={(e) => handleYearChange(Number(e.target.value))}
-            className="w-full bg-[#111B33] text-white text-[13px] font-semibold rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none cursor-pointer"
-          >
-            {yearsForState.map((e) => (
-              <option key={e.id} value={e.year}>{e.year}</option>
-            ))}
-          </select>
-          <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
-        </div>
+        <FilterSelect
+          ariaLabel="Select state"
+          searchPlaceholder="Search states…"
+          options={uniqueStates.map((s) => ({ value: s, label: s, meta: stateMeta[s] }))}
+          value={selectedState}
+          onChange={handleStateChange}
+        />
+
+        {/* Years are few enough per state to show outright, which saves a
+            second dropdown and makes the available data visible at a glance.
+            Segmented rather than free-floating pills: with flex-1 the row fills
+            evenly whether a state has two, three or four elections, instead of
+            leaving dead space on the right, and it lines up with the
+            Granularity switch below. */}
+        {yearsForState.length > 0 && (
+          <div className="flex bg-[#111B33] rounded-xl p-1 mt-2">
+            {yearsForState.map((e) => {
+              const active = currentElection?.year === e.year;
+              return (
+                <button
+                  key={e.id}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => handleYearChange(e.year)}
+                  className={`flex-1 text-[11.5px] font-bold py-2 rounded-lg tabular-nums transition-all ${
+                    active
+                      ? "bg-[#3B82F6] text-white shadow-sm"
+                      : "text-[#64748B] hover:text-white"
+                  }`}
+                >
+                  {e.year}
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       <div className="h-px bg-white/10 mx-4" />
@@ -123,40 +144,42 @@ export default function Sidebar({ onCloseMobile }: { onCloseMobile?: () => void 
           ))}
         </div>
 
-        <div className="relative mt-2.5">
-            <select
-              title="Select District"
-              value={selectedDistrict || ""}
-              onChange={(e) => {
-                setSelectedDistrict(e.target.value || null);
-                setSelectedAC(null);
-              }}
-              className="w-full bg-[#111B33] text-white text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none"
-            >
-              <option value="">All Districts</option>
-              {districts.map((d) => (
-                <option key={d.id} value={d.name}>{d.name}</option>
-              ))}
-            </select>
-            <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
-          </div>
+        <div className="mt-2.5">
+          <FilterSelect
+            ariaLabel="All Districts"
+            searchPlaceholder="Search districts…"
+            options={[
+              { value: "", label: "All Districts" },
+              ...districts.map((d) => ({
+                value: d.name,
+                label: d.name,
+                meta: `${d.constituency_count} ACs`,
+              })),
+            ]}
+            value={selectedDistrict || ""}
+            onChange={(v) => {
+              setSelectedDistrict(v || null);
+              setSelectedAC(null);
+            }}
+          />
+        </div>
 
         {granularity === "AC" && (
-          <div className="relative mt-2.5">
-            <select
-              title="Select Constituency"
-              value={selectedAC || ""}
-              onChange={(e) => setSelectedAC(e.target.value ? Number(e.target.value) : null)}
-              className="w-full bg-[#111B33] text-white text-[13px] font-medium rounded-xl px-3.5 py-2.5 border border-white/10 outline-none focus:border-[#3B82F6] transition-all appearance-none"
-            >
-              <option value="">All Constituencies</option>
-              {filteredConstituencies.map((c) => (
-                <option key={c.id} value={c.ac_no}>
-                  {c.ac_no} — {c.name}
-                </option>
-              ))}
-            </select>
-            <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748B] pointer-events-none" />
+          <div className="mt-2.5">
+            <FilterSelect
+              ariaLabel="All Constituencies"
+              searchPlaceholder="Search constituencies…"
+              options={[
+                { value: "", label: "All Constituencies" },
+                ...filteredConstituencies.map((c) => ({
+                  value: String(c.ac_no),
+                  label: `${c.ac_no} — ${c.name}`,
+                  meta: c.category ?? undefined,
+                })),
+              ]}
+              value={selectedAC ? String(selectedAC) : ""}
+              onChange={(v) => setSelectedAC(v ? Number(v) : null)}
+            />
           </div>
         )}
       </div>
