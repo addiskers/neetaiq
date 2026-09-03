@@ -3,6 +3,20 @@ import re
 from fastapi import HTTPException, Query
 
 
+# Canonical slug for every state get_models() knows about. This is the single
+# list to extend when a new state is added — endpoints that aggregate across all
+# states (e.g. /overview/all-elections) iterate this instead of hardcoding their
+# own subset, so they never fall out of sync with the registry again.
+CANONICAL_STATES = [
+    "westbengal", "assam", "puducherry", "tamilnadu", "goa", "manipur",
+    "punjab", "gujarat", "himachalpradesh", "uttarpradesh", "uttarakhand",
+    "kerala", "tripura", "rajasthan", "delhi", "jharkhand", "andhrapradesh",
+    "maharashtra", "jammukashmir", "bihar", "haryana", "odisha",
+    "arunachalpradesh", "sikkim", "mizoram", "chhattisgarh", "madhyapradesh",
+    "telangana", "karnataka", "nagaland", "meghalaya",
+]
+
+
 def get_models(state: str = "westbengal"):
     """Return (Election, District, Constituency, Candidate, Party) for a state.
 

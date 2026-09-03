@@ -32,33 +32,24 @@ def _filter_constituencies(db: Session, eid: int, Constituency, District,
 
 @router.get("/all-elections", response_model=List[ElectionOut])
 def list_all_elections(db: Session = Depends(get_db)):
-    from app.models.westbengal import WBElection
-    from app.models.assam import AssamElection
-    from app.models.puducherry import PuducherryElection
-    from app.models.tamilnadu import TamilNaduElection
-    from app.models.goa import GoaElection
-    from app.models.manipur import ManipurElection
-    from app.models.punjab import PunjabElection
-    from app.models.gujarat import GujaratElection
-    from app.models.himachal import HimachalElection
-    from app.models.up import UPElection
-    from app.models.uttarakhand import UKElection
-    from app.models.kerala import KeralaElection
-    from app.models.tripura import TripuraElection
-    wb = db.query(WBElection).all()
-    assam = db.query(AssamElection).all()
-    puducherry = db.query(PuducherryElection).all()
-    tamilnadu = db.query(TamilNaduElection).all()
-    goa = db.query(GoaElection).all()
-    manipur = db.query(ManipurElection).all()
-    punjab = db.query(PunjabElection).all()
-    gujarat = db.query(GujaratElection).all()
-    himachal = db.query(HimachalElection).all()
-    up = db.query(UPElection).all()
-    uk = db.query(UKElection).all()
-    kerala = db.query(KeralaElection).all()
-    tripura = db.query(TripuraElection).all()
-    return wb + assam + puducherry + tamilnadu + goa + manipur + punjab + gujarat + himachal + up + uk + kerala + tripura
+    """Every election across every state.
+
+    Iterates the registry's canonical state list rather than a hardcoded subset,
+    so a newly added state shows up here automatically. A state whose tables are
+    absent (model deployed but no data imported yet) is skipped rather than
+    failing the whole response — the transaction is rolled back so one missing
+    table can't poison the queries that follow.
+    """
+    from app.models.registry import CANONICAL_STATES, get_models
+
+    out = []
+    for slug in CANONICAL_STATES:
+        Election, *_ = get_models(slug)
+        try:
+            out.extend(db.query(Election).all())
+        except Exception:
+            db.rollback()
+    return out
 
 
 @router.get("/elections", response_model=List[ElectionOut])
