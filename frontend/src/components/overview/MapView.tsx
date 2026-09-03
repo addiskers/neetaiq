@@ -246,7 +246,7 @@ const STATE_MAP_CONFIG: Record<string, StateMapConfig> = {
   "Meghalaya": { center: [25.57, 91.30], zoom: 8.0, geojson: "/meghalaya_AC.geojson" },
   "Nagaland": { center: [26.12, 94.28], zoom: 8.0, geojson: "/nagaland_AC.geojson" },
   "Karnataka": { center: [15.04, 76.34], zoom: 6.5, geojson: "/karnataka_AC.geojson" },
-  "Telangana": { center: [17.88, 79.52], zoom: 7.0, geojson: "/Telangana_AC.geojson" },
+  "Telangana": { center: [17.88, 79.52], zoom: 7.0, geojson: "/telangana_AC.geojson" },
   "Madhya Pradesh": { center: [23.97, 78.42], zoom: 6.3, geojson: "/madhyapradesh_AC.geojson" },
   "Chhattisgarh": { center: [20.94, 82.32], zoom: 6.8, geojson: "/chhattisgarh_AC.geojson" },
   "Mizoram": { center: [23.23, 92.85], zoom: 8.2, geojson: "/mizoram_AC.geojson" },
